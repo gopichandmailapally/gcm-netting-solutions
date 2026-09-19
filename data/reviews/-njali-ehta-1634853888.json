@@ -1,0 +1,13 @@
+{
+    "id": 1634853888,
+    "customer_name": "Anjali Mehta",
+    "rating": 5,
+    "category": "Bird Netting",
+    "review_text": "Excellent bird netting! Quality install, non-toxic, and very little maintenance needed. Super happy with the service!",
+    "location": "Malkajgiri",
+    "created_at": "2021-10-22 03:34:48",
+    "status": "approved",
+    "source": "ai_generated",
+    "verified": true,
+    "helpful_count": 6
+}

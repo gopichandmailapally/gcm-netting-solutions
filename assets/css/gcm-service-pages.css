@@ -1,0 +1,309 @@
+/**
+ * GCM Safety Nets — Generated Service Page Layout
+ *
+ * ALL layout rules use !important so this external file beats
+ * any old <style> block that existing generated pages have in
+ * their <body>. Upload this file — full-width applies instantly
+ * to every page without regeneration.
+ */
+
+/* ═══════════════════════════════════════════════════════
+   FULL-WIDTH WRAPPER  (matches homepage section bands)
+   ═══════════════════════════════════════════════════════ */
+.gcm-wrap {
+    background:    #ffffff !important;
+    width:         100%    !important;
+    max-width:     100%    !important;
+    padding:       32px 0 48px !important;
+    margin:        0       !important;
+    border-radius: 0       !important;
+    box-sizing:    border-box !important;
+    display:       block   !important;
+    overflow-x:    hidden  !important;
+}
+
+/* ═══════════════════════════════════════════════════════
+   CONTENT GRID — fills viewport, centres only on wide screens
+   ═══════════════════════════════════════════════════════ */
+.gcm-grid {
+    width:                  100%       !important;
+    max-width:              1380px     !important;
+    margin:                 0 auto     !important;
+    padding:                0 24px     !important;
+    display:                grid       !important;
+    grid-template-columns:  1fr 300px  !important;
+    gap:                    28px       !important;
+    align-items:            start      !important;
+    box-sizing:             border-box !important;
+}
+
+.gcm-main    { min-width: 0 !important; }
+.gcm-sidebar { min-width: 0 !important; }
+
+/* ═══════════════════════════════════════════════════════
+   MAIN CONTENT CARDS  — clean, flat sections
+   ═══════════════════════════════════════════════════════ */
+.gcm-main > .gcm-card {
+    background:    #ffffff                          !important;
+    border-radius: 10px                             !important;
+    box-shadow:    0 2px 12px rgba(0,0,0,.06)       !important;
+    border:        1px solid #e8eef4                !important;
+    padding:       28px                             !important;
+    margin-bottom: 24px                             !important;
+    transition:    box-shadow .3s                   !important;
+}
+.gcm-main > .gcm-card:last-child { margin-bottom: 0 !important; }
+
+/* ═══════════════════════════════════════════════════════
+   SIDEBAR CARDS  — floating card style
+   ═══════════════════════════════════════════════════════ */
+.gcm-sidebar .gcm-card {
+    background:    #ffffff                               !important;
+    border-radius: 14px                                  !important;
+    padding:       22px                                  !important;
+    box-shadow:    0 4px 20px rgba(102,126,234,.12)      !important;
+    border:        1px solid #e0e7ff                     !important;
+    margin-bottom: 18px                                  !important;
+}
+.gcm-sidebar .gcm-card:last-child { margin-bottom: 0 !important; }
+
+/* ═══════════════════════════════════════════════════════
+   SIDEBAR ELEMENTS
+   ═══════════════════════════════════════════════════════ */
+.gcm-sb-title {
+    color:          #0f172a                                        !important;
+    margin:         0 0 14px                                       !important;
+    font-size:      16px                                           !important;
+    font-weight:    800                                            !important;
+    padding-bottom: 10px                                           !important;
+    border-bottom:  2px solid                                      !important;
+    border-image:   linear-gradient(90deg,#667eea,#764ba2) 1      !important;
+    font-family:    'Times New Roman', Times, serif                !important;
+}
+
+.gcm-sb-links {
+    display:        flex           !important;
+    flex-direction: column         !important;
+    gap:            5px            !important;
+    max-height:     280px          !important;
+    overflow-y:     auto           !important;
+    scrollbar-width: thin;
+    scrollbar-color: #c4b5fd transparent;
+}
+
+.gcm-sb-links a {
+    display:         block                                   !important;
+    padding:         8px 12px                               !important;
+    border-radius:   7px                                    !important;
+    text-decoration: none                                   !important;
+    font-size:       13px                                   !important;
+    color:           #374151                                !important;
+    background:      #f0f4ff                                !important;
+    border:          1px solid #e0e7ff                      !important;
+    transition:      all .2s                                !important;
+    line-height:     1.4                                    !important;
+    font-family:     'Times New Roman', Times, serif        !important;
+}
+.gcm-sb-links a:hover  { background:#ede9fe !important; color:#4f46e5 !important; border-color:#a5b4fc !important; }
+.gcm-sb-links a.active { background:linear-gradient(135deg,#667eea,#764ba2) !important; color:#fff !important; font-weight:700 !important; border-color:transparent !important; }
+
+.gcm-highlights           { padding:0 !important; margin:0 !important; list-style:none !important; }
+.gcm-highlights li        { padding:9px 0 !important; color:#374151 !important; border-bottom:1px solid #f1f5f9 !important; font-size:14px !important; line-height:1.5 !important; font-family:'Times New Roman',Times,serif !important; }
+.gcm-highlights li:last-child { border-bottom:none !important; }
+
+/* ═══════════════════════════════════════════════════════
+   MAIN ARTICLE CONTENT  —  Times New Roman throughout
+   ═══════════════════════════════════════════════════════ */
+.gcm-content {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+.gcm-content h2 {
+    font-size:    24px                                               !important;
+    font-weight:  800                                                !important;
+    color:        #0f172a                                            !important;
+    margin:       32px 0 12px                                        !important;
+    padding-bottom: 10px                                             !important;
+    border-bottom:  3px solid transparent                            !important;
+    border-image: linear-gradient(90deg,#667eea,#10b981) 1          !important;
+    font-family:  'Times New Roman', Times, serif                    !important;
+}
+.gcm-content h3 {
+    font-size:    19px                                               !important;
+    font-weight:  700                                                !important;
+    color:        #1e3a5f                                            !important;
+    margin:       22px 0 10px                                        !important;
+    padding:      9px 14px                                           !important;
+    background:   #f0f4ff                                            !important;
+    border-left:  4px solid #6366f1                                  !important;
+    border-radius: 0 7px 7px 0                                       !important;
+    font-family:  'Times New Roman', Times, serif                    !important;
+}
+.gcm-content p {
+    color:       #475569                                             !important;
+    line-height: 1.9                                                 !important;
+    font-size:   16px                                                !important;
+    margin:      12px 0                                              !important;
+    font-family: 'Times New Roman', Times, serif                     !important;
+}
+.gcm-content ul,
+.gcm-content ol  { margin:16px 0 !important; padding-left:0 !important; list-style:none !important; }
+
+.gcm-content li {
+    color:        #1e293b                                            !important;
+    line-height:  1.75                                               !important;
+    margin:       8px 0                                              !important;
+    padding:      12px 16px 12px 44px                               !important;
+    position:     relative                                           !important;
+    background:   linear-gradient(135deg,#f0fdf4,#f8fffc)           !important;
+    border-left:  4px solid #10b981                                  !important;
+    border-radius: 10px                                              !important;
+    box-shadow:   0 2px 6px rgba(16,185,129,.07)                    !important;
+    font-family:  'Times New Roman', Times, serif                    !important;
+}
+.gcm-content li::before {
+    content:   '\2713'                                               !important;
+    position:  absolute                                              !important;
+    left:      14px                                                  !important;
+    top:       50%                                                   !important;
+    transform: translateY(-50%)                                      !important;
+    color:     #10b981                                               !important;
+    font-weight: 900                                                 !important;
+    font-size: 15px                                                  !important;
+}
+.gcm-content strong {
+    color:       #0f172a                                             !important;
+    font-weight: 800                                                 !important;
+    font-family: 'Times New Roman', Times, serif                     !important;
+}
+.gcm-content ol               { counter-reset: gcm-c !important; }
+.gcm-content ol li            { counter-increment:gcm-c !important; background:linear-gradient(135deg,#eff6ff,#f8faff) !important; border-left-color:#6366f1 !important; }
+.gcm-content ol li::before    { content:counter(gcm-c) !important; background:linear-gradient(135deg,#667eea,#764ba2) !important; color:#fff !important; width:22px !important; height:22px !important; border-radius:50% !important; display:flex !important; align-items:center !important; justify-content:center !important; font-size:11px !important; font-weight:800 !important; left:11px !important; }
+
+/* ═══════════════════════════════════════════════════════
+   LIST-ITEM ACCORDION — individual li items collapsible
+   JS in modern-footer.php adds .gcm-li-acc / .gcm-li-open.
+   One item open at a time per list. h2 headings unchanged.
+   ═══════════════════════════════════════════════════════ */
+
+/* Override li padding when it becomes an accordion item */
+.gcm-content li.gcm-li-acc {
+    padding:  0                                                    !important;
+    cursor:   default                                              !important;
+    overflow: hidden                                               !important;
+}
+/* Align checkmark / number badge to the header row */
+.gcm-content ul li.gcm-li-acc::before {
+    top:       17px                                                !important;
+    transform: none                                                !important;
+}
+.gcm-content ol li.gcm-li-acc::before {
+    top:       14px                                                !important;
+    transform: none                                                !important;
+}
+
+/* Clickable header button inside li */
+.gcm-li-header {
+    display:         flex                                          !important;
+    align-items:     center                                        !important;
+    justify-content: space-between                                 !important;
+    width:           100%                                          !important;
+    padding:         13px 16px 13px 44px                          !important;
+    background:      transparent                                   !important;
+    border:          none                                          !important;
+    cursor:          pointer                                       !important;
+    text-align:      left                                          !important;
+    font-family:     'Times New Roman', Times, serif               !important;
+    outline:         none                                          !important;
+}
+
+/* Title span = the <strong> text */
+.gcm-li-title {
+    flex:        1                                                  !important;
+    font-weight: 800                                               !important;
+    color:       #0f172a                                           !important;
+    font-size:   15px                                              !important;
+    line-height: 1.45                                              !important;
+    font-family: 'Times New Roman', Times, serif                   !important;
+}
+
+/* Chevron circle */
+.gcm-li-chev {
+    flex-shrink:     0                                             !important;
+    width:           22px                                          !important;
+    height:          22px                                          !important;
+    border-radius:   50%                                           !important;
+    background:      rgba(16,185,129,.14)                          !important;
+    display:         inline-flex                                   !important;
+    align-items:     center                                        !important;
+    justify-content: center                                        !important;
+    margin-left:     10px                                          !important;
+    transition:      transform .3s cubic-bezier(.34,1.56,.64,1), background .2s !important;
+    flex-shrink:     0                                             !important;
+}
+.gcm-li-chev::before {
+    content:       ''                                              !important;
+    display:       block                                           !important;
+    width:         6px                                             !important;
+    height:        6px                                             !important;
+    border-right:  2px solid #10b981                              !important;
+    border-bottom: 2px solid #10b981                              !important;
+    transform:     rotate(45deg) translateY(-2px)                  !important;
+    transition:    border-color .2s                                !important;
+}
+.gcm-li-acc.gcm-li-open .gcm-li-chev {
+    transform:  rotate(180deg)                                     !important;
+    background: rgba(16,185,129,.25)                               !important;
+}
+
+/* For ol items (blue numbered) use indigo chevron color */
+.gcm-content ol .gcm-li-chev {
+    background: rgba(99,102,241,.14)                               !important;
+}
+.gcm-content ol .gcm-li-chev::before {
+    border-right-color:  #6366f1                                   !important;
+    border-bottom-color: #6366f1                                   !important;
+}
+.gcm-content ol .gcm-li-acc.gcm-li-open .gcm-li-chev {
+    background: rgba(99,102,241,.25)                               !important;
+}
+
+/* Collapsible body — grid-template-rows: 0fr → 1fr */
+.gcm-li-body {
+    display:            grid                                       !important;
+    grid-template-rows: 0fr                                        !important;
+    transition:         grid-template-rows .32s ease               !important;
+}
+.gcm-li-acc.gcm-li-open .gcm-li-body {
+    grid-template-rows: 1fr                                        !important;
+}
+
+/* Inner: overflow hidden required for 0fr collapse */
+.gcm-li-inner {
+    overflow:    hidden                                            !important;
+    padding:     0 16px 0 44px                                     !important;
+    box-sizing:  border-box                                        !important;
+    color:       #475569                                           !important;
+    font-size:   15px                                              !important;
+    line-height: 1.75                                              !important;
+    font-family: 'Times New Roman', Times, serif                   !important;
+}
+.gcm-li-acc.gcm-li-open .gcm-li-inner {
+    padding: 2px 16px 14px 44px                                    !important;
+}
+
+/* ═══════════════════════════════════════════════════════
+   MOBILE
+   ═══════════════════════════════════════════════════════ */
+@media (max-width: 900px) {
+    .gcm-grid {
+        grid-template-columns: 1fr  !important;
+        padding:               0 12px !important;
+    }
+    .gcm-main    { order: 1 !important; }
+    .gcm-sidebar { order: 2 !important; }
+
+    .gcm-li-header { padding: 11px 12px 11px 40px !important; }
+    .gcm-li-title  { font-size: 14px !important; }
+    .gcm-li-inner  { padding: 0 12px 0 40px !important; }
+    .gcm-li-acc.gcm-li-open .gcm-li-inner { padding: 2px 12px 12px 40px !important; }
+}

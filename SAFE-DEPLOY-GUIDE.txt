@@ -1,0 +1,89 @@
+============================================================
+  GCM NETTING SOLUTIONS — SAFE DEPLOYMENT GUIDE
+  Read this EVERY TIME before uploading this zip file
+============================================================
+
+THIS ZIP FILE CONTAINS:
+  ✓ All PHP website files (code only)
+  ✓ CSS, JS, config files
+  ✗ Does NOT contain AI-generated service pages
+  ✗ Does Not contain blogs, reviews, FAQs (stored on server)
+  ✗ Does NOT touch MySQL database (always safe)
+
+------------------------------------------------------------
+  THE GOLDEN RULE OF DEPLOYMENT
+------------------------------------------------------------
+
+  ✅ CORRECT:  Upload zip → Extract → DONE
+  ❌ WRONG:    Delete files first → Upload zip → Extract
+                            ↑
+               THIS destroys all your AI content!
+
+------------------------------------------------------------
+  STEP-BY-STEP: HOW TO DEPLOY ON HOSTINGER
+------------------------------------------------------------
+
+BEFORE YOU START:
+  → Go to: gcmsafetynets.in/admin/pages/content-export.php
+  → Click "Download Full Backup (ZIP)"
+  → Save the backup ZIP to your computer
+  → Now you are safe to deploy
+
+STEP 1: Login to hPanel
+  → Go to: https://hpanel.hostinger.com
+  → Login with your credentials
+
+STEP 2: Open File Manager
+  → Click "Websites" in the left menu
+  → Click "Manage" next to gcmsafetynets.in
+  → Click "File Manager"
+  → Navigate to: public_html  (or gcmsafetynets.in folder)
+
+STEP 3: Upload the zip
+  → Click the "Upload Files" button (top toolbar)
+  → Select: gcmsafetynets-deploy.zip
+  → Wait for 100% upload complete
+
+STEP 4: Extract the zip
+  → Find gcmsafetynets-deploy.zip in the file list
+  → RIGHT-CLICK on it → Select "Extract"
+  → Confirm extract path (should be public_html or /)
+  → Click OK / Extract
+
+STEP 5: Verify (IMPORTANT)
+  → Visit: gcmsafetynets.in/admin/pages/content-export.php
+  → Check all content counts are the same as before
+  → If counts match → deployment successful ✓
+
+STEP 6: (Optional) Delete the zip from server
+  → Right-click gcmsafetynets-deploy.zip → Delete
+  → This frees up server space
+
+------------------------------------------------------------
+  WHAT STAYS SAFE (never deleted by this zip)
+------------------------------------------------------------
+
+  ✓ generated-pages/*.php     → AI service pages (PHP files)
+  ✓ data/blogs/*.json         → All blog posts
+  ✓ data/reviews/*.json       → All customer reviews
+  ✓ data/faqs/*.json          → All FAQ entries
+  ✓ MySQL Database            → ALL database records always safe
+  ✓ Pillar pages (root *.php) → Pigeon nets, bird nets, etc.
+
+------------------------------------------------------------
+  IF YOU ACCIDENTALLY DELETED EVERYTHING
+------------------------------------------------------------
+
+  Don't panic. Here's how to restore:
+
+  1. Deploy this zip first (you already have it)
+  2. Go to admin panel and login
+  3. Open Admin → Content Protection
+  4. Click "Full Backup (ALL content)" — if you have one
+     from before, restore those files via File Manager
+  5. For service pages: Go to Service Page Generator
+     and regenerate (DB records are safe in MySQL)
+
+------------------------------------------------------------
+  SUPPORT: Check admin panel → Content Protection
+============================================================

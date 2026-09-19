@@ -1,0 +1,3800 @@
+[
+  {
+    "area_name": "Abids",
+    "area_slug": "abids",
+    "zone": "Central Chennai",
+    "pincode": "500001"
+  },
+  {
+    "area_name": "Adikmet",
+    "area_slug": "adikmet",
+    "zone": "Central Chennai",
+    "pincode": "500044"
+  },
+  {
+    "area_name": "Afzalgunj",
+    "area_slug": "afzalgunj",
+    "zone": "South Chennai",
+    "pincode": "500012"
+  },
+  {
+    "area_name": "Aliabad",
+    "area_slug": "aliabad",
+    "zone": "South Chennai",
+    "pincode": "500053"
+  },
+  {
+    "area_name": "Alwal",
+    "area_slug": "alwal",
+    "zone": "North Chennai",
+    "pincode": "500010"
+  },
+  {
+    "area_name": "Amberpet",
+    "area_slug": "amberpet",
+    "zone": "East Chennai",
+    "pincode": "500013"
+  },
+  {
+    "area_name": "Ameerpet",
+    "area_slug": "ameerpet",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Ananthagiri Hills",
+    "area_slug": "ananthagiri-hills",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Asif Nagar",
+    "area_slug": "asif-nagar",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Asifabad",
+    "area_slug": "asifabad",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Attapur",
+    "area_slug": "attapur",
+    "zone": "South Chennai",
+    "pincode": "500048"
+  },
+  {
+    "area_name": "Attapur Metro",
+    "area_slug": "attapur-metro",
+    "zone": "South Chennai",
+    "pincode": "500048"
+  },
+  {
+    "area_name": "Ayyappa Society",
+    "area_slug": "ayyappa-society",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Bachupally",
+    "area_slug": "bachupally",
+    "zone": "West Chennai",
+    "pincode": "500090"
+  },
+  {
+    "area_name": "Badangpet",
+    "area_slug": "badangpet",
+    "zone": "South-East Chennai",
+    "pincode": "500058"
+  },
+  {
+    "area_name": "Bagh Amberpet",
+    "area_slug": "bagh-amberpet",
+    "zone": "East Chennai",
+    "pincode": "500013"
+  },
+  {
+    "area_name": "Bagh Lingampally",
+    "area_slug": "bagh-lingampally",
+    "zone": "Central Chennai",
+    "pincode": "500044"
+  },
+  {
+    "area_name": "Bahadurpura",
+    "area_slug": "bahadurpura",
+    "zone": "South Chennai",
+    "pincode": "500064"
+  },
+  {
+    "area_name": "Balkampet",
+    "area_slug": "balkampet",
+    "zone": "Central Chennai",
+    "pincode": "500018"
+  },
+  {
+    "area_name": "Balnagar",
+    "area_slug": "balnagar",
+    "zone": "North Chennai",
+    "pincode": "500037"
+  },
+  {
+    "area_name": "Bandlaguda",
+    "area_slug": "bandlaguda",
+    "zone": "South Chennai",
+    "pincode": "500005"
+  },
+  {
+    "area_name": "Banjara Hills",
+    "area_slug": "banjara-hills",
+    "zone": "West Chennai",
+    "pincode": "500034"
+  },
+  {
+    "area_name": "Barkas",
+    "area_slug": "barkas",
+    "zone": "South Chennai",
+    "pincode": "500005"
+  },
+  {
+    "area_name": "Basheerbagh",
+    "area_slug": "basheerbagh",
+    "zone": "Central Chennai",
+    "pincode": "500029"
+  },
+  {
+    "area_name": "Begum Bazar",
+    "area_slug": "begum-bazar",
+    "zone": "South Chennai",
+    "pincode": "500012"
+  },
+  {
+    "area_name": "Begumpet",
+    "area_slug": "begumpet",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Boduppal",
+    "area_slug": "boduppal",
+    "zone": "East Chennai",
+    "pincode": "500092"
+  },
+  {
+    "area_name": "Borabanda",
+    "area_slug": "borabanda",
+    "zone": "West Chennai",
+    "pincode": "500018"
+  },
+  {
+    "area_name": "Bowenpally",
+    "area_slug": "bowenpally",
+    "zone": "North Chennai",
+    "pincode": "500011"
+  },
+  {
+    "area_name": "Boysguda",
+    "area_slug": "boysguda",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Champapet",
+    "area_slug": "champapet",
+    "zone": "South-East Chennai",
+    "pincode": "500079"
+  },
+  {
+    "area_name": "Chanda Nagar",
+    "area_slug": "chanda-nagar",
+    "zone": "West Chennai",
+    "pincode": "500050"
+  },
+  {
+    "area_name": "Chandanagar",
+    "area_slug": "chandanagar",
+    "zone": "West Chennai",
+    "pincode": "500050"
+  },
+  {
+    "area_name": "Charminar",
+    "area_slug": "charminar",
+    "zone": "South Chennai",
+    "pincode": "500002"
+  },
+  {
+    "area_name": "Chikkadpally",
+    "area_slug": "chikkadpally",
+    "zone": "Central Chennai",
+    "pincode": "500020"
+  },
+  {
+    "area_name": "Chintal",
+    "area_slug": "chintal",
+    "zone": "North Chennai",
+    "pincode": "500054"
+  },
+  {
+    "area_name": "Chintalkunta",
+    "area_slug": "chintalkunta",
+    "zone": "North Chennai",
+    "pincode": "500054"
+  },
+  {
+    "area_name": "Dabeerpura",
+    "area_slug": "dabeerpura",
+    "zone": "South Chennai",
+    "pincode": "500024"
+  },
+  {
+    "area_name": "Dammaiguda",
+    "area_slug": "dammaiguda",
+    "zone": "North Chennai",
+    "pincode": "500083"
+  },
+  {
+    "area_name": "Dar-ul-Shifa",
+    "area_slug": "dar-ul-shifa",
+    "zone": "South Chennai",
+    "pincode": "500024"
+  },
+  {
+    "area_name": "Dhoolpet",
+    "area_slug": "dhoolpet",
+    "zone": "South Chennai",
+    "pincode": "500006"
+  },
+  {
+    "area_name": "Dilsukhnagar",
+    "area_slug": "dilsukhnagar",
+    "zone": "South-East Chennai",
+    "pincode": "500060"
+  },
+  {
+    "area_name": "Domalguda",
+    "area_slug": "domalguda",
+    "zone": "Central Chennai",
+    "pincode": "500029"
+  },
+  {
+    "area_name": "Dundigal",
+    "area_slug": "dundigal",
+    "zone": "West Chennai",
+    "pincode": "500043"
+  },
+  {
+    "area_name": "East Marredpally",
+    "area_slug": "east-marredpally",
+    "zone": "North Chennai",
+    "pincode": "500026"
+  },
+  {
+    "area_name": "ECIL",
+    "area_slug": "ecil",
+    "zone": "North Chennai",
+    "pincode": "500062"
+  },
+  {
+    "area_name": "ECIL Cross Roads",
+    "area_slug": "ecil-cross-roads",
+    "zone": "North Chennai",
+    "pincode": "500062"
+  },
+  {
+    "area_name": "Edi Bazar",
+    "area_slug": "edi-bazar",
+    "zone": "South Chennai",
+    "pincode": "500023"
+  },
+  {
+    "area_name": "Erragadda",
+    "area_slug": "erragadda",
+    "zone": "Central Chennai",
+    "pincode": "500018"
+  },
+  {
+    "area_name": "Falaknuma",
+    "area_slug": "falaknuma",
+    "zone": "South Chennai",
+    "pincode": "500053"
+  },
+  {
+    "area_name": "Fateh Nagar",
+    "area_slug": "fateh-nagar",
+    "zone": "North Chennai",
+    "pincode": "500018"
+  },
+  {
+    "area_name": "Ferozguda",
+    "area_slug": "ferozguda",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Film Nagar",
+    "area_slug": "film-nagar",
+    "zone": "West Chennai",
+    "pincode": "500096"
+  },
+  {
+    "area_name": "Financial District",
+    "area_slug": "financial-district",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "Gachibowli",
+    "area_slug": "gachibowli",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "Gaddiannaram",
+    "area_slug": "gaddiannaram",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Gajularamaram",
+    "area_slug": "gajularamaram",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Gandhi Nagar",
+    "area_slug": "gandhi-nagar",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Ghatkesar",
+    "area_slug": "ghatkesar",
+    "zone": "East Chennai",
+    "pincode": "501301"
+  },
+  {
+    "area_name": "Golconda",
+    "area_slug": "golconda",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Goshamahal",
+    "area_slug": "goshamahal",
+    "zone": "South Chennai",
+    "pincode": "500012"
+  },
+  {
+    "area_name": "Gowlidoddy",
+    "area_slug": "gowlidoddy",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "Gudimelakunta",
+    "area_slug": "gudimelakunta",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Habsiguda",
+    "area_slug": "habsiguda",
+    "zone": "East Chennai",
+    "pincode": "500007"
+  },
+  {
+    "area_name": "Hafeezpet",
+    "area_slug": "hafeezpet",
+    "zone": "West Chennai",
+    "pincode": "500049"
+  },
+  {
+    "area_name": "Hayathnagar",
+    "area_slug": "hayathnagar",
+    "zone": "South-East Chennai",
+    "pincode": "501505"
+  },
+  {
+    "area_name": "Himayatnagar",
+    "area_slug": "himayatnagar",
+    "zone": "Central Chennai",
+    "pincode": "500029"
+  },
+  {
+    "area_name": "Hitech City",
+    "area_slug": "hitech-city",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Hussainialam",
+    "area_slug": "hussainialam",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Hyderguda",
+    "area_slug": "hyderguda",
+    "zone": "Central Chennai",
+    "pincode": "500029"
+  },
+  {
+    "area_name": "Ibrahim Bagh",
+    "area_slug": "ibrahim-bagh",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Ibrahimpatnam",
+    "area_slug": "ibrahimpatnam",
+    "zone": "South-East Chennai",
+    "pincode": "501506"
+  },
+  {
+    "area_name": "IDA Bollaram",
+    "area_slug": "ida-bollaram",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "IS Sadan",
+    "area_slug": "is-sadan",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Izzat Nagar",
+    "area_slug": "izzat-nagar",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Jagadgirigutta",
+    "area_slug": "jagadgirigutta",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Jahanuma",
+    "area_slug": "jahanuma",
+    "zone": "South Chennai",
+    "pincode": "500053"
+  },
+  {
+    "area_name": "Jamia Osmania",
+    "area_slug": "jamia-osmania",
+    "zone": "East Chennai",
+    "pincode": "500007"
+  },
+  {
+    "area_name": "Jeedimetla",
+    "area_slug": "jeedimetla",
+    "zone": "North Chennai",
+    "pincode": "500055"
+  },
+  {
+    "area_name": "Jubilee Hills",
+    "area_slug": "jubilee-hills",
+    "zone": "West Chennai",
+    "pincode": "500033"
+  },
+  {
+    "area_name": "Kachiguda",
+    "area_slug": "kachiguda",
+    "zone": "Central Chennai",
+    "pincode": "500027"
+  },
+  {
+    "area_name": "Kailash Nagar",
+    "area_slug": "kailash-nagar",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Kalimandir",
+    "area_slug": "kalimandir",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Kamala Nagar",
+    "area_slug": "kamala-nagar",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Kapra",
+    "area_slug": "kapra",
+    "zone": "North Chennai",
+    "pincode": "500062"
+  },
+  {
+    "area_name": "Karkhana",
+    "area_slug": "karkhana",
+    "zone": "North Chennai",
+    "pincode": "500009"
+  },
+  {
+    "area_name": "Karwan",
+    "area_slug": "karwan",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Kattedan",
+    "area_slug": "kattedan",
+    "zone": "South Chennai",
+    "pincode": "500077"
+  },
+  {
+    "area_name": "Khairtabad",
+    "area_slug": "khairtabad",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Khajaguda",
+    "area_slug": "khajaguda",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Kishanbagh",
+    "area_slug": "kishanbagh",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Kismatkhan Gudda",
+    "area_slug": "kismatkhan-gudda",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Kompally",
+    "area_slug": "kompally",
+    "zone": "North Chennai",
+    "pincode": "500014"
+  },
+  {
+    "area_name": "Kondapur",
+    "area_slug": "kondapur",
+    "zone": "West Chennai",
+    "pincode": "500084"
+  },
+  {
+    "area_name": "Kothapet",
+    "area_slug": "kothapet",
+    "zone": "South-East Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "KPHB Colony",
+    "area_slug": "kphb-colony",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "Kukatpally",
+    "area_slug": "kukatpally",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "Lakdikapul",
+    "area_slug": "lakdikapul",
+    "zone": "Central Chennai",
+    "pincode": "500004"
+  },
+  {
+    "area_name": "Lalapet",
+    "area_slug": "lalapet",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Langer Houz",
+    "area_slug": "langer-houz",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "LB Nagar",
+    "area_slug": "lb-nagar",
+    "zone": "South-East Chennai",
+    "pincode": "500074"
+  },
+  {
+    "area_name": "Lingampally",
+    "area_slug": "lingampally",
+    "zone": "West Chennai",
+    "pincode": "500019"
+  },
+  {
+    "area_name": "Madannapet",
+    "area_slug": "madannapet",
+    "zone": "South-East Chennai",
+    "pincode": "500059"
+  },
+  {
+    "area_name": "Madhapur",
+    "area_slug": "madhapur",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Madinaguda",
+    "area_slug": "madinaguda",
+    "zone": "South Chennai",
+    "pincode": "500002"
+  },
+  {
+    "area_name": "Mahdipatnam",
+    "area_slug": "mahdipatnam",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Malakpet",
+    "area_slug": "malakpet",
+    "zone": "South-East Chennai",
+    "pincode": "500036"
+  },
+  {
+    "area_name": "Mallapur",
+    "area_slug": "mallapur",
+    "zone": "East Chennai",
+    "pincode": "500076"
+  },
+  {
+    "area_name": "Manikonda",
+    "area_slug": "manikonda",
+    "zone": "West Chennai",
+    "pincode": "500089"
+  },
+  {
+    "area_name": "Marredpally",
+    "area_slug": "marredpally",
+    "zone": "North Chennai",
+    "pincode": "500026"
+  },
+  {
+    "area_name": "Masab Tank",
+    "area_slug": "masab-tank",
+    "zone": "Central Chennai",
+    "pincode": "500028"
+  },
+  {
+    "area_name": "Meerpet",
+    "area_slug": "meerpet",
+    "zone": "South-East Chennai",
+    "pincode": "500097"
+  },
+  {
+    "area_name": "Mehdipatnam",
+    "area_slug": "mehdipatnam",
+    "zone": "Central Chennai",
+    "pincode": "500028"
+  },
+  {
+    "area_name": "Mettuguda",
+    "area_slug": "mettuguda",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Miyapur",
+    "area_slug": "miyapur",
+    "zone": "West Chennai",
+    "pincode": "500049"
+  },
+  {
+    "area_name": "Moghalpura",
+    "area_slug": "moghalpura",
+    "zone": "South Chennai",
+    "pincode": "500002"
+  },
+  {
+    "area_name": "Moosarambagh",
+    "area_slug": "moosarambagh",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Moti Nagar",
+    "area_slug": "moti-nagar",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Moula Ali",
+    "area_slug": "moula-ali",
+    "zone": "North Chennai",
+    "pincode": "500040"
+  },
+  {
+    "area_name": "Musheerabad",
+    "area_slug": "musheerabad",
+    "zone": "Central Chennai",
+    "pincode": "500020"
+  },
+  {
+    "area_name": "Nacharam",
+    "area_slug": "nacharam",
+    "zone": "East Chennai",
+    "pincode": "500076"
+  },
+  {
+    "area_name": "Nagaram",
+    "area_slug": "nagaram",
+    "zone": "North Chennai",
+    "pincode": "500083"
+  },
+  {
+    "area_name": "Nagole",
+    "area_slug": "nagole",
+    "zone": "East Chennai",
+    "pincode": "500068"
+  },
+  {
+    "area_name": "Nallakunta",
+    "area_slug": "nallakunta",
+    "zone": "Central Chennai",
+    "pincode": "500044"
+  },
+  {
+    "area_name": "Nampally",
+    "area_slug": "nampally",
+    "zone": "Central Chennai",
+    "pincode": "500001"
+  },
+  {
+    "area_name": "Nanakramguda",
+    "area_slug": "nanakramguda",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "Nanal Nagar",
+    "area_slug": "nanal-nagar",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Narayanguda",
+    "area_slug": "narayanguda",
+    "zone": "Central Chennai",
+    "pincode": "500029"
+  },
+  {
+    "area_name": "Neredmet",
+    "area_slug": "neredmet",
+    "zone": "North Chennai",
+    "pincode": "500056"
+  },
+  {
+    "area_name": "New Bowenpally",
+    "area_slug": "new-bowenpally",
+    "zone": "North Chennai",
+    "pincode": "500011"
+  },
+  {
+    "area_name": "Nizampet",
+    "area_slug": "nizampet",
+    "zone": "West Chennai",
+    "pincode": "500090"
+  },
+  {
+    "area_name": "Old Bowenpally",
+    "area_slug": "old-bowenpally",
+    "zone": "North Chennai",
+    "pincode": "500011"
+  },
+  {
+    "area_name": "Old City",
+    "area_slug": "old-city",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Old Malakpet",
+    "area_slug": "old-malakpet",
+    "zone": "South-East Chennai",
+    "pincode": "500036"
+  },
+  {
+    "area_name": "Osman Nagar",
+    "area_slug": "osman-nagar",
+    "zone": "West Chennai",
+    "pincode": "502032"
+  },
+  {
+    "area_name": "Osmangunj",
+    "area_slug": "osmangunj",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Osmania University",
+    "area_slug": "osmania-university",
+    "zone": "East Chennai",
+    "pincode": "500007"
+  },
+  {
+    "area_name": "Padmarao Nagar",
+    "area_slug": "padmarao-nagar",
+    "zone": "Central Chennai",
+    "pincode": "500025"
+  },
+  {
+    "area_name": "Panjagutta",
+    "area_slug": "panjagutta",
+    "zone": "Central Chennai",
+    "pincode": "500082"
+  },
+  {
+    "area_name": "Panjagutta Circle",
+    "area_slug": "panjagutta-circle",
+    "zone": "Central Chennai",
+    "pincode": "500082"
+  },
+  {
+    "area_name": "Paradise",
+    "area_slug": "paradise",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Patancheru",
+    "area_slug": "patancheru",
+    "zone": "West Chennai",
+    "pincode": "502319"
+  },
+  {
+    "area_name": "Patel Road",
+    "area_slug": "patel-road",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Peerzadiguda",
+    "area_slug": "peerzadiguda",
+    "zone": "East Chennai",
+    "pincode": "500039"
+  },
+  {
+    "area_name": "Pragathi Nagar",
+    "area_slug": "pragathi-nagar",
+    "zone": "West Chennai",
+    "pincode": "500090"
+  },
+  {
+    "area_name": "Purani Haveli",
+    "area_slug": "purani-haveli",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Qila Mohd. Nagar",
+    "area_slug": "qila-mohd-nagar",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Quthbullapur",
+    "area_slug": "quthbullapur",
+    "zone": "North Chennai",
+    "pincode": "500055"
+  },
+  {
+    "area_name": "Rajendranagar",
+    "area_slug": "rajendranagar",
+    "zone": "South Chennai",
+    "pincode": "500030"
+  },
+  {
+    "area_name": "Ramakrishna Puram",
+    "area_slug": "ramakrishna-puram",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Ramanthapur",
+    "area_slug": "ramanthapur",
+    "zone": "East Chennai",
+    "pincode": "500013"
+  },
+  {
+    "area_name": "Ramnagar",
+    "area_slug": "ramnagar",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "RC Puram",
+    "area_slug": "rc-puram",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Red Hills",
+    "area_slug": "red-hills",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Safilguda",
+    "area_slug": "safilguda",
+    "zone": "North Chennai",
+    "pincode": "500047"
+  },
+  {
+    "area_name": "Saidabad",
+    "area_slug": "saidabad",
+    "zone": "South-East Chennai",
+    "pincode": "500059"
+  },
+  {
+    "area_name": "Sainikpuri",
+    "area_slug": "sainikpuri",
+    "zone": "North Chennai",
+    "pincode": "500094"
+  },
+  {
+    "area_name": "Sanath Nagar",
+    "area_slug": "sanath-nagar",
+    "zone": "Central Chennai",
+    "pincode": "500018"
+  },
+  {
+    "area_name": "Sangareddy",
+    "area_slug": "sangareddy",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Santosh Nagar",
+    "area_slug": "santosh-nagar",
+    "zone": "South-East Chennai",
+    "pincode": "500059"
+  },
+  {
+    "area_name": "Saroornagar",
+    "area_slug": "saroornagar",
+    "zone": "South-East Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Tambaram",
+    "area_slug": "secunderabad",
+    "zone": "North Chennai",
+    "pincode": "500003"
+  },
+  {
+    "area_name": "Serilingampally",
+    "area_slug": "serilingampally",
+    "zone": "West Chennai",
+    "pincode": "500019"
+  },
+  {
+    "area_name": "Shaikpet",
+    "area_slug": "shaikpet",
+    "zone": "West Chennai",
+    "pincode": "500008"
+  },
+  {
+    "area_name": "Shamirpet",
+    "area_slug": "shamirpet",
+    "zone": "North Chennai",
+    "pincode": "500078"
+  },
+  {
+    "area_name": "Shamshabad",
+    "area_slug": "shamshabad",
+    "zone": "South Chennai",
+    "pincode": "501218"
+  },
+  {
+    "area_name": "Shankarpally",
+    "area_slug": "shankarpally",
+    "zone": "West Chennai",
+    "pincode": "501203"
+  },
+  {
+    "area_name": "Tank Bund",
+    "area_slug": "tank-bund",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Tappachabutra",
+    "area_slug": "tappachabutra",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Tarnaka",
+    "area_slug": "tarnaka",
+    "zone": "East Chennai",
+    "pincode": "500017"
+  },
+  {
+    "area_name": "Tolichowki",
+    "area_slug": "tolichowki",
+    "zone": "West Chennai",
+    "pincode": "500008"
+  },
+  {
+    "area_name": "Trimulgherry",
+    "area_slug": "trimulgherry",
+    "zone": "North Chennai",
+    "pincode": "500015"
+  },
+  {
+    "area_name": "Umdanagar",
+    "area_slug": "umdanagar",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Uppal",
+    "area_slug": "uppal",
+    "zone": "East Chennai",
+    "pincode": "500039"
+  },
+  {
+    "area_name": "Uppuguda",
+    "area_slug": "uppuguda",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Vanasthalipuram",
+    "area_slug": "vanasthalipuram",
+    "zone": "South-East Chennai",
+    "pincode": "500070"
+  },
+  {
+    "area_name": "Vengal Rao Nagar",
+    "area_slug": "vengal-rao-nagar",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Vidyanagar",
+    "area_slug": "vidyanagar",
+    "zone": "Central Chennai",
+    "pincode": "500044"
+  },
+  {
+    "area_name": "Vikrampuri",
+    "area_slug": "vikrampuri",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Warasiguda",
+    "area_slug": "warasiguda",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "West Marredpally",
+    "area_slug": "west-marredpally",
+    "zone": "North Chennai",
+    "pincode": "500026"
+  },
+  {
+    "area_name": "Yakutpura",
+    "area_slug": "yakutpura",
+    "zone": "South Chennai",
+    "pincode": "500023"
+  },
+  {
+    "area_name": "Yousufguda",
+    "area_slug": "yousufguda",
+    "zone": "West Chennai",
+    "pincode": "500045"
+  },
+  {
+    "area_name": "Zakir Hussain Colony",
+    "area_slug": "zakir-hussain-colony",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Zamistanpur",
+    "area_slug": "zamistanpur",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Zeregumbad",
+    "area_slug": "zeregumbad",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Ziaguda",
+    "area_slug": "ziaguda",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Zohra Nagar",
+    "area_slug": "zohra-nagar",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Kokapet",
+    "area_slug": "kokapet",
+    "zone": "West Chennai",
+    "pincode": "500075"
+  },
+  {
+    "area_name": "Narsingi",
+    "area_slug": "narsingi",
+    "zone": "West Chennai",
+    "pincode": "500075"
+  },
+  {
+    "area_name": "Puppalguda",
+    "area_slug": "puppalguda",
+    "zone": "East Chennai",
+    "pincode": "500039"
+  },
+  {
+    "area_name": "Tellapur",
+    "area_slug": "tellapur",
+    "zone": "West Chennai",
+    "pincode": "502032"
+  },
+  {
+    "area_name": "Mokila",
+    "area_slug": "mokila",
+    "zone": "West Chennai",
+    "pincode": "501203"
+  },
+  {
+    "area_name": "Kollur",
+    "area_slug": "kollur",
+    "zone": "West Chennai",
+    "pincode": "502300"
+  },
+  {
+    "area_name": "Gandipet",
+    "area_slug": "gandipet",
+    "zone": "West Chennai",
+    "pincode": "500075"
+  },
+  {
+    "area_name": "Bandlaguda Jagir",
+    "area_slug": "bandlaguda-jagir",
+    "zone": "South Chennai",
+    "pincode": "500086"
+  },
+  {
+    "area_name": "Kismatpur",
+    "area_slug": "kismatpur",
+    "zone": "South Chennai",
+    "pincode": "500030"
+  },
+  {
+    "area_name": "Adibatla",
+    "area_slug": "adibatla",
+    "zone": "South-East Chennai",
+    "pincode": "501510"
+  },
+  {
+    "area_name": "Tukkuguda",
+    "area_slug": "tukkuguda",
+    "zone": "Central Chennai",
+    "pincode": "501359"
+  },
+  {
+    "area_name": "Bowrampet",
+    "area_slug": "bowrampet",
+    "zone": "West Chennai",
+    "pincode": "500043"
+  },
+  {
+    "area_name": "Ameenpur",
+    "area_slug": "ameenpur",
+    "zone": "West Chennai",
+    "pincode": "502032"
+  },
+  {
+    "area_name": "Beeramguda",
+    "area_slug": "beeramguda",
+    "zone": "West Chennai",
+    "pincode": "502032"
+  },
+  {
+    "area_name": "Kothaguda",
+    "area_slug": "kothaguda",
+    "zone": "West Chennai",
+    "pincode": "500084"
+  },
+  {
+    "area_name": "Kavuri Hills",
+    "area_slug": "kavuri-hills",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Prashasan Nagar",
+    "area_slug": "prashasan-nagar",
+    "zone": "West Chennai",
+    "pincode": "500096"
+  },
+  {
+    "area_name": "Journalist Colony",
+    "area_slug": "journalist-colony",
+    "zone": "West Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Shilparamam",
+    "area_slug": "shilparamam",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Madhapur Metro",
+    "area_slug": "madhapur-metro",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Jubilee Hills Checkpost",
+    "area_slug": "jubilee-hills-checkpost",
+    "zone": "West Chennai",
+    "pincode": "500033"
+  },
+  {
+    "area_name": "Puppalaguda Golden Mile",
+    "area_slug": "puppalaguda-golden-mile",
+    "zone": "West Chennai",
+    "pincode": "500089"
+  },
+  {
+    "area_name": "Nanakramguda Financial Hub",
+    "area_slug": "nanakramguda-financial-hub",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "Gandipet Lake View",
+    "area_slug": "gandipet-lake-view",
+    "zone": "West Chennai",
+    "pincode": "500075"
+  },
+  {
+    "area_name": "Himayat Sagar",
+    "area_slug": "himayat-sagar",
+    "zone": "West Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Chilkur",
+    "area_slug": "chilkur",
+    "zone": "West Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Moinabad",
+    "area_slug": "moinabad",
+    "zone": "West Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Velimela",
+    "area_slug": "velimela",
+    "zone": "West Chennai",
+    "pincode": "502300"
+  },
+  {
+    "area_name": "Muthangi",
+    "area_slug": "muthangi",
+    "zone": "West Chennai",
+    "pincode": "502300"
+  },
+  {
+    "area_name": "Indresham",
+    "area_slug": "indresham",
+    "zone": "West Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Rudraram",
+    "area_slug": "rudraram",
+    "zone": "West Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Isnapur",
+    "area_slug": "isnapur",
+    "zone": "West Chennai",
+    "pincode": "502307"
+  },
+  {
+    "area_name": "Sultanpur",
+    "area_slug": "sultanpur",
+    "zone": "West Chennai",
+    "pincode": "502319"
+  },
+  {
+    "area_name": "Kollur Exit 2",
+    "area_slug": "kollur-exit-2",
+    "zone": "West Chennai",
+    "pincode": "502300"
+  },
+  {
+    "area_name": "Tellapur Techno City",
+    "area_slug": "tellapur-techno-city",
+    "zone": "West Chennai",
+    "pincode": "502032"
+  },
+  {
+    "area_name": "Medchal",
+    "area_slug": "medchal",
+    "zone": "North Chennai",
+    "pincode": "501401"
+  },
+  {
+    "area_name": "Suchitra",
+    "area_slug": "suchitra",
+    "zone": "North Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Suchitra Circle",
+    "area_slug": "suchitra-circle",
+    "zone": "North Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Dindigul Airforce",
+    "area_slug": "dindigul-airforce",
+    "zone": "North Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Suraram Colony",
+    "area_slug": "suraram-colony",
+    "zone": "North Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Bahadurpally",
+    "area_slug": "bahadurpally",
+    "zone": "North Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Gundlapochampally",
+    "area_slug": "gundlapochampally",
+    "zone": "North Chennai",
+    "pincode": "500100"
+  },
+  {
+    "area_name": "Kandlakoya",
+    "area_slug": "kandlakoya",
+    "zone": "North Chennai",
+    "pincode": "501401"
+  },
+  {
+    "area_name": "Dulapally",
+    "area_slug": "dulapally",
+    "zone": "North Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Kompally Highway",
+    "area_slug": "kompally-highway",
+    "zone": "North Chennai",
+    "pincode": "500014"
+  },
+  {
+    "area_name": "Bolarum Cantonment",
+    "area_slug": "bolarum-cantonment",
+    "zone": "North Chennai",
+    "pincode": "500010"
+  },
+  {
+    "area_name": "Machabollaram",
+    "area_slug": "machabollaram",
+    "zone": "North Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Kowkoor",
+    "area_slug": "kowkoor",
+    "zone": "North Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Yapral",
+    "area_slug": "yapral",
+    "zone": "North Chennai",
+    "pincode": "500087"
+  },
+  {
+    "area_name": "Lothkunta",
+    "area_slug": "lothkunta",
+    "zone": "North Chennai",
+    "pincode": "500015"
+  },
+  {
+    "area_name": "Old Alwal",
+    "area_slug": "old-alwal",
+    "zone": "North Chennai",
+    "pincode": "500010"
+  },
+  {
+    "area_name": "Venkatapuram",
+    "area_slug": "venkatapuram",
+    "zone": "North Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Subhash Nagar",
+    "area_slug": "subhash-nagar",
+    "zone": "North Chennai",
+    "pincode": "500055"
+  },
+  {
+    "area_name": "Quthbullapur Village",
+    "area_slug": "quthbullapur-village",
+    "zone": "North Chennai",
+    "pincode": "500055"
+  },
+  {
+    "area_name": "Chintal HMT",
+    "area_slug": "chintal-hmt",
+    "zone": "North Chennai",
+    "pincode": "500054"
+  },
+  {
+    "area_name": "Shapur Nagar",
+    "area_slug": "shapur-nagar",
+    "zone": "North Chennai",
+    "pincode": "500055"
+  },
+  {
+    "area_name": "IDPL Colony",
+    "area_slug": "idpl-colony",
+    "zone": "North Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "KPHB Phase 1",
+    "area_slug": "kphb-phase-1",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "KPHB Phase 2",
+    "area_slug": "kphb-phase-2",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "KPHB Phase 3",
+    "area_slug": "kphb-phase-3",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "KPHB Phase 4",
+    "area_slug": "kphb-phase-4",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "KPHB Phase 5",
+    "area_slug": "kphb-phase-5",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "KPHB Phase 6",
+    "area_slug": "kphb-phase-6",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "KPHB Phase 7",
+    "area_slug": "kphb-phase-7",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "KPHB Phase 8",
+    "area_slug": "kphb-phase-8",
+    "zone": "West Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "KPHB Phase 9",
+    "area_slug": "kphb-phase-9",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "Allwyn Colony",
+    "area_slug": "allwyn-colony",
+    "zone": "West Chennai",
+    "pincode": "500049"
+  },
+  {
+    "area_name": "Hydernagar",
+    "area_slug": "hydernagar",
+    "zone": "West Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Nizampet Village",
+    "area_slug": "nizampet-village",
+    "zone": "West Chennai",
+    "pincode": "500090"
+  },
+  {
+    "area_name": "Nizampet Road",
+    "area_slug": "nizampet-road",
+    "zone": "West Chennai",
+    "pincode": "500090"
+  },
+  {
+    "area_name": "Matrusri Nagar",
+    "area_slug": "matrusri-nagar",
+    "zone": "West Chennai",
+    "pincode": "500049"
+  },
+  {
+    "area_name": "Mayuri Nagar",
+    "area_slug": "mayuri-nagar",
+    "zone": "West Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "JP Nagar Miyapur",
+    "area_slug": "jp-nagar-miyapur",
+    "zone": "West Chennai",
+    "pincode": "500049"
+  },
+  {
+    "area_name": "Hafeezpet Station Road",
+    "area_slug": "hafeezpet-station-road",
+    "zone": "West Chennai",
+    "pincode": "500049"
+  },
+  {
+    "area_name": "Vasanth Nagar",
+    "area_slug": "vasanth-nagar",
+    "zone": "West Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Somajiguda",
+    "area_slug": "somajiguda",
+    "zone": "Central Chennai",
+    "pincode": "500082"
+  },
+  {
+    "area_name": "Srinagar Colony",
+    "area_slug": "srinagar-colony",
+    "zone": "Central Chennai",
+    "pincode": "500073"
+  },
+  {
+    "area_name": "Venkatagiri",
+    "area_slug": "venkatagiri",
+    "zone": "West Chennai",
+    "pincode": "500045"
+  },
+  {
+    "area_name": "Yousufguda Checkpost",
+    "area_slug": "yousufguda-checkpost",
+    "zone": "West Chennai",
+    "pincode": "500045"
+  },
+  {
+    "area_name": "Krishna Nagar",
+    "area_slug": "krishna-nagar",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Kalyan Nagar",
+    "area_slug": "kalyan-nagar",
+    "zone": "West Chennai",
+    "pincode": "500038"
+  },
+  {
+    "area_name": "Madhura Nagar",
+    "area_slug": "madhura-nagar",
+    "zone": "West Chennai",
+    "pincode": "500038"
+  },
+  {
+    "area_name": "SR Nagar",
+    "area_slug": "sr-nagar",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Sanjeeva Reddy Nagar",
+    "area_slug": "sanjeeva-reddy-nagar",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "BK Guda",
+    "area_slug": "bk-guda",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Balkampet Temple Road",
+    "area_slug": "balkampet-temple-road",
+    "zone": "Central Chennai",
+    "pincode": "500018"
+  },
+  {
+    "area_name": "Fatehnagar Bridge",
+    "area_slug": "fatehnagar-bridge",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Sanathnagar Industrial",
+    "area_slug": "sanathnagar-industrial",
+    "zone": "Central Chennai",
+    "pincode": "500018"
+  },
+  {
+    "area_name": "Czech Colony",
+    "area_slug": "czech-colony",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Mothi Nagar Colony",
+    "area_slug": "mothi-nagar-colony",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Rahmath Nagar",
+    "area_slug": "rahmath-nagar",
+    "zone": "West Chennai",
+    "pincode": "500045"
+  },
+  {
+    "area_name": "Karmika Nagar",
+    "area_slug": "karmika-nagar",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Nandagiri Hills",
+    "area_slug": "nandagiri-hills",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Kavadiguda",
+    "area_slug": "kavadiguda",
+    "zone": "Central Chennai",
+    "pincode": "500080"
+  },
+  {
+    "area_name": "Shivam Road",
+    "area_slug": "shivam-road",
+    "zone": "Central Chennai",
+    "pincode": "500044"
+  },
+  {
+    "area_name": "Uppal Depot",
+    "area_slug": "uppal-depot",
+    "zone": "East Chennai",
+    "pincode": "500039"
+  },
+  {
+    "area_name": "Uppal Ring Road",
+    "area_slug": "uppal-ring-road",
+    "zone": "East Chennai",
+    "pincode": "500039"
+  },
+  {
+    "area_name": "Ramanthapur TV Studio",
+    "area_slug": "ramanthapur-tv-studio",
+    "zone": "East Chennai",
+    "pincode": "500013"
+  },
+  {
+    "area_name": "Habsiguda Street 8",
+    "area_slug": "habsiguda-street-8",
+    "zone": "East Chennai",
+    "pincode": "500007"
+  },
+  {
+    "area_name": "Nacharam Industrial",
+    "area_slug": "nacharam-industrial",
+    "zone": "East Chennai",
+    "pincode": "500076"
+  },
+  {
+    "area_name": "Mallapur IDA",
+    "area_slug": "mallapur-ida",
+    "zone": "East Chennai",
+    "pincode": "500076"
+  },
+  {
+    "area_name": "Cherlapally",
+    "area_slug": "cherlapally",
+    "zone": "North Chennai",
+    "pincode": "500051"
+  },
+  {
+    "area_name": "Rampally X Roads",
+    "area_slug": "rampally-x-roads",
+    "zone": "East Chennai",
+    "pincode": "501301"
+  },
+  {
+    "area_name": "Pocharam",
+    "area_slug": "pocharam",
+    "zone": "East Chennai",
+    "pincode": "500088"
+  },
+  {
+    "area_name": "Infosys SEZ Pocharam",
+    "area_slug": "infosys-sez-pocharam",
+    "zone": "East Chennai",
+    "pincode": "500088"
+  },
+  {
+    "area_name": "Singapore Township",
+    "area_slug": "singapore-township",
+    "zone": "East Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Narapally",
+    "area_slug": "narapally",
+    "zone": "East Chennai",
+    "pincode": "500088"
+  },
+  {
+    "area_name": "Medipally",
+    "area_slug": "medipally",
+    "zone": "East Chennai",
+    "pincode": "500098"
+  },
+  {
+    "area_name": "Chengicherla",
+    "area_slug": "chengicherla",
+    "zone": "East Chennai",
+    "pincode": "500098"
+  },
+  {
+    "area_name": "Korremula",
+    "area_slug": "korremula",
+    "zone": "East Chennai",
+    "pincode": "500088"
+  },
+  {
+    "area_name": "Chilkanagar",
+    "area_slug": "chilkanagar",
+    "zone": "East Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "IDA Uppal",
+    "area_slug": "ida-uppal",
+    "zone": "East Chennai",
+    "pincode": "500039"
+  },
+  {
+    "area_name": "Saroornagar Lake",
+    "area_slug": "saroornagar-lake",
+    "zone": "South-East Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Chaitanyapuri",
+    "area_slug": "chaitanyapuri",
+    "zone": "South-East Chennai",
+    "pincode": "500060"
+  },
+  {
+    "area_name": "Chaitanyapuri Metro",
+    "area_slug": "chaitanyapuri-metro",
+    "zone": "South-East Chennai",
+    "pincode": "500060"
+  },
+  {
+    "area_name": "Kothapet Fruit Market",
+    "area_slug": "kothapet-fruit-market",
+    "zone": "South-East Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Doctors Colony LB Nagar",
+    "area_slug": "doctors-colony-lb-nagar",
+    "zone": "South-East Chennai",
+    "pincode": "500074"
+  },
+  {
+    "area_name": "Mansoorabad",
+    "area_slug": "mansoorabad",
+    "zone": "South-East Chennai",
+    "pincode": "500074"
+  },
+  {
+    "area_name": "Auto Nagar",
+    "area_slug": "auto-nagar",
+    "zone": "South-East Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Panama Godowns",
+    "area_slug": "panama-godowns",
+    "zone": "South-East Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Sachivalaya Nagar",
+    "area_slug": "sachivalaya-nagar",
+    "zone": "South-East Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "NGO Colony",
+    "area_slug": "ngo-colony",
+    "zone": "South-East Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "BN Reddy Nagar",
+    "area_slug": "bn-reddy-nagar",
+    "zone": "South-East Chennai",
+    "pincode": "500079"
+  },
+  {
+    "area_name": "Hastinapuram",
+    "area_slug": "hastinapuram",
+    "zone": "South-East Chennai",
+    "pincode": "500079"
+  },
+  {
+    "area_name": "Sagar Ring Road",
+    "area_slug": "sagar-ring-road",
+    "zone": "South-East Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Karmanghat",
+    "area_slug": "karmanghat",
+    "zone": "South-East Chennai",
+    "pincode": "500079"
+  },
+  {
+    "area_name": "Singareni Colony",
+    "area_slug": "singareni-colony",
+    "zone": "South-East Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Saleem Nagar",
+    "area_slug": "saleem-nagar",
+    "zone": "South-East Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "New Malakpet",
+    "area_slug": "new-malakpet",
+    "zone": "South-East Chennai",
+    "pincode": "500036"
+  },
+  {
+    "area_name": "Chanchalguda",
+    "area_slug": "chanchalguda",
+    "zone": "South-East Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Dabeerpura Flyover",
+    "area_slug": "dabeerpura-flyover",
+    "zone": "South Chennai",
+    "pincode": "500024"
+  },
+  {
+    "area_name": "Azampura",
+    "area_slug": "azampura",
+    "zone": "South-East Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Shamshabad Airport Zone",
+    "area_slug": "shamshabad-airport-zone",
+    "zone": "South Chennai",
+    "pincode": "501218"
+  },
+  {
+    "area_name": "Tukkuguda ORR Exit",
+    "area_slug": "tukkuguda-orr-exit",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Maheshwaram",
+    "area_slug": "maheshwaram",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Fab City",
+    "area_slug": "fab-city",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Hardware Park",
+    "area_slug": "hardware-park",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Wonderla Zone",
+    "area_slug": "wonderla-zone",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Adibatla TCS SEZ",
+    "area_slug": "adibatla-tcs-sez",
+    "zone": "South-East Chennai",
+    "pincode": "501510"
+  },
+  {
+    "area_name": "Bongloor",
+    "area_slug": "bongloor",
+    "zone": "South-East Chennai",
+    "pincode": "501510"
+  },
+  {
+    "area_name": "Turkayamjal",
+    "area_slug": "turkayamjal",
+    "zone": "South-East Chennai",
+    "pincode": "501510"
+  },
+  {
+    "area_name": "Gurramguda",
+    "area_slug": "gurramguda",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Injapur",
+    "area_slug": "injapur",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Nadargul",
+    "area_slug": "nadargul",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Balapur",
+    "area_slug": "balapur",
+    "zone": "South-East Chennai",
+    "pincode": "500058"
+  },
+  {
+    "area_name": "Mailardevpally",
+    "area_slug": "mailardevpally",
+    "zone": "South Chennai",
+    "pincode": "500005"
+  },
+  {
+    "area_name": "Shivarampally",
+    "area_slug": "shivarampally",
+    "zone": "East Chennai",
+    "pincode": "501301"
+  },
+  {
+    "area_name": "Aramghar",
+    "area_slug": "aramghar",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Hasan Nagar",
+    "area_slug": "hasan-nagar",
+    "zone": "West Chennai",
+    "pincode": "500096"
+  },
+  {
+    "area_name": "Mir Alam Tank",
+    "area_slug": "mir-alam-tank",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Tadban",
+    "area_slug": "tadban",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Kalapathar",
+    "area_slug": "kalapathar",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Vattepally",
+    "area_slug": "vattepally",
+    "zone": "South Chennai",
+    "pincode": "500053"
+  },
+  {
+    "area_name": "Engine Bowli",
+    "area_slug": "engine-bowli",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Sun City Bandlaguda",
+    "area_slug": "sun-city-bandlaguda",
+    "zone": "South Chennai",
+    "pincode": "500005"
+  },
+  {
+    "area_name": "Hydershakote",
+    "area_slug": "hydershakote",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Peerancheru",
+    "area_slug": "peerancheru",
+    "zone": "South Chennai",
+    "pincode": "500091"
+  },
+  {
+    "area_name": "Appa Junction",
+    "area_slug": "appa-junction",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "TSPA Junction",
+    "area_slug": "tspa-junction",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Himayat Sagar ORR",
+    "area_slug": "himayat-sagar-orr",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Langar Houz Military",
+    "area_slug": "langar-houz-military",
+    "zone": "South Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Nanakramguda Circle",
+    "area_slug": "nanakramguda-circle",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "ISB Road",
+    "area_slug": "isb-road",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "Wipro Circle",
+    "area_slug": "wipro-circle",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "Waverock",
+    "area_slug": "waverock",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "Telecom Nagar Gachibowli",
+    "area_slug": "telecom-nagar-gachibowli",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "Diamond Hills Gachibowli",
+    "area_slug": "diamond-hills-gachibowli",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "PJR Nagar Gachibowli",
+    "area_slug": "pjr-nagar-gachibowli",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "Vinayak Nagar Gachibowli",
+    "area_slug": "vinayak-nagar-gachibowli",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "Indira Nagar Gachibowli",
+    "area_slug": "indira-nagar-gachibowli",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "Lumbini Avenue Gachibowli",
+    "area_slug": "lumbini-avenue-gachibowli",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "Jayabheri Silicon County",
+    "area_slug": "jayabheri-silicon-county",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "Golf View Apartments Gachibowli",
+    "area_slug": "golf-view-apartments-gachibowli",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "Hitec City",
+    "area_slug": "hitec-city",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Ayyappa Society Mega Hills",
+    "area_slug": "ayyappa-society-mega-hills",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Kavuri Hills Phase 1",
+    "area_slug": "kavuri-hills-phase-1",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Kavuri Hills Phase 2",
+    "area_slug": "kavuri-hills-phase-2",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Kavuri Hills Phase 3",
+    "area_slug": "kavuri-hills-phase-3",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Jaihind Enclave",
+    "area_slug": "jaihind-enclave",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Mindspace",
+    "area_slug": "mindspace",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Cyber Towers",
+    "area_slug": "cyber-towers",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Raidurg",
+    "area_slug": "raidurg",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Knowledge City",
+    "area_slug": "knowledge-city",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Durgam Cheruvu",
+    "area_slug": "durgam-cheruvu",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "100 Feet Road Madhapur",
+    "area_slug": "100-feet-road-madhapur",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Image Hospitals Lane Madhapur",
+    "area_slug": "image-hospitals-lane-madhapur",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Silicon Valley Madhapur",
+    "area_slug": "silicon-valley-madhapur",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Vittal Rao Nagar Madhapur",
+    "area_slug": "vittal-rao-nagar-madhapur",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Sri Rama Colony Madhapur",
+    "area_slug": "sri-rama-colony-madhapur",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Inorbit Mall Road",
+    "area_slug": "inorbit-mall-road",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Divyasree Orion",
+    "area_slug": "divyasree-orion",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "My Home Bhooja",
+    "area_slug": "my-home-bhooja",
+    "zone": "West Chennai",
+    "pincode": "500081"
+  },
+  {
+    "area_name": "Raghavendra Colony Kondapur",
+    "area_slug": "raghavendra-colony-kondapur",
+    "zone": "West Chennai",
+    "pincode": "500084"
+  },
+  {
+    "area_name": "Shilpa Park Kondapur",
+    "area_slug": "shilpa-park-kondapur",
+    "zone": "West Chennai",
+    "pincode": "500084"
+  },
+  {
+    "area_name": "Raja Rajeshwari Nagar Kondapur",
+    "area_slug": "raja-rajeshwari-nagar-kondapur",
+    "zone": "West Chennai",
+    "pincode": "500084"
+  },
+  {
+    "area_name": "Prashanth Nagar Kondapur",
+    "area_slug": "prashanth-nagar-kondapur",
+    "zone": "West Chennai",
+    "pincode": "500084"
+  },
+  {
+    "area_name": "Botanical Garden Road",
+    "area_slug": "botanical-garden-road",
+    "zone": "West Chennai",
+    "pincode": "500084"
+  },
+  {
+    "area_name": "Whitefields Kondapur",
+    "area_slug": "whitefields-kondapur",
+    "zone": "West Chennai",
+    "pincode": "500084"
+  },
+  {
+    "area_name": "Chirec Avenue Kondapur",
+    "area_slug": "chirec-avenue-kondapur",
+    "zone": "West Chennai",
+    "pincode": "500084"
+  },
+  {
+    "area_name": "Masjid Banda Kondapur",
+    "area_slug": "masjid-banda-kondapur",
+    "zone": "West Chennai",
+    "pincode": "500084"
+  },
+  {
+    "area_name": "CR Foundation Road Kondapur",
+    "area_slug": "cr-foundation-road-kondapur",
+    "zone": "West Chennai",
+    "pincode": "500084"
+  },
+  {
+    "area_name": "Green Valley Kondapur",
+    "area_slug": "green-valley-kondapur",
+    "zone": "West Chennai",
+    "pincode": "500084"
+  },
+  {
+    "area_name": "Silpa Gramcraft Kondapur",
+    "area_slug": "silpa-gramcraft-kondapur",
+    "zone": "West Chennai",
+    "pincode": "500084"
+  },
+  {
+    "area_name": "JNTU",
+    "area_slug": "jntu",
+    "zone": "West Chennai",
+    "pincode": "500085"
+  },
+  {
+    "area_name": "JNTU Road",
+    "area_slug": "jntu-road",
+    "zone": "West Chennai",
+    "pincode": "500085"
+  },
+  {
+    "area_name": "Dharma Reddy Colony Kukatpally",
+    "area_slug": "dharma-reddy-colony-kukatpally",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "Bhagya Nagar Colony Kukatpally",
+    "area_slug": "bhagya-nagar-colony-kukatpally",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "Vivekananda Nagar Colony Kukatpally",
+    "area_slug": "vivekananda-nagar-colony-kukatpally",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "Balaji Nagar Kukatpally",
+    "area_slug": "balaji-nagar-kukatpally",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "Sumitra Nagar Kukatpally",
+    "area_slug": "sumitra-nagar-kukatpally",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "Moosapet Metro",
+    "area_slug": "moosapet-metro",
+    "zone": "West Chennai",
+    "pincode": "500018"
+  },
+  {
+    "area_name": "Shatavahana Nagar Kukatpally",
+    "area_slug": "shatavahana-nagar-kukatpally",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "Sardar Patel Nagar Kukatpally",
+    "area_slug": "sardar-patel-nagar-kukatpally",
+    "zone": "West Chennai",
+    "pincode": "500072"
+  },
+  {
+    "area_name": "Matrusri Nagar Miyapur",
+    "area_slug": "matrusri-nagar-miyapur",
+    "zone": "West Chennai",
+    "pincode": "500049"
+  },
+  {
+    "area_name": "Janapriya West City Miyapur",
+    "area_slug": "janapriya-west-city-miyapur",
+    "zone": "West Chennai",
+    "pincode": "500049"
+  },
+  {
+    "area_name": "Mayuri Nagar Miyapur",
+    "area_slug": "mayuri-nagar-miyapur",
+    "zone": "West Chennai",
+    "pincode": "500049"
+  },
+  {
+    "area_name": "Deepthisree Nagar Miyapur",
+    "area_slug": "deepthisree-nagar-miyapur",
+    "zone": "West Chennai",
+    "pincode": "500049"
+  },
+  {
+    "area_name": "Miyapur Allwyn X Roads",
+    "area_slug": "miyapur-allwyn-x-roads",
+    "zone": "West Chennai",
+    "pincode": "500049"
+  },
+  {
+    "area_name": "Prem Nagar Hafeezpet",
+    "area_slug": "prem-nagar-hafeezpet",
+    "zone": "West Chennai",
+    "pincode": "500049"
+  },
+  {
+    "area_name": "Marthanda Nagar Hafeezpet",
+    "area_slug": "marthanda-nagar-hafeezpet",
+    "zone": "West Chennai",
+    "pincode": "500049"
+  },
+  {
+    "area_name": "Aditya Nagar Hafeezpet",
+    "area_slug": "aditya-nagar-hafeezpet",
+    "zone": "West Chennai",
+    "pincode": "500049"
+  },
+  {
+    "area_name": "BHEL",
+    "area_slug": "bhel",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "BHEL Township",
+    "area_slug": "bhel-township",
+    "zone": "West Chennai",
+    "pincode": "500032"
+  },
+  {
+    "area_name": "Puppalaguda",
+    "area_slug": "puppalaguda",
+    "zone": "West Chennai",
+    "pincode": "500089"
+  },
+  {
+    "area_name": "Neknampur",
+    "area_slug": "neknampur",
+    "zone": "West Chennai",
+    "pincode": "500089"
+  },
+  {
+    "area_name": "Alijapur Manikonda",
+    "area_slug": "alijapur-manikonda",
+    "zone": "West Chennai",
+    "pincode": "500089"
+  },
+  {
+    "area_name": "OU Colony Manikonda",
+    "area_slug": "ou-colony-manikonda",
+    "zone": "West Chennai",
+    "pincode": "500089"
+  },
+  {
+    "area_name": "Secretariat Colony Puppalaguda",
+    "area_slug": "secretariat-colony-puppalaguda",
+    "zone": "West Chennai",
+    "pincode": "500089"
+  },
+  {
+    "area_name": "Lanco Hills Manikonda",
+    "area_slug": "lanco-hills-manikonda",
+    "zone": "West Chennai",
+    "pincode": "500089"
+  },
+  {
+    "area_name": "Chitrapuri Colony Manikonda",
+    "area_slug": "chitrapuri-colony-manikonda",
+    "zone": "West Chennai",
+    "pincode": "500089"
+  },
+  {
+    "area_name": "Alkapur Township",
+    "area_slug": "alkapur-township",
+    "zone": "West Chennai",
+    "pincode": "500089"
+  },
+  {
+    "area_name": "Alkapur Township Sector 1",
+    "area_slug": "alkapur-township-sector-1",
+    "zone": "West Chennai",
+    "pincode": "500089"
+  },
+  {
+    "area_name": "Alkapur Township Sector 2",
+    "area_slug": "alkapur-township-sector-2",
+    "zone": "West Chennai",
+    "pincode": "500089"
+  },
+  {
+    "area_name": "Alkapur Township Sector 3",
+    "area_slug": "alkapur-township-sector-3",
+    "zone": "West Chennai",
+    "pincode": "500089"
+  },
+  {
+    "area_name": "Puppalaguda Golden Tulip",
+    "area_slug": "puppalaguda-golden-tulip",
+    "zone": "West Chennai",
+    "pincode": "500089"
+  },
+  {
+    "area_name": "Kokapet Golden Mile",
+    "area_slug": "kokapet-golden-mile",
+    "zone": "West Chennai",
+    "pincode": "500075"
+  },
+  {
+    "area_name": "Kokapet Neopolis",
+    "area_slug": "kokapet-neopolis",
+    "zone": "West Chennai",
+    "pincode": "500075"
+  },
+  {
+    "area_name": "CBIT Gandipet",
+    "area_slug": "cbit-gandipet",
+    "zone": "West Chennai",
+    "pincode": "500075"
+  },
+  {
+    "area_name": "Ocean Park Gandipet",
+    "area_slug": "ocean-park-gandipet",
+    "zone": "West Chennai",
+    "pincode": "500075"
+  },
+  {
+    "area_name": "Manchirevula",
+    "area_slug": "manchirevula",
+    "zone": "West Chennai",
+    "pincode": "500075"
+  },
+  {
+    "area_name": "Khanapur Gandipet",
+    "area_slug": "khanapur-gandipet",
+    "zone": "West Chennai",
+    "pincode": "500075"
+  },
+  {
+    "area_name": "Tellapur Techno Road",
+    "area_slug": "tellapur-techno-road",
+    "zone": "West Chennai",
+    "pincode": "502032"
+  },
+  {
+    "area_name": "Pati",
+    "area_slug": "pati",
+    "zone": "West Chennai",
+    "pincode": "502300"
+  },
+  {
+    "area_name": "Edulanagulapally",
+    "area_slug": "edulanagulapally",
+    "zone": "West Chennai",
+    "pincode": "502324"
+  },
+  {
+    "area_name": "Bandari Layout Nizampet",
+    "area_slug": "bandari-layout-nizampet",
+    "zone": "West Chennai",
+    "pincode": "500090"
+  },
+  {
+    "area_name": "Bachupally X Roads",
+    "area_slug": "bachupally-x-roads",
+    "zone": "West Chennai",
+    "pincode": "500090"
+  },
+  {
+    "area_name": "Pragathi Nagar Lake",
+    "area_slug": "pragathi-nagar-lake",
+    "zone": "West Chennai",
+    "pincode": "500090"
+  },
+  {
+    "area_name": "Mallampet",
+    "area_slug": "mallampet",
+    "zone": "West Chennai",
+    "pincode": "500090"
+  },
+  {
+    "area_name": "Gandi Maisamma",
+    "area_slug": "gandi-maisamma",
+    "zone": "West Chennai",
+    "pincode": "500043"
+  },
+  {
+    "area_name": "Suraram",
+    "area_slug": "suraram",
+    "zone": "West Chennai",
+    "pincode": "500055"
+  },
+  {
+    "area_name": "Motinagar",
+    "area_slug": "motinagar",
+    "zone": "West Chennai",
+    "pincode": "500018"
+  },
+  {
+    "area_name": "Rahmath Nagar Yousufguda",
+    "area_slug": "rahmath-nagar-yousufguda",
+    "zone": "West Chennai",
+    "pincode": "500045"
+  },
+  {
+    "area_name": "Venkatagiri Yousufguda",
+    "area_slug": "venkatagiri-yousufguda",
+    "zone": "West Chennai",
+    "pincode": "500045"
+  },
+  {
+    "area_name": "Jubilee Hills Check Post",
+    "area_slug": "jubilee-hills-check-post",
+    "zone": "West Chennai",
+    "pincode": "500033"
+  },
+  {
+    "area_name": "Jubilee Hills Road No 36",
+    "area_slug": "jubilee-hills-road-no-36",
+    "zone": "West Chennai",
+    "pincode": "500033"
+  },
+  {
+    "area_name": "Jubilee Hills Road No 45",
+    "area_slug": "jubilee-hills-road-no-45",
+    "zone": "West Chennai",
+    "pincode": "500033"
+  },
+  {
+    "area_name": "Jubilee Hills Road No 10",
+    "area_slug": "jubilee-hills-road-no-10",
+    "zone": "West Chennai",
+    "pincode": "500033"
+  },
+  {
+    "area_name": "Jubilee Hills Road No 1",
+    "area_slug": "jubilee-hills-road-no-1",
+    "zone": "West Chennai",
+    "pincode": "500033"
+  },
+  {
+    "area_name": "Jubilee Hills Road No 5",
+    "area_slug": "jubilee-hills-road-no-5",
+    "zone": "West Chennai",
+    "pincode": "500033"
+  },
+  {
+    "area_name": "Jubilee Hills Road No 25",
+    "area_slug": "jubilee-hills-road-no-25",
+    "zone": "West Chennai",
+    "pincode": "500033"
+  },
+  {
+    "area_name": "Banjara Hills Road No 1",
+    "area_slug": "banjara-hills-road-no-1",
+    "zone": "West Chennai",
+    "pincode": "500034"
+  },
+  {
+    "area_name": "Banjara Hills Road No 2",
+    "area_slug": "banjara-hills-road-no-2",
+    "zone": "West Chennai",
+    "pincode": "500034"
+  },
+  {
+    "area_name": "Banjara Hills Road No 3",
+    "area_slug": "banjara-hills-road-no-3",
+    "zone": "West Chennai",
+    "pincode": "500034"
+  },
+  {
+    "area_name": "Banjara Hills Road No 10",
+    "area_slug": "banjara-hills-road-no-10",
+    "zone": "West Chennai",
+    "pincode": "500034"
+  },
+  {
+    "area_name": "Banjara Hills Road No 12",
+    "area_slug": "banjara-hills-road-no-12",
+    "zone": "West Chennai",
+    "pincode": "500034"
+  },
+  {
+    "area_name": "Banjara Hills Road No 14",
+    "area_slug": "banjara-hills-road-no-14",
+    "zone": "West Chennai",
+    "pincode": "500034"
+  },
+  {
+    "area_name": "MLA Colony Banjara Hills",
+    "area_slug": "mla-colony-banjara-hills",
+    "zone": "West Chennai",
+    "pincode": "500034"
+  },
+  {
+    "area_name": "Mithila Nagar Banjara Hills",
+    "area_slug": "mithila-nagar-banjara-hills",
+    "zone": "West Chennai",
+    "pincode": "500034"
+  },
+  {
+    "area_name": "Journalist Colony Jubilee Hills",
+    "area_slug": "journalist-colony-jubilee-hills",
+    "zone": "West Chennai",
+    "pincode": "500033"
+  },
+  {
+    "area_name": "Toli Chowki",
+    "area_slug": "toli-chowki",
+    "zone": "West Chennai",
+    "pincode": "500008"
+  },
+  {
+    "area_name": "Seven Tombs Shaikpet",
+    "area_slug": "seven-tombs-shaikpet",
+    "zone": "West Chennai",
+    "pincode": "500008"
+  },
+  {
+    "area_name": "Paramount Colony Tolichowki",
+    "area_slug": "paramount-colony-tolichowki",
+    "zone": "West Chennai",
+    "pincode": "500008"
+  },
+  {
+    "area_name": "Galaxy Theatre Tolichowki",
+    "area_slug": "galaxy-theatre-tolichowki",
+    "zone": "West Chennai",
+    "pincode": "500008"
+  },
+  {
+    "area_name": "Rethi Bowli Tolichowki",
+    "area_slug": "rethi-bowli-tolichowki",
+    "zone": "West Chennai",
+    "pincode": "500008"
+  },
+  {
+    "area_name": "Prakash Nagar Begumpet",
+    "area_slug": "prakash-nagar-begumpet",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Kundanbagh Begumpet",
+    "area_slug": "kundanbagh-begumpet",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Mayur Marg Begumpet",
+    "area_slug": "mayur-marg-begumpet",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Brahmanwadi Begumpet",
+    "area_slug": "brahmanwadi-begumpet",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "BS Maktha Begumpet",
+    "area_slug": "bs-maktha-begumpet",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Ameerpet Metro",
+    "area_slug": "ameerpet-metro",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Dharam Karan Road Ameerpet",
+    "area_slug": "dharam-karan-road-ameerpet",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Leelanagar Ameerpet",
+    "area_slug": "leelanagar-ameerpet",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Lal Bungalow Ameerpet",
+    "area_slug": "lal-bungalow-ameerpet",
+    "zone": "Central Chennai",
+    "pincode": "600002"
+  },
+  {
+    "area_name": "Raj Bhavan Road Somajiguda",
+    "area_slug": "raj-bhavan-road-somajiguda",
+    "zone": "Central Chennai",
+    "pincode": "500082"
+  },
+  {
+    "area_name": "Officers Colony Somajiguda",
+    "area_slug": "officers-colony-somajiguda",
+    "zone": "Central Chennai",
+    "pincode": "500082"
+  },
+  {
+    "area_name": "Punjagutta",
+    "area_slug": "punjagutta",
+    "zone": "Central Chennai",
+    "pincode": "500082"
+  },
+  {
+    "area_name": "Nagarjuna Circle Panjagutta",
+    "area_slug": "nagarjuna-circle-panjagutta",
+    "zone": "Central Chennai",
+    "pincode": "500082"
+  },
+  {
+    "area_name": "Panjagutta Metro",
+    "area_slug": "panjagutta-metro",
+    "zone": "Central Chennai",
+    "pincode": "500082"
+  },
+  {
+    "area_name": "Street No 1 Himayatnagar",
+    "area_slug": "street-no-1-himayatnagar",
+    "zone": "Central Chennai",
+    "pincode": "500029"
+  },
+  {
+    "area_name": "Narayanguda Flyover",
+    "area_slug": "narayanguda-flyover",
+    "zone": "Central Chennai",
+    "pincode": "500029"
+  },
+  {
+    "area_name": "Khairatabad",
+    "area_slug": "khairatabad",
+    "zone": "Central Chennai",
+    "pincode": "500004"
+  },
+  {
+    "area_name": "Khairatabad Bada Ganesh",
+    "area_slug": "khairatabad-bada-ganesh",
+    "zone": "Central Chennai",
+    "pincode": "500004"
+  },
+  {
+    "area_name": "Saifabad",
+    "area_slug": "saifabad",
+    "zone": "Central Chennai",
+    "pincode": "500004"
+  },
+  {
+    "area_name": "Secretariat",
+    "area_slug": "secretariat",
+    "zone": "Central Chennai",
+    "pincode": "500004"
+  },
+  {
+    "area_name": "Mehdipatnam Rythu Bazar",
+    "area_slug": "mehdipatnam-rythu-bazar",
+    "zone": "Central Chennai",
+    "pincode": "500028"
+  },
+  {
+    "area_name": "Humayun Nagar",
+    "area_slug": "humayun-nagar",
+    "zone": "Central Chennai",
+    "pincode": "500028"
+  },
+  {
+    "area_name": "Sanathnagar",
+    "area_slug": "sanathnagar",
+    "zone": "Central Chennai",
+    "pincode": "500018"
+  },
+  {
+    "area_name": "Balkampet Yellamma Temple",
+    "area_slug": "balkampet-yellamma-temple",
+    "zone": "Central Chennai",
+    "pincode": "500018"
+  },
+  {
+    "area_name": "Moosapet",
+    "area_slug": "moosapet",
+    "zone": "Central Chennai",
+    "pincode": "500018"
+  },
+  {
+    "area_name": "Nampally Railway Station",
+    "area_slug": "nampally-railway-station",
+    "zone": "Central Chennai",
+    "pincode": "500001"
+  },
+  {
+    "area_name": "Koti",
+    "area_slug": "koti",
+    "zone": "Central Chennai",
+    "pincode": "500095"
+  },
+  {
+    "area_name": "Koti Women's College",
+    "area_slug": "koti-women-s-college",
+    "zone": "Central Chennai",
+    "pincode": "500095"
+  },
+  {
+    "area_name": "Sultan Bazar",
+    "area_slug": "sultan-bazar",
+    "zone": "Central Chennai",
+    "pincode": "500095"
+  },
+  {
+    "area_name": "Troop Bazar",
+    "area_slug": "troop-bazar",
+    "zone": "Central Chennai",
+    "pincode": "500001"
+  },
+  {
+    "area_name": "Moazam Jahi Market",
+    "area_slug": "moazam-jahi-market",
+    "zone": "Central Chennai",
+    "pincode": "500001"
+  },
+  {
+    "area_name": "Ashok Nagar",
+    "area_slug": "ashok-nagar",
+    "zone": "Central Chennai",
+    "pincode": "500020"
+  },
+  {
+    "area_name": "RTC X Roads",
+    "area_slug": "rtc-x-roads",
+    "zone": "Central Chennai",
+    "pincode": "500020"
+  },
+  {
+    "area_name": "Gandhinagar",
+    "area_slug": "gandhinagar",
+    "zone": "Central Chennai",
+    "pincode": "500080"
+  },
+  {
+    "area_name": "Walker Town Padmarao Nagar",
+    "area_slug": "walker-town-padmarao-nagar",
+    "zone": "Central Chennai",
+    "pincode": "500025"
+  },
+  {
+    "area_name": "Kachiguda Station Road",
+    "area_slug": "kachiguda-station-road",
+    "zone": "Central Chennai",
+    "pincode": "500027"
+  },
+  {
+    "area_name": "Barkatpura",
+    "area_slug": "barkatpura",
+    "zone": "Central Chennai",
+    "pincode": "500027"
+  },
+  {
+    "area_name": "Nimboliadda",
+    "area_slug": "nimboliadda",
+    "zone": "Central Chennai",
+    "pincode": "500027"
+  },
+  {
+    "area_name": "Shivam Road Nallakunta",
+    "area_slug": "shivam-road-nallakunta",
+    "zone": "Central Chennai",
+    "pincode": "500044"
+  },
+  {
+    "area_name": "Shantinagar Masab Tank",
+    "area_slug": "shantinagar-masab-tank",
+    "zone": "Central Chennai",
+    "pincode": "500028"
+  },
+  {
+    "area_name": "Red Hills Nampally",
+    "area_slug": "red-hills-nampally",
+    "zone": "Central Chennai",
+    "pincode": "500004"
+  },
+  {
+    "area_name": "Boggulkunta",
+    "area_slug": "boggulkunta",
+    "zone": "Central Chennai",
+    "pincode": "500001"
+  },
+  {
+    "area_name": "Chirag Ali Lane Abids",
+    "area_slug": "chirag-ali-lane-abids",
+    "zone": "Central Chennai",
+    "pincode": "500001"
+  },
+  {
+    "area_name": "King Koti",
+    "area_slug": "king-koti",
+    "zone": "Central Chennai",
+    "pincode": "500001"
+  },
+  {
+    "area_name": "Tilak Road Abids",
+    "area_slug": "tilak-road-abids",
+    "zone": "Central Chennai",
+    "pincode": "500001"
+  },
+  {
+    "area_name": "Tambaram Station",
+    "area_slug": "secunderabad-station",
+    "zone": "North Chennai",
+    "pincode": "500003"
+  },
+  {
+    "area_name": "Paradise Circle Tambaram",
+    "area_slug": "paradise-circle-secunderabad",
+    "zone": "North Chennai",
+    "pincode": "500003"
+  },
+  {
+    "area_name": "General Bazaar Tambaram",
+    "area_slug": "general-bazaar-secunderabad",
+    "zone": "North Chennai",
+    "pincode": "500003"
+  },
+  {
+    "area_name": "MG Road Tambaram",
+    "area_slug": "mg-road-secunderabad",
+    "zone": "North Chennai",
+    "pincode": "500003"
+  },
+  {
+    "area_name": "RP Road Tambaram",
+    "area_slug": "rp-road-secunderabad",
+    "zone": "North Chennai",
+    "pincode": "500003"
+  },
+  {
+    "area_name": "Regimental Bazaar Tambaram",
+    "area_slug": "regimental-bazaar-secunderabad",
+    "zone": "North Chennai",
+    "pincode": "500003"
+  },
+  {
+    "area_name": "Teachers Colony Marredpally",
+    "area_slug": "teachers-colony-marredpally",
+    "zone": "North Chennai",
+    "pincode": "500026"
+  },
+  {
+    "area_name": "Nehru Nagar Marredpally",
+    "area_slug": "nehru-nagar-marredpally",
+    "zone": "North Chennai",
+    "pincode": "500026"
+  },
+  {
+    "area_name": "Gunrock Enclave Karkhana",
+    "area_slug": "gunrock-enclave-karkhana",
+    "zone": "North Chennai",
+    "pincode": "500009"
+  },
+  {
+    "area_name": "Vikram Nagar Karkhana",
+    "area_slug": "vikram-nagar-karkhana",
+    "zone": "North Chennai",
+    "pincode": "500009"
+  },
+  {
+    "area_name": "Diamond Point Tambaram",
+    "area_slug": "diamond-point-secunderabad",
+    "zone": "North Chennai",
+    "pincode": "500009"
+  },
+  {
+    "area_name": "Hasmathpet",
+    "area_slug": "hasmathpet",
+    "zone": "North Chennai",
+    "pincode": "500011"
+  },
+  {
+    "area_name": "Trimulgherry RTA",
+    "area_slug": "trimulgherry-rta",
+    "zone": "North Chennai",
+    "pincode": "500015"
+  },
+  {
+    "area_name": "Lal Bazar Trimulgherry",
+    "area_slug": "lal-bazar-trimulgherry",
+    "zone": "North Chennai",
+    "pincode": "500015"
+  },
+  {
+    "area_name": "Alwal Hills",
+    "area_slug": "alwal-hills",
+    "zone": "North Chennai",
+    "pincode": "500010"
+  },
+  {
+    "area_name": "Loyola Academy Alwal",
+    "area_slug": "loyola-academy-alwal",
+    "zone": "North Chennai",
+    "pincode": "500010"
+  },
+  {
+    "area_name": "Bolarum",
+    "area_slug": "bolarum",
+    "zone": "North Chennai",
+    "pincode": "500010"
+  },
+  {
+    "area_name": "Macha Bolarum",
+    "area_slug": "macha-bolarum",
+    "zone": "North Chennai",
+    "pincode": "500010"
+  },
+  {
+    "area_name": "Bolarum Bazaar",
+    "area_slug": "bolarum-bazaar",
+    "zone": "North Chennai",
+    "pincode": "500010"
+  },
+  {
+    "area_name": "Malkajgiri",
+    "area_slug": "malkajgiri",
+    "zone": "North Chennai",
+    "pincode": "500047"
+  },
+  {
+    "area_name": "Anandbagh Malkajgiri",
+    "area_slug": "anandbagh-malkajgiri",
+    "zone": "North Chennai",
+    "pincode": "500047"
+  },
+  {
+    "area_name": "Safilguda Malkajgiri",
+    "area_slug": "safilguda-malkajgiri",
+    "zone": "North Chennai",
+    "pincode": "500047"
+  },
+  {
+    "area_name": "Safilguda Lake",
+    "area_slug": "safilguda-lake",
+    "zone": "North Chennai",
+    "pincode": "500047"
+  },
+  {
+    "area_name": "Neredmet X Roads",
+    "area_slug": "neredmet-x-roads",
+    "zone": "North Chennai",
+    "pincode": "500056"
+  },
+  {
+    "area_name": "RK Puram Neredmet",
+    "area_slug": "rk-puram-neredmet",
+    "zone": "North Chennai",
+    "pincode": "500056"
+  },
+  {
+    "area_name": "Sainikpuri 5th Avenue",
+    "area_slug": "sainikpuri-5th-avenue",
+    "zone": "North Chennai",
+    "pincode": "500094"
+  },
+  {
+    "area_name": "Defence Colony Sainikpuri",
+    "area_slug": "defence-colony-sainikpuri",
+    "zone": "North Chennai",
+    "pincode": "500094"
+  },
+  {
+    "area_name": "Vayupuri Sainikpuri",
+    "area_slug": "vayupuri-sainikpuri",
+    "zone": "North Chennai",
+    "pincode": "500094"
+  },
+  {
+    "area_name": "Officers Colony Yapral",
+    "area_slug": "officers-colony-yapral",
+    "zone": "North Chennai",
+    "pincode": "500087"
+  },
+  {
+    "area_name": "AS Rao Nagar",
+    "area_slug": "as-rao-nagar",
+    "zone": "North Chennai",
+    "pincode": "500062"
+  },
+  {
+    "area_name": "Radhika Theatre ECIL",
+    "area_slug": "radhika-theatre-ecil",
+    "zone": "North Chennai",
+    "pincode": "500062"
+  },
+  {
+    "area_name": "Kamla Nagar ECIL",
+    "area_slug": "kamla-nagar-ecil",
+    "zone": "North Chennai",
+    "pincode": "500062"
+  },
+  {
+    "area_name": "Kushaiguda",
+    "area_slug": "kushaiguda",
+    "zone": "North Chennai",
+    "pincode": "500062"
+  },
+  {
+    "area_name": "Cherlapally Phase 1",
+    "area_slug": "cherlapally-phase-1",
+    "zone": "North Chennai",
+    "pincode": "500051"
+  },
+  {
+    "area_name": "Cherlapally Phase 2",
+    "area_slug": "cherlapally-phase-2",
+    "zone": "North Chennai",
+    "pincode": "500051"
+  },
+  {
+    "area_name": "Nagaram X Roads",
+    "area_slug": "nagaram-x-roads",
+    "zone": "North Chennai",
+    "pincode": "500083"
+  },
+  {
+    "area_name": "Keesara",
+    "area_slug": "keesara",
+    "zone": "North Chennai",
+    "pincode": "501301"
+  },
+  {
+    "area_name": "Keesaragutta",
+    "area_slug": "keesaragutta",
+    "zone": "North Chennai",
+    "pincode": "501301"
+  },
+  {
+    "area_name": "Balanagar",
+    "area_slug": "balanagar",
+    "zone": "North Chennai",
+    "pincode": "500037"
+  },
+  {
+    "area_name": "Balanagar Industrial Area",
+    "area_slug": "balanagar-industrial-area",
+    "zone": "North Chennai",
+    "pincode": "500037"
+  },
+  {
+    "area_name": "FAPCCA Balanagar",
+    "area_slug": "fapcca-balanagar",
+    "zone": "North Chennai",
+    "pincode": "500037"
+  },
+  {
+    "area_name": "HAL Colony Balanagar",
+    "area_slug": "hal-colony-balanagar",
+    "zone": "North Chennai",
+    "pincode": "500037"
+  },
+  {
+    "area_name": "Jeedimetla Phase 1",
+    "area_slug": "jeedimetla-phase-1",
+    "zone": "North Chennai",
+    "pincode": "500055"
+  },
+  {
+    "area_name": "Jeedimetla Phase 2",
+    "area_slug": "jeedimetla-phase-2",
+    "zone": "North Chennai",
+    "pincode": "500055"
+  },
+  {
+    "area_name": "Subhash Nagar Quthbullapur",
+    "area_slug": "subhash-nagar-quthbullapur",
+    "zone": "North Chennai",
+    "pincode": "500055"
+  },
+  {
+    "area_name": "Ganesh Nagar Chintal",
+    "area_slug": "ganesh-nagar-chintal",
+    "zone": "North Chennai",
+    "pincode": "500054"
+  },
+  {
+    "area_name": "Suchitra Kompally",
+    "area_slug": "suchitra-kompally",
+    "zone": "North Chennai",
+    "pincode": "500014"
+  },
+  {
+    "area_name": "Cine Planet Kompally",
+    "area_slug": "cine-planet-kompally",
+    "zone": "North Chennai",
+    "pincode": "500014"
+  },
+  {
+    "area_name": "Dhoolapally",
+    "area_slug": "dhoolapally",
+    "zone": "North Chennai",
+    "pincode": "500014"
+  },
+  {
+    "area_name": "Hakimpet",
+    "area_slug": "hakimpet",
+    "zone": "North Chennai",
+    "pincode": "500014"
+  },
+  {
+    "area_name": "Kandlakoya Oxygen Park",
+    "area_slug": "kandlakoya-oxygen-park",
+    "zone": "North Chennai",
+    "pincode": "501401"
+  },
+  {
+    "area_name": "Medchal Checkpost",
+    "area_slug": "medchal-checkpost",
+    "zone": "North Chennai",
+    "pincode": "501401"
+  },
+  {
+    "area_name": "Thumkunta",
+    "area_slug": "thumkunta",
+    "zone": "North Chennai",
+    "pincode": "500078"
+  },
+  {
+    "area_name": "Turkapally",
+    "area_slug": "turkapally",
+    "zone": "North Chennai",
+    "pincode": "500078"
+  },
+  {
+    "area_name": "Moula Ali Housing Board",
+    "area_slug": "moula-ali-housing-board",
+    "zone": "North Chennai",
+    "pincode": "500040"
+  },
+  {
+    "area_name": "Moula Ali Kaman",
+    "area_slug": "moula-ali-kaman",
+    "zone": "North Chennai",
+    "pincode": "500040"
+  },
+  {
+    "area_name": "Lalaguda",
+    "area_slug": "lalaguda",
+    "zone": "North Chennai",
+    "pincode": "500017"
+  },
+  {
+    "area_name": "Chilakalguda",
+    "area_slug": "chilakalguda",
+    "zone": "North Chennai",
+    "pincode": "500061"
+  },
+  {
+    "area_name": "Sitaphalmandi",
+    "area_slug": "sitaphalmandi",
+    "zone": "North Chennai",
+    "pincode": "500061"
+  },
+  {
+    "area_name": "Namalagundu",
+    "area_slug": "namalagundu",
+    "zone": "North Chennai",
+    "pincode": "500061"
+  },
+  {
+    "area_name": "Warsiguda",
+    "area_slug": "warsiguda",
+    "zone": "North Chennai",
+    "pincode": "500061"
+  },
+  {
+    "area_name": "Uppal Metro",
+    "area_slug": "uppal-metro",
+    "zone": "East Chennai",
+    "pincode": "500039"
+  },
+  {
+    "area_name": "Uppal Kalan",
+    "area_slug": "uppal-kalan",
+    "zone": "East Chennai",
+    "pincode": "500039"
+  },
+  {
+    "area_name": "Ramanathapur",
+    "area_slug": "ramanathapur",
+    "zone": "East Chennai",
+    "pincode": "500013"
+  },
+  {
+    "area_name": "Golnaka",
+    "area_slug": "golnaka",
+    "zone": "East Chennai",
+    "pincode": "500013"
+  },
+  {
+    "area_name": "Tarnaka Metro",
+    "area_slug": "tarnaka-metro",
+    "zone": "East Chennai",
+    "pincode": "500017"
+  },
+  {
+    "area_name": "Habsiguda Street No 8",
+    "area_slug": "habsiguda-street-no-8",
+    "zone": "East Chennai",
+    "pincode": "500007"
+  },
+  {
+    "area_name": "Nacharam Industrial Area",
+    "area_slug": "nacharam-industrial-area",
+    "zone": "East Chennai",
+    "pincode": "500076"
+  },
+  {
+    "area_name": "Boduppal Ring Road",
+    "area_slug": "boduppal-ring-road",
+    "zone": "East Chennai",
+    "pincode": "500092"
+  },
+  {
+    "area_name": "Rampally",
+    "area_slug": "rampally",
+    "zone": "East Chennai",
+    "pincode": "501301"
+  },
+  {
+    "area_name": "Ghatkesar Railway Station",
+    "area_slug": "ghatkesar-railway-station",
+    "zone": "East Chennai",
+    "pincode": "501301"
+  },
+  {
+    "area_name": "Pocharam Infosys Gate 1",
+    "area_slug": "pocharam-infosys-gate-1",
+    "zone": "East Chennai",
+    "pincode": "500088"
+  },
+  {
+    "area_name": "Pocharam Infosys Gate 2",
+    "area_slug": "pocharam-infosys-gate-2",
+    "zone": "East Chennai",
+    "pincode": "500088"
+  },
+  {
+    "area_name": "Yamnampet",
+    "area_slug": "yamnampet",
+    "zone": "East Chennai",
+    "pincode": "501301"
+  },
+  {
+    "area_name": "Annojiguda",
+    "area_slug": "annojiguda",
+    "zone": "East Chennai",
+    "pincode": "500088"
+  },
+  {
+    "area_name": "Nagole Metro",
+    "area_slug": "nagole-metro",
+    "zone": "East Chennai",
+    "pincode": "500068"
+  },
+  {
+    "area_name": "Bandlaguda Nagole",
+    "area_slug": "bandlaguda-nagole",
+    "zone": "East Chennai",
+    "pincode": "500068"
+  },
+  {
+    "area_name": "Alkapuri Nagole",
+    "area_slug": "alkapuri-nagole",
+    "zone": "East Chennai",
+    "pincode": "500068"
+  },
+  {
+    "area_name": "Dilsukhnagar Metro",
+    "area_slug": "dilsukhnagar-metro",
+    "zone": "South-East Chennai",
+    "pincode": "500060"
+  },
+  {
+    "area_name": "Konark Theatre Dilsukhnagar",
+    "area_slug": "konark-theatre-dilsukhnagar",
+    "zone": "South-East Chennai",
+    "pincode": "500060"
+  },
+  {
+    "area_name": "Gadiannaram",
+    "area_slug": "gadiannaram",
+    "zone": "South-East Chennai",
+    "pincode": "500060"
+  },
+  {
+    "area_name": "LB Nagar Ring Road",
+    "area_slug": "lb-nagar-ring-road",
+    "zone": "South-East Chennai",
+    "pincode": "500074"
+  },
+  {
+    "area_name": "Mansoorabad LB Nagar",
+    "area_slug": "mansoorabad-lb-nagar",
+    "zone": "South-East Chennai",
+    "pincode": "500074"
+  },
+  {
+    "area_name": "Red Tank Vanasthalipuram",
+    "area_slug": "red-tank-vanasthalipuram",
+    "zone": "South-East Chennai",
+    "pincode": "500070"
+  },
+  {
+    "area_name": "Sahibabad Vanasthalipuram",
+    "area_slug": "sahibabad-vanasthalipuram",
+    "zone": "South-East Chennai",
+    "pincode": "500070"
+  },
+  {
+    "area_name": "Hayathnagar Depot",
+    "area_slug": "hayathnagar-depot",
+    "zone": "South-East Chennai",
+    "pincode": "501505"
+  },
+  {
+    "area_name": "Kuntloor",
+    "area_slug": "kuntloor",
+    "zone": "South-East Chennai",
+    "pincode": "501505"
+  },
+  {
+    "area_name": "Pedda Amberpet",
+    "area_slug": "pedda-amberpet",
+    "zone": "South-East Chennai",
+    "pincode": "501505"
+  },
+  {
+    "area_name": "Pedda Amberpet Toll Plaza",
+    "area_slug": "pedda-amberpet-toll-plaza",
+    "zone": "South-East Chennai",
+    "pincode": "501505"
+  },
+  {
+    "area_name": "Pasumamula",
+    "area_slug": "pasumamula",
+    "zone": "South-East Chennai",
+    "pincode": "501505"
+  },
+  {
+    "area_name": "Karmanghat Hanuman Temple",
+    "area_slug": "karmanghat-hanuman-temple",
+    "zone": "South-East Chennai",
+    "pincode": "500079"
+  },
+  {
+    "area_name": "Hastinapuram North",
+    "area_slug": "hastinapuram-north",
+    "zone": "South-East Chennai",
+    "pincode": "500079"
+  },
+  {
+    "area_name": "Hastinapuram South",
+    "area_slug": "hastinapuram-south",
+    "zone": "South-East Chennai",
+    "pincode": "500079"
+  },
+  {
+    "area_name": "Jillelguda",
+    "area_slug": "jillelguda",
+    "zone": "South-East Chennai",
+    "pincode": "500097"
+  },
+  {
+    "area_name": "TCS Adibatla",
+    "area_slug": "tcs-adibatla",
+    "zone": "South-East Chennai",
+    "pincode": "501510"
+  },
+  {
+    "area_name": "Bongloor ORR Exit 12",
+    "area_slug": "bongloor-orr-exit-12",
+    "zone": "South-East Chennai",
+    "pincode": "501510"
+  },
+  {
+    "area_name": "Lad Bazar Charminar",
+    "area_slug": "lad-bazar-charminar",
+    "zone": "South Chennai",
+    "pincode": "500002"
+  },
+  {
+    "area_name": "Gulzar Houz",
+    "area_slug": "gulzar-houz",
+    "zone": "South Chennai",
+    "pincode": "500002"
+  },
+  {
+    "area_name": "Madina Charminar",
+    "area_slug": "madina-charminar",
+    "zone": "South Chennai",
+    "pincode": "500002"
+  },
+  {
+    "area_name": "Patel Market",
+    "area_slug": "patel-market",
+    "zone": "South Chennai",
+    "pincode": "500002"
+  },
+  {
+    "area_name": "Afzal Gunj",
+    "area_slug": "afzal-gunj",
+    "zone": "South Chennai",
+    "pincode": "500012"
+  },
+  {
+    "area_name": "Mangalhat",
+    "area_slug": "mangalhat",
+    "zone": "South Chennai",
+    "pincode": "500006"
+  },
+  {
+    "area_name": "Zoo Park Bahadurpura",
+    "area_slug": "zoo-park-bahadurpura",
+    "zone": "South Chennai",
+    "pincode": "500064"
+  },
+  {
+    "area_name": "Purana Pul",
+    "area_slug": "purana-pul",
+    "zone": "South Chennai",
+    "pincode": "500064"
+  },
+  {
+    "area_name": "Chadarghat",
+    "area_slug": "chadarghat",
+    "zone": "South Chennai",
+    "pincode": "500024"
+  },
+  {
+    "area_name": "Chowni",
+    "area_slug": "chowni",
+    "zone": "South Chennai",
+    "pincode": "500024"
+  },
+  {
+    "area_name": "Rein Bazar",
+    "area_slug": "rein-bazar",
+    "zone": "South Chennai",
+    "pincode": "500023"
+  },
+  {
+    "area_name": "Talab Katta",
+    "area_slug": "talab-katta",
+    "zone": "South Chennai",
+    "pincode": "500002"
+  },
+  {
+    "area_name": "Falaknuma Palace Road",
+    "area_slug": "falaknuma-palace-road",
+    "zone": "South Chennai",
+    "pincode": "500053"
+  },
+  {
+    "area_name": "Chandrayangutta",
+    "area_slug": "chandrayangutta",
+    "zone": "South Chennai",
+    "pincode": "500005"
+  },
+  {
+    "area_name": "Bandlaguda Old City",
+    "area_slug": "bandlaguda-old-city",
+    "zone": "South Chennai",
+    "pincode": "500005"
+  },
+  {
+    "area_name": "Pahadi Shareef",
+    "area_slug": "pahadi-shareef",
+    "zone": "South Chennai",
+    "pincode": "500005"
+  },
+  {
+    "area_name": "Jalpally",
+    "area_slug": "jalpally",
+    "zone": "South Chennai",
+    "pincode": "500005"
+  },
+  {
+    "area_name": "Gaganpahad",
+    "area_slug": "gaganpahad",
+    "zone": "South Chennai",
+    "pincode": "500052"
+  },
+  {
+    "area_name": "Shastripuram",
+    "area_slug": "shastripuram",
+    "zone": "South Chennai",
+    "pincode": "500077"
+  },
+  {
+    "area_name": "Agriculture University Rajendranagar",
+    "area_slug": "agriculture-university-rajendranagar",
+    "zone": "South Chennai",
+    "pincode": "500030"
+  },
+  {
+    "area_name": "Budvel",
+    "area_slug": "budvel",
+    "zone": "South Chennai",
+    "pincode": "500030"
+  },
+  {
+    "area_name": "Attapur Pillar 143",
+    "area_slug": "attapur-pillar-143",
+    "zone": "South Chennai",
+    "pincode": "500048"
+  },
+  {
+    "area_name": "Upperpally Attapur",
+    "area_slug": "upperpally-attapur",
+    "zone": "South Chennai",
+    "pincode": "500048"
+  },
+  {
+    "area_name": "Hyderguda Attapur",
+    "area_slug": "hyderguda-attapur",
+    "zone": "South Chennai",
+    "pincode": "500048"
+  },
+  {
+    "area_name": "Appapally",
+    "area_slug": "appapally",
+    "zone": "South Chennai",
+    "pincode": "500091"
+  },
+  {
+    "area_name": "Shamshabad Airport",
+    "area_slug": "shamshabad-airport",
+    "zone": "South Chennai",
+    "pincode": "501218"
+  },
+  {
+    "area_name": "RGI Airport",
+    "area_slug": "rgi-airport",
+    "zone": "South Chennai",
+    "pincode": "501218"
+  },
+  {
+    "area_name": "Fab City Tukkuguda",
+    "area_slug": "fab-city-tukkuguda",
+    "zone": "South Chennai",
+    "pincode": "501359"
+  },
+  {
+    "area_name": "Thimmapur",
+    "area_slug": "thimmapur",
+    "zone": "South Chennai",
+    "pincode": "509325"
+  },
+  {
+    "area_name": "Shadnagar",
+    "area_slug": "shadnagar",
+    "zone": "South Chennai",
+    "pincode": "509216"
+  }
+]

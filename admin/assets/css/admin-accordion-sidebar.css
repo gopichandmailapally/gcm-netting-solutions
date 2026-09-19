@@ -1,0 +1,185 @@
+/**
+ * GCM Admin - Accordion Collapsible Sidebar
+ * One section open at a time, smooth animations
+ */
+
+/* ── Group wrapper ─────────────────────────────────── */
+.nav-group {
+    margin: 2px 8px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* ── Clickable section header ───────────────────────── */
+.nav-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.22s ease, color 0.22s ease;
+    user-select: none;
+}
+
+.nav-group-header:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* Left side: icon + label */
+.nav-group-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.45);
+    transition: color 0.22s ease;
+}
+
+.nav-group-label i {
+    font-size: 13px;
+    width: 18px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.35);
+    transition: color 0.22s ease;
+}
+
+/* Chevron arrow */
+.nav-group-arrow {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.25);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.22s ease;
+    flex-shrink: 0;
+}
+
+/* ── Collapsible items list ─────────────────────────── */
+.nav-group-items {
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.38s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.28s ease;
+    opacity: 0;
+    padding-left: 8px;
+    margin: 0 4px;
+}
+
+/* ── OPEN state ─────────────────────────────────────── */
+.nav-group.open > .nav-group-header {
+    background: rgba(255, 102, 0, 0.12);
+    border-left: 3px solid #FF6600;
+    padding-left: 11px;
+}
+
+.nav-group.open > .nav-group-header .nav-group-label {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-group.open > .nav-group-header .nav-group-label i {
+    color: #FF6600;
+}
+
+.nav-group.open > .nav-group-header .nav-group-arrow {
+    transform: rotate(90deg);
+    color: #FF6600;
+}
+
+.nav-group.open > .nav-group-items {
+    max-height: 800px;
+    opacity: 1;
+}
+
+/* ── Items inside group ─────────────────────────────── */
+.nav-group-items > li {
+    margin-bottom: 2px;
+}
+
+.nav-group-items > li > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 14px 9px 18px;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: background 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
+    position: relative;
+}
+
+.nav-group-items > li > a::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: background 0.2s;
+}
+
+.nav-group-items > li > a:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #FFFFFF;
+    padding-left: 22px;
+}
+
+.nav-group-items > li > a:hover::before {
+    background: #FF6600;
+}
+
+.nav-group-items > li > a i {
+    font-size: 13px;
+    width: 16px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 0.2s;
+}
+
+.nav-group-items > li > a:hover i {
+    color: #FF6600;
+}
+
+/* Active item in group */
+.nav-group-items > li.active > a {
+    background: rgba(255, 102, 0, 0.18);
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.nav-group-items > li.active > a::before {
+    background: #FF6600;
+}
+
+.nav-group-items > li.active > a i {
+    color: #FF6600;
+}
+
+/* ── AI-Protected badge in nav ──────────────────────── */
+.nav-ai-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    background: rgba(255, 102, 0, 0.25);
+    color: #FF6600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: auto;
+    text-transform: uppercase;
+}
+
+/* ── Dashboard standalone item ──────────────────────── */
+.sidebar-nav > ul > li.nav-dashboard-item {
+    margin: 0 8px 8px;
+}
+
+.sidebar-nav > ul > li.nav-dashboard-item > a {
+    border-radius: 8px;
+    padding: 12px 14px;
+}

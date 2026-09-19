@@ -1,0 +1,157 @@
+/**
+ * GCM Safety Nets — Global Content Font: Times New Roman
+ * Applied to all text content across the entire website.
+ * UI elements (nav, buttons, header) retain their own styling.
+ */
+
+/* ── Body base ── */
+body {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+/* ── All headings site-wide ── */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+/* ── Paragraph and list content ── */
+p, li, td, th, blockquote, figcaption, caption,
+address, cite, dd, dt, pre, q, s, u, ins, del {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+/* ── Section titles used across pages ── */
+.section-title,
+.section-subtitle,
+.section-heading,
+.page-title,
+.content-title {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+/* ── Service pages / pillar pages content ── */
+.service-content,
+.service-content h1,
+.service-content h2,
+.service-content h3,
+.service-content p,
+.service-content li,
+.service-area-page p,
+.service-area-page h1,
+.service-area-page h2,
+.service-area-page h3,
+.service-area-page li {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+/* ── Generated service pages ── */
+.gcm-content,
+.gcm-content h2,
+.gcm-content h3,
+.gcm-content h4,
+.gcm-content p,
+.gcm-content li,
+.gcm-content td,
+.gcm-content th,
+.gcm-content strong,
+.gcm-content em,
+.gcm-content blockquote {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+/* ── About, Contact, FAQ, Gallery, Blog pages ── */
+.about-content,
+.faq-content,
+.faq-answer,
+.faq-question,
+.blog-content,
+.blog-post,
+.review-text,
+.testimonial-text,
+.contact-info p,
+.page-content,
+.page-body,
+.inner-content {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+/* ── Homepage sections ── */
+.hero-title,
+.hero-subtitle,
+.hero-text,
+.service-description,
+.about-text,
+.why-text,
+.stat-label,
+.feature-text,
+.card-description {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+/* ── Footer content (links and text, not logos) ── */
+.footer-description,
+.footer-text,
+footer p,
+footer li,
+footer address {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+/* ── Note: nav, buttons, inputs, header retain their own font ──
+   No override needed — only content/body text uses Times New Roman */
+
+/* ════════════════════════════════════════════════════════════════
+   GENERATED SERVICE PAGE — FULL-WIDTH LAYOUT OVERRIDE
+   These !important rules beat the <style> block each generated
+   page injects into <body>, fixing ALL existing pages instantly.
+   ════════════════════════════════════════════════════════════════ */
+
+/* Remove the narrow "floating card" look from the wrapper */
+.gcm-wrap {
+    background: #f8fafc !important;
+    border-radius: 0 !important;
+    margin-top: 0 !important;
+    padding: 32px 0 48px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Grid: fill the viewport, centred only when viewport > 1380px */
+.gcm-grid {
+    max-width: 1380px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+    display: grid !important;
+    grid-template-columns: 1fr 300px !important;
+    gap: 28px !important;
+    align-items: start !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+}
+
+/* Main content column: flat sections (no floating card effect) */
+.gcm-main > .gcm-card {
+    background: #ffffff !important;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important;
+    border: 1px solid #e8eef4 !important;
+    padding: 28px !important;
+    margin-bottom: 24px !important;
+}
+
+/* Sidebar cards: keep subtle card styling */
+.gcm-sidebar .gcm-card {
+    border-radius: 14px !important;
+    box-shadow: 0 4px 20px rgba(102,126,234,0.12) !important;
+}
+
+/* Mobile: stack sidebar below content */
+@media (max-width: 900px) {
+    .gcm-grid {
+        grid-template-columns: 1fr !important;
+        padding: 0 12px !important;
+    }
+    .gcm-main  { order: 1 !important; }
+    .gcm-sidebar { order: 2 !important; }
+}

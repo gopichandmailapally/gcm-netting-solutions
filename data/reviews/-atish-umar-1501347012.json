@@ -1,0 +1,13 @@
+{
+    "id": 1501347012,
+    "customer_name": "Satish Kumar",
+    "rating": 5,
+    "category": "Children Safety Nets",
+    "review_text": "Perfect child safety nets, fast service!",
+    "location": "Meerpet",
+    "created_at": "2017-07-29 22:20:12",
+    "status": "approved",
+    "source": "ai_generated",
+    "verified": true,
+    "helpful_count": 15
+}

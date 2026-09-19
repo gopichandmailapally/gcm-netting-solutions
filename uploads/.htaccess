@@ -1,0 +1,13 @@
+# Security: block all script execution in uploads directory
+<FilesMatch "\.(php|php3|php4|php5|phtml|pl|cgi|sh|py|rb|asp|aspx|jsp)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Allow direct access to image files only
+<FilesMatch "\.(png|jpg|jpeg|gif|webp|ico|svg)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+Options -Indexes

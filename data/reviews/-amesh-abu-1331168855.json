@@ -1,0 +1,13 @@
+{
+    "id": 1331168855,
+    "customer_name": "Ramesh Babu",
+    "rating": 5,
+    "category": "Construction Safety Nets",
+    "review_text": "Amazing construction safety nets, perfectly installed!",
+    "location": "Sainikpuri",
+    "created_at": "2012-03-08 06:37:35",
+    "status": "approved",
+    "source": "ai_generated",
+    "verified": true,
+    "helpful_count": 42
+}

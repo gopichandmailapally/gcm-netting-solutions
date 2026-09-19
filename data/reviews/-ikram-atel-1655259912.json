@@ -1,0 +1,13 @@
+{
+    "id": 1655259912,
+    "customer_name": "Vikram Patel",
+    "rating": 4,
+    "category": "Bird Netting",
+    "review_text": "The bird netting installation was great! It looks durable, and corrosion free. Plus, they have a warranty! Good service.",
+    "location": "Golconda",
+    "created_at": "2022-06-15 07:55:12",
+    "status": "approved",
+    "source": "ai_generated",
+    "verified": true,
+    "helpful_count": 35
+}

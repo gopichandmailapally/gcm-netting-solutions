@@ -1,0 +1,13 @@
+{
+    "id": 1596600162,
+    "customer_name": "Rajesh Kumar",
+    "rating": 5,
+    "category": "Sports Nets",
+    "review_text": "Excellent sports nets installation! On time, long lasting, and a real value for money.",
+    "location": "Karwan",
+    "created_at": "2020-08-05 09:32:42",
+    "status": "approved",
+    "source": "ai_generated",
+    "verified": true,
+    "helpful_count": 43
+}

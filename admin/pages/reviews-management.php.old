@@ -1,0 +1,234 @@
+<?php
+/**
+ * Reviews Management
+ * Approve, reject, and manage user reviews
+ */
+
+define('GCM_INIT', true);
+require_once '../../config/config.php';
+require_once '../../config/database.php';
+require_once '../../config/email-helper.php';
+
+if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
+    header('Location: ../login.php');
+    exit;
+}
+
+$db = Database::getInstance();
+$success = '';
+$error = '';
+
+// Handle actions
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['approve_review'])) {
+        $id = (int)$_POST['review_id'];
+        $review = $db->fetchOne("SELECT * FROM user_reviews WHERE id = ?", [$id], 'i');
+        
+        $db->execute(
+            "UPDATE user_reviews SET status = 'approved', display_on_website = 1, approved_at = NOW(), approved_by = ? WHERE id = ?",
+            [$_SESSION['admin_id'], $id],
+            'ii'
+        );
+        
+        // Send approval email
+        send_review_approval_to_user($review);
+        
+        $success = 'Review approved and published to website!';
+    }
+    
+    if (isset($_POST['reject_review'])) {
+        $id = (int)$_POST['review_id'];
+        $db->execute("UPDATE user_reviews SET status = 'rejected', display_on_website = 0 WHERE id = ?", [$id], 'i');
+        $success = 'Review rejected.';
+    }
+    
+    if (isset($_POST['update_review'])) {
+        $id = (int)$_POST['review_id'];
+        $customer_name = $_POST['customer_name'];
+        $review_text = $_POST['review_text'];
+        $rating = (int)$_POST['rating'];
+        $admin_notes = $_POST['admin_notes'];
+        
+        $db->execute(
+            "UPDATE user_reviews SET customer_name = ?, review_text = ?, rating = ?, admin_notes = ? WHERE id = ?",
+            [$customer_name, $review_text, $rating, $admin_notes, $id],
+            'ssisi'
+        );
+        
+        $success = 'Review updated successfully!';
+    }
+    
+    if (isset($_POST['toggle_display'])) {
+        $id = (int)$_POST['review_id'];
+        $current = (int)$_POST['current_display'];
+        $new_display = $current ? 0 : 1;
+        
+        $db->execute("UPDATE user_reviews SET display_on_website = ? WHERE id = ?", [$new_display, $id], 'ii');
+        $success = $new_display ? 'Review is now visible on website.' : 'Review hidden from website.';
+    }
+    
+    if (isset($_POST['delete_review'])) {
+        $id = (int)$_POST['review_id'];
+        $db->execute("DELETE FROM user_reviews WHERE id = ?", [$id], 'i');
+        $success = 'Review deleted successfully!';
+    }
+}
+
+// Fetch reviews by status
+$pending = $db->fetchAll("SELECT * FROM user_reviews WHERE status = 'pending' ORDER BY submitted_at DESC");
+$approved = $db->fetchAll("SELECT * FROM user_reviews WHERE status = 'approved' ORDER BY approved_at DESC LIMIT 50");
+$rejected = $db->fetchAll("SELECT * FROM user_reviews WHERE status = 'rejected' ORDER BY submitted_at DESC LIMIT 20");
+
+$page_title = 'Reviews Management';
+require_once '../includes/header.php';
+?>
+
+<style>
+.review-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+.review-pending { border-left: 5px solid #ffc107; }
+.review-approved { border-left: 5px solid #28a745; }
+.review-rejected { border-left: 5px solid #dc3545; }
+.stars { color: #ffc107; font-size: 18px; }
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+</style>
+
+<div class="content-wrapper">
+    <h2><i class="fas fa-star"></i> Reviews Management</h2>
+    <hr>
+
+    <?php if ($success): ?>
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <?php echo $success; ?>
+        </div>
+    <?php endif; ?>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs mb-4" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#pending">
+                Pending <span class="badge bg-warning"><?php echo count($pending); ?></span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#approved">
+                Approved <span class="badge bg-success"><?php echo count($approved); ?></span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#rejected">
+                Rejected <span class="badge bg-danger"><?php echo count($rejected); ?></span>
+            </a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <!-- Pending Reviews -->
+        <div class="tab-pane fade show active" id="pending">
+            <?php if (empty($pending)): ?>
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle"></i> No pending reviews.
+                </div>
+            <?php else: ?>
+                <?php foreach ($pending as $review): ?>
+                    <?php include 'review-card.php'; ?>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </div>
+
+        <!-- Approved Reviews -->
+        <div class="tab-pane fade" id="approved">
+            <?php if (empty($approved)): ?>
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle"></i> No approved reviews yet.
+                </div>
+            <?php else: ?>
+                <?php foreach ($approved as $review): ?>
+                    <?php include 'review-card.php'; ?>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </div>
+
+        <!-- Rejected Reviews -->
+        <div class="tab-pane fade" id="rejected">
+            <?php if (empty($rejected)): ?>
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle"></i> No rejected reviews.
+                </div>
+            <?php else: ?>
+                <?php foreach ($rejected as $review): ?>
+                    <?php include 'review-card.php'; ?>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
+
+<script>
+function deleteReview(id) {
+    if (confirm('Are you sure you want to delete this review permanently?')) {
+        const form = document.createElement('form');
+        form.method = 'POST';
+        form.innerHTML = `
+            <input type="hidden" name="review_id" value="${id}">
+            <input type="hidden" name="delete_review" value="1">
+        `;
+        document.body.appendChild(form);
+        form.submit();
+    }
+}
+
+function approveReview(id) {
+    if (confirm('Approve this review and publish to website?')) {
+        const form = document.createElement('form');
+        form.method = 'POST';
+        form.innerHTML = `
+            <input type="hidden" name="review_id" value="${id}">
+            <input type="hidden" name="approve_review" value="1">
+        `;
+        document.body.appendChild(form);
+        form.submit();
+    }
+}
+
+function rejectReview(id) {
+    if (confirm('Reject this review?')) {
+        const form = document.createElement('form');
+        form.method = 'POST';
+        form.innerHTML = `
+            <input type="hidden" name="review_id" value="${id}">
+            <input type="hidden" name="reject_review" value="1">
+        `;
+        document.body.appendChild(form);
+        form.submit();
+    }
+}
+
+function toggleDisplay(id, current) {
+    const action = current ? 'hide' : 'show';
+    if (confirm(`Are you sure you want to ${action} this review on the website?`)) {
+        const form = document.createElement('form');
+        form.method = 'POST';
+        form.innerHTML = `
+            <input type="hidden" name="review_id" value="${id}">
+            <input type="hidden" name="current_display" value="${current}">
+            <input type="hidden" name="toggle_display" value="1">
+        `;
+        document.body.appendChild(form);
+        form.submit();
+    }
+}
+</script>
+
+<?php require_once '../includes/footer.php'; ?>

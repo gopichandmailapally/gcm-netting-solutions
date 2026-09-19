@@ -1,0 +1,239 @@
+/**
+ * Mobile Padding Fix for Service/Area Pages
+ * Applies to all 12,032 area-specific service pages
+ * NO PAGE REGENERATION NEEDED - Just upload this CSS!
+ */
+
+/* Apply ONLY to service-area pages (not pillar pages) */
+.service-area-page {
+    /* Mobile devices - reduce side padding */
+}
+
+@media (max-width: 768px) {
+    /* MOBILE PADDING FIX - Service Area Pages */
+    
+    /* Main containers */
+    .service-area-page {
+        padding: 0 10px !important;
+    }
+    
+    .page-container {
+        padding: 0 !important;
+        max-width: 100% !important;
+    }
+    
+    /* Hero section */
+    .service-hero-section {
+        padding: 40px 15px !important;
+        margin: 0 5px !important;
+    }
+    
+    .hero-container {
+        padding: 0 5px !important;
+    }
+    
+    .hero-title {
+        font-size: 28px !important;
+        padding: 0 5px !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px !important;
+        padding: 0 5px !important;
+    }
+    
+    .hero-buttons {
+        gap: 10px;
+    }
+    
+    .hero-btn {
+        padding: 12px 16px !important;
+        font-size: 15px !important;
+    }
+    
+    /* Content section */
+    .content-section {
+        padding: 0 !important;
+    }
+    
+    .content-card {
+        padding: 15px !important;
+        margin: 10px 5px !important;
+        border-radius: 12px !important;
+    }
+    
+    .content-card h2 {
+        font-size: 24px !important;
+        padding: 0 5px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .content-card h3 {
+        font-size: 20px !important;
+        padding: 0 5px !important;
+        margin-top: 20px !important;
+    }
+    
+    .content-card p {
+        font-size: 16px !important;
+        line-height: 1.7 !important;
+        padding: 0 5px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .content-card ul,
+    .content-card ol {
+        padding-left: 25px !important;
+        margin: 15px 5px !important;
+    }
+    
+    .content-card li {
+        margin-bottom: 10px !important;
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+    }
+    
+    /* CTA Box */
+    .cta-gradient-box {
+        padding: 25px 15px !important;
+        margin: 20px 5px !important;
+        border-radius: 12px !important;
+    }
+    
+    .cta-title {
+        font-size: 22px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .cta-subtitle {
+        font-size: 15px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .cta-buttons {
+        gap: 10px;
+    }
+    
+    .cta-btn {
+        padding: 12px 16px !important;
+        font-size: 15px !important;
+    }
+    
+    /* Sidebar */
+    .sidebar-section {
+        padding: 0 5px !important;
+        margin-top: 20px !important;
+    }
+    
+    .sidebar-card {
+        padding: 20px 15px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .contact-form-card {
+        padding: 25px 15px !important;
+    }
+    
+    .form-title {
+        font-size: 20px !important;
+    }
+    
+    .form-input {
+        padding: 12px 14px !important;
+        font-size: 15px !important;
+    }
+    
+    .form-submit-btn {
+        padding: 12px 16px !important;
+        font-size: 15px !important;
+    }
+    
+    /* Two column layout */
+    .two-column-layout {
+        padding: 0 !important;
+        gap: 15px !important;
+    }
+    
+    /* Breadcrumb */
+    .breadcrumb {
+        padding: 0 10px !important;
+        font-size: 13px !important;
+        margin-bottom: 15px !important;
+    }
+}
+
+/* Extra Small Devices - Ultra Compact */
+@media (max-width: 480px) {
+    .service-area-page {
+        padding: 0 8px !important;
+    }
+    
+    .page-container {
+        padding: 0 !important;
+    }
+    
+    .service-hero-section {
+        padding: 30px 12px !important;
+        margin: 0 !important;
+    }
+    
+    .hero-container {
+        padding: 0 !important;
+    }
+    
+    .hero-title {
+        font-size: 24px !important;
+        padding: 0 !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 14px !important;
+        padding: 0 !important;
+    }
+    
+    .content-card {
+        padding: 12px !important;
+        margin: 10px 0 !important;
+    }
+    
+    .content-card h2 {
+        font-size: 22px !important;
+        padding: 0 !important;
+    }
+    
+    .content-card h3 {
+        font-size: 18px !important;
+        padding: 0 !important;
+    }
+    
+    .content-card p {
+        font-size: 15px !important;
+        padding: 0 !important;
+    }
+    
+    .content-card ul,
+    .content-card ol {
+        padding-left: 20px !important;
+        margin: 10px 0 !important;
+    }
+    
+    .cta-gradient-box {
+        padding: 20px 12px !important;
+        margin: 15px 0 !important;
+    }
+    
+    .sidebar-card {
+        padding: 15px 12px !important;
+    }
+    
+    .breadcrumb {
+        padding: 0 5px !important;
+        font-size: 12px !important;
+    }
+}
+
+/* Ensure this doesn't affect pillar pages */
+body:not(.service-area-page) .pillar-page,
+body:not(.service-area-page) .pillar-hero {
+    /* Keep original padding for pillar pages */
+}

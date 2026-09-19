@@ -1,0 +1,557 @@
+/**
+ * Modern Invoice Themes - Attractive Color Schemes
+ * Professional, print-ready invoice designs
+ */
+
+/* ========================================
+   COLOR THEMES FOR DIFFERENT COMPANIES
+   ======================================== */
+
+/* Theme 1: Professional Blue (Default) */
+.invoice-theme-blue {
+    --primary-color: #2563eb;
+    --primary-dark: #1e40af;
+    --primary-light: #dbeafe;
+    --accent-color: #3b82f6;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --bg-light: #f1f5f9;
+}
+
+/* Theme 2: Success Green */
+.invoice-theme-green {
+    --primary-color: #059669;
+    --primary-dark: #047857;
+    --primary-light: #d1fae5;
+    --accent-color: #10b981;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --bg-light: #f0fdf4;
+}
+
+/* Theme 3: Royal Purple */
+.invoice-theme-purple {
+    --primary-color: #7c3aed;
+    --primary-dark: #6d28d9;
+    --primary-light: #ede9fe;
+    --accent-color: #8b5cf6;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --bg-light: #faf5ff;
+}
+
+/* Theme 4: Elegant Orange */
+.invoice-theme-orange {
+    --primary-color: #ea580c;
+    --primary-dark: #c2410c;
+    --primary-light: #fed7aa;
+    --accent-color: #f97316;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --bg-light: #fff7ed;
+}
+
+/* Theme 5: Modern Teal */
+.invoice-theme-teal {
+    --primary-color: #0d9488;
+    --primary-dark: #0f766e;
+    --primary-light: #ccfbf1;
+    --accent-color: #14b8a6;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --bg-light: #f0fdfa;
+}
+
+/* Theme 6: Bold Red */
+.invoice-theme-red {
+    --primary-color: #dc2626;
+    --primary-dark: #b91c1c;
+    --primary-light: #fee2e2;
+    --accent-color: #ef4444;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --bg-light: #fef2f2;
+}
+
+/* Theme 7: Corporate Navy */
+.invoice-theme-navy {
+    --primary-color: #1e3a8a;
+    --primary-dark: #1e40af;
+    --primary-light: #dbeafe;
+    --accent-color: #3b82f6;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --bg-light: #eff6ff;
+}
+
+/* Theme 8: Luxury Gold */
+.invoice-theme-gold {
+    --primary-color: #ca8a04;
+    --primary-dark: #a16207;
+    --primary-light: #fef3c7;
+    --accent-color: #eab308;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --bg-light: #fefce8;
+}
+
+/* ========================================
+   MODERN INVOICE LAYOUT
+   ======================================== */
+
+.invoice-container {
+    max-width: 210mm;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+/* Header Section */
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.company-info {
+    flex: 1;
+}
+
+.company-logo {
+    max-width: 180px;
+    max-height: 80px;
+    margin-bottom: 15px;
+}
+
+.company-name {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin: 0 0 8px 0;
+    letter-spacing: -0.5px;
+}
+
+.company-details {
+    font-size: 13px;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.invoice-title-section {
+    text-align: right;
+}
+
+.invoice-title {
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--primary-color);
+    margin: 0 0 10px 0;
+    letter-spacing: -1px;
+}
+
+.invoice-number {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark);
+    background: var(--primary-light);
+    padding: 8px 20px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+/* Info Grid */
+.invoice-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.info-box {
+    background: var(--bg-light);
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.info-box-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.info-box-content {
+    font-size: 14px;
+    color: var(--text-dark);
+    line-height: 1.8;
+}
+
+.info-box-content strong {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* Items Table */
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.invoice-table thead {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+}
+
+.invoice-table thead th {
+    padding: 16px 12px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.invoice-table thead th:last-child {
+    text-align: right;
+}
+
+.invoice-table tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+    transition: background 0.2s;
+}
+
+.invoice-table tbody tr:hover {
+    background: var(--bg-light);
+}
+
+.invoice-table tbody td {
+    padding: 16px 12px;
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.invoice-table tbody td:last-child {
+    text-align: right;
+    font-weight: 600;
+}
+
+.item-description {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-top: 4px;
+}
+
+/* Totals Section */
+.invoice-totals {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+.totals-box {
+    width: 400px;
+    background: var(--bg-light);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 24px;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.total-row:last-child {
+    border-bottom: none;
+}
+
+.total-row.subtotal {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.total-row.tax {
+    color: var(--text-light);
+}
+
+.total-row.grand-total {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 20px 24px;
+}
+
+/* Amount in Words */
+.amount-in-words {
+    background: var(--primary-light);
+    padding: 20px 24px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.amount-in-words-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.amount-in-words-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* Terms & Notes */
+.invoice-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid var(--bg-light);
+}
+
+.footer-section {
+    font-size: 13px;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.footer-section-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Bank Details Box */
+.bank-details-box {
+    background: var(--bg-light);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+    border: 2px dashed var(--primary-color);
+}
+
+.bank-details-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.bank-details-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--text-dark);
+}
+
+.bank-detail-item {
+    display: flex;
+    gap: 8px;
+}
+
+.bank-detail-label {
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+/* Signature Section */
+.signature-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding-top: 40px;
+}
+
+.signature-box {
+    text-align: center;
+}
+
+.signature-line {
+    width: 200px;
+    height: 2px;
+    background: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.signature-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+/* Watermark */
+.invoice-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 120px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.03);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Status Badge */
+.status-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 24px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.status-badge.paid {
+    background: #d1fae5;
+    color: #047857;
+    border: 2px solid #10b981;
+}
+
+.status-badge.draft {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 2px solid #ef4444;
+}
+
+.status-badge.sent {
+    background: #dbeafe;
+    color: #1e40af;
+    border: 2px solid #3b82f6;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .invoice-container {
+        box-shadow: none;
+        padding: 20px;
+        max-width: 100%;
+    }
+    
+    .no-print {
+        display: none !important;
+    }
+    
+    .invoice-table tbody tr:hover {
+        background: transparent;
+    }
+    
+    @page {
+        margin: 15mm;
+        size: A4;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .invoice-container {
+        padding: 20px;
+    }
+    
+    .invoice-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .invoice-title-section {
+        text-align: left;
+    }
+    
+    .invoice-info-grid,
+    .invoice-footer,
+    .bank-details-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .totals-box {
+        width: 100%;
+    }
+    
+    .invoice-table {
+        font-size: 12px;
+    }
+    
+    .invoice-table thead th,
+    .invoice-table tbody td {
+        padding: 10px 8px;
+    }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.invoice-container {
+    animation: fadeInUp 0.6s ease;
+}
+
+/* Gradient Backgrounds */
+.gradient-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 30px;
+    border-radius: 12px 12px 0 0;
+    margin: -40px -40px 30px -40px;
+}
+
+.gradient-header .company-name,
+.gradient-header .invoice-title {
+    color: white;
+}
+
+.gradient-header .company-details {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Modern Card Style */
+.card-style {
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Accent Lines */
+.accent-line {
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    border-radius: 2px;
+    margin: 20px 0;
+}

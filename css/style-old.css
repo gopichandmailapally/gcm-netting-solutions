@@ -1,0 +1,814 @@
+/* ============================================
+   GCM SAFETY NETS - MOBILE-FIRST CSS FRAMEWORK
+   Production-Ready Responsive Design
+   No Frameworks | Vanilla CSS | Grid & Flexbox
+   ============================================ */
+
+/* ============================================
+   1. CSS RESET & BASE STYLES (MOBILE-FIRST)
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Color Palette */
+  --primary-blue: #004A99;
+  --secondary-white: #FFFFFF;
+  --accent-orange: #FF6600;
+  --text-dark: #333333;
+  --text-light: #666666;
+  --bg-light-gray: #F5F5F5;
+  --border-gray: #DDDDDD;
+  
+  /* Typography */
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-heading: 'Arial', sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-dark);
+  line-height: 1.6;
+  background-color: var(--secondary-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-blue);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-orange);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary-blue);
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+p {
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-dark);
+}
+
+ul, ol {
+  margin-left: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* ============================================
+   2. REUSABLE UTILITY CLASSES
+   ============================================ */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-padding {
+  padding: var(--spacing-xl) 0;
+}
+
+.mb-sm {
+  margin-bottom: var(--spacing-sm);
+}
+
+.mb-md {
+  margin-bottom: var(--spacing-md);
+}
+
+.mb-lg {
+  margin-bottom: var(--spacing-lg);
+}
+
+/* ============================================
+   3. HEADER & NAVIGATION (MOBILE-FIRST)
+   ============================================ */
+
+.site-header {
+  background-color: var(--primary-blue);
+  color: var(--secondary-white);
+  padding: var(--spacing-sm) 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--secondary-white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.site-logo:hover {
+  color: var(--accent-orange);
+}
+
+/* Mobile Menu Toggle Button */
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  color: var(--secondary-white);
+  font-size: 1.75rem;
+  cursor: pointer;
+  padding: var(--spacing-xs);
+}
+
+.menu-toggle:hover {
+  color: var(--accent-orange);
+}
+
+/* Navigation Menu (Hidden on Mobile by Default) */
+.main-nav {
+  display: none;
+  width: 100%;
+  flex-basis: 100%;
+  margin-top: var(--spacing-sm);
+}
+
+.main-nav.active {
+  display: block;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.nav-list li a {
+  display: block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  color: var(--secondary-white);
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list li a:hover,
+.nav-list li a.active {
+  background-color: var(--accent-orange);
+  color: var(--secondary-white);
+}
+
+/* Header CTA Button */
+.header-cta {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-md);
+  background-color: var(--accent-orange);
+  color: var(--secondary-white);
+  font-weight: 700;
+  border-radius: 4px;
+  margin-top: var(--spacing-sm);
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.header-cta:hover {
+  background-color: #E55A00;
+  color: var(--secondary-white);
+}
+
+/* ============================================
+   4. BUTTONS & CALL-TO-ACTION
+   ============================================ */
+
+.cta-button {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--accent-orange);
+  color: var(--secondary-white);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #E55A00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.3);
+  color: var(--secondary-white);
+}
+
+.cta-button-secondary {
+  background-color: var(--primary-blue);
+}
+
+.cta-button-secondary:hover {
+  background-color: #003A7A;
+}
+
+/* ============================================
+   5. HERO SECTION
+   ============================================ */
+
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, #003A7A 100%);
+  color: var(--secondary-white);
+  text-align: center;
+  padding: var(--spacing-xl) var(--spacing-sm);
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content h1 {
+  color: var(--secondary-white);
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  color: var(--secondary-white);
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-lg);
+  opacity: 0.95;
+}
+
+/* ============================================
+   6. RESPONSIVE GRID LAYOUTS
+   ============================================ */
+
+/* 3-Column Grid (Responsive) */
+.grid-3-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* 2-Column Grid */
+.grid-2-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* 4-Column Grid */
+.grid-4-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* ============================================
+   7. SERVICE CARDS
+   ============================================ */
+
+.service-card {
+  background-color: var(--secondary-white);
+  border: 1px solid var(--border-gray);
+  border-radius: 8px;
+  padding: var(--spacing-md);
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 74, 153, 0.15);
+  border-color: var(--accent-orange);
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.service-card p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.service-card .cta-button {
+  font-size: 0.95rem;
+  padding: var(--spacing-xs) var(--spacing-md);
+}
+
+/* ============================================
+   8. LOCATION LIST (SERVICE AREAS)
+   ============================================ */
+
+.location-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xs);
+}
+
+.location-list li {
+  background-color: var(--bg-light-gray);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-left: 4px solid var(--accent-orange);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.location-list li:hover {
+  background-color: #E8E8E8;
+}
+
+.location-list li a {
+  display: block;
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+/* ============================================
+   9. TESTIMONIAL COMPONENT
+   ============================================ */
+
+.testimonial {
+  background-color: var(--bg-light-gray);
+  border-left: 4px solid var(--accent-orange);
+  padding: var(--spacing-md);
+  border-radius: 4px;
+  margin: var(--spacing-md) 0;
+  font-style: italic;
+}
+
+.testimonial p {
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-dark);
+  font-size: 1rem;
+}
+
+.testimonial span {
+  display: block;
+  font-weight: 700;
+  color: var(--primary-blue);
+  font-style: normal;
+  margin-top: var(--spacing-xs);
+  font-size: 0.9rem;
+}
+
+/* ============================================
+   10. LOCAL FAQ COMPONENT
+   ============================================ */
+
+.local-faq {
+  background-color: var(--secondary-white);
+  border: 1px solid var(--border-gray);
+  border-radius: 8px;
+  padding: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+}
+
+.local-faq h3 {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--accent-orange);
+  padding-bottom: var(--spacing-xs);
+}
+
+.local-faq h4 {
+  color: var(--accent-orange);
+  font-size: 1.1rem;
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+}
+
+.local-faq p {
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-sm);
+  padding-left: var(--spacing-sm);
+}
+
+/* ============================================
+   11. GALLERY
+   ============================================ */
+
+.gallery {
+  margin: var(--spacing-lg) 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-sm);
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* ============================================
+   12. CONTACT FORM
+   ============================================ */
+
+.contact-form {
+  background-color: var(--bg-light-gray);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-xs);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-gray);
+  border-radius: 4px;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(0, 74, 153, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Honeypot Field (Hidden) */
+.honeypot {
+  display: none !important;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+}
+
+/* ============================================
+   13. FEATURES / WHY CHOOSE US
+   ============================================ */
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}
+
+.feature-item {
+  text-align: center;
+  padding: var(--spacing-md);
+  background-color: var(--secondary-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: var(--accent-orange);
+  margin-bottom: var(--spacing-sm);
+}
+
+.feature-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.feature-item p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* ============================================
+   14. FOOTER
+   ============================================ */
+
+.site-footer {
+  background-color: var(--primary-blue);
+  color: var(--secondary-white);
+  padding: var(--spacing-xl) 0 var(--spacing-md);
+  margin-top: var(--spacing-xl);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.footer-column h3 {
+  color: var(--secondary-white);
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--accent-orange);
+  padding-bottom: var(--spacing-xs);
+}
+
+.footer-column p,
+.footer-column a {
+  color: var(--secondary-white);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.footer-column a:hover {
+  color: var(--accent-orange);
+}
+
+.footer-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--secondary-white);
+  font-size: 0.9rem;
+}
+
+/* ============================================
+   15. TABLET BREAKPOINT (768px+)
+   ============================================ */
+
+@media (min-width: 768px) {
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+  
+  /* Header Navigation - Horizontal on Tablet */
+  .menu-toggle {
+    display: none;
+  }
+  
+  .main-nav {
+    display: block !important;
+    width: auto;
+    flex-basis: auto;
+    margin-top: 0;
+  }
+  
+  .nav-list {
+    flex-direction: row;
+    gap: var(--spacing-sm);
+  }
+  
+  .header-cta {
+    margin-top: 0;
+    margin-left: var(--spacing-md);
+  }
+  
+  /* Grid Layouts - 2 Columns on Tablet */
+  .grid-3-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-2-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-4-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .location-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 2.75rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+  }
+  
+}
+
+/* ============================================
+   16. DESKTOP BREAKPOINT (1024px+)
+   ============================================ */
+
+@media (min-width: 1024px) {
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2.25rem;
+  }
+  
+  .container {
+    padding: 0 var(--spacing-lg);
+  }
+  
+  /* Grid Layouts - 3-4 Columns on Desktop */
+  .grid-3-col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-4-col {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .location-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.35rem;
+  }
+  
+}
+
+/* ============================================
+   17. PERFORMANCE & ACCESSIBILITY
+   ============================================ */
+
+/* Lazy Loading Images */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+img[loading="lazy"].loaded {
+  opacity: 1;
+}
+
+/* Focus Visible for Accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--accent-orange);
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .site-header,
+  .site-footer,
+  .cta-button,
+  .contact-form {
+    display: none;
+  }
+}

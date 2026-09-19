@@ -1,0 +1,475 @@
+/**
+ * GCM Admin Panel — Complete Mobile Responsive System
+ * Breakpoints: 1024px tablet · 768px mobile-L · 480px mobile · 360px small
+ * Targets all pages using header-new.php + admin-professional-theme.css
+ */
+
+/* ══════════════════════════════════════════════════════
+   SIDEBAR OVERLAY BACKDROP
+   Appears behind sidebar when open on ≤1024px screens
+══════════════════════════════════════════════════════ */
+#sidebarOverlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15,23,42,.65);
+    backdrop-filter: blur(3px);
+    z-index: 999;
+    cursor: pointer;
+    transition: opacity .3s;
+}
+#sidebarOverlay.show { display: block; }
+
+/* Prevent body scroll when sidebar is open */
+body.sidebar-open { overflow: hidden; }
+
+/* ══════════════════════════════════════════════════════
+   GLOBAL OVERFLOW PREVENTION
+   Stops any content from creating horizontal scrollbar
+══════════════════════════════════════════════════════ */
+.admin-main,
+.admin-content,
+.admin-body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* ══════════════════════════════════════════════════════
+   SIDEBAR RESPONSIVE — 1024px for OLD header.php pages
+   (admin.css only hides at 768px; this extends to tablet)
+══════════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+    .admin-sidebar {
+        transform: translateX(-100%);
+        position: fixed;
+        z-index: 1000;
+    }
+    .admin-sidebar.show {
+        transform: translateX(0);
+    }
+    .admin-main {
+        margin-left: 0 !important;
+    }
+    .mobile-sidebar-toggle {
+        display: block !important;
+    }
+}
+
+/* Long URLs and text — break to prevent overflow */
+@media (max-width: 768px) {
+    a, .storage-path, .sm-url, code, pre {
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .admin-content * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* ══════════════════════════════════════════════════════
+   TABLET  ≤ 1024px
+══════════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+
+    /* ── Topbar ── */
+    .admin-topbar {
+        padding: 12px 16px;
+    }
+    .topbar-left h2 {
+        font-size: 1.1rem;
+    }
+    .topbar-right {
+        gap: 10px;
+    }
+    .user-info {
+        display: none; /* hide name/role — keep avatar */
+    }
+    .user-menu-trigger {
+        padding: 6px 8px;
+        gap: 6px;
+    }
+
+    /* ── Content padding ── */
+    .admin-content {
+        padding: 20px 18px;
+    }
+
+    /* ── Stats grid 4→2 cols ── */
+    .stats-grid,
+    .dashboard-stats,
+    .stat-cards {
+        grid-template-columns: repeat(2,1fr) !important;
+        gap: 14px !important;
+    }
+    /* Remove inner dividers when wrapping to 2 rows */
+    .stat-card + .stat-card::before { display: none !important; }
+    .stat-card {
+        border: 1px solid #f1f5f9 !important;
+        border-radius: 14px !important;
+    }
+
+    /* ── Tables — horizontal scroll ── */
+    .table-wrapper,
+    .data-table-wrapper,
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 10px;
+    }
+    .data-table,
+    .table-responsive table,
+    table {
+        min-width: 680px;
+    }
+    .data-table thead th,
+    table thead th {
+        white-space: nowrap;
+    }
+
+    /* ── Cards grid 2 cols ── */
+    .cards-grid {
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+}
+
+/* ══════════════════════════════════════════════════════
+   MOBILE-LARGE  ≤ 768px
+══════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+    /* ── Content padding ── */
+    .admin-content {
+        padding: 14px 12px;
+    }
+
+    /* ── Page header ── */
+    .page-header {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+    .page-header h1,
+    .page-header h2 {
+        font-size: 1.3rem;
+    }
+
+    /* ── Section cards ── */
+    .content-section,
+    .generator-section,
+    .form-section {
+        padding: 16px;
+        border-radius: 14px;
+        margin-bottom: 16px;
+    }
+    .content-section h2,
+    .generator-section h2,
+    .form-section h2 {
+        font-size: 1.1rem;
+    }
+
+    /* ── SEO / Dashboard section cards ── */
+    .seo-section-head { padding: 14px 16px !important; }
+    .seo-section-body { padding: 16px !important; }
+    .seo-section-head h2 { font-size: 16px !important; }
+
+    /* ── Forms ── */
+    .form-grid,
+    .form-row,
+    .form-two-col,
+    .form-three-col {
+        grid-template-columns: 1fr !important;
+        gap: 12px;
+    }
+    .form-group label { font-size: 13px; }
+    /* Prevent iOS auto-zoom on focus */
+    .form-control,
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="search"],
+    select,
+    textarea {
+        font-size: 16px !important;
+        padding: 11px 13px !important;
+    }
+    .form-actions,
+    .header-actions {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .form-actions .btn,
+    .header-actions .btn {
+        flex: 1;
+        min-width: 130px;
+        justify-content: center;
+    }
+
+    /* ── Buttons ── */
+    .btn,
+    .btn-primary,
+    .btn-secondary,
+    .btn-success,
+    .btn-danger,
+    .btn-warning,
+    .generate-btn,
+    button[type="submit"] {
+        padding: 11px 18px;
+        font-size: 13.5px;
+    }
+    .btn-group {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    /* ── Tables ── */
+    .data-table thead th,
+    table thead th {
+        padding: 10px 8px;
+        font-size: 11px;
+    }
+    .data-table tbody td,
+    table tbody td {
+        padding: 9px 8px;
+        font-size: 13px;
+    }
+
+    /* ── Cards ── */
+    .cards-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px;
+    }
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .card-body { padding: 14px; }
+
+    /* ── Modals ── */
+    .modal-content {
+        width: calc(100% - 24px) !important;
+        margin: 12px;
+        max-width: none !important;
+    }
+    .modal-header { padding: 16px 18px; }
+    .modal-body   { padding: 16px 18px; }
+    .modal-footer {
+        flex-direction: column;
+        gap: 8px;
+        padding: 14px 18px;
+    }
+    .modal-footer .btn { width: 100%; justify-content: center; }
+
+    /* ── GCM custom modal ── */
+    .gcm-modal-buttons { flex-direction: column; }
+    .gcm-btn           { width: 100%; justify-content: center; }
+
+    /* ── Filters ── */
+    .filters-row,
+    .filter-bar {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .filter-group,
+    .filter-bar select,
+    .filter-bar input {
+        width: 100%;
+    }
+
+    /* ── Pagination ── */
+    .pagination {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+    .pagination-controls {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    /* ── Tabs ── */
+    .nav-tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+    }
+    .nav-tab {
+        white-space: nowrap;
+        font-size: 13px;
+        padding: 9px 14px;
+    }
+
+    /* ── File upload ── */
+    .file-upload-area { padding: 28px 14px; }
+    .file-upload-text { font-size: 13px; }
+
+    /* ── Charts ── */
+    .chart-container { height: 220px; }
+    canvas            { max-height: 220px; }
+
+    /* ── Footer ── */
+    .admin-footer { padding: 14px; margin-top: 22px; }
+    .footer-content p { font-size: 11px; }
+
+    /* ── Topbar page title clip on very narrow ── */
+    .topbar-left h2 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 180px;
+    }
+}
+
+/* ══════════════════════════════════════════════════════
+   MOBILE  ≤ 480px  (most phones in portrait)
+══════════════════════════════════════════════════════ */
+@media (max-width: 480px) {
+
+    /* ── Content ── */
+    .admin-content { padding: 10px 8px; }
+
+    /* ── Topbar ── */
+    .admin-topbar { padding: 10px 12px; }
+    .topbar-left h2 {
+        font-size: 0.9rem;
+        max-width: 140px;
+    }
+    .topbar-left { gap: 8px; }
+    .topbar-right { gap: 6px; }
+    .topbar-item .btn-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    /* ── Stats grid — keep 2 cols but shrink ── */
+    .stats-grid,
+    .dashboard-stats,
+    .stat-cards {
+        grid-template-columns: repeat(2,1fr) !important;
+        gap: 8px !important;
+    }
+    .stat-card { padding: 14px 10px !important; }
+    .stat-icon-wrap,
+    .stat-card .icon {
+        width: 40px !important; height: 40px !important;
+        font-size: 17px !important; border-radius: 11px !important;
+    }
+    .stat-card .value { font-size: 1.5rem !important; }
+    .stat-card h3     { font-size: 9px !important; }
+    .stat-card .sub   { font-size: 10px !important; }
+
+    /* ── Page header ── */
+    .page-header { padding: 12px; }
+    .page-header h1, .page-header h2 { font-size: 1.1rem; }
+
+    /* ── Section cards ── */
+    .content-section,
+    .generator-section,
+    .form-section {
+        padding: 12px;
+        border-radius: 12px;
+        margin-bottom: 12px;
+    }
+
+    /* ── Modals ── */
+    .modal-content { margin: 8px; width: calc(100% - 16px) !important; }
+    .gcm-modal     { max-width: calc(100% - 16px); margin: 8px; }
+    .gcm-modal-header { padding: 20px 18px 16px; }
+    .gcm-modal-body   { padding: 16px 18px 20px; }
+
+    /* ── Tables ── */
+    .data-table thead th,
+    table thead th { padding: 8px 6px; font-size: 10px; }
+    .data-table tbody td,
+    table tbody td { padding: 8px 6px; font-size: 12px; }
+
+    /* ── Buttons ── */
+    .btn,
+    .btn-primary,
+    .btn-secondary,
+    button[type="submit"],
+    .generate-btn {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+}
+
+/* ══════════════════════════════════════════════════════
+   SMALL PHONES  ≤ 360px
+══════════════════════════════════════════════════════ */
+@media (max-width: 360px) {
+
+    /* Stats: single column */
+    .stats-grid,
+    .dashboard-stats,
+    .stat-cards {
+        grid-template-columns: 1fr !important;
+    }
+    .stat-card { padding: 14px !important; flex-direction: row !important; }
+
+    /* Topbar */
+    .admin-topbar { padding: 8px 10px; }
+    .topbar-left h2 { font-size: 0.85rem; max-width: 120px; }
+
+    .admin-content { padding: 8px 6px; }
+}
+
+/* ══════════════════════════════════════════════════════
+   TOUCH-FRIENDLY TARGETS
+══════════════════════════════════════════════════════ */
+@media (hover: none) and (pointer: coarse) {
+    .sidebar-nav li > a,
+    .nav-category-header {
+        min-height: 46px;
+    }
+    .btn, button {
+        min-height: 44px;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+}
+
+/* ══════════════════════════════════════════════════════
+   LANDSCAPE TABLET (768–1024, landscape)
+══════════════════════════════════════════════════════ */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .admin-sidebar { width: 260px; }
+    .admin-main    { margin-left: 260px; }
+    .admin-sidebar.show ~ .admin-main { margin-left: 0; }
+    .admin-sidebar { transform: translateX(-100%); }
+    .admin-sidebar.show { transform: translateX(0); }
+}
+
+/* ══════════════════════════════════════════════════════
+   PRINT — hide admin chrome
+══════════════════════════════════════════════════════ */
+@media print {
+    .admin-sidebar,
+    .admin-topbar,
+    .admin-footer,
+    #sidebarOverlay,
+    .tip-bar,
+    .mobile-sidebar-toggle,
+    .no-print { display: none !important; }
+    .admin-main  { margin-left: 0 !important; }
+    .admin-content { padding: 0 !important; }
+}
+
+/* ══════════════════════════════════════════════════════
+   REDUCED MOTION
+══════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+    }
+}
