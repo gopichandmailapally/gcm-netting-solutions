@@ -257,11 +257,11 @@ $gcm_custom_jsonld = [
     '@graph' => [
         [
             '@type' => 'WebPage',
-            '@id' => "https://www.gcmsafetynets.in/{$page_slug}#webpage",
-            'url' => "https://www.gcmsafetynets.in/{$page_slug}",
+            '@id' => SITE_URL . "/{$page_slug}#webpage",
+            'url' => SITE_URL . "/{$page_slug}",
             'name' => $page_title,
             'description' => $meta_description,
-            'breadcrumb' => ['@id' => "https://www.gcmsafetynets.in/{$page_slug}#breadcrumb"],
+            'breadcrumb' => ['@id' => SITE_URL . "/{$page_slug}#breadcrumb"],
             'speakable' => [
                 '@type' => 'SpeakableSpecification',
                 'cssSelector' => ['.aeo-quick-answer', '.faq-answer-snippet']
@@ -269,7 +269,7 @@ $gcm_custom_jsonld = [
         ],
         [
             '@type' => 'Service',
-            '@id' => "https://www.gcmsafetynets.in/{$page_slug}#service",
+            '@id' => SITE_URL . "/{$page_slug}#service",
             'name' => "No.1 {$service_name} in {$area_name}, Chennai",
             'serviceType' => $service_name,
             'description' => "Certified {$service_name} installation in {$area_name}, Chennai. Garware UV materials, 5-year written warranty, same-day installation.",
@@ -279,10 +279,10 @@ $gcm_custom_jsonld = [
             ],
             'provider' => [
                 '@type' => 'HomeAndConstructionBusiness',
-                '@id' => 'https://www.gcmsafetynets.in/#organization',
+                '@id' => SITE_URL . '/#organization',
                 'name' => 'GCM Netting Solutions',
                 'telephone' => '+91-9912399224',
-                'url' => 'https://www.gcmsafetynets.in',
+                'url' => SITE_URL,
                 'priceRange' => '₹₹',
                 'award' => 'Ranked #1 Safety Nets Installation Provider in Chennai (15+ Years Experience, 10,000+ Customers, 4.9 Star Rating)',
                 'address' => [
@@ -317,36 +317,36 @@ $gcm_custom_jsonld = [
                     'unitText' => 'SQFT'
                 ],
                 'availability' => 'https://schema.org/InStock',
-                'url' => "https://www.gcmsafetynets.in/{$page_slug}"
+                'url' => SITE_URL . "/{$page_slug}"
             ]
         ],
         [
             '@type' => 'BreadcrumbList',
-            '@id' => "https://www.gcmsafetynets.in/{$page_slug}#breadcrumb",
+            '@id' => SITE_URL . "/{$page_slug}#breadcrumb",
             'itemListElement' => [
                 [
                     '@type' => 'ListItem',
                     'position' => 1,
                     'name' => 'Home',
-                    'item' => 'https://www.gcmsafetynets.in/'
+                    'item' => SITE_URL . '/'
                 ],
                 [
                     '@type' => 'ListItem',
                     'position' => 2,
                     'name' => 'Services',
-                    'item' => 'https://www.gcmsafetynets.in/services'
+                    'item' => SITE_URL . '/services'
                 ],
                 [
                     '@type' => 'ListItem',
                     'position' => 3,
                     'name' => "{$service_name} in {$area_name}",
-                    'item' => "https://www.gcmsafetynets.in/{$page_slug}"
+                    'item' => SITE_URL . "/{$page_slug}"
                 ]
             ]
         ],
         [
             '@type' => 'FAQPage',
-            '@id' => "https://www.gcmsafetynets.in/{$page_slug}#faq",
+            '@id' => SITE_URL . "/{$page_slug}#faq",
             'mainEntity' => $faq_schema_items
         ]
     ]

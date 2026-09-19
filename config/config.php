@@ -44,10 +44,9 @@ define('DB_NAME', 'gcmsafetynets_db');
 define('DB_CHARSET', 'utf8mb4');
 
 // Site Configuration - Auto-detect URL
-if ($is_local) {
-    $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
-    $host = $_SERVER['HTTP_HOST'] ?? 'localhost:8080';
-    define('SITE_URL', $protocol . '://' . $host);
+if (!empty($_SERVER['HTTP_HOST'])) {
+    $protocol = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && strtolower($_SERVER['HTTP_X_FORWARDED_PROTO']) === 'https')) ? 'https' : 'http';
+    define('SITE_URL', $protocol . '://' . $_SERVER['HTTP_HOST']);
 } else {
     define('SITE_URL', 'https://www.gcmsafetynets.in');
 }
