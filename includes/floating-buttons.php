@@ -14,18 +14,29 @@ define('GCM_FLOATING_BUTTONS_RENDERED', true);
 
 require_once __DIR__ . '/whatsapp_helper.php';
 
-$phone_number = defined('COMPANY_PHONE') ? COMPANY_PHONE : '9912399224';
-$whatsapp_num = defined('COMPANY_WHATSAPP') ? COMPANY_WHATSAPP : '919912399224';
-$smart_wa_url = getGcmWhatsAppUrl();
+// Safe normalization without character mask stripping bugs
+$raw_phone = defined('COMPANY_PHONE') ? (string)COMPANY_PHONE : '9912399224';
+$clean_digits = preg_replace('/[^0-9]/', '', $raw_phone);
+if (strlen($clean_digits) === 12 && substr($clean_digits, 0, 2) === '91') {
+    $clean_digits = substr($clean_digits, 2);
+}
+if (strlen($clean_digits) !== 10) {
+    $clean_digits = '9912399224';
+}
+
+$phone_call_href = 'tel:+91' . $clean_digits;
+$phone_display   = '+91 99123 99224';
+$whatsapp_num    = defined('COMPANY_WHATSAPP') ? COMPANY_WHATSAPP : '919912399224';
+$smart_wa_url    = getGcmWhatsAppUrl();
 ?>
 
 <!-- GCM Netting Solutions - Exactly 3 Floating Action Buttons -->
 <div class="gcm-floating-actions" id="gcmFloatingActions" aria-label="Quick Contact Options">
     <!-- 1. Phone Call Button -->
-    <a href="tel:+91<?php echo ltrim($phone_number, '+91'); ?>" 
+    <a href="<?php echo $phone_call_href; ?>" 
        class="gcm-fab gcm-fab-phone" 
-       title="Call Us (+91 <?php echo $phone_number; ?>)"
-       aria-label="Call Us (+91 <?php echo $phone_number; ?>)">
+       title="Call Us (<?php echo $phone_display; ?>)"
+       aria-label="Call Us (<?php echo $phone_display; ?>)">
         <i class="fas fa-phone-alt"></i>
         <span class="gcm-fab-tooltip">Call Us</span>
     </a>
@@ -305,7 +316,7 @@ $smart_wa_url = getGcmWhatsAppUrl();
                   '• Website: www.gcmnettingsolutions.com\n\n' +
                   pricingText;
                   
-        var targetPhone = '<?php echo ltrim($whatsapp_num, "+"); ?>';
+        var targetPhone = '<?php echo preg_replace("/[^0-9]/", "", $whatsapp_num); ?>';
         window.open('https://wa.me/' + targetPhone + '?text=' + encodeURIComponent(msg), '_blank');
     });
 })();

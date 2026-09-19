@@ -147,7 +147,7 @@
 <h2>Ready to Get Started with Your Project?</h2>
 <p>Use our <strong>free price calculator</strong> for instant estimation or contact experts for personalized quotation.</p>
 <div class="cta-buttons-row">
-<a href="tel:<?php echo COMPANY_PHONE; ?>" class="cta-btn btn-call"><i class="fas fa-phone-alt"></i> Call for Quote</a>
+<a href="tel:+91<?php echo COMPANY_PHONE; ?>" class="cta-btn btn-call"><i class="fas fa-phone-alt"></i> Call: +91 99123 99224</a>
 <a href="<?php require_once __DIR__ . '/whatsapp_helper.php'; echo getGcmWhatsAppUrl(); ?>" class="cta-btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Now</a>
 </div>
 <div class="trust-badges">

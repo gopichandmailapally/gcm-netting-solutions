@@ -47,8 +47,8 @@ include 'includes/modern-header.php';
                             <i class="fas fa-phone"></i>
                         </div>
                         <h3>Call Us</h3>
-                        <a href="tel:<?php echo COMPANY_PHONE; ?>" class="info-link">
-                            +91-<?php echo COMPANY_PHONE; ?>
+                        <a href="tel:+91<?php echo COMPANY_PHONE; ?>" class="info-link">
+                            +91 99123 99224
                         </a>
                         <p>Mon - Sun: 8:00 AM - 8:00 PM</p>
                     </div>
@@ -59,8 +59,8 @@ include 'includes/modern-header.php';
                             <i class="fab fa-whatsapp"></i>
                         </div>
                         <h3>WhatsApp</h3>
-                        <a href="https://wa.me/<?php echo COMPANY_WHATSAPP; ?>?text=Hi, I'm interested in your safety net services" class="info-link" target="_blank">
-                            +91-<?php echo COMPANY_PHONE; ?>
+                        <a href="<?php require_once __DIR__ . '/includes/whatsapp_helper.php'; echo getGcmWhatsAppUrl(); ?>" class="info-link" target="_blank">
+                            +91 99123 99224
                         </a>
                         <p>Quick Response Guaranteed</p>
                     </div>

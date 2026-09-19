@@ -93,8 +93,8 @@ include 'includes/modern-header.php';
                         <h3>Need Immediate Assistance?</h3>
                         <p>If you have an urgent requirement, feel free to contact us directly</p>
                         <div class="urgent-buttons">
-                            <a href="tel:<?php echo COMPANY_PHONE; ?>" class="btn btn-primary">
-                                <i class="fas fa-phone"></i> Call Now
+                            <a href="tel:+91<?php echo COMPANY_PHONE; ?>" class="btn btn-primary">
+                                <i class="fas fa-phone"></i> Call: +91 99123 99224
                             </a>
                             <a href="https://wa.me/<?php echo COMPANY_WHATSAPP; ?>" class="btn btn-success" target="_blank">
                                 <i class="fab fa-whatsapp"></i> WhatsApp Us

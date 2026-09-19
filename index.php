@@ -928,8 +928,8 @@ function toggleFAQ(button) {
                 <h2>Ready to Secure Your Space?</h2>
                 <p>Get professional installation services across Chennai. Free consultation & quotation!</p>
                 <div class="cta-buttons">
-                    <a href="tel:<?php echo COMPANY_PHONE; ?>" class="btn btn-white btn-large">
-                        <i class="fas fa-phone"></i> Call <?php echo COMPANY_PHONE; ?>
+                    <a href="tel:+91<?php echo COMPANY_PHONE; ?>" class="btn btn-white btn-large">
+                        <i class="fas fa-phone"></i> Call +91 99123 99224
                     </a>
                     <a href="https://wa.me/<?php echo COMPANY_WHATSAPP; ?>" class="btn btn-success btn-large" target="_blank">
                         <i class="fab fa-whatsapp"></i> WhatsApp Us

@@ -525,8 +525,8 @@ include 'includes/modern-header.php';
                 <h3>Need Help with Estimation?</h3>
                 <p>Our experts are here to help you with accurate measurements and pricing</p>
                 <div class="cta-buttons">
-                    <a href="tel:<?php echo COMPANY_PHONE; ?>" class="btn btn-primary">
-                        <i class="fas fa-phone"></i> Call <?php echo COMPANY_PHONE; ?>
+                    <a href="tel:+91<?php echo COMPANY_PHONE; ?>" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Call +91 99123 99224
                     </a>
                     <a href="https://wa.me/<?php echo COMPANY_WHATSAPP; ?>" class="btn btn-success" target="_blank">
                         <i class="fab fa-whatsapp"></i> WhatsApp Us

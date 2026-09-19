@@ -252,7 +252,7 @@ include 'includes/modern-header.php';
                 <div style="background: #F8FAFC; padding: 30px; border-radius: 12px; margin-top: 20px;">
                     <p style="font-size: 16px; color: #1E293B; margin-bottom: 10px;"><strong><?php echo COMPANY_NAME; ?></strong></p>
                     <p style="font-size: 15px; color: #475569; margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="color: #0066CC; width: 20px;"></i> <?php echo COMPANY_ADDRESS; ?></p>
-                    <p style="font-size: 15px; color: #475569; margin-bottom: 8px;"><i class="fas fa-phone" style="color: #0066CC; width: 20px;"></i> +91-<?php echo COMPANY_PHONE; ?></p>
+                    <p style="font-size: 15px; color: #475569; margin-bottom: 8px;"><i class="fas fa-phone" style="color: #0066CC; width: 20px;"></i> +91 99123 99224</p>
                     <p style="font-size: 15px; color: #475569; margin-bottom: 8px;"><i class="fas fa-envelope" style="color: #0066CC; width: 20px;"></i> <?php echo COMPANY_EMAIL; ?></p>
                     <p style="font-size: 15px; color: #475569; margin-bottom: 0;"><i class="fas fa-clock" style="color: #0066CC; width: 20px;"></i> Mon - Sun: 8:00 AM - 8:00 PM</p>
                 </div>

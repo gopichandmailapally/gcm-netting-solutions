@@ -71,7 +71,7 @@
                             </li>
                             <li>
                                 <i class="fas fa-phone"></i>
-                                <a href="tel:<?php echo COMPANY_PHONE; ?>">+91-<?php echo COMPANY_PHONE; ?></a>
+                                <a href="tel:+91<?php echo COMPANY_PHONE; ?>">+91 99123 99224</a>
                             </li>
                             <li>
                                 <i class="fas fa-envelope"></i>

@@ -94,8 +94,8 @@ if (!defined('GCM_INIT')) {
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
-                    <a href="tel:<?php echo COMPANY_PHONE; ?>">
-                        <?php echo COMPANY_PHONE; ?>
+                    <a href="tel:+91<?php echo COMPANY_PHONE; ?>">
+                        +91 99123 99224
                     </a>
                 </div>
                 <div class="contact-item">
