@@ -12,6 +12,7 @@ require_once __DIR__ . '/seo-engine.php';
 <html lang="en">
 <head>
     <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="LM3-QQv_gwEmLfFxVrcOfu3mtxPhG2CUQm4ncsYksG4" />
     <meta name="google-site-verification" content="z3sEDC2o67dDvLFf6Gv8c0oQd9sepeHfXF-rpNw_ZNA" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
