@@ -12,6 +12,9 @@
                             <h3><?php echo COMPANY_NAME; ?></h3>
                         </div>
                         <p><?php echo SITE_TAGLINE; ?></p>
+                        <p style="font-size: 13px; color: #10B981; font-weight: 600; margin: 8px 0 14px;">
+                            <i class="fas fa-shield-alt"></i> Authorised Dealers in <a href="https://www.russea.in" target="_blank" rel="noopener noreferrer" style="color: #10B981; text-decoration: underline;" title="Russea™ Branded Nets">Russea™ Branded Nets</a>
+                        </p>
                         <div class="footer-social">
                             <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                             <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>

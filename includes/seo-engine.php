@@ -130,6 +130,11 @@ function gcm_render_seo_head() {
           },
           "award": "Ranked #1 Safety Nets Installation Company in Chennai (15+ Years Experience, 10,000+ Completed Projects)",
           "foundingDate": "2010",
+          "brand": {
+            "@type": "Brand",
+            "name": "Russea™ Branded Nets",
+            "url": "https://www.russea.in"
+          },
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Comprehensive Safety Netting Services",

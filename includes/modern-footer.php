@@ -52,6 +52,7 @@ html,body{margin:0!important;padding:0!important;overflow-x:hidden!important;}
                 <div class="footer-certifications">
                     <span class="cert-badge"><i class="fas fa-certificate"></i> ISO Certified</span>
                     <span class="cert-badge"><i class="fas fa-award"></i> Quality Assured</span>
+                    <a href="https://www.russea.in" target="_blank" rel="noopener noreferrer" class="cert-badge" style="text-decoration:none;color:inherit;" title="Official Authorized Dealer in Russea™ Branded Nets"><i class="fas fa-shield-alt" style="color:#10B981;"></i> Authorised Russea™ Dealer</a>
                 </div>
                 <div class="footer-social">
                     <a href="#" class="social-link facebook" aria-label="Facebook">

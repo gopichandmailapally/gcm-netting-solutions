@@ -64,12 +64,12 @@ include 'includes/modern-header.php';
                     
                     <p><?php echo nl2br(htmlspecialchars($about_content['company_description'])); ?></p>
                     
-                    <p>Our commitment to quality, customer satisfaction, and professional service has made us the preferred choice for thousands of customers across Chennai. With a team of experienced professionals and premium quality materials, we ensure the safety and security of your property.</p>
+                    <p>Our commitment to quality, customer satisfaction, and professional service has made us the preferred choice for thousands of customers across Chennai. With a team of experienced professionals and authentic <a href="https://www.russea.in" target="_blank" rel="noopener noreferrer" style="color: #10B981; font-weight: 600; text-decoration: underline;">Russea™ Branded Nets</a>, we ensure the highest grade safety and security of your property.</p>
                     
                     <div class="key-points">
                         <div class="point">
                             <i class="fas fa-check-circle"></i>
-                            <span>Premium HDPE nets with UV protection</span>
+                            <span>Authorised <a href="https://www.russea.in" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Russea™</a> Virgin HDPE nets with UV protection</span>
                         </div>
                         <div class="point">
                             <i class="fas fa-check-circle"></i>
@@ -156,8 +156,8 @@ include 'includes/modern-header.php';
                     <div class="feature-icon">
                         <i class="fas fa-certificate"></i>
                     </div>
-                    <h4>Quality Materials</h4>
-                    <p>We use only premium HDPE nets with UV protection and weather resistance, ensuring long-lasting durability.</p>
+                    <h4>Authorised Russea™ Nets</h4>
+                    <p>We are authorized dealers in genuine <a href="https://www.russea.in" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; font-weight: 600;">Russea™ Branded Nets</a>, using only premium UV-treated materials ensuring long-lasting durability.</p>
                 </div>
                 
                 <div class="feature-box">

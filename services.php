@@ -205,10 +205,11 @@ include 'includes/modern-header.php';
 
         <!-- Trust badges -->
         <div class="trust-bar">
+            <div class="trust-item"><i class="fas fa-certificate" style="color:#10b981;"></i> <a href="https://www.russea.in" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">Authorised <span style="color:#10b981;font-weight:700;text-decoration:underline;">Russea™</span> Dealer</a></div>
             <div class="trust-item"><i class="fas fa-star"></i> 15+ Years Experience</div>
             <div class="trust-item"><i class="fas fa-users"></i> 10,000+ Happy Customers</div>
             <div class="trust-item"><i class="fas fa-map-marker-alt"></i> 188+ Locations Covered</div>
-            <div class="trust-item"><i class="fas fa-shield-alt"></i> 1-Year Installation Warranty</div>
+            <div class="trust-item"><i class="fas fa-shield-alt"></i> 5-Year Net Warranty</div>
             <div class="trust-item"><i class="fas fa-clock"></i> Same-Day Service Available</div>
         </div>
 

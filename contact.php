@@ -240,8 +240,8 @@ include 'includes/modern-header.php';
                                         <i class="fas fa-check-circle"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h4>Quality Materials</h4>
-                                        <p>Premium HDPE nets with UV protection</p>
+                                        <h4>Authorised Russea™ Nets</h4>
+                                        <p>Authentic <a href="https://www.russea.in" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; font-weight: 600;">Russea™ Branded Nets</a> with UV protection</p>
                                     </div>
                                 </div>
                                 

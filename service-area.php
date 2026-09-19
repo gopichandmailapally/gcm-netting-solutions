@@ -275,7 +275,8 @@ $gcm_custom_jsonld = [
             'description' => "Certified {$service_name} installation in {$area_name}, Chennai. Authorized Russea™ Branded UV materials, 5-year written warranty, same-day installation.",
             'brand' => [
                 '@type' => 'Brand',
-                'name' => 'Russea™ Branded Nets (Top Quality Netting Brand)'
+                'name' => 'Russea™ Branded Nets (Top Quality Netting Brand)',
+                'url' => 'https://www.russea.in'
             ],
             'provider' => [
                 '@type' => 'HomeAndConstructionBusiness',
@@ -413,7 +414,7 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
 
     <!-- Trust Badges -->
     <div style="display:flex;gap:24px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.18);padding-top:20px;">
-      <span style="color:rgba(255,255,255,.95);font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;"><i class="fas fa-certificate" style="color:#10B981;"></i> Authorised Russea™ Dealer</span>
+      <span style="color:rgba(255,255,255,.95);font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;"><i class="fas fa-certificate" style="color:#10B981;"></i> <a href="https://www.russea.in" target="_blank" rel="noopener noreferrer" style="color:#ffffff;text-decoration:underline;" title="Official Authorized Dealer in Russea™ Branded Nets">Authorised Russea™ Dealer</a></span>
       <span style="color:rgba(255,255,255,.95);font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;"><i class="fas fa-shield-alt" style="color:#10B981;"></i> 5-Year Written Warranty</span>
       <span style="color:rgba(255,255,255,.95);font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;"><i class="fas fa-clock" style="color:#10B981;"></i> 60-Min Inspection in <?php echo $area_name; ?></span>
       <span style="color:rgba(255,255,255,.95);font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;"><i class="fas fa-star" style="color:#F59E0B;"></i> 4.9/5 Rated (1,280+ Reviews)</span>
@@ -471,7 +472,7 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
               <tbody>
                 <tr style="border-bottom:1px solid #e2e8f0;">
                   <td style="padding:12px 16px;font-weight:600;">Netting Material</td>
-                  <td style="padding:12px 16px;background:#f0fdf4;color:#15803d;font-weight:700;">100% Virgin Russea™ High-Density Nylon (Top Quality Certified)</td>
+                  <td style="padding:12px 16px;background:#f0fdf4;color:#15803d;font-weight:700;">100% Virgin <a href="https://www.russea.in" target="_blank" rel="noopener noreferrer" style="color:#15803d;text-decoration:underline;" title="Russea™ Branded Nets">Russea™</a> High-Density Nylon (Top Quality Certified)</td>
                   <td style="padding:12px 16px;color:#64748b;">Recycled or low-grade plastic (rots in sun within 6-12 months)</td>
                 </tr>
                 <tr style="border-bottom:1px solid #e2e8f0;background:#fafafa;">

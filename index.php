@@ -237,8 +237,8 @@ $_generic = 'Professional installation services across Chennai';
                     </div>
                     <div class="highlight-card">
                         <div class="highlight-icon" style="background: #10b981;"><i class="fas fa-certificate"></i></div>
-                        <h4 class="highlight-title">Quality Materials</h4>
-                        <p class="highlight-description">Premium grade with 5-year warranty</p>
+                        <h4 class="highlight-title">Russea™ Branded Nets</h4>
+                        <p class="highlight-description">Authorised dealers in <a href="https://www.russea.in" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Russea™</a> with 5-yr warranty</p>
                     </div>
                     <div class="highlight-card">
                         <div class="highlight-icon" style="background: #f59e0b;"><i class="fas fa-user-check"></i></div>
@@ -275,7 +275,7 @@ $_generic = 'Professional installation services across Chennai';
         <span><i class="fas fa-shield-alt"></i> Quality Guaranteed</span>
         <span><i class="fas fa-tools"></i> Professional Installation</span>
         <span><i class="fas fa-headset"></i> 24/7 Customer Support</span>
-        <span><i class="fas fa-certificate"></i> Certified Materials</span>
+        <span><i class="fas fa-certificate"></i> Authorised <a href="https://www.russea.in" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Russea™</a> Dealer</span>
         <span><i class="fas fa-rupee-sign"></i> Affordable Pricing</span>
         <span><i class="fas fa-map-marker-alt"></i> All Over Chennai</span>
     </div>
@@ -302,8 +302,8 @@ $_generic = 'Professional installation services across Chennai';
                 <div class="highlight-icon">
                     <i class="fas fa-certificate"></i>
                 </div>
-                <h3>Quality Materials</h3>
-                <p>Premium HDPE nets with UV protection and weather resistance</p>
+                <h3>Authorised Russea™ Nets</h3>
+                <p>Authentic 100% Virgin <a href="https://www.russea.in" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Russea™ Branded Nets</a> with UV protection & 5-year warranty</p>
             </div>
             
             <div class="highlight-card">
@@ -879,7 +879,7 @@ $_generic = 'Professional installation services across Chennai';
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>We use premium quality HDPE (High-Density Polyethylene) nets with UV protection and weather resistance. All materials are certified and long-lasting.</p>
+                        <p>We are authorized dealers in genuine <a href="https://www.russea.in" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color, #10b981); font-weight: 600; text-decoration: underline;">Russea™ Branded Nets</a>, utilizing 100% Virgin HDPE (High-Density Polyethylene) and high-tensile translucent nylon with UV-stabilization and ISO certification for maximum durability.</p>
                     </div>
                 </div>
                 
