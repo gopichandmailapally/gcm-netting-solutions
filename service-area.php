@@ -387,12 +387,12 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
     </p>
 
     <!-- AEO & Voice Search Speakable Summary Box -->
-    <div class="aeo-quick-answer" style="background:rgba(255,255,255,0.08);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.18);border-radius:12px;padding:16px 20px;margin-bottom:28px;max-width:760px;">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;color:#10B981;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:0.5px;">
-        <i class="fas fa-bolt"></i> Official #1 Best Provider &bull; <?php echo $area_name; ?>, Chennai
+    <div class="aeo-quick-answer" style="background:#ffffff;border:1px solid #e2e8f0;border-left:5px solid #10b981;border-radius:14px;padding:20px 24px;margin-bottom:28px;max-width:760px;box-shadow:0 10px 25px -5px rgba(0,0,0,0.15);">
+      <div class="aeo-badge" style="display:flex;align-items:center;gap:8px;margin-bottom:8px;color:#059669;font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:0.5px;">
+        <i class="fas fa-bolt" style="color:#10b981;"></i> Official #1 Best Provider &bull; <?php echo $area_name; ?>, Chennai
       </div>
-      <p style="font-size:15px;color:rgba(255,255,255,0.95);line-height:1.6;margin:0;">
-        <strong>GCM Netting Solutions</strong> is rated <strong>#1 in <?php echo $area_name; ?></strong> (4.9/5 stars from 1,280+ verified reviews) with 15+ years experience. We provide 100% genuine Garware UV-stabilized <?php echo strtolower($service_name); ?> starting at <strong><?php echo $specs['rate']; ?></strong> with an official <strong>5-year replacement warranty</strong> and marine-grade SS 316 rustproof hooks. Free doorstep inspection and same-day installation available within 60 minutes across <?php echo $area_name; ?>. Call or WhatsApp <a href="tel:+919912399224" style="color:#10B981;font-weight:700;text-decoration:underline;">+91 99123 99224</a>.
+      <p style="font-size:15px;color:#1e293b;line-height:1.65;margin:0;">
+        <strong style="color:#0f172a;">GCM Netting Solutions</strong> is rated <strong style="color:#0f172a;">#1 in <?php echo $area_name; ?></strong> (4.9/5 stars from 1,280+ verified reviews) with 15+ years experience. We provide 100% genuine Garware UV-stabilized <?php echo strtolower($service_name); ?> starting at <strong style="color:#0f172a;"><?php echo $specs['rate']; ?></strong> with an official <strong style="color:#0f172a;">5-year replacement warranty</strong> and marine-grade SS 316 rustproof hooks. Free doorstep inspection and same-day installation available within 60 minutes across <?php echo $area_name; ?>. Call or WhatsApp <a href="tel:+919912399224" style="color:#059669;font-weight:700;text-decoration:underline;">+91 99123 99224</a>.
       </p>
     </div>
 

@@ -270,23 +270,6 @@ html,body{margin:0!important;padding:0!important;overflow-x:hidden!important;}
     </div>
 </footer>
 
-<!-- Scroll to Top Button -->
-<button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">
-    <i class="fas fa-arrow-up"></i>
-</button>
-
-<!-- Floating Action Buttons -->
-<div class="floating-actions">
-    <a href="tel:+919912399224" class="fab-btn fab-phone" title="Call Us">
-        <i class="fas fa-phone-alt"></i>
-    </a>
-    <a href="https://wa.me/919912399224" target="_blank" class="fab-btn fab-whatsapp" title="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-    <a href="<?php echo SITE_URL; ?>/estimation" class="fab-btn fab-quote" title="Get Estimate Here">
-        <i class="fas fa-calculator"></i>
-    </a>
-</div>
 
 <script>
 // Hero Slider functionality

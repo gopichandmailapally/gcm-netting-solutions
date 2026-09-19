@@ -125,5 +125,12 @@
         gtag('js', new Date());
         gtag('config', 'G-XXXXXXXXXX');
     </script>
+    
+    <!-- Unified Floating Action Buttons (Exactly 3) -->
+    <?php 
+    if (file_exists(__DIR__ . '/floating-buttons.php')) {
+        include __DIR__ . '/floating-buttons.php';
+    }
+    ?>
 </body>
 </html>

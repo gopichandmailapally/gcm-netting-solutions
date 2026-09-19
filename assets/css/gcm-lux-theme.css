@@ -294,11 +294,41 @@ h1, h2, h3, h4, h5, h6, .hero-slider h1, .section-title, .service-card h3 {
    6. DYNAMIC SERVICE AREA PAGE OVERRIDES
    ========================================================================== */
 .aeo-quick-answer {
-    background: linear-gradient(145deg, #ffffff 0%, #f0fdf4 100%) !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
     border-left: 5px solid #10b981 !important;
     border-radius: 16px !important;
-    box-shadow: 0 12px 30px -8px rgba(16, 185, 129, 0.15) !important;
-    padding: 24px !important;
+    box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.12) !important;
+    padding: 22px 26px !important;
+    margin-bottom: 28px !important;
+}
+
+.aeo-quick-answer .aeo-badge,
+.aeo-quick-answer > div:first-child {
+    color: #059669 !important;
+    font-weight: 800 !important;
+    font-size: 13px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+.aeo-quick-answer p,
+.aeo-quick-answer .aeo-text {
+    color: #1e293b !important;
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+    margin: 0 !important;
+}
+
+.aeo-quick-answer strong {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+}
+
+.aeo-quick-answer a {
+    color: #059669 !important;
+    font-weight: 700 !important;
+    text-decoration: underline !important;
 }
 
 .gcm-geo-table {
@@ -359,4 +389,13 @@ h1, h2, h3, h4, h5, h6, .hero-slider h1, .section-title, .service-card h3 {
     border-color: rgba(37, 99, 235, 0.4) !important;
     color: #ffffff !important;
     transform: translateX(4px) !important;
+}
+
+/* Ensure only the unified 3 floating contact buttons are shown */
+.floating-actions,
+.scroll-to-top,
+.floating-buttons:not(.gcm-floating-actions) {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
 }

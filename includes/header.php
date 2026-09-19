@@ -136,8 +136,5 @@ if (!defined('GCM_INIT')) {
         </div>
     </header>
     
-    <!-- Floating Action Buttons -->
-    <?php include 'floating-buttons.php'; ?>
-    
     <!-- Main Content -->
     <main class="site-content">
