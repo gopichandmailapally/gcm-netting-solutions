@@ -61,6 +61,7 @@ include 'includes/modern-header.php';
 <!-- Improved Homepage CSS -->
 <link rel="stylesheet" href="assets/css/homepage-improved.css">
 <link rel="stylesheet" href="assets/css/service-highlights.css">
+<link rel="stylesheet" href="assets/css/gcm-lux-theme.css?v=2">
 
 <?php
 // Unique subtitle for each hero slide.

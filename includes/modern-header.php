@@ -51,6 +51,7 @@ require_once __DIR__ . '/seo-engine.php';
     <link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/success-popup.css?v=<?php echo filemtime($cssDir.'success-popup.css'); ?>">
     <link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/gcm-fonts.css?v=<?php echo filemtime($cssDir.'gcm-fonts.css'); ?>">
     <link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/gcm-service-pages.css?v=<?php echo filemtime($cssDir.'gcm-service-pages.css'); ?>">
+    <link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/gcm-lux-theme.css?v=<?php echo filemtime($cssDir.'gcm-lux-theme.css'); ?>">
     
     <?php
     // Include additional CSS if specified

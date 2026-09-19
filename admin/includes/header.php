@@ -36,6 +36,7 @@ $billingPath = $inSubfolder ? ($inBillingFolder ? '' : '../billing/') : 'billing
     <link rel="stylesheet" href="<?php echo $adminPath; ?>assets/css/admin-enhanced-modern.css?v=2">
     <link rel="stylesheet" href="<?php echo $adminPath; ?>assets/css/admin-accordion-sidebar.css?v=2">
     <link rel="stylesheet" href="<?php echo $adminPath; ?>assets/css/admin-mobile-responsive.css">
+    <link rel="stylesheet" href="<?php echo $adminPath; ?>assets/css/admin-lux-executive.css?v=2">
     <link rel="stylesheet" href="<?php echo $baseUrl; ?>assets/css/custom-alerts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">

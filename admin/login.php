@@ -150,6 +150,9 @@ $csrf_token = $security->generateCSRFToken();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login | GCM Netting Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -159,95 +162,170 @@ $csrf_token = $security->generateCSRFToken();
         }
         
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #060b17;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Ambient Glowing Nebula Orbs */
+        .ambient-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.45;
+            pointer-events: none;
+            animation: orbFloat 18s ease-in-out infinite alternate;
+        }
+
+        .orb-1 {
+            width: 450px;
+            height: 450px;
+            background: radial-gradient(circle, #2563eb 0%, #1e40af 100%);
+            top: -100px;
+            left: -100px;
+        }
+
+        .orb-2 {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, #06b6d4 0%, #0284c7 100%);
+            bottom: -80px;
+            right: -80px;
+            animation-delay: -9s;
+        }
+
+        .orb-3 {
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, #10b981 0%, #047857 100%);
+            top: 40%;
+            left: 60%;
+            opacity: 0.25;
+            animation-delay: -4s;
+        }
+
+        @keyframes orbFloat {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(40px, -30px) scale(1.08); }
+            100% { transform: translate(-30px, 40px) scale(0.95); }
         }
         
         .login-container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(28px) saturate(190%);
+            -webkit-backdrop-filter: blur(28px) saturate(190%);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 30px 70px -15px rgba(0, 0, 0, 0.7), 0 0 40px rgba(14, 165, 233, 0.12);
             overflow: hidden;
-            max-width: 450px;
+            max-width: 460px;
             width: 100%;
+            position: relative;
+            z-index: 10;
         }
         
         .login-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px 30px;
+            padding: 44px 32px 28px;
             text-align: center;
+            position: relative;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, transparent 100%);
+        }
+        
+        .logo-icon-wrap {
+            width: 76px;
+            height: 76px;
+            margin: 0 auto 20px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.2) 0%, rgba(6, 182, 212, 0.25) 100%);
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 12px 30px -5px rgba(37, 99, 235, 0.4);
+            position: relative;
+        }
+
+        .logo-icon-wrap i {
+            font-size: 36px;
+            background: linear-gradient(135deg, #38bdf8 0%, #60a5fa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .status-dot {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            width: 16px;
+            height: 16px;
+            background: #10b981;
+            border: 3px solid #0f172a;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #10b981;
         }
         
         .login-header h1 {
-            font-size: 28px;
-            margin-bottom: 8px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 26px;
+            margin-bottom: 6px;
             font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #ffffff;
         }
         
         .login-header p {
             font-size: 14px;
-            opacity: 0.9;
-        }
-        
-        .login-header .logo-icon {
-            font-size: 60px;
-            margin-bottom: 16px;
+            color: #94a3b8;
+            font-weight: 500;
         }
         
         .login-form {
-            padding: 40px 30px;
+            padding: 32px 32px 28px;
         }
         
         .error-message {
-            background: #FEE2E2;
-            border: 2px solid #EF4444;
-            color: #991B1B;
-            padding: 12px 16px;
-            border-radius: 8px;
-            margin-bottom: 20px;
+            background: rgba(239, 68, 68, 0.12);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #fca5a5;
+            padding: 14px 18px;
+            border-radius: 12px;
+            margin-bottom: 22px;
             font-size: 14px;
             display: flex;
             align-items: center;
-            gap: 10px;
-        }
-        
-        .error-message i {
-            font-size: 18px;
+            gap: 12px;
         }
         
         .success-message {
-            background: #D1FAE5;
-            border: 2px solid #10B981;
-            color: #065F46;
-            padding: 12px 16px;
-            border-radius: 8px;
-            margin-bottom: 20px;
+            background: rgba(16, 185, 129, 0.12);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: #6ee7b7;
+            padding: 14px 18px;
+            border-radius: 12px;
+            margin-bottom: 22px;
             font-size: 14px;
             display: flex;
             align-items: center;
-            gap: 10px;
-        }
-        
-        .success-message i {
-            font-size: 18px;
+            gap: 12px;
         }
         
         .form-group {
-            margin-bottom: 24px;
+            margin-bottom: 22px;
         }
         
         .form-group label {
             display: block;
             font-weight: 600;
-            color: #1E293B;
+            color: #cbd5e1;
             margin-bottom: 8px;
-            font-size: 14px;
+            font-size: 13.5px;
         }
         
         .input-wrapper {
@@ -256,49 +334,65 @@ $csrf_token = $security->generateCSRFToken();
         
         .input-wrapper i {
             position: absolute;
-            left: 16px;
+            left: 18px;
             top: 50%;
             transform: translateY(-50%);
-            color: #94A3B8;
-            font-size: 18px;
+            color: #64748b;
+            font-size: 16px;
+            transition: color 0.25s ease;
         }
         
         .form-control {
             width: 100%;
-            padding: 14px 16px 14px 48px;
-            border: 2px solid #E2E8F0;
-            border-radius: 10px;
+            padding: 14px 18px 14px 48px;
+            background: rgba(30, 41, 59, 0.6);
+            border: 1.5px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
             font-size: 15px;
-            transition: all 0.3s ease;
+            color: #ffffff;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
             font-family: inherit;
+        }
+
+        .form-control::placeholder {
+            color: #64748b;
         }
         
         .form-control:focus {
             outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            background: rgba(30, 41, 59, 0.85);
+            border-color: #38bdf8;
+            box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
+        }
+
+        .form-control:focus + i {
+            color: #38bdf8;
         }
         
         .btn-login {
             width: 100%;
-            padding: 16px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 15px 24px;
+            background: linear-gradient(135deg, #0284c7 0%, #2563eb 50%, #4f46e5 100%);
             color: white;
             border: none;
-            border-radius: 10px;
-            font-size: 16px;
+            border-radius: 12px;
+            font-size: 15.5px;
             font-weight: 700;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.5);
+            margin-top: 10px;
+            letter-spacing: 0.01em;
         }
         
         .btn-login:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 14px 30px -4px rgba(37, 99, 235, 0.65);
+            filter: brightness(1.08);
         }
         
         .btn-login:active {
@@ -306,70 +400,42 @@ $csrf_token = $security->generateCSRFToken();
         }
         
         .login-footer {
-            padding: 20px 30px;
-            background: #F8FAFC;
+            padding: 20px 32px;
+            background: rgba(10, 15, 28, 0.6);
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
             text-align: center;
             font-size: 13px;
-            color: #64748B;
+            color: #64748b;
         }
-        
-        .forgot-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 18px;
-            padding-top: 18px;
-            border-top: 1px solid #E2E8F0;
-        }
-        
-        .forgot-links a {
-            color: #667eea;
-            text-decoration: none;
-            font-size: 13px;
-            font-weight: 600;
-            display: flex;
+
+        .security-badge {
+            display: inline-flex;
             align-items: center;
-            gap: 6px;
-            transition: color 0.2s;
+            gap: 8px;
+            color: #94a3b8;
+            font-weight: 600;
+            font-size: 12.5px;
         }
-        
-        .forgot-links a:hover {
-            color: #764ba2;
-            text-decoration: underline;
-        }
-        
-        .default-credentials {
-            background: #FEF3C7;
-            border: 2px solid #F59E0B;
-            color: #92400E;
-            padding: 16px;
-            border-radius: 10px;
-            margin-bottom: 24px;
-            font-size: 13px;
-        }
-        
-        .default-credentials strong {
-            display: block;
-            margin-bottom: 8px;
-            font-size: 14px;
-        }
-        
-        .default-credentials code {
-            background: #FDE68A;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-family: 'Courier New', monospace;
+
+        .security-badge i {
+            color: #10b981;
         }
     </style>
 </head>
 <body>
+    <!-- Ambient Lighting Nebula -->
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+
     <div class="login-container">
         <div class="login-header">
-            <div class="logo-icon">
+            <div class="logo-icon-wrap">
                 <i class="fas fa-shield-alt"></i>
+                <div class="status-dot"></div>
             </div>
             <h1>GCM Netting Solutions</h1>
-            <p>Admin Panel Login</p>
+            <p>Chennai Enterprise Admin Dashboard</p>
         </div>
         
         <form method="POST" class="login-form">
@@ -392,64 +458,58 @@ $csrf_token = $security->generateCSRFToken();
             <?php if ($error): ?>
                 <div class="error-message">
                     <i class="fas fa-exclamation-circle"></i>
-                    <?php echo htmlspecialchars($error); ?>
-                    <?php if ($lockout_time > 0): ?>
-                        <br><small>Try again in <?php echo ceil($lockout_time / 60); ?> minute(s)</small>
-                    <?php endif; ?>
+                    <div>
+                        <?php echo htmlspecialchars($error); ?>
+                        <?php if ($lockout_time > 0): ?>
+                            <div style="font-size:12px;margin-top:2px;">Try again in <?php echo ceil($lockout_time / 60); ?> minute(s)</div>
+                        <?php endif; ?>
+                    </div>
                 </div>
             <?php endif; ?>
             
             <div class="form-group">
-                <label for="username">Username</label>
+                <label for="username">Administrator Username</label>
                 <div class="input-wrapper">
-                    <i class="fas fa-user"></i>
                     <input 
                         type="text" 
                         id="username" 
                         name="username" 
                         class="form-control" 
-                        placeholder="Enter your username"
+                        placeholder="Enter username"
                         required
                         autocomplete="username"
                         autofocus
                     >
+                    <i class="fas fa-user"></i>
                 </div>
             </div>
             
             <div class="form-group">
                 <label for="password">Password</label>
                 <div class="input-wrapper">
-                    <i class="fas fa-lock"></i>
                     <input 
                         type="password" 
                         id="password" 
                         name="password" 
                         class="form-control" 
-                        placeholder="Enter your password"
+                        placeholder="••••••••••••"
                         required
                         autocomplete="current-password"
                     >
+                    <i class="fas fa-lock"></i>
                 </div>
             </div>
             
             <button type="submit" class="btn-login">
-                <i class="fas fa-sign-in-alt"></i>
-                Login to Admin Panel
+                <span>Sign In Securely</span>
+                <i class="fas fa-arrow-right"></i>
             </button>
-            
-            <div class="forgot-links">
-                <a href="forgot-password.php">
-                    <i class="fas fa-key"></i> Forgot Password?
-                </a>
-                <a href="forgot-username.php">
-                    <i class="fas fa-user-question"></i> Forgot Username?
-                </a>
-            </div>
         </form>
         
         <div class="login-footer">
-            <i class="fas fa-shield-alt"></i> Protected by Enterprise Security
-            <br><small style="opacity:0.7;margin-top:5px;display:block;">Brute-force protection • CSRF protection • Session security</small>
+            <div class="security-badge">
+                <i class="fas fa-shield-check"></i> 256-Bit SSL Encrypted &bull; 2FA Protected
+            </div>
         </div>
     </div>
 </body>

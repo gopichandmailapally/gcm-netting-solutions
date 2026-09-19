@@ -1,0 +1,406 @@
+/**
+ * GCM Netting Solutions - Executive Admin Panel Luxury Stylesheet
+ * High-End SaaS Aesthetic: Obsidian Glassmorphism, Harmonious Accents, Fluid Micro-Interactions
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap');
+
+:root {
+    --adm-font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --adm-font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* Executive Obsidian & Navy */
+    --adm-sidebar-bg: linear-gradient(180deg, #060b17 0%, #0a1329 50%, #0f1c3d 100%);
+    --adm-canvas-bg: #f8fafc;
+    --adm-card-bg: #ffffff;
+    --adm-border-subtle: rgba(226, 232, 240, 0.8);
+    --adm-border-dark: rgba(255, 255, 255, 0.08);
+
+    /* Electric Accents */
+    --adm-blue-primary: #2563eb;
+    --adm-cyan-accent: #06b6d4;
+    --adm-emerald-accent: #10b981;
+    --adm-amber-accent: #f59e0b;
+    --adm-rose-accent: #f43f5e;
+    --adm-violet-accent: #8b5cf6;
+
+    /* Ambient Glows */
+    --adm-shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+    --adm-shadow-md: 0 12px 30px -10px rgba(15, 23, 42, 0.08), 0 0 1px 1px rgba(226, 232, 240, 0.9);
+    --adm-shadow-lg: 0 20px 40px -15px rgba(37, 99, 235, 0.12), 0 0 1px 1px rgba(37, 99, 235, 0.15);
+}
+
+body {
+    font-family: var(--adm-font-main) !important;
+    background-color: var(--adm-canvas-bg) !important;
+    color: #1e293b !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .dash-hero h1, .stat-text-wrap h3, .qa-title {
+    font-family: var(--adm-font-display) !important;
+    letter-spacing: -0.015em;
+}
+
+/* ==========================================================================
+   1. OBSIDIAN SIDEBAR WITH TRANSLUCENT GLOW
+   ========================================================================== */
+.admin-sidebar {
+    background: var(--adm-sidebar-bg) !important;
+    border-right: 1px solid var(--adm-border-dark) !important;
+    box-shadow: 4px 0 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+.sidebar-header {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border-bottom: 1px solid var(--adm-border-dark) !important;
+    padding: 24px 20px !important;
+}
+
+.sidebar-header .logo {
+    font-family: var(--adm-font-display) !important;
+    font-weight: 800 !important;
+    font-size: 20px !important;
+    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #38bdf8 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.sidebar-nav a {
+    color: #94a3b8 !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    padding: 12px 16px !important;
+    border-radius: 12px !important;
+    margin: 4px 12px !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.sidebar-nav a:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.07) !important;
+    transform: translateX(4px) !important;
+}
+
+.sidebar-nav li.active > a, 
+.sidebar-nav a.active {
+    color: #ffffff !important;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(14, 165, 233, 0.9) 100%) !important;
+    box-shadow: 0 8px 20px -4px rgba(37, 99, 235, 0.5) !important;
+    font-weight: 700 !important;
+}
+
+/* ==========================================================================
+   2. DASHBOARD HERO BANNER & REAL-TIME CLOCK
+   ========================================================================== */
+.dash-hero {
+    background: linear-gradient(135deg, #09132b 0%, #0f234f 50%, #1e40af 100%) !important;
+    border-radius: 20px !important;
+    padding: 32px 36px !important;
+    color: #ffffff !important;
+    box-shadow: 0 16px 36px -10px rgba(15, 23, 42, 0.25) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    margin-bottom: 28px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.dash-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(6, 182, 212, 0.25) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.dash-hero h1 {
+    font-size: 30px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    margin: 8px 0 !important;
+}
+
+.dash-greet-chip {
+    background: rgba(16, 185, 129, 0.2) !important;
+    border: 1px solid rgba(16, 185, 129, 0.4) !important;
+    color: #6ee7b7 !important;
+    font-weight: 700 !important;
+    border-radius: 30px !important;
+    padding: 6px 14px !important;
+    font-size: 13px !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dash-live-clock {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 16px !important;
+    padding: 12px 20px !important;
+    text-align: center;
+}
+
+.dash-admin-badge {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-radius: 20px !important;
+    padding: 6px 16px !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+/* ==========================================================================
+   3. EXECUTIVE KPI STAT CARDS
+   ========================================================================== */
+.stats-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
+    gap: 20px !important;
+    margin-bottom: 28px !important;
+}
+
+.stat-card {
+    background: #ffffff !important;
+    border-radius: 18px !important;
+    padding: 24px !important;
+    border: 1px solid var(--adm-border-subtle) !important;
+    box-shadow: var(--adm-shadow-md) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 18px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: var(--adm-shadow-lg) !important;
+    border-color: rgba(37, 99, 235, 0.3) !important;
+}
+
+.stat-icon-wrap {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 16px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 24px !important;
+    flex-shrink: 0 !important;
+}
+
+.stat-icon-wrap.blue {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.12) 0%, rgba(14, 165, 233, 0.2) 100%) !important;
+    color: #2563eb !important;
+}
+
+.stat-icon-wrap.orange {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(251, 191, 36, 0.2) 100%) !important;
+    color: #d97706 !important;
+}
+
+.stat-icon-wrap.green {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(52, 211, 153, 0.2) 100%) !important;
+    color: #059669 !important;
+}
+
+.stat-icon-wrap.teal {
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.12) 0%, rgba(34, 211, 238, 0.2) 100%) !important;
+    color: #0891b2 !important;
+}
+
+.stat-text-wrap h3 {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #64748b !important;
+    margin-bottom: 4px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.stat-text-wrap .value {
+    font-size: 28px !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    line-height: 1.1 !important;
+}
+
+.stat-text-wrap .sub {
+    font-size: 13px !important;
+    color: #64748b !important;
+    margin-top: 4px !important;
+}
+
+/* Secondary Metric Strip */
+.dash-strip {
+    background: #ffffff !important;
+    border-radius: 14px !important;
+    padding: 16px 24px !important;
+    border: 1px solid var(--adm-border-subtle) !important;
+    box-shadow: var(--adm-shadow-sm) !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+    margin-bottom: 28px !important;
+}
+
+.strip-item {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+/* ==========================================================================
+   4. QUICK ACTION CARDS & SECTIONS
+   ========================================================================== */
+.seo-section {
+    background: #ffffff !important;
+    border-radius: 20px !important;
+    border: 1px solid var(--adm-border-subtle) !important;
+    box-shadow: var(--adm-shadow-md) !important;
+    margin-bottom: 28px !important;
+    overflow: hidden !important;
+}
+
+.seo-section-head {
+    padding: 20px 28px !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    background: #ffffff !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.seo-section-head h2 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    margin: 0 !important;
+}
+
+.qa-card {
+    background: #f8fafc !important;
+    border-radius: 14px !important;
+    border: 1px solid #e2e8f0 !important;
+    padding: 18px !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    text-decoration: none !important;
+}
+
+.qa-card:hover {
+    transform: translateY(-4px) !important;
+    background: #ffffff !important;
+    border-color: #3b82f6 !important;
+    box-shadow: 0 12px 24px -6px rgba(59, 130, 246, 0.15) !important;
+}
+
+.qa-icon {
+    width: 46px !important;
+    height: 46px !important;
+    border-radius: 12px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 20px !important;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(6, 182, 212, 0.15) 100%) !important;
+    color: #2563eb !important;
+}
+
+.qa-title {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    display: block !important;
+}
+
+.qa-sub {
+    font-size: 13px !important;
+    color: #64748b !important;
+    display: block !important;
+}
+
+/* ==========================================================================
+   5. DATA TABLES & STATUS BADGES
+   ========================================================================== */
+.table, table.data-table {
+    width: 100% !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+}
+
+.table th, table.data-table th {
+    background: #f1f5f9 !important;
+    color: #475569 !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    padding: 14px 18px !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+}
+
+.table td, table.data-table td {
+    padding: 14px 18px !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    font-size: 14px !important;
+    color: #334155 !important;
+}
+
+.table tr:hover td, table.data-table tr:hover td {
+    background: #f8fafc !important;
+}
+
+/* Modern Status Pills */
+.badge-status-new, .status-pill-new {
+    background: #dbeafe !important;
+    color: #1d4ed8 !important;
+    border-radius: 20px !important;
+    padding: 4px 12px !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+
+.badge-status-approved, .status-pill-success {
+    background: #d1fae5 !important;
+    color: #065f46 !important;
+    border-radius: 20px !important;
+    padding: 4px 12px !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+
+.badge-status-pending, .status-pill-warning {
+    background: #fef3c7 !important;
+    color: #92400e !important;
+    border-radius: 20px !important;
+    padding: 4px 12px !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}

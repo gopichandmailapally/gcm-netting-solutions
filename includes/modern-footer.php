@@ -494,5 +494,11 @@ if (isset($additional_js) && is_array($additional_js)) {
 })();
 </script>
 
+<?php 
+if (file_exists(__DIR__ . '/floating-buttons.php')) {
+    include __DIR__ . '/floating-buttons.php';
+}
+?>
+
 </body>
 </html>
