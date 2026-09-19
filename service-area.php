@@ -75,7 +75,7 @@ $area_pincode = htmlspecialchars(!empty($area_row['pincode']) ? $area_row['pinco
 
 // Dynamic Meta Titles & Descriptions engineered for #1 CTR & Search Intent
 $page_title       = "No.1 {$service_name} in {$area_name}, Chennai | GCM Netting Solutions (Starts ₹18/sq.ft)";
-$meta_description = "Looking for the best {$service_name} in {$area_name}, Chennai? GCM Netting Solutions provides 100% genuine Garware nets, 5-year warranty, free inspection & same-day installation. Call 9912399224.";
+$meta_description = "Looking for the best {$service_name} in {$area_name}, Chennai? GCM Netting Solutions is an authorized dealer in genuine Russea™ Branded Nets, providing 5-year warranty, free inspection & same-day installation. Call 9912399224.";
 $meta_keywords    = "{$service_name}, {$service_name} in {$area_name}, {$service_slug} chennai, safety nets in {$area_slug}, pigeon nets {$area_slug}, balcony safety nets {$area_slug}, {$service_name} price {$area_name}";
 $current_page     = 'services';
 
@@ -151,7 +151,7 @@ $_all_areas = $_db->fetchAll(
 // Category Specifications & Details
 $cat_specs = [
     'PIGEON NETS' => [
-        'material' => '100% Virgin Garware High-Density Polyethylene (HDPE) & Translucent Nylon',
+        'material' => '100% Virgin Russea™ High-Density Polyethylene (HDPE) & Translucent Nylon',
         'mesh_size' => '25mm to 30mm (Prevents pigeons from entering without blocking light/air)',
         'thickness' => '0.8mm to 1.2mm multi-strand braided twine',
         'breaking_load' => 'Up to 60 kg per single mesh square',
@@ -178,7 +178,7 @@ $cat_specs = [
         'rate' => 'Starting from ₹22 - ₹35 per sq.ft.'
     ],
     'SPORTS NETS' => [
-        'material' => 'UV-Treated Garware Nylon & Knotted Polyethylene (Abrasion resistant)',
+        'material' => 'UV-Treated Russea™ Nylon & Knotted Polyethylene (Abrasion resistant)',
         'mesh_size' => '40mm to 50mm square mesh',
         'thickness' => '2.0mm to 3.5mm thick impact-absorbing twine',
         'breaking_load' => 'Withstands high-velocity leather and tennis cricket ball impacts',
@@ -212,11 +212,11 @@ $specs = $cat_specs[$category] ?? $cat_specs['SAFETY NETS'];
 $faqs_data = [
     [
         'q' => "Which is the #1 best rated {$service_name} service in {$area_name}, Chennai?",
-        'a' => "GCM Netting Solutions is officially rated the #1 {$service_name} service provider in {$area_name}, Chennai with 10,000+ satisfied clients and a 4.9/5 star Google rating. We provide authentic Garware UV-treated materials, a written 5-year replacement warranty, free site inspection, and fast same-day installation within 2 to 4 hours. Call or WhatsApp +91 99123 99224 for an immediate free quote."
+        'a' => "GCM Netting Solutions is officially rated the #1 {$service_name} service provider in {$area_name}, Chennai with 10,000+ satisfied clients and a 4.9/5 star Google rating. As authorized dealers in authentic Russea™ Branded Nets, we provide UV-treated high-tensile materials, a written 5-year replacement warranty, free site inspection, and fast same-day installation within 2 to 4 hours. Call or WhatsApp +91 99123 99224 for an immediate free quote."
     ],
     [
         'q' => "What is the cost of {$service_name} installation in {$area_name}, Chennai?",
-        'a' => "The price for {$service_name} in {$area_name} starts at {$specs['rate']}. Pricing depends on the total square footage, selected material grade (e.g. Garware Nylon, SS 316 wire), and height of the installation. We provide a 100% free doorstep inspection and measurement in {$area_name} with an exact upfront quote."
+        'a' => "The price for {$service_name} in {$area_name} starts at {$specs['rate']}. Pricing depends on the total square footage, selected material grade (e.g. Russea™ Nylon, SS 316 wire), and height of the installation. We provide a 100% free doorstep inspection and measurement in {$area_name} with an exact upfront quote."
     ],
     [
         'q' => "How quickly can GCM Netting Solutions complete {$service_name} installation in {$area_name}?",
@@ -272,10 +272,10 @@ $gcm_custom_jsonld = [
             '@id' => SITE_URL . "/{$page_slug}#service",
             'name' => "No.1 {$service_name} in {$area_name}, Chennai",
             'serviceType' => $service_name,
-            'description' => "Certified {$service_name} installation in {$area_name}, Chennai. Garware UV materials, 5-year written warranty, same-day installation.",
+            'description' => "Certified {$service_name} installation in {$area_name}, Chennai. Authorized Russea™ Branded UV materials, 5-year written warranty, same-day installation.",
             'brand' => [
                 '@type' => 'Brand',
-                'name' => 'Garware Technical Fibres Certified'
+                'name' => 'Russea™ Branded Nets (Top Quality Netting Brand)'
             ],
             'provider' => [
                 '@type' => 'HomeAndConstructionBusiness',
@@ -392,7 +392,7 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
         <i class="fas fa-bolt" style="color:#10b981;"></i> Official #1 Best Provider &bull; <?php echo $area_name; ?>, Chennai
       </div>
       <p style="font-size:15px;color:#1e293b;line-height:1.65;margin:0;">
-        <strong style="color:#0f172a;">GCM Netting Solutions</strong> is rated <strong style="color:#0f172a;">#1 in <?php echo $area_name; ?></strong> (4.9/5 stars from 1,280+ verified reviews) with 15+ years experience. We provide 100% genuine Garware UV-stabilized <?php echo strtolower($service_name); ?> starting at <strong style="color:#0f172a;"><?php echo $specs['rate']; ?></strong> with an official <strong style="color:#0f172a;">5-year replacement warranty</strong> and marine-grade SS 316 rustproof hooks. Free doorstep inspection and same-day installation available within 60 minutes across <?php echo $area_name; ?>. Call or WhatsApp <a href="tel:+919912399224" style="color:#059669;font-weight:700;text-decoration:underline;">+91 99123 99224</a>.
+        <strong style="color:#0f172a;">GCM Netting Solutions</strong> is rated <strong style="color:#0f172a;">#1 in <?php echo $area_name; ?></strong> (4.9/5 stars from 1,280+ verified reviews) with 15+ years experience. We are authorized dealers in 100% genuine Russea™ Branded UV-stabilized <?php echo strtolower($service_name); ?> starting at <strong style="color:#0f172a;"><?php echo $specs['rate']; ?></strong> with an official <strong style="color:#0f172a;">5-year replacement warranty</strong> and marine-grade SS 316 rustproof hooks. Free doorstep inspection and same-day installation available within 60 minutes across <?php echo $area_name; ?>. Call or WhatsApp <a href="tel:+919912399224" style="color:#059669;font-weight:700;text-decoration:underline;">+91 99123 99224</a>.
       </p>
     </div>
 
@@ -413,7 +413,7 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
 
     <!-- Trust Badges -->
     <div style="display:flex;gap:24px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.18);padding-top:20px;">
-      <span style="color:rgba(255,255,255,.95);font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;"><i class="fas fa-certificate" style="color:#10B981;"></i> 100% Garware Materials</span>
+      <span style="color:rgba(255,255,255,.95);font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;"><i class="fas fa-certificate" style="color:#10B981;"></i> Authorised Russea™ Dealer</span>
       <span style="color:rgba(255,255,255,.95);font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;"><i class="fas fa-shield-alt" style="color:#10B981;"></i> 5-Year Written Warranty</span>
       <span style="color:rgba(255,255,255,.95);font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;"><i class="fas fa-clock" style="color:#10B981;"></i> 60-Min Inspection in <?php echo $area_name; ?></span>
       <span style="color:rgba(255,255,255,.95);font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;"><i class="fas fa-star" style="color:#F59E0B;"></i> 4.9/5 Rated (1,280+ Reviews)</span>
@@ -471,7 +471,7 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
               <tbody>
                 <tr style="border-bottom:1px solid #e2e8f0;">
                   <td style="padding:12px 16px;font-weight:600;">Netting Material</td>
-                  <td style="padding:12px 16px;background:#f0fdf4;color:#15803d;font-weight:700;">100% Virgin Garware High-Density Nylon (ISI Certified)</td>
+                  <td style="padding:12px 16px;background:#f0fdf4;color:#15803d;font-weight:700;">100% Virgin Russea™ High-Density Nylon (Top Quality Certified)</td>
                   <td style="padding:12px 16px;color:#64748b;">Recycled or low-grade plastic (rots in sun within 6-12 months)</td>
                 </tr>
                 <tr style="border-bottom:1px solid #e2e8f0;background:#fafafa;">
@@ -590,7 +590,7 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
               <tbody>
                 <tr>
                   <td style="padding:12px 16px;border-bottom:1px solid #e2e8f0;font-weight:600;">Pigeon / Bird Netting</td>
-                  <td style="padding:12px 16px;border-bottom:1px solid #e2e8f0;color:#64748b;">Garware Virgin Nylon (UV-Protected)</td>
+                  <td style="padding:12px 16px;border-bottom:1px solid #e2e8f0;color:#64748b;">Russea™ Virgin Nylon (UV-Protected)</td>
                   <td style="padding:12px 16px;border-bottom:1px solid #e2e8f0;color:#10B981;font-weight:700;">₹18 - ₹25 / sq.ft.</td>
                   <td style="padding:12px 16px;border-bottom:1px solid #e2e8f0;">5 Years</td>
                 </tr>
@@ -645,7 +645,7 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
             <div style="background:#f8fafc;padding:18px;border-radius:10px;border:1px solid #e2e8f0;">
               <div style="color:#f59e0b;font-size:14px;margin-bottom:8px;">&#9733;&#9733;&#9733;&#9733;&#9733; (5/5)</div>
               <p style="font-size:14px;color:#334155;line-height:1.5;margin-bottom:10px;">
-                "Exceptional installation of <?php echo strtolower($service_name); ?> at our apartment in <?php echo $area_name; ?>. The technician was polite, highly experienced, and finished the entire job in 2 hours. High quality Garware net."
+                "Exceptional installation of <?php echo strtolower($service_name); ?> at our apartment in <?php echo $area_name; ?>. The technician was polite, highly experienced, and finished the entire job in 2 hours. High quality Russea™ net."
               </p>
               <strong style="font-size:13px;color:#0f172a;">Rajesh V. — Resident, <?php echo $area_name; ?></strong>
             </div>

@@ -29,7 +29,7 @@ function gcm_render_seo_head() {
         $title .= ' | GCM Netting Solutions';
     }
 
-    $desc = $meta_description ?? 'Looking for the best safety nets in Chennai? GCM Netting Solutions offers 100% genuine Garware nets, 5-year warranty, free inspection & same-day installation. Call 9912399224.';
+    $desc = $meta_description ?? 'Looking for the best safety nets in Chennai? GCM Netting Solutions is an authorized dealer in genuine Russea™ Branded Nets, offering 5-year warranty, free inspection & same-day installation. Call 9912399224.';
     $kw = $meta_keywords ?? 'safety nets chennai, safety nets near me, pigeon nets chennai, balcony safety nets in chennai, invisible grills chennai, cricket nets chennai, gcm safety nets';
 
     $default_image = 'https://www.gcmnettingsolutions.com/assets/img/services/pigeon-nets.jpg';
@@ -172,7 +172,7 @@ function gcm_render_seo_head() {
               "name": "Who is the #1 best safety nets service provider in Chennai?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "GCM Netting Solutions is officially recognized as the #1 safety nets installation company in Chennai. With 15+ years of experience, 10,000+ completed installations, and a 4.9/5 rating, we provide authentic Garware nylon materials, stainless steel 316 rust-proof hooks, a 5-year written warranty, and same-day installation within 2 hours. Call 9912399224."
+                "text": "GCM Netting Solutions is officially recognized as the #1 safety nets installation company in Chennai. Authorized dealers in genuine Russea™ Branded Nets with 15+ years of experience, 10,000+ completed installations, and a 4.9/5 rating, we provide authentic Russea™ nylon materials, stainless steel 316 rust-proof hooks, a 5-year written warranty, and same-day installation within 2 hours. Call 9912399224."
               }
             },
             {
@@ -180,7 +180,7 @@ function gcm_render_seo_head() {
               "name": "What is the price of balcony safety nets installation in Chennai?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Balcony safety nets in Chennai start from ₹18 to ₹28 per square foot depending on the material grade (Garware Virgin Nylon or HDPE Monofilament). GCM Netting Solutions provides 100% free doorstep measurement and quotations with zero obligation."
+                "text": "Balcony safety nets in Chennai start from ₹18 to ₹28 per square foot depending on the material grade (Russea™ Virgin Nylon or HDPE Monofilament). GCM Netting Solutions provides 100% free doorstep measurement and quotations with zero obligation."
               }
             },
             {
