@@ -60,7 +60,7 @@ function gcm_generate_sitemap() {
             'terms-conditions'  => ['0.3', 'yearly']
         ];
         foreach ($static_pages as $slug => [$pri, $freq]) {
-            $url = ($slug === '') ? 'https://www.gcmsafetynets.in/' : 'https://www.gcmsafetynets.in/' . $slug;
+            $url = ($slug === '') ? 'https://www.gcmnettingsolutions.com/' : 'https://www.gcmnettingsolutions.com/' . $slug;
             $write_url($main_fp, $url, $today, $freq, $pri);
             $total_urls++;
         }
@@ -81,7 +81,7 @@ function gcm_generate_sitemap() {
         foreach ($pillars as $p) {
             $slug = trim((string)($p['keyword_slug'] ?? ''));
             if (!$slug) continue;
-            $write_url($srv_fp, 'https://www.gcmsafetynets.in/' . htmlspecialchars($slug), $today, 'weekly', '0.9');
+            $write_url($srv_fp, 'https://www.gcmnettingsolutions.com/' . htmlspecialchars($slug), $today, 'weekly', '0.9');
             $total_urls++;
         }
         $close_sitemap($srv_fp);
@@ -126,7 +126,7 @@ function gcm_generate_sitemap() {
             $slug = trim((string)($br['slug'] ?? ''));
             if (!$slug) continue;
             $lastmod = !empty($br['created_at']) ? date('Y-m-d', strtotime((string)$br['created_at'])) : $today;
-            $write_url($blog_fp, 'https://www.gcmsafetynets.in/blog/' . urlencode($slug), $lastmod, 'monthly', '0.7');
+            $write_url($blog_fp, 'https://www.gcmnettingsolutions.com/blog/' . urlencode($slug), $lastmod, 'monthly', '0.7');
             $total_urls++;
         }
         $close_sitemap($blog_fp);
@@ -151,7 +151,7 @@ function gcm_generate_sitemap() {
             foreach ($chunk as $file) {
                 $base = basename($file);
                 $slug = pathinfo($base, PATHINFO_FILENAME);
-                $write_url($area_fp, 'https://www.gcmsafetynets.in/' . htmlspecialchars($slug), $today, 'monthly', '0.8');
+                $write_url($area_fp, 'https://www.gcmnettingsolutions.com/' . htmlspecialchars($slug), $today, 'monthly', '0.8');
                 $total_urls++;
             }
             $close_sitemap($area_fp);
@@ -170,7 +170,7 @@ function gcm_generate_sitemap() {
         fwrite($ifp, '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . PHP_EOL);
         foreach ($sitemaps_created as $sm_file) {
             fwrite($ifp, "  <sitemap>\n");
-            fwrite($ifp, "    <loc>https://www.gcmsafetynets.in/{$sm_file}</loc>\n");
+            fwrite($ifp, "    <loc>https://www.gcmnettingsolutions.com/{$sm_file}</loc>\n");
             fwrite($ifp, "    <lastmod>{$today}</lastmod>\n");
             fwrite($ifp, "  </sitemap>\n");
         }
@@ -189,7 +189,7 @@ function gcm_generate_sitemap() {
 
 // ── Ping Google & Bing with updated sitemap ────────────────────────
 function gcm_ping_search_engines() {
-    $sm = urlencode('https://www.gcmsafetynets.in/sitemap.xml');
+    $sm = urlencode('https://www.gcmnettingsolutions.com/sitemap.xml');
     $endpoints = [
         'https://www.google.com/ping?sitemap=' . $sm,
         'https://www.bing.com/webmaster/ping.aspx?siteMap=' . $sm,

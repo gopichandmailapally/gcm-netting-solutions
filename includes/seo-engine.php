@@ -17,10 +17,10 @@ function gcm_render_seo_head() {
     $clean_uri = preg_replace('/\.php$/i', '', $raw_uri);
     $clean_uri = rtrim($clean_uri, '/');
     if ($clean_uri === '' || $clean_uri === '/index') {
-        $canonical_url = 'https://www.gcmsafetynets.in/';
+        $canonical_url = 'https://www.gcmnettingsolutions.com/';
         $is_home = true;
     } else {
-        $canonical_url = 'https://www.gcmsafetynets.in' . $clean_uri;
+        $canonical_url = 'https://www.gcmnettingsolutions.com' . $clean_uri;
         $is_home = false;
     }
 
@@ -32,8 +32,8 @@ function gcm_render_seo_head() {
     $desc = $meta_description ?? 'Looking for the best safety nets in Chennai? GCM Netting Solutions offers 100% genuine Garware nets, 5-year warranty, free inspection & same-day installation. Call 9912399224.';
     $kw = $meta_keywords ?? 'safety nets chennai, safety nets near me, pigeon nets chennai, balcony safety nets in chennai, invisible grills chennai, cricket nets chennai, gcm safety nets';
 
-    $default_image = 'https://www.gcmsafetynets.in/assets/img/services/pigeon-nets.jpg';
-    $logo_image    = 'https://www.gcmsafetynets.in/uploads/logo.png';
+    $default_image = 'https://www.gcmnettingsolutions.com/assets/img/services/pigeon-nets.jpg';
+    $logo_image    = 'https://www.gcmnettingsolutions.com/uploads/logo.png';
 
     // Placename calculation
     $placename = $gcm_geo_placename ?? 'Chennai, Tamil Nadu';
@@ -83,11 +83,11 @@ function gcm_render_seo_head() {
       "@graph": [
         {
           "@type": "HomeAndConstructionBusiness",
-          "@id": "https://www.gcmsafetynets.in/#organization",
+          "@id": "https://www.gcmnettingsolutions.com/#organization",
           "name": "GCM Netting Solutions",
           "alternateName": "GCM Enterprises",
           "legalName": "GCM Netting Solutions & Services",
-          "url": "https://www.gcmsafetynets.in",
+          "url": "https://www.gcmnettingsolutions.com",
           "telephone": "+91-9912399224",
           "email": "gcmsafetynets@gmail.com",
           "priceRange": "₹₹",
@@ -152,20 +152,20 @@ function gcm_render_seo_head() {
         },
         {
           "@type": "WebSite",
-          "@id": "https://www.gcmsafetynets.in/#website",
-          "url": "https://www.gcmsafetynets.in/",
+          "@id": "https://www.gcmnettingsolutions.com/#website",
+          "url": "https://www.gcmnettingsolutions.com/",
           "name": "GCM Netting Solutions Chennai",
           "description": "Chennai's No.1 Safety Nets Installation Service",
-          "publisher": { "@id": "https://www.gcmsafetynets.in/#organization" },
+          "publisher": { "@id": "https://www.gcmnettingsolutions.com/#organization" },
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://www.gcmsafetynets.in/all-areas?q={search_term_string}",
+            "target": "https://www.gcmnettingsolutions.com/all-areas?q={search_term_string}",
             "query-input": "required name=search_term_string"
           }
         },
         {
           "@type": "FAQPage",
-          "@id": "https://www.gcmsafetynets.in/#faq",
+          "@id": "https://www.gcmnettingsolutions.com/#faq",
           "mainEntity": [
             {
               "@type": "Question",

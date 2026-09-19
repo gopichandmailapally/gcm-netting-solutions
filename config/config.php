@@ -48,7 +48,7 @@ if (!empty($_SERVER['HTTP_HOST'])) {
     $protocol = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && strtolower($_SERVER['HTTP_X_FORWARDED_PROTO']) === 'https')) ? 'https' : 'http';
     define('SITE_URL', $protocol . '://' . $_SERVER['HTTP_HOST']);
 } else {
-    define('SITE_URL', 'https://gcmnettingsolutions.com');
+    define('SITE_URL', 'https://www.gcmnettingsolutions.com');
 }
 define('SITE_NAME', 'GCM Netting Solutions');
 define('SITE_TAGLINE', 'Chennai\'s Largest Netting Solutions Provider');

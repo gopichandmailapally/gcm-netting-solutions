@@ -6,7 +6,7 @@
  */
 
 function auto_update_sitemap() {
-    $base_url = 'https://www.gcmsafetynets.in';
+    $base_url = 'https://www.gcmnettingsolutions.com';
     $base_dir = dirname(__DIR__);
     
     // Start XML
