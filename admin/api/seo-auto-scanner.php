@@ -235,7 +235,7 @@ class SEOScanner {
             case 'missing_meta_description':
                 // Generate basic meta description from filename
                 $title = ucwords(str_replace(['-', '.php', '_'], ' ', $filename));
-                $meta_desc = "Professional " . $title . " services in Chennai. Get expert installation, best quality products, and affordable prices. Call +91 91213 99234 for free consultation.";
+                $meta_desc = "Professional " . $title . " services in Chennai. Get expert installation, best quality products, and affordable prices. Call +91 99123 99224 for free consultation.";
                 
                 // Find where to insert
                 if (preg_match('/(define\(.*?GCM_INIT.*?\);)/s', $content, $matches)) {

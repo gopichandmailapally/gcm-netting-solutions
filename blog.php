@@ -229,10 +229,10 @@ include 'includes/modern-header.php';
                     <div style="padding: 40px; background: #F8FAFC; border-top: 1px solid #E2E8F0;">
                         <h3 style="text-align: center; color: #2D3748; margin-bottom: 20px;">Need Professional Safety Net Installation?</h3>
                         <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                            <a href="tel:+919121399234" style="padding: 15px 30px; background: linear-gradient(135deg, #3B82F6, #2563EB); color: white; border-radius: 12px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px;">
-                                <i class="fas fa-phone"></i> Call: +91 91213 99234
+                            <a href="tel:+919912399224" style="padding: 15px 30px; background: linear-gradient(135deg, #3B82F6, #2563EB); color: white; border-radius: 12px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px;">
+                                <i class="fas fa-phone"></i> Call: +91 99123 99224
                             </a>
-                            <a href="https://wa.me/919121399234" style="padding: 15px 30px; background: #25D366; color: white; border-radius: 12px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px;">
+                            <a href="https://wa.me/919912399224" style="padding: 15px 30px; background: #25D366; color: white; border-radius: 12px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px;">
                                 <i class="fab fa-whatsapp"></i> WhatsApp Us
                             </a>
                         </div>

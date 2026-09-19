@@ -420,8 +420,8 @@ include 'includes/modern-header.php';
                     <p style="font-size: 14px; color: #718096; margin-bottom: 15px;">
                         Can't find what you're looking for? Contact us directly!
                     </p>
-                    <a href="tel:+919121399234" style="display: block; padding: 12px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; text-align: center; border-radius: 10px; text-decoration: none; font-weight: 600; margin-bottom: 10px;">
-                        <i class="fas fa-phone-alt"></i> +91 91213 99234
+                    <a href="tel:+919912399224" style="display: block; padding: 12px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; text-align: center; border-radius: 10px; text-decoration: none; font-weight: 600; margin-bottom: 10px;">
+                        <i class="fas fa-phone-alt"></i> +91 99123 99224
                     </a>
                     <a href="contact.php" style="display: block; padding: 12px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; border-radius: 10px; text-decoration: none; font-weight: 600;">
                         <i class="fas fa-envelope"></i> Contact Form
