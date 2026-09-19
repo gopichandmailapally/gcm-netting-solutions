@@ -48,7 +48,7 @@ if (!empty($_SERVER['HTTP_HOST'])) {
     $protocol = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && strtolower($_SERVER['HTTP_X_FORWARDED_PROTO']) === 'https')) ? 'https' : 'http';
     define('SITE_URL', $protocol . '://' . $_SERVER['HTTP_HOST']);
 } else {
-    define('SITE_URL', 'https://www.gcmsafetynets.in');
+    define('SITE_URL', 'https://gcmnettingsolutions.com');
 }
 define('SITE_NAME', 'GCM Netting Solutions');
 define('SITE_TAGLINE', 'Chennai\'s Largest Netting Solutions Provider');
@@ -59,8 +59,8 @@ define('COMPANY_NAME', 'GCM Netting Solutions');
 define('COMPANY_PHONE', '9912399224');
 define('COMPANY_WHATSAPP', '919912399224');
 define('COMPANY_EMAIL', 'gcmsafetynets@gmail.com');
-define('COMPANY_EMAIL_SECONDARY', 'contact@gcmsafetynets.in');
-define('COMPANY_WEBSITE', 'www.gcmsafetynets.in');
+define('COMPANY_EMAIL_SECONDARY', 'contact@gcmnettingsolutions.com');
+define('COMPANY_WEBSITE', 'gcmnettingsolutions.com');
 define('COMPANY_ADDRESS', 'No. 42, Anna Salai, Mount Road, Chennai - 600002, Tamil Nadu, India');
 
 // Admin Configuration
@@ -311,9 +311,9 @@ function send_email($to, $subject, $body, $reply_to_email = '', $reply_to_name =
 
     /* ── PHP mail() fallback (Hostinger MTA) ────────────── */
     error_log('[Email] SMTP failed, trying php mail() fallback for: ' . $to);
-    // Use the hosted domain address — Hostinger's server is SPF-authorized for gcmsafetynets.in,
+    // Use the hosted domain address — Hostinger's server is SPF-authorized for gcmnettingsolutions.com,
     // NOT for gcmsafetynets@gmail.com. Gmail From causes SPF rejection on shared hosting.
-    $mf_email = 'noreply@gcmsafetynets.in';
+    $mf_email = 'noreply@gcmnettingsolutions.com';
     $mf_name  = SMTP_FROM_NAME;
     $reply_to_label = $reply_to_email ? ($reply_to_name ?: $reply_to_email) : SMTP_FROM_NAME;
     $reply_to_addr  = $reply_to_email ?: SMTP_FROM_EMAIL;

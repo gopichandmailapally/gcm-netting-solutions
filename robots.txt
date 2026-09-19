@@ -1,4 +1,4 @@
-# robots.txt for https://www.gcmsafetynets.in
+# robots.txt for https://gcmnettingsolutions.com
 # Optimized for Google, Bing, and Generative AI Search Engines (GEO/AEO)
 
 User-agent: *
@@ -38,4 +38,4 @@ User-agent: Amazonbot
 Allow: /
 
 # Master Sitemap Index
-Sitemap: https://www.gcmsafetynets.in/sitemap.xml
+Sitemap: https://gcmnettingsolutions.com/sitemap.xml

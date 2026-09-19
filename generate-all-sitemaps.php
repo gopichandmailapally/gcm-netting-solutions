@@ -8,7 +8,7 @@
 set_time_limit(600);
 ini_set('memory_limit', '512M');
 
-$base_url = 'https://www.gcmsafetynets.in';
+$base_url = 'https://gcmnettingsolutions.com';
 $today    = date('Y-m-d');
 $chunk_size = 50000;
 
