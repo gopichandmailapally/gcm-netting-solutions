@@ -17,7 +17,7 @@
                             <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
                             <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
                             <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-                            <a href="https://wa.me/<?php echo COMPANY_WHATSAPP; ?>" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="<?php require_once __DIR__ . '/whatsapp_helper.php'; echo getGcmWhatsAppUrl(); ?>" title="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                     

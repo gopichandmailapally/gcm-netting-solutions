@@ -148,7 +148,7 @@
 <p>Use our <strong>free price calculator</strong> for instant estimation or contact experts for personalized quotation.</p>
 <div class="cta-buttons-row">
 <a href="tel:<?php echo COMPANY_PHONE; ?>" class="cta-btn btn-call"><i class="fas fa-phone-alt"></i> Call for Quote</a>
-<a href="https://wa.me/<?php echo COMPANY_WHATSAPP; ?>?text=Hi, I need price estimation" class="cta-btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Now</a>
+<a href="<?php require_once __DIR__ . '/whatsapp_helper.php'; echo getGcmWhatsAppUrl(); ?>" class="cta-btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Now</a>
 </div>
 <div class="trust-badges">
 <span><i class="fas fa-check-circle"></i> 10,000+ Customers</span>

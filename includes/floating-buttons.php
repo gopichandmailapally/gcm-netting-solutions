@@ -2,8 +2,8 @@
 /**
  * GCM Netting Solutions - Unified Floating Action Buttons
  * Renders exactly 3 floating contact buttons:
- * 1. WhatsApp Button (Direct chat)
- * 2. Phone Call Button (Instant dial)
+ * 1. Phone Call Button (Instant dial)
+ * 2. WhatsApp Button (Direct smart inquiry chat)
  * 3. Scroll to Top Button (Smooth scroll, appears on scroll > 250px)
  */
 
@@ -12,8 +12,11 @@ if (defined('GCM_FLOATING_BUTTONS_RENDERED')) {
 }
 define('GCM_FLOATING_BUTTONS_RENDERED', true);
 
+require_once __DIR__ . '/whatsapp_helper.php';
+
 $phone_number = defined('COMPANY_PHONE') ? COMPANY_PHONE : '9912399224';
 $whatsapp_num = defined('COMPANY_WHATSAPP') ? COMPANY_WHATSAPP : '919912399224';
+$smart_wa_url = getGcmWhatsAppUrl();
 ?>
 
 <!-- GCM Netting Solutions - Exactly 3 Floating Action Buttons -->
@@ -27,8 +30,8 @@ $whatsapp_num = defined('COMPANY_WHATSAPP') ? COMPANY_WHATSAPP : '919912399224';
         <span class="gcm-fab-tooltip">Call Us</span>
     </a>
 
-    <!-- 2. WhatsApp Button -->
-    <a href="https://wa.me/<?php echo ltrim($whatsapp_num, '+'); ?>?text=Hi%20GCM%20Netting%20Solutions%2C%20I%20need%20safety%20net%20installation%20in%20Chennai" 
+    <!-- 2. WhatsApp Button (Smart Dynamic Lead System) -->
+    <a href="<?php echo htmlspecialchars($smart_wa_url); ?>" 
        class="gcm-fab gcm-fab-whatsapp" 
        target="_blank" 
        rel="noopener noreferrer"
@@ -220,5 +223,90 @@ $whatsapp_num = defined('COMPANY_WHATSAPP') ? COMPANY_WHATSAPP : '919912399224';
 
     window.addEventListener('scroll', updateScrollTopVisibility, { passive: true });
     updateScrollTopVisibility();
+
+    // Smart Dynamic WhatsApp Click Handler for GCM Netting Solutions
+    document.addEventListener('click', function(e) {
+        var waLink = e.target.closest('a[href*="wa.me"], a[href*="whatsapp.com"], .gcm-fab-whatsapp, .btn-whatsapp, .whatsapp-link');
+        if (!waLink) return;
+        
+        // Prevent default static link and launch custom smart formatted message
+        e.preventDefault();
+        
+        var currentUrl = window.location.href.split('#')[0];
+        var path = window.location.pathname;
+        var title = document.title || '';
+        var h1Elem = document.querySelector('h1');
+        var h1 = h1Elem ? h1Elem.innerText.trim() : '';
+        
+        // 1. Detect Service
+        var service = '';
+        var checkStr = (h1 + ' ' + title + ' ' + path).toLowerCase();
+        
+        if (checkStr.includes('cloth-hanger') || checkStr.includes('cloth hanger') || checkStr.includes('drying-hanger') || checkStr.includes('drying stand') || checkStr.includes('pulley cloth')) {
+            service = 'Balcony & Ceiling Cloth Drying Hanger';
+        } else if (checkStr.includes('invisible-grill') || checkStr.includes('invisible grill')) {
+            service = 'Stainless Steel 316 Invisible Grills for Balcony';
+        } else if (checkStr.includes('box-cricket') || checkStr.includes('box cricket')) {
+            service = 'Box Cricket Ground Setup & Netting';
+        } else if (checkStr.includes('cricket')) {
+            service = 'Cricket Practice Pitch Nets Installation';
+        } else if (checkStr.includes('sports')) {
+            service = 'Sports & Ground Perimeter Netting';
+        } else if (checkStr.includes('spike')) {
+            service = 'Anti-Bird & Pigeon Protection Spikes';
+        } else if (checkStr.includes('pigeon') || checkStr.includes('kabutar')) {
+            service = 'Pigeon Safety Nets Installation';
+        } else if (checkStr.includes('child') || checkStr.includes('toddler')) {
+            service = 'Children Balcony & Stair Safety Nets';
+        } else if (checkStr.includes('duct')) {
+            service = 'Duct Area Safety Nets';
+        } else if (checkStr.includes('monkey')) {
+            service = 'Monkey Protection Safety Nets';
+        } else if (checkStr.includes('fall')) {
+            service = 'Fall Protection Safety Nets';
+        } else if (checkStr.includes('balcony')) {
+            service = 'Balcony Safety Nets Installation';
+        } else if (h1) {
+            service = h1.replace(/[–—|\-].*$/, '').trim();
+        } else if (title) {
+            service = title.replace(/[–—|\-].*$/, '').trim();
+        } else {
+            service = 'Safety Nets & Balcony Solutions';
+        }
+        
+        // 2. Detect Chennai Locality
+        var location = '';
+        var match = path.match(/-in-([a-z0-9-]+)/i);
+        if (match && match[1]) {
+            var areaSlug = match[1];
+            var areaFormatted = areaSlug.split('-').map(function(w) {
+                return w.charAt(0).toUpperCase() + w.slice(1);
+            }).join(' ');
+            location = areaFormatted + ', Chennai';
+        } else {
+            location = 'Chennai, Tamil Nadu (All Areas & Outskirts)';
+        }
+        
+        // 3. Determine Pricing / Prompt text
+        var pricingText = 'Please share pricing per sq.ft, warranty details, and same-day installation availability.';
+        if (checkStr.includes('hanger') || checkStr.includes('drying')) {
+            pricingText = 'Please share pricing per piece / set, model options, technical specifications, and installation availability.';
+        } else if (checkStr.includes('spike')) {
+            pricingText = 'Please share pricing per piece / per strip, technical specifications, and installation availability.';
+        } else if (checkStr.includes('box cricket') || checkStr.includes('turf')) {
+            pricingText = 'Please share turnkey court setup cost / pricing per sq.ft, technical specifications, and installation availability.';
+        }
+        
+        // 4. Construct Exact Standard Inquiry Message
+        var msg = 'Hi GCM Netting Solutions, I would like to inquire about *' + service + '* in *' + location + '*.\n\n' +
+                  '• Service: ' + service + '\n' +
+                  '• Location: ' + location + '\n' +
+                  '• Page: ' + currentUrl + '\n' +
+                  '• Website: www.gcmnettingsolutions.com\n\n' +
+                  pricingText;
+                  
+        var targetPhone = '<?php echo ltrim($whatsapp_num, "+"); ?>';
+        window.open('https://wa.me/' + targetPhone + '?text=' + encodeURIComponent(msg), '_blank');
+    });
 })();
 </script>
