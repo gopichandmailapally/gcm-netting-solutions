@@ -13,6 +13,11 @@ require_once __DIR__ . '/config/database.php';
 $service_slug = strtolower(trim($_GET['service'] ?? ''));
 $area_slug    = strtolower(trim($_GET['area'] ?? ''));
 
+// Default to Chennai city target if area is not specified
+if (!empty($service_slug) && empty($area_slug)) {
+    $area_slug = 'chennai';
+}
+
 if (empty($service_slug) || empty($area_slug)) {
     http_response_code(404);
     if (file_exists(__DIR__ . '/404.php')) {
@@ -67,16 +72,30 @@ if (!$service_row || !$area_row) {
     exit;
 }
 
+// If request came as standalone keyword URL without "-in-", 301 redirect to canonical Chennai target page
+$request_path = trim(parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH), '/');
+if ($request_path === $service_slug && $service_slug !== 'index') {
+    header("Location: " . SITE_URL . "/{$service_slug}-in-chennai", true, 301);
+    exit;
+}
+
 $service_name = htmlspecialchars($service_row['keyword_name']);
 $area_name    = htmlspecialchars($area_row['area_name']);
 $category     = strtoupper($service_row['category'] ?? 'SAFETY NETS');
 $zone         = htmlspecialchars($area_row['zone'] ?? 'Central Chennai');
 $area_pincode = htmlspecialchars(!empty($area_row['pincode']) ? $area_row['pincode'] : '600002');
 
+// Smart Location Handling: Distinguish between Master Chennai City Hub & Neighborhood Areas
+$is_chennai_metro = (strtolower($area_slug) === 'chennai' || strtolower($area_name) === 'chennai');
+$display_locality = $is_chennai_metro ? 'Chennai' : "{$area_name}, Chennai";
+$display_scope    = $is_chennai_metro ? 'across Chennai' : "across {$area_name}, Chennai";
+$display_badge    = $is_chennai_metro ? 'All Over Chennai' : "{$area_name}, Chennai";
+$display_inspect  = $is_chennai_metro ? 'in Chennai' : "in {$area_name}";
+
 // Dynamic Meta Titles & Descriptions engineered for #1 CTR & Search Intent
-$page_title       = "No.1 {$service_name} in {$area_name}, Chennai | GCM Netting Solutions (Starts ₹18/sq.ft)";
-$meta_description = "Looking for the best {$service_name} in {$area_name}, Chennai? GCM Netting Solutions is an authorized dealer in genuine Russea™ Branded Nets, providing 5-year warranty, free inspection & same-day installation. Call 9912399224.";
-$meta_keywords    = "{$service_name}, {$service_name} in {$area_name}, {$service_slug} chennai, safety nets in {$area_slug}, pigeon nets {$area_slug}, balcony safety nets {$area_slug}, {$service_name} price {$area_name}";
+$page_title       = "No.1 {$service_name} in {$display_locality} | GCM Netting Solutions (Starts ₹18/sq.ft)";
+$meta_description = "Looking for the best {$service_name} in {$display_locality}? GCM Netting Solutions is an authorized dealer in genuine Russea™ Branded Nets, providing 5-year warranty, free inspection & same-day installation across Chennai. Call 9912399224.";
+$meta_keywords    = "{$service_name}, {$service_name} in Chennai, {$service_name} {$area_name}, {$service_slug} chennai, safety nets in {$area_slug}, pigeon nets chennai, balcony safety nets chennai, {$service_name} price in chennai";
 $current_page     = 'services';
 
 // Check for custom unique content in DB
@@ -129,23 +148,29 @@ $_cat_kws = $_db->fetchAll(
 );
 
 // Geographic Semantic Siloing: Nearby areas strictly within the same geographic corridor / zone
-$_nearby_areas = $_db->fetchAll(
-    "SELECT area_name, area_slug FROM service_areas WHERE zone = ? AND area_slug != ? AND is_active = 1 ORDER BY area_name ASC LIMIT 16",
-    [$area_row['zone'] ?? 'Central Chennai', $area_slug],
-    'ss'
-);
-
-if (empty($_nearby_areas) || count($_nearby_areas) < 8) {
-    $_hub_areas = $_db->fetchAll(
-        "SELECT area_name, area_slug FROM service_areas WHERE area_slug IN ('anna-nagar','t-nagar','velachery','adyar','tambaram','porur','mylapore','nungambakkam','guindy','besant-nagar','sholinganallur','perungudi','thoraipakkam','medavakkam','chromepet','ambattur') AND area_slug != ? LIMIT 12",
-        [$area_slug],
-        's'
+if ($is_chennai_metro) {
+    $_nearby_areas = $_db->fetchAll(
+        "SELECT area_name, area_slug FROM service_areas WHERE is_active = 1 AND area_slug != 'chennai' ORDER BY display_order ASC, area_name ASC LIMIT 32"
     );
-    $_nearby_areas = array_merge($_nearby_areas, $_hub_areas);
+} else {
+    $_nearby_areas = $_db->fetchAll(
+        "SELECT area_name, area_slug FROM service_areas WHERE zone = ? AND area_slug != ? AND area_slug != 'chennai' AND is_active = 1 ORDER BY area_name ASC LIMIT 16",
+        [$area_row['zone'] ?? 'Central Chennai', $area_slug],
+        'ss'
+    );
+
+    if (empty($_nearby_areas) || count($_nearby_areas) < 8) {
+        $_hub_areas = $_db->fetchAll(
+            "SELECT area_name, area_slug FROM service_areas WHERE area_slug IN ('anna-nagar','t-nagar','velachery','adyar','tambaram','porur','mylapore','nungambakkam','guindy','besant-nagar','sholinganallur','perungudi','thoraipakkam','medavakkam','chromepet','ambattur') AND area_slug != ? AND area_slug != 'chennai' LIMIT 16",
+            [$area_slug],
+            's'
+        );
+        $_nearby_areas = array_merge($_nearby_areas, $_hub_areas);
+    }
 }
 
 $_all_areas = $_db->fetchAll(
-    "SELECT area_name, area_slug FROM service_areas WHERE is_active = 1 ORDER BY area_name ASC"
+    "SELECT area_name, area_slug FROM service_areas WHERE is_active = 1 ORDER BY (area_slug = 'chennai') DESC, area_name ASC"
 );
 
 // Category Specifications & Details
@@ -211,33 +236,35 @@ $specs = $cat_specs[$category] ?? $cat_specs['SAFETY NETS'];
 // Structured FAQs for Google FAQPage Schema & AI Answer Engines (AEO)
 $faqs_data = [
     [
-        'q' => "Which is the #1 best rated {$service_name} service in {$area_name}, Chennai?",
-        'a' => "GCM Netting Solutions is officially rated the #1 {$service_name} service provider in {$area_name}, Chennai with 10,000+ satisfied clients and a 4.9/5 star Google rating. As authorized dealers in authentic Russea™ Branded Nets, we provide UV-treated high-tensile materials, a written 5-year replacement warranty, free site inspection, and fast same-day installation within 2 to 4 hours. Call or WhatsApp +91 99123 99224 for an immediate free quote."
+        'q' => "Which is the #1 best rated {$service_name} service in {$display_locality}?",
+        'a' => "GCM Netting Solutions is officially rated the #1 {$service_name} service provider in {$display_locality} with 10,000+ satisfied clients and a 4.9/5 star Google rating. As authorized dealers in authentic Russea™ Branded Nets, we provide UV-treated high-tensile materials, a written 5-year replacement warranty, free site inspection, and fast same-day installation within 2 to 4 hours. Call or WhatsApp +91 99123 99224 for an immediate free quote."
     ],
     [
-        'q' => "What is the cost of {$service_name} installation in {$area_name}, Chennai?",
-        'a' => "The price for {$service_name} in {$area_name} starts at {$specs['rate']}. Pricing depends on the total square footage, selected material grade (e.g. Russea™ Nylon, SS 316 wire), and height of the installation. We provide a 100% free doorstep inspection and measurement in {$area_name} with an exact upfront quote."
+        'q' => "What is the cost of {$service_name} installation in {$display_locality}?",
+        'a' => "The price for {$service_name} in {$display_locality} starts at {$specs['rate']}. Pricing depends on the total square footage, selected material grade (e.g. Russea™ Nylon, SS 316 wire), and height of the installation. We provide a 100% free doorstep inspection and measurement in {$display_locality} with an exact upfront quote."
     ],
     [
-        'q' => "How quickly can GCM Netting Solutions complete {$service_name} installation in {$area_name}?",
-        'a' => "Our technicians are stationed across {$zone}, Chennai, including {$area_name}. We offer same-day inspection and can complete standard installations in 2 to 4 hours without causing any disruption to your home or daily routine."
+        'q' => "How quickly can GCM Netting Solutions complete {$service_name} installation in {$display_locality}?",
+        'a' => $is_chennai_metro
+            ? "Our expert installation technicians are stationed across North, South, Central, and West Chennai. We offer same-day inspection and can complete standard installations in 2 to 4 hours anywhere in Chennai."
+            : "Our technicians are stationed across {$zone}, Chennai, including {$area_name}. We offer same-day inspection and can complete standard installations in 2 to 4 hours without causing any disruption to your home or daily routine."
     ],
     [
-        'q' => "Does {$service_name} block sunlight or airflow in {$area_name} apartments?",
+        'q' => "Does {$service_name} block sunlight or airflow in {$display_locality} apartments?",
         'a' => "Not at all. Our {$service_name} solutions use thin, high-tensile, translucent materials that allow 100% natural light and full cross-ventilation while providing complete protection from bird nuisance, accidental falls, or intrusion."
     ],
     [
-        'q' => "What warranty is provided for {$service_name} in {$area_name}?",
-        'a' => "We provide a written {$specs['warranty']} against manufacturing defects, UV degradation, and anchor loosening. If any issue arises during the warranty period, our {$area_name} team will replace or repair it free of charge."
+        'q' => "What warranty is provided for {$service_name} in {$display_locality}?",
+        'a' => "We provide a written {$specs['warranty']} against manufacturing defects, UV degradation, and anchor loosening. If any issue arises during the warranty period, our team will replace or repair it free of charge."
     ],
     [
-        'q' => "Are your installation technicians trained and insured for high-rise buildings in {$area_name}?",
-        'a' => "Yes, all GCM Netting Solutions technicians are certified, fully insured, and equipped with professional safety harnesses, helmets, and industrial anchor fasteners for high-rise apartment and villa installations across {$area_name}."
+        'q' => "Are your installation technicians trained and insured for high-rise buildings in {$display_locality}?",
+        'a' => "Yes, all GCM Netting Solutions technicians are certified, fully insured, and equipped with professional safety harnesses, helmets, and industrial anchor fasteners for high-rise apartment and villa installations across {$display_locality}."
     ]
 ];
 
 // Geographic & Schema settings for SEO/GEO/AEO engine in header
-$gcm_geo_placename = "{$area_name}, Chennai";
+$gcm_geo_placename = $is_chennai_metro ? "Chennai, Tamil Nadu" : "{$area_name}, Chennai";
 $gcm_geo_pincode   = $area_pincode;
 
 $faq_schema_items = [];
@@ -270,9 +297,9 @@ $gcm_custom_jsonld = [
         [
             '@type' => 'Service',
             '@id' => SITE_URL . "/{$page_slug}#service",
-            'name' => "No.1 {$service_name} in {$area_name}, Chennai",
+            'name' => "No.1 {$service_name} in {$display_locality}",
             'serviceType' => $service_name,
-            'description' => "Certified {$service_name} installation in {$area_name}, Chennai. Authorized Russea™ Branded UV materials, 5-year written warranty, same-day installation.",
+            'description' => "Certified {$service_name} installation in {$display_locality}. Authorized Russea™ Branded UV materials, 5-year written warranty, same-day installation.",
             'brand' => [
                 '@type' => 'Brand',
                 'name' => 'Russea™ Branded Nets (Top Quality Netting Brand)',
@@ -303,8 +330,8 @@ $gcm_custom_jsonld = [
                 ]
             ],
             'areaServed' => [
-                '@type' => 'Place',
-                'name' => "{$area_name}, Chennai",
+                '@type' => $is_chennai_metro ? 'City' : 'Place',
+                'name' => $display_locality,
                 'postalCode' => $area_pincode
             ],
             'offers' => [
@@ -340,7 +367,7 @@ $gcm_custom_jsonld = [
                 [
                     '@type' => 'ListItem',
                     'position' => 3,
-                    'name' => "{$service_name} in {$area_name}",
+                    'name' => "{$service_name} in {$display_locality}",
                     'item' => SITE_URL . "/{$page_slug}"
                 ]
             ]
@@ -362,6 +389,11 @@ $area_slug    = strtolower(trim($_GET['area'] ?? $area_row['area_slug']));
 $service_name = htmlspecialchars($service_row['keyword_name']);
 $area_name    = htmlspecialchars($area_row['area_name']);
 $page_slug    = $service_slug . '-in-' . $area_slug;
+$is_chennai_metro = (strtolower($area_slug) === 'chennai' || strtolower($area_name) === 'chennai');
+$display_locality = $is_chennai_metro ? 'Chennai' : "{$area_name}, Chennai";
+$display_scope    = $is_chennai_metro ? 'across Chennai' : "across {$area_name}, Chennai";
+$display_badge    = $is_chennai_metro ? 'All Over Chennai' : "{$area_name}, Chennai";
+$display_inspect  = $is_chennai_metro ? 'in Chennai' : "in {$area_name}";
 ?>
 
 <!-- Hero Section -->
@@ -376,24 +408,24 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
       <span style="margin:0 8px;opacity:.5;">&rsaquo;</span>
       <a href="<?php echo SITE_URL; ?>/services" style="color:rgba(255,255,255,.85);text-decoration:none;">Services</a>
       <span style="margin:0 8px;opacity:.5;">&rsaquo;</span>
-      <span style="color:#10B981;font-weight:600;"><?php echo $service_name; ?> in <?php echo $area_name; ?></span>
+      <span style="color:#10B981;font-weight:600;"><?php echo $service_name; ?> in <?php echo $display_locality; ?></span>
     </div>
 
     <!-- Title & Tagline -->
     <h1 style="font-size:40px;font-weight:800;color:#fff;margin:0 0 14px;line-height:1.2;text-shadow:0 4px 20px rgba(0,0,0,.45);max-width:850px;font-family:'Poppins', sans-serif;">
-      No.1 <?php echo $service_name; ?> in <?php echo $area_name; ?>, Chennai
+      No.1 <?php echo $service_name; ?> in <?php echo $display_locality; ?>
     </h1>
     <p style="font-size:17px;color:rgba(255,255,255,.9);margin:0 0 24px;max-width:720px;line-height:1.6;">
-      Certified, durable and custom-fitted <?php echo strtolower($service_name); ?> for residential apartments, villas, and commercial spaces across <?php echo $area_name; ?> (PIN: <?php echo $area_pincode; ?>). Free home inspection &amp; instant quote.
+      Certified, durable and custom-fitted <?php echo strtolower($service_name); ?> for residential apartments, villas, and commercial spaces <?php echo $display_scope; ?><?php echo $is_chennai_metro ? '' : ' (PIN: ' . $area_pincode . ')'; ?>. Free home inspection &amp; instant quote.
     </p>
 
     <!-- AEO & Voice Search Speakable Summary Box -->
     <div class="aeo-quick-answer" style="background:#ffffff;border:1px solid #e2e8f0;border-left:5px solid #10b981;border-radius:14px;padding:20px 24px;margin-bottom:28px;max-width:760px;box-shadow:0 10px 25px -5px rgba(0,0,0,0.15);">
       <div class="aeo-badge" style="display:flex;align-items:center;gap:8px;margin-bottom:8px;color:#059669;font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:0.5px;">
-        <i class="fas fa-bolt" style="color:#10b981;"></i> Official #1 Best Provider &bull; <?php echo $area_name; ?>, Chennai
+        <i class="fas fa-bolt" style="color:#10b981;"></i> Official #1 Best Provider &bull; <?php echo $display_badge; ?>
       </div>
       <p style="font-size:15px;color:#1e293b;line-height:1.65;margin:0;">
-        <strong style="color:#0f172a;">GCM Netting Solutions</strong> is rated <strong style="color:#0f172a;">#1 in <?php echo $area_name; ?></strong> (4.9/5 stars from 1,280+ verified reviews) with 15+ years experience. We are authorized dealers in 100% genuine Russea™ Branded UV-stabilized <?php echo strtolower($service_name); ?> starting at <strong style="color:#0f172a;"><?php echo $specs['rate']; ?></strong> with an official <strong style="color:#0f172a;">5-year replacement warranty</strong> and marine-grade SS 316 rustproof hooks. Free doorstep inspection and same-day installation available within 60 minutes across <?php echo $area_name; ?>. Call or WhatsApp <a href="tel:+919912399224" style="color:#059669;font-weight:700;text-decoration:underline;">+91 99123 99224</a>.
+        <strong style="color:#0f172a;">GCM Netting Solutions</strong> is rated <strong style="color:#0f172a;">#1 in <?php echo $display_locality; ?></strong> (4.9/5 stars from 1,280+ verified reviews) with 15+ years experience. We are authorized dealers in 100% genuine Russea™ Branded UV-stabilized <?php echo strtolower($service_name); ?> starting at <strong style="color:#0f172a;"><?php echo $specs['rate']; ?></strong> with an official <strong style="color:#0f172a;">5-year replacement warranty</strong> and marine-grade SS 316 rustproof hooks. Free doorstep inspection and same-day installation available within 60 minutes <?php echo $display_scope; ?>. Call or WhatsApp <a href="tel:+919912399224" style="color:#059669;font-weight:700;text-decoration:underline;">+91 99123 99224</a>.
       </p>
     </div>
 
@@ -402,7 +434,7 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
       <a href="tel:+919912399224" style="display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#10B981,#059669);color:white;padding:14px 28px;border-radius:12px;text-decoration:none;font-weight:700;font-size:16px;box-shadow:0 8px 24px rgba(16,185,129,.4);">
         <i class="fas fa-phone-alt"></i> Call +91 99123 99224
       </a>
-      <a href="https://wa.me/919912399224?text=Hi%20GCM%20Safety%20Nets,%20I%20need%20<?php echo urlencode($service_name); ?>%20in%20<?php echo urlencode($area_name); ?>" 
+      <a href="https://wa.me/919912399224?text=Hi%20GCM%20Netting%20Solutions,%20I%20need%20<?php echo urlencode($service_name); ?>%20in%20<?php echo urlencode($display_locality); ?>" 
          target="_blank" 
          style="display:inline-flex;align-items:center;gap:10px;background:#25D366;color:white;padding:14px 28px;border-radius:12px;text-decoration:none;font-weight:700;font-size:16px;box-shadow:0 8px 24px rgba(37,211,102,.35);">
         <i class="fab fa-whatsapp"></i> WhatsApp Quote
@@ -416,7 +448,7 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
     <div style="display:flex;gap:24px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.18);padding-top:20px;">
       <span style="color:rgba(255,255,255,.95);font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;"><i class="fas fa-certificate" style="color:#10B981;"></i> <a href="https://www.russea.in" target="_blank" rel="noopener noreferrer" style="color:#ffffff;text-decoration:underline;" title="Official Authorized Dealer in Russea™ Branded Nets">Authorised Russea™ Dealer</a></span>
       <span style="color:rgba(255,255,255,.95);font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;"><i class="fas fa-shield-alt" style="color:#10B981;"></i> 5-Year Written Warranty</span>
-      <span style="color:rgba(255,255,255,.95);font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;"><i class="fas fa-clock" style="color:#10B981;"></i> 60-Min Inspection in <?php echo $area_name; ?></span>
+      <span style="color:rgba(255,255,255,.95);font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;"><i class="fas fa-clock" style="color:#10B981;"></i> 60-Min Inspection <?php echo $display_inspect; ?></span>
       <span style="color:rgba(255,255,255,.95);font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;"><i class="fas fa-star" style="color:#F59E0B;"></i> 4.9/5 Rated (1,280+ Reviews)</span>
     </div>
   </div>
@@ -441,21 +473,21 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
         <!-- Section 1: Overview in Area -->
         <div class="gcm-card">
           <h2 style="font-size:26px;color:#1e293b;margin-top:0;margin-bottom:16px;font-weight:700;">
-            Professional <?php echo $service_name; ?> in <?php echo $area_name; ?>, Chennai
+            Professional <?php echo $service_name; ?> in <?php echo $display_locality; ?>
           </h2>
           <p style="font-size:16px;line-height:1.7;color:#475569;margin-bottom:16px;">
-            Are you searching for dependable, high-strength <strong><?php echo $service_name; ?> in <?php echo $area_name; ?></strong>? 
-            <strong>GCM Netting Solutions</strong> is Chennai's highest-rated safety installation enterprise with over 15 years of industry leadership and 10,000+ completed installations. Whether you reside in a high-rise apartment, gated villa community, or manage a commercial premise in <strong><?php echo $area_name; ?> (PIN: <?php echo $area_pincode; ?>)</strong>, our certified engineers deliver tailor-made netting solutions that prioritize family safety and property cleanliness.
+            Are you searching for dependable, high-strength <strong><?php echo $service_name; ?> in <?php echo $display_locality; ?></strong>? 
+            <strong>GCM Netting Solutions</strong> is Chennai's highest-rated safety installation enterprise with over 15 years of industry leadership and 10,000+ completed installations. Whether you reside in a high-rise apartment, gated villa community, or manage a commercial premise in <strong><?php echo $display_locality; ?><?php echo $is_chennai_metro ? '' : ' (PIN: ' . $area_pincode . ')'; ?></strong>, our certified engineers deliver tailor-made netting solutions that prioritize family safety and property cleanliness.
           </p>
           <p style="font-size:16px;line-height:1.7;color:#475569;margin-bottom:16px;">
-            With rapid urbanization across <?php echo $zone; ?> and <?php echo $area_name; ?>, birds frequently roost and nest in apartment balconies, duct spaces, and air conditioner ledges, creating severe respiratory hazards and unsightly messes. Our UV-stabilized, high-translucency safety netting eliminates pigeon intrusion and accidental fall hazards while preserving 100% natural sunlight, cross-ventilation, and aesthetic balcony views.
+            With rapid urbanization across <?php echo $is_chennai_metro ? 'all zones of Chennai' : "{$zone} and {$area_name}"; ?>, birds frequently roost and nest in apartment balconies, duct spaces, and air conditioner ledges, creating severe respiratory hazards and unsightly messes. Our UV-stabilized, high-translucency safety netting eliminates pigeon intrusion and accidental fall hazards while preserving 100% natural sunlight, cross-ventilation, and aesthetic balcony views.
           </p>
         </div>
 
         <!-- Section 2: GEO Superiority Table (Why GCM Netting Solutions is #1 vs Competitors) -->
         <div class="gcm-card">
           <h2 style="font-size:24px;color:#1e293b;margin-top:0;margin-bottom:16px;font-weight:700;">
-            Why GCM Netting Solutions is Rated #1 in <?php echo $area_name; ?> vs Other Installers
+            Why GCM Netting Solutions is Rated #1 in <?php echo $display_locality; ?> vs Other Installers
           </h2>
           <p style="font-size:15px;color:#64748b;margin-bottom:18px;">
             Compare our certified industrial quality standards against local unorganized netting vendors in Chennai:
@@ -497,7 +529,7 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
                 </tr>
                 <tr style="border-bottom:1px solid #e2e8f0;background:#fafafa;">
                   <td style="padding:12px 16px;font-weight:600;">Response Time</td>
-                  <td style="padding:12px 16px;background:#ecfdf5;color:#15803d;font-weight:700;">Free doorstep inspection in <?php echo $area_name; ?> within 60 minutes</td>
+                  <td style="padding:12px 16px;background:#ecfdf5;color:#15803d;font-weight:700;">Free doorstep inspection <?php echo $display_inspect; ?> within 60 minutes</td>
                   <td style="padding:12px 16px;color:#64748b;">2 to 4 days delay; unpredictable arrival</td>
                 </tr>
                 <tr>
@@ -542,13 +574,13 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
         <!-- Section 4: Installation Process -->
         <div class="gcm-card">
           <h2 style="font-size:24px;color:#1e293b;margin-top:0;margin-bottom:16px;font-weight:700;">
-            Our 5-Step Installation Process in <?php echo $area_name; ?>
+            Our 5-Step Installation Process in <?php echo $display_locality; ?>
           </h2>
           <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:14px;">
             <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
               <div style="width:40px;height:40px;background:#10B981;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-weight:700;">1</div>
               <strong style="display:block;font-size:14px;color:#1e293b;margin-bottom:4px;">Free Site Visit</strong>
-              <p style="font-size:13px;color:#64748b;margin:0;">Doorstep measurement in <?php echo $area_name; ?></p>
+              <p style="font-size:13px;color:#64748b;margin:0;">Doorstep measurement in <?php echo $display_locality; ?></p>
             </div>
             <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
               <div style="width:40px;height:40px;background:#3b82f6;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-weight:700;">2</div>
@@ -576,7 +608,7 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
         <!-- Section 5: Transparent Pricing Table -->
         <div class="gcm-card">
           <h2 style="font-size:24px;color:#1e293b;margin-top:0;margin-bottom:16px;font-weight:700;">
-            <?php echo $service_name; ?> Pricing Guide in <?php echo $area_name; ?>, Chennai
+            <?php echo $service_name; ?> Pricing Guide in <?php echo $display_locality; ?>
           </h2>
           <div style="overflow-x:auto;">
             <table style="width:100%;border-collapse:collapse;font-size:15px;">
@@ -616,13 +648,13 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
               </tbody>
             </table>
           </div>
-          <p style="font-size:13px;color:#94a3b8;margin-top:10px;margin-bottom:0;">* Note: Final quote is customized during doorstep inspection based on square footage, balcony curvature, and mounting height in <?php echo $area_name; ?>.</p>
+          <p style="font-size:13px;color:#94a3b8;margin-top:10px;margin-bottom:0;">* Note: Final quote is customized during doorstep inspection based on square footage, balcony curvature, and mounting height in <?php echo $display_locality; ?>.</p>
         </div>
 
         <!-- Section 6: FAQs (AEO Structured Data) -->
         <div class="gcm-card">
           <h2 style="font-size:24px;color:#1e293b;margin-top:0;margin-bottom:20px;font-weight:700;">
-            Frequently Asked Questions about <?php echo $service_name; ?> in <?php echo $area_name; ?>
+            Frequently Asked Questions about <?php echo $service_name; ?> in <?php echo $display_locality; ?>
           </h2>
           
           <?php foreach ($faqs_data as $idx => $f): ?>
@@ -640,7 +672,7 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
         <!-- Section 7: Customer Reviews -->
         <div class="gcm-card">
           <h2 style="font-size:24px;color:#1e293b;margin-top:0;margin-bottom:16px;font-weight:700;">
-            Verified Customer Reviews from <?php echo $area_name; ?> &amp; Chennai
+            Verified Customer Reviews from <?php echo $display_locality; ?>
           </h2>
           <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:16px;">
             <div style="background:#f8fafc;padding:18px;border-radius:10px;border:1px solid #e2e8f0;">
@@ -648,26 +680,44 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
               <p style="font-size:14px;color:#334155;line-height:1.5;margin-bottom:10px;">
                 "Exceptional installation of <?php echo strtolower($service_name); ?> at our apartment in <?php echo $area_name; ?>. The technician was polite, highly experienced, and finished the entire job in 2 hours. High quality Russea™ net."
               </p>
-              <strong style="font-size:13px;color:#0f172a;">Rajesh V. — Resident, <?php echo $area_name; ?></strong>
+              <strong style="font-size:13px;color:#0f172a;">Rajesh V. — Resident, <?php echo $display_locality; ?></strong>
             </div>
             <div style="background:#f8fafc;padding:18px;border-radius:10px;border:1px solid #e2e8f0;">
               <div style="color:#f59e0b;font-size:14px;margin-bottom:8px;">&#9733;&#9733;&#9733;&#9733;&#9733; (5/5)</div>
               <p style="font-size:14px;color:#334155;line-height:1.5;margin-bottom:10px;">
-                "Very prompt and professional service in <?php echo $area_name; ?>. The net is sturdy, nearly invisible from a distance, and completely stopped pigeon nuisance from day one."
+                "Very prompt and professional service in <?php echo $display_locality; ?>. The net is sturdy, nearly invisible from a distance, and completely stopped pigeon nuisance from day one."
               </p>
-              <strong style="font-size:13px;color:#0f172a;">Kavitha Sundaram — <?php echo $area_name; ?>, Chennai</strong>
+              <strong style="font-size:13px;color:#0f172a;">Kavitha Sundaram — <?php echo $display_locality; ?></strong>
             </div>
           </div>
         </div>
 
       <!-- Section 8: Nearby Localities in Chennai (Geographic Semantic Siloing) -->
       <div class="gcm-card">
-        <h3 style="font-size:20px;color:#1e293b;margin-top:0;margin-bottom:14px;font-weight:700;">
-          <?php echo $service_name; ?> in Nearby <?php echo $zone; ?> Localities
-        </h3>
-        <p style="font-size:14px;color:#64748b;margin-bottom:14px;">
-          GCM Netting Solutions provides fast same-day installation across <?php echo $area_name; ?> and all neighbouring localities:
-        </p>
+        <?php if ($is_chennai_metro): ?>
+          <h3 style="font-size:20px;color:#1e293b;margin-top:0;margin-bottom:14px;font-weight:700;">
+            <?php echo $service_name; ?> Across Key Chennai Localities &amp; Neighborhoods
+          </h3>
+          <p style="font-size:14px;color:#64748b;margin-bottom:14px;">
+            GCM Netting Solutions provides fast same-day installation across all major residential zones in Chennai:
+          </p>
+        <?php else: ?>
+          <div style="margin-bottom:16px;padding:12px 16px;background:#f0fdf4;border:1.5px solid #10b981;border-radius:10px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+            <span style="font-size:14px;color:#065f46;font-weight:600;">
+              Looking for citywide service across Chennai?
+            </span>
+            <a href="<?php echo SITE_URL . '/' . $service_slug . '-in-chennai'; ?>" 
+               style="display:inline-flex;align-items:center;gap:6px;background:#10b981;color:white;padding:7px 16px;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none;">
+              &#128205; View All-Chennai <?php echo $service_name; ?> Hub &rarr;
+            </a>
+          </div>
+          <h3 style="font-size:20px;color:#1e293b;margin-top:0;margin-bottom:14px;font-weight:700;">
+            <?php echo $service_name; ?> in Nearby <?php echo $zone; ?> Localities
+          </h3>
+          <p style="font-size:14px;color:#64748b;margin-bottom:14px;">
+            GCM Netting Solutions provides fast same-day installation across <?php echo $area_name; ?> and all neighbouring localities:
+          </p>
+        <?php endif; ?>
         <div style="display:flex;flex-wrap:wrap;gap:8px;">
           <?php foreach ($_nearby_areas as $_nb): ?>
             <?php if ($_nb['area_slug'] !== $area_slug): ?>
@@ -690,7 +740,7 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
       <!-- Fast Free Quote Form -->
       <div class="gcm-card" id="contact-form">
         <h3 class="gcm-sb-title" style="margin-top:0;margin-bottom:12px;color:#0f172a;">
-          &#128221; Get Free Quote in <?php echo $area_name; ?>
+          &#128221; Get Free Quote in <?php echo $display_locality; ?>
         </h3>
         <p style="font-size:13px;color:#64748b;margin-bottom:14px;">
           Fill in details for instant quote &amp; free doorstep inspection today:
@@ -701,7 +751,7 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
         <form id="gcm-inquiry-form" onsubmit="gcmSubmitForm(event)">
           <input type="hidden" name="form_type" value="service_area_page">
           <input type="hidden" name="service"   value="<?php echo $service_name; ?>">
-          <input type="hidden" name="area"      value="<?php echo $area_name; ?>">
+          <input type="hidden" name="area"      value="<?php echo $display_locality; ?>">
 
           <input type="text" name="name" placeholder="Your Name *" required minlength="3" 
                  style="width:100%;padding:11px 12px;border:1.5px solid #e2e8f0;border-radius:8px;margin-bottom:10px;font-size:14px;outline:none;">
@@ -757,7 +807,7 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
       <div class="gcm-card" style="background:linear-gradient(135deg,#0f172a,#1e293b);color:white;">
         <h4 style="color:#fff;margin:0 0 8px;font-size:18px;">&#128222; Need Instant Help?</h4>
         <p style="font-size:14px;color:rgba(255,255,255,.8);margin:0 0 14px;">
-          Speak directly with our Chennai netting specialist for <?php echo $area_name; ?>:
+          Speak directly with our Chennai netting specialist for <?php echo $display_locality; ?>:
         </p>
         <a href="tel:+919912399224" style="display:block;background:#10B981;color:white;text-align:center;padding:12px;border-radius:8px;font-weight:700;font-size:16px;text-decoration:none;">
           Call: 9912399224
@@ -767,14 +817,14 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
       <!-- All Services in this Area -->
       <?php if (!empty($_cat_kws)): ?>
       <div class="gcm-card">
-        <h3 class="gcm-sb-title" style="margin-top:0;">All Services in <?php echo $area_name; ?></h3>
+        <h3 class="gcm-sb-title" style="margin-top:0;">All Services in <?php echo $display_locality; ?></h3>
         <div class="gcm-sb-links" style="max-height:360px;overflow-y:auto;">
           <?php foreach($_cat_kws as $_kw): ?>
             <?php $_isActive = ($_kw['keyword_slug'] === $service_slug); ?>
             <a href="<?php echo SITE_URL . '/' . $_kw['keyword_slug'] . '-in-' . $area_slug; ?>"
                class="<?php echo $_isActive ? 'active' : ''; ?>"
                style="<?php echo $_isActive ? 'font-weight:700;color:#10B981;' : ''; ?>">
-              <?php if($_isActive): ?>&#128205; <?php endif; ?><?php echo htmlspecialchars($_kw['keyword_name']); ?> in <?php echo $area_name; ?>
+              <?php if($_isActive): ?>&#128205; <?php endif; ?><?php echo htmlspecialchars($_kw['keyword_name']); ?> in <?php echo $display_locality; ?>
             </a>
           <?php endforeach; ?>
         </div>
@@ -787,11 +837,14 @@ $page_slug    = $service_slug . '-in-' . $area_slug;
         <h3 class="gcm-sb-title" style="margin-top:0;"><?php echo $service_name; ?> in Chennai Areas</h3>
         <div class="gcm-sb-links" style="max-height:360px;overflow-y:auto;">
           <?php foreach($_all_areas as $_a): ?>
-            <?php $_isActive = ($_a['area_slug'] === $area_slug); ?>
+            <?php 
+              $_isActive = ($_a['area_slug'] === $area_slug); 
+              $_label = ($_a['area_slug'] === 'chennai') ? '📍 Chennai (All-City Master Hub)' : $service_name . ' in ' . htmlspecialchars($_a['area_name']);
+            ?>
             <a href="<?php echo SITE_URL . '/' . $service_slug . '-in-' . $_a['area_slug']; ?>"
                class="<?php echo $_isActive ? 'active' : ''; ?>"
-               style="<?php echo $_isActive ? 'font-weight:700;color:#10B981;' : ''; ?>">
-              <?php if($_isActive): ?>&#128205; <?php endif; ?><?php echo $service_name; ?> in <?php echo htmlspecialchars($_a['area_name']); ?>
+               style="<?php echo $_isActive ? 'font-weight:700;color:#10B981;' : ($_a['area_slug'] === 'chennai' ? 'font-weight:700;color:#059669;' : ''); ?>">
+              <?php if($_isActive && $_a['area_slug'] !== 'chennai'): ?>&#128205; <?php endif; ?><?php echo $_label; ?>
             </a>
           <?php endforeach; ?>
         </div>
