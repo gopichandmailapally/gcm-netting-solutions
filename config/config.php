@@ -40,7 +40,7 @@ define('DEBUG_MODE', $is_local); // Enable debug in local environment
 define('DB_HOST', 'localhost');
 define('DB_USER', 'gcmsafetynets_user');
 define('DB_PASS', 't856zxMjLey8bpU5');
-define('DB_NAME', 'gcmsafetynets_db');
+define('DB_NAME', 'gcmnettingsolutions_db');
 define('DB_CHARSET', 'utf8mb4');
 
 // Site Configuration - Auto-detect URL

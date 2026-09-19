@@ -18,7 +18,7 @@ $areas = [];
 // 1. Try MySQL Database Connection
 try {
     $db_host = defined('DB_HOST') ? DB_HOST : 'localhost';
-    $db_name = defined('DB_NAME') ? DB_NAME : 'gcmsafetynets_db';
+    $db_name = defined('DB_NAME') ? DB_NAME : 'gcmnettingsolutions_db';
     $db_user = defined('DB_USER') ? DB_USER : 'gcmsafetynets_user';
     $db_pass = defined('DB_PASS') ? DB_PASS : 't856zxMjLey8bpU5';
 
