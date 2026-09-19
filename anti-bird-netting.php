@@ -59,7 +59,7 @@ include 'includes/modern-header.php';
 
 <h3>Service Coverage Across Chennai</h3>
 
-<p>GCM Netting Solutions provides comprehensive Anti Bird Netting services in all 188+ areas across Chennai, including Gachibowli, Madhapur, Banjara Hills, Jubilee Hills, Tambaram, and more. We cater to residential apartments, commercial complexes, industrial warehouses, and individual homes. Our quick response time and free consultation ensure that you receive the best possible service, no matter where you are located in Chennai.</p>
+<p>GCM Netting Solutions provides comprehensive Anti Bird Netting services in all 188+ areas across Chennai, including Anna Nagar, T Nagar, Anna Nagar, Adyar, Tambaram, and more. We cater to residential apartments, commercial complexes, industrial warehouses, and individual homes. Our quick response time and free consultation ensure that you receive the best possible service, no matter where you are located in Chennai.</p>
 
 <h3>Why Anti Bird Netting Matters in Chennai: A Local Perspective</h3>
 

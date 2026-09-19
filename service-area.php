@@ -137,7 +137,7 @@ $_nearby_areas = $_db->fetchAll(
 
 if (empty($_nearby_areas) || count($_nearby_areas) < 8) {
     $_hub_areas = $_db->fetchAll(
-        "SELECT area_name, area_slug FROM service_areas WHERE area_slug IN ('gachibowli','madhapur','kukatpally','kondapur','banjara-hills','jubilee-hills','hitec-city','miyapur','secunderabad','begumpet') AND area_slug != ? LIMIT 12",
+        "SELECT area_name, area_slug FROM service_areas WHERE area_slug IN ('anna-nagar','t-nagar','velachery','adyar','tambaram','porur','mylapore','nungambakkam','guindy','besant-nagar','sholinganallur','perungudi','thoraipakkam','medavakkam','chromepet','ambattur') AND area_slug != ? LIMIT 12",
         [$area_slug],
         's'
     );

@@ -59,7 +59,7 @@ include 'includes/modern-header.php';
 
 <h3>Service Coverage Across Chennai</h3>
 
-<p>We proudly serve all 188+ areas across Chennai, including but not limited to Gachibowli, Jubilee Hills, Banjara Hills, Madhapur, Tambaram, and Kukatpally. Whether you need pigeon net installation for your residential apartment, commercial building, or industrial facility, we've got you covered. We offer a quick response time in all zones and provide free consultation and site visits to assess your specific needs.</p>
+<p>We proudly serve all 188+ areas across Chennai, including but not limited to Anna Nagar, Adyar, Besant Nagar, T Nagar, Tambaram, and Porur. Whether you need pigeon net installation for your residential apartment, commercial building, or industrial facility, we've got you covered. We offer a quick response time in all zones and provide free consultation and site visits to assess your specific needs.</p>
 
 <h3>Why Pigeon Net Installation Matters in Chennai</h3>
 

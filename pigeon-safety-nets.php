@@ -77,7 +77,7 @@ include 'includes/modern-header.php';
 
 <h3>Service Coverage Across Chennai</h3>
 
-<p>GCM Netting Solutions provides comprehensive <strong>pigeon net installation services</strong> in all 188+ areas across Chennai, including Gachibowli, Madhapur, Jubilee Hills, Banjara Hills, Tambaram, and beyond. Whether you need pigeon protection for your residential apartment, commercial building, or industrial facility, we've got you covered. We pride ourselves on our quick response time and offer free consultation and site visits to assess your specific needs.</p>
+<p>GCM Netting Solutions provides comprehensive <strong>pigeon net installation services</strong> in all 188+ areas across Chennai, including Anna Nagar, T Nagar, Velachery, Adyar, Tambaram, and beyond. Whether you need pigeon protection for your residential apartment, commercial building, or industrial facility, we've got you covered. We pride ourselves on our quick response time and offer free consultation and site visits to assess your specific needs.</p>
 
 <h3>Why Pigeon Safety Nets Matter in Chennai</h3>
 

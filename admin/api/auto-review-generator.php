@@ -137,15 +137,15 @@ $keywords = [
     'satisfaction guaranteed','customer care'
 ];
 $areas = [
-    'Abids','Ameerpet','Banjara Hills','Begumpet','Boduppal','Borabanda',
-    'Chandanagar','Charminar','Dilsukhnagar','Ecil','Gachibowli','Habsiguda',
-    'Hafeezpet','Hitech City','Jubilee Hills','Kompally','Kondapur','Kothapet',
-    'Kukatpally','LB Nagar','Madhapur','Madinaguda','Malkajgiri','Manikonda',
-    'Mehdipatnam','Miyapur','Nacharam','Nagole','Nallagandla','Nanakramguda',
-    'Nizampet','Pragathi Nagar','RC Puram','Sainikpuri','Saroornagar',
-    'Tambaram','Serilingampally','Somajiguda','SR Nagar','Tarnaka',
-    'Tolichowki','Uppal','Vanasthalipuram','Yousufguda','KPHB','AS Rao Nagar',
-    'Moosapet','Bowenpally','Alwal','Balanagar','Himayath Nagar','Attapur'
+    'Abids','Kodambakkam','Besant Nagar','Nungambakkam','Boduppal','Borabanda',
+    'Chromepet','Charminar','Pallavaram','Ecil','Anna Nagar','Habsiguda',
+    'Hafeezpet','Sholinganallur','Adyar','Madipakkam','Velachery','Kothapet',
+    'Porur','Avadi','T Nagar','Madinaguda','Malkajgiri','Mylapore',
+    'Mogappair','Ambattur','Nacharam','Nagole','Medavakkam','Nanakramguda',
+    'Kilpauk','Pragathi Nagar','RC Puram','Sainikpuri','Saroornagar',
+    'Tambaram','Serilingampally','Alwarpet','SR Nagar','Tarnaka',
+    'Kotturpuram','Uppal','Vanasthalipuram','Yousufguda','Thiruvanmiyur','AS Rao Nagar',
+    'Moosapet','Bowenpally','Alwal','Balanagar','Himayath Nagar','Saidapet'
 ];
 
 /* ── Generation loop ───────────────────────────────────────────────────── */

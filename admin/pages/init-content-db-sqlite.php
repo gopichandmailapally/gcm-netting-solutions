@@ -207,16 +207,16 @@ try {
         
         // Insert sample Chennai areas
         $areas_data = [
-            ['Ameerpet', 'ameerpet', '600002', 'Central'],
-            ['Banjara Hills', 'banjara-hills', '500034', 'Central'],
-            ['Hitech City', 'hitech-city', '500081', 'West'],
-            ['Gachibowli', 'gachibowli', '500032', 'West'],
-            ['Madhapur', 'madhapur', '500081', 'West'],
-            ['Kondapur', 'kondapur', '500084', 'West'],
-            ['Kukatpally', 'kukatpally', '500072', 'North'],
-            ['Miyapur', 'miyapur', '500049', 'North'],
+            ['Kodambakkam', 'ameerpet', '600002', 'Central'],
+            ['Besant Nagar', 'banjara-hills', '500034', 'Central'],
+            ['Sholinganallur', 'hitech-city', '500081', 'West'],
+            ['Anna Nagar', 'gachibowli', '500032', 'West'],
+            ['T Nagar', 'madhapur', '500081', 'West'],
+            ['Velachery', 'kondapur', '500084', 'West'],
+            ['Porur', 'kukatpally', '500072', 'North'],
+            ['Ambattur', 'miyapur', '500049', 'North'],
             ['Tambaram', 'secunderabad', '500003', 'North'],
-            ['Begumpet', 'begumpet', '600002', 'Central']
+            ['Nungambakkam', 'begumpet', '600002', 'Central']
         ];
         
         $stmt = $conn->prepare("INSERT INTO areas (area_name, slug, pincode, zone, is_active, display_order) VALUES (?, ?, ?, ?, 1, ?)");

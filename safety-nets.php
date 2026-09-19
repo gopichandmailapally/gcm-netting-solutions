@@ -56,7 +56,7 @@ include 'includes/modern-header.php';
 
 <h3>Service Coverage Across Chennai</h3>
 
-<p>GCM Netting Solutions proudly serves all 188+ areas across Chennai, including Gachibowli, Madhapur, Jubilee Hills, Banjara Hills, Tambaram, and more. Whether you need safety nets for a residential apartment, a commercial office, or an industrial facility, we've got you covered. Our team provides quick response times in all zones, ensuring timely installation and support. Contact us today for a free consultation and site visit!</p>
+<p>GCM Netting Solutions proudly serves all 188+ areas across Chennai, including Anna Nagar, T Nagar, Adyar, Besant Nagar, Tambaram, and more. Whether you need safety nets for a residential apartment, a commercial office, or an industrial facility, we've got you covered. Our team provides quick response times in all zones, ensuring timely installation and support. Contact us today for a free consultation and site visit!</p>
 
 <h3>Why This Service Matters in Chennai</h3>
 

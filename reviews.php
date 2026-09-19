@@ -590,7 +590,7 @@ include 'includes/modern-header.php';
                                 </div>
                                 <div>
                                     <label style="display:block; font-weight:600; color:#374151; margin-bottom:6px;">Location</label>
-                                    <input type="text" name="location" placeholder="e.g. Gachibowli, Chennai"
+                                    <input type="text" name="location" placeholder="e.g. Anna Nagar, Chennai"
                                            style="width:100%; padding:12px 14px; border:2px solid #e2e8f0; border-radius:10px; font-size:15px; outline:none; box-sizing:border-box; transition:border-color 0.2s;"
                                            onfocus="this.style.borderColor='#667eea'" onblur="this.style.borderColor='#e2e8f0'">
                                 </div>

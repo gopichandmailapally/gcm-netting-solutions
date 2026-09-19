@@ -159,7 +159,7 @@ include 'includes/modern-header.php';
                                     <label for="area">
                                         <i class="fas fa-map-marker-alt"></i> Your Location (Area in Chennai) *
                                     </label>
-                                    <input type="text" id="area" name="area" class="form-control" placeholder="e.g., Kukatpally, Gachibowli, Kondapur" required>
+                                    <input type="text" id="area" name="area" class="form-control" placeholder="e.g., Anna Nagar, T Nagar, Velachery" required>
                                 </div>
                                 
                                 <div class="form-group">
@@ -282,7 +282,7 @@ include 'includes/modern-header.php';
                                     endforeach;
                                 } else {
                                     // Fallback to popular areas if database is empty
-                                    $fallback_areas = ['Gachibowli', 'Hitech City', 'Kukatpally', 'Madhapur', 'Kondapur', 'Miyapur', 'Banjara Hills', 'Jubilee Hills', 'Tambaram', 'Begumpet', 'Ameerpet', 'SR Nagar', 'Uppal', 'LB Nagar', 'Dilsukhnagar', 'Malakpet', 'Attapur', 'Mehdipatnam', 'Tolichowki', 'Manikonda'];
+                                    $fallback_areas = ['Anna Nagar', 'T Nagar', 'Velachery', 'Adyar', 'Tambaram', 'Porur', 'Mylapore', 'Nungambakkam', 'Guindy', 'Besant Nagar', 'Sholinganallur', 'Perungudi', 'Thoraipakkam', 'Medavakkam', 'Chromepet', 'Pallavaram', 'Ambattur', 'Avadi', 'Poonamallee', 'Kilpauk', 'Kodambakkam', 'Alwarpet'];
                                     foreach ($fallback_areas as $area):
                                 ?>
                                     <span class="area-tag"><?php echo $area; ?></span>
@@ -290,7 +290,7 @@ include 'includes/modern-header.php';
                                     endforeach;
                                 }
                                 ?>
-                                <span class="area-tag more">+130 More Areas</span>
+                                <span class="area-tag more">+600 More Areas</span>
                             </div>
                             <a href="all-areas.php" class="btn btn-secondary btn-sm">
                                 <i class="fas fa-map"></i> View All Areas
@@ -477,22 +477,22 @@ include 'includes/modern-header.php';
                             <i class="fas fa-map-marker-alt"></i> Head Office - Saroornagar
                         </a>
                         <a href="https://www.google.com/maps/dir/?api=1&destination=17.4947,78.3985" target="_blank" class="direction-link">
-                            <i class="fas fa-map-marker-alt"></i> Kukatpally Branch
+                            <i class="fas fa-map-marker-alt"></i> Porur Branch
                         </a>
                         <a href="https://www.google.com/maps/dir/?api=1&destination=17.4290,78.4490" target="_blank" class="direction-link">
                             <i class="fas fa-map-marker-alt"></i> Panjagutta Branch
                         </a>
                         <a href="https://www.google.com/maps/dir/?api=1&destination=17.4010,78.3845" target="_blank" class="direction-link">
-                            <i class="fas fa-map-marker-alt"></i> Manikonda Branch
+                            <i class="fas fa-map-marker-alt"></i> Mylapore Branch
                         </a>
                         <a href="https://www.google.com/maps/dir/?api=1&destination=17.5378,78.4903" target="_blank" class="direction-link">
-                            <i class="fas fa-map-marker-alt"></i> Kompally Branch
+                            <i class="fas fa-map-marker-alt"></i> Madipakkam Branch
                         </a>
                         <a href="https://www.google.com/maps/dir/?api=1&destination=17.4421,78.5494" target="_blank" class="direction-link">
                             <i class="fas fa-map-marker-alt"></i> Nacharam Branch
                         </a>
                         <a href="https://www.google.com/maps/dir/?api=1&destination=17.3669,78.4159" target="_blank" class="direction-link">
-                            <i class="fas fa-map-marker-alt"></i> Attapur Branch
+                            <i class="fas fa-map-marker-alt"></i> Saidapet Branch
                         </a>
                         <a href="https://www.google.com/maps/dir/?api=1&destination=17.4062,78.5591" target="_blank" class="direction-link">
                             <i class="fas fa-map-marker-alt"></i> Uppal Branch

@@ -57,7 +57,7 @@ include 'includes/modern-header.php';
     <li><i class="fa fa-check-circle" aria-hidden="true"></i> <strong>Competitive Pricing with No Hidden Costs:</strong> We offer transparent and affordable pricing with no surprises. Get a free quote today!</li>
 </ul>
 
-<p><strong>Our Cricket Net Installation Service Covers All of Chennai:</strong> We proudly serve all 188+ areas across Chennai, including Banjara Hills, Jubilee Hills, Gachibowli, Madhapur, Tambaram, and beyond. Whether it's a residential apartment, commercial complex, or industrial facility, we provide efficient and effective cricket net solutions. Our quick response time ensures you get the protection you need when you need it. We offer free consultation and site visits to assess your specific requirements and provide the best possible solution.</p>
+<p><strong>Our Cricket Net Installation Service Covers All of Chennai:</strong> We proudly serve all 188+ areas across Chennai, including Anna Nagar, T Nagar, Velachery, Adyar, Tambaram, and beyond. Whether it's a residential apartment, commercial complex, or industrial facility, we provide efficient and effective cricket net solutions. Our quick response time ensures you get the protection you need when you need it. We offer free consultation and site visits to assess your specific requirements and provide the best possible solution.</p>
 
 <h3>Why Cricket Nets Matter in Chennai: Protecting Your Property and Community</h3>
 

@@ -55,7 +55,7 @@ include 'includes/modern-header.php';
     <li><i class="fas fa-check-circle"></i> <strong>Competitive Pricing:</strong> Transparent pricing with no hidden costs. Get the best value for your investment in a high-quality drying solution.</li>
 </ul>
 
-<p><strong>Service Coverage:</strong> We proudly serve all 188+ areas across Chennai, from Gachibowli to Tambaram and beyond. Our services cater to residential apartments, commercial buildings, and industrial properties. We guarantee a quick response time in all zones of Chennai and offer free consultation and site visits to assess your specific needs.</p>
+<p><strong>Service Coverage:</strong> We proudly serve all 188+ areas across Chennai, from Anna Nagar to Tambaram and beyond. Our services cater to residential apartments, commercial buildings, and industrial properties. We guarantee a quick response time in all zones of Chennai and offer free consultation and site visits to assess your specific needs.</p>
 
 <h3>Why Ceiling Cloth Hangers Matter in Chennai</h3>
 

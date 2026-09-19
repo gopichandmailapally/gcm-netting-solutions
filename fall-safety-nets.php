@@ -54,7 +54,7 @@ include 'includes/modern-header.php';
     <li><i class="fas fa-check-circle"></i> <strong>Competitive Pricing with No Hidden Costs:</strong> Transparent pricing and affordable solutions for every budget.</li>
 </ul>
 
-<p><strong>Service Coverage:</strong> GCM Netting Solutions provides comprehensive fall safety net services across all 188+ areas of Chennai, including Banjara Hills, Jubilee Hills, Gachibowli, Hitech City, Tambaram, and more. We cater to residential, commercial, and industrial properties, offering a quick response time in all zones. Contact us today for a free consultation and site visit to assess your specific needs.</p>
+<p><strong>Service Coverage:</strong> GCM Netting Solutions provides comprehensive fall safety net services across all 188+ areas of Chennai, including Anna Nagar, Adyar, Anna Nagar, Sholinganallur, Tambaram, and more. We cater to residential, commercial, and industrial properties, offering a quick response time in all zones. Contact us today for a free consultation and site visit to assess your specific needs.</p>
 
 <h3>Why Fall Safety Nets Matter in Chennai</h3>
 

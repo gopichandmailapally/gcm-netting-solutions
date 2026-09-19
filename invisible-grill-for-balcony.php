@@ -59,7 +59,7 @@ include 'includes/modern-header.php';
 
 <h3>Our Service Coverage in Chennai</h3>
 
-<p>GCM Netting Solutions proudly serves all 188+ areas across Chennai, including but not limited to Gachibowli, Jubilee Hills, Banjara Hills, Madhapur, Kondapur, Hitech City, and Tambaram. We cater to residential, commercial, and industrial properties, providing tailored solutions to meet your specific needs. Our quick response time ensures that your safety concerns are addressed promptly. We offer free consultation and site visits to assess your requirements and provide a customized quote.</p>
+<p>GCM Netting Solutions proudly serves all 188+ areas across Chennai, including but not limited to Anna Nagar, T Nagar, Velachery, Adyar, Tambaram, Porur, and Besant Nagar. We cater to residential, commercial, and industrial properties, providing tailored solutions to meet your specific needs. Our quick response time ensures that your safety concerns are addressed promptly. We offer free consultation and site visits to assess your requirements and provide a customized quote.</p>
 
 <h3>Why Invisible Grill Matters for Chennai Homes and Buildings</h3>
 

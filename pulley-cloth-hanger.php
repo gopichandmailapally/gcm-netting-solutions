@@ -57,7 +57,7 @@ include 'includes/modern-header.php';
 
 <h3>Service Coverage Across Chennai</h3>
 
-<p>GCM Netting Solutions proudly serves all 188+ areas across Chennai, including but not limited to Gachibowli, Madhapur, Jubilee Hills, Banjara Hills, Tambaram, and Kukatpally. We cater to residential apartments, commercial buildings, and industrial properties. Our quick response time ensures that you receive prompt and efficient service, regardless of your location in Chennai. We also offer free consultation and site visits to assess your specific needs and provide tailored solutions.</p>
+<p>GCM Netting Solutions proudly serves all 188+ areas across Chennai, including but not limited to Anna Nagar, T Nagar, Velachery, Adyar, Tambaram, and Porur. We cater to residential apartments, commercial buildings, and industrial properties. Our quick response time ensures that you receive prompt and efficient service, regardless of your location in Chennai. We also offer free consultation and site visits to assess your specific needs and provide tailored solutions.</p>
 
 <h3>Why Pulley Cloth Hangers Matter in Chennai's Unique Climate</h3>
 

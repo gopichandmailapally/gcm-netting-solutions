@@ -59,7 +59,7 @@ include 'includes/modern-header.php';
 
 <h3>Our Service Coverage in Chennai</h3>
 
-<p>GCM Netting Solutions provides bird net installation services across all 188+ areas of Chennai, including but not limited to Gachibowli, Jubilee Hills, Banjara Hills, Madhapur, Kondapur, HITEC City, Tambaram, and Kukatpally. We cater to residential, commercial, and industrial properties of all sizes. Our team is committed to providing a quick response time in all zones of Chennai, and we offer a free consultation and site visit to assess your specific needs.</p>
+<p>GCM Netting Solutions provides bird net installation services across all 188+ areas of Chennai, including but not limited to Anna Nagar, T Nagar, Velachery, Adyar, Tambaram, Porur, Mylapore, and Nungambakkam. We cater to residential, commercial, and industrial properties of all sizes. Our team is committed to providing a quick response time in all zones of Chennai, and we offer a free consultation and site visit to assess your specific needs.</p>
 
 <h3>Why Bird Nets are Essential in Chennai</h3>
 

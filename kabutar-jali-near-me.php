@@ -59,7 +59,7 @@ include 'includes/modern-header.php';
 
 <h3>Service Coverage Across Chennai</h3>
 
-<p>We proudly serve all 188+ areas across Chennai, including but not limited to Gachibowli, Jubilee Hills, Banjara Hills, Madhapur, Tambaram, and Kukatpally. Whether you need Kabutar Jali for your residential apartment, commercial building, or industrial facility, we've got you covered. Our quick response time ensures that we can address your pigeon problem promptly, regardless of your location in Chennai. We also offer a free consultation and site visit to assess your specific needs and provide a customized solution.</p>
+<p>We proudly serve all 188+ areas across Chennai, including but not limited to Anna Nagar, Adyar, Besant Nagar, T Nagar, Tambaram, and Porur. Whether you need Kabutar Jali for your residential apartment, commercial building, or industrial facility, we've got you covered. Our quick response time ensures that we can address your pigeon problem promptly, regardless of your location in Chennai. We also offer a free consultation and site visit to assess your specific needs and provide a customized solution.</p>
 
 <h3>Why This Service Matters in Chennai</h3>
 

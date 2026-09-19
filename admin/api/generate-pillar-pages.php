@@ -286,7 +286,7 @@ function generateFallbackContent($serviceName, $category) {
 <h3>Service Coverage</h3>
 <p>
     We provide {$serviceName} installation services across all areas of Chennai including 
-    Gachibowli, Madhapur, Hitech City, Kukatpally, Tambaram, and 183+ more locations. 
+    Anna Nagar, T Nagar, Velachery, Porur, Tambaram, and 183+ more locations. 
     Our team ensures quick response times and professional service delivery.
 </p>
 HTML;

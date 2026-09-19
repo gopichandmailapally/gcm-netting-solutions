@@ -55,7 +55,7 @@ $recent_rankings = $db->fetchAll(
 // Generate keyword suggestions based on services and areas
 $keyword_suggestions = [];
 $services = ['Pigeon Nets', 'Safety Nets', 'Bird Nets', 'Cricket Nets', 'Invisible Grills', 'Balcony Nets'];
-$areas = ['Kukatpally', 'Gachibowli', 'Hitech City', 'Madhapur', 'Kondapur', 'Miyapur'];
+$areas = ['Porur', 'Anna Nagar', 'Sholinganallur', 'T Nagar', 'Velachery', 'Ambattur'];
 
 foreach ($services as $service) {
     foreach ($areas as $area) {
@@ -141,7 +141,7 @@ include '../includes/header.php';
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:14px;">
             <div>
                 <label style="display:block;font-size:12px;font-weight:600;color:#475569;margin-bottom:6px;">Keyword to Check</label>
-                <input type="text" id="keyword" style="width:100%;padding:10px 14px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:14px;color:#1e293b;box-sizing:border-box;" placeholder="e.g., Pigeon Nets in Kukatpally">
+                <input type="text" id="keyword" style="width:100%;padding:10px 14px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:14px;color:#1e293b;box-sizing:border-box;" placeholder="e.g., Pigeon Nets in Porur">
             </div>
             <div>
                 <label style="display:block;font-size:12px;font-weight:600;color:#475569;margin-bottom:6px;">Page URL (optional)</label>

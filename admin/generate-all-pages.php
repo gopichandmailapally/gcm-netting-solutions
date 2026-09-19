@@ -119,18 +119,18 @@ $service_categories = [
 // 150 CHENNAI AREAS (Alphabetically Sorted)
 // ============================================
 $all_areas = [
-    'Abids', 'Adikmet', 'Afzalgunj', 'Aliabad', 'Alwal', 'Amberpet', 'Ameerpet', 'Ananthagiri-Hills', 'Asif-Nagar', 'Asifabad',
-    'Attapur', 'Attapur-Metro', 'Ayyappa-Society', 'Bachupally', 'Badangpet', 'Bagh-Amberpet', 'Bagh-Lingampally', 'Bahadurpura', 'Balkampet', 'Balnagar',
-    'Bandlaguda', 'Banjara-Hills', 'Barkas', 'Basheerbagh', 'Begum-Bazar', 'Begumpet', 'Boduppal', 'Borabanda', 'Bowenpally', 'Boysguda',
-    'Champapet', 'Chanda-Nagar', 'Chandanagar', 'Charminar', 'Chikkadpally', 'Chintal', 'Chintalkunta', 'Dabeerpura', 'Dammaiguda', 'Dilsukhnagar',
-    'Domalguda', 'ECIL', 'ECIL-Cross-Roads', 'Erragadda', 'Falaknuma', 'Film-Nagar', 'Financial-District', 'Gachibowli', 'Gaddiannaram', 'Gajularamaram',
+    'Abids', 'Adikmet', 'Afzalgunj', 'Aliabad', 'Alwal', 'Amberpet', 'Kodambakkam', 'Ananthagiri-Hills', 'Asif-Nagar', 'Asifabad',
+    'Saidapet', 'Saidapet-Metro', 'Ayyappa-Society', 'Royapettah', 'Badangpet', 'Bagh-Amberpet', 'Bagh-Lingampally', 'Bahadurpura', 'Balkampet', 'Balnagar',
+    'Bandlaguda', 'Banjara-Hills', 'Barkas', 'Basheerbagh', 'Begum-Bazar', 'Nungambakkam', 'Boduppal', 'Borabanda', 'Bowenpally', 'Boysguda',
+    'Champapet', 'Chanda-Nagar', 'Chromepet', 'Charminar', 'Chikkadpally', 'Chintal', 'Chintalkunta', 'Dabeerpura', 'Dammaiguda', 'Pallavaram',
+    'Domalguda', 'ECIL', 'ECIL-Cross-Roads', 'Erragadda', 'Falaknuma', 'Film-Nagar', 'Financial-District', 'Anna Nagar', 'Gaddiannaram', 'Gajularamaram',
     'Gandhi-Nagar', 'Ghatkesar', 'Golconda', 'Goshamahal', 'Gowlidoddy', 'Gudimelakunta', 'Habsiguda', 'Hafeezpet', 'Hayathnagar', 'Himayatnagar',
     'Hitech-City', 'Hussainialam', 'Hyderguda', 'IS-Sadan', 'Jahanuma', 'Jeedimetla', 'Jubilee-Hills', 'Kachiguda', 'Kailash-Nagar', 'Kalimandir',
-    'Kamala-Nagar', 'Kapra', 'Karkhana', 'Karwan', 'Kattedan', 'Khairtabad', 'Khajaguda', 'Kishanbagh', 'Kismatkhan-Gudda', 'Kompally',
-    'Kondapur', 'Kothapet', 'KPHB-Colony', 'Kukatpally', 'LB-Nagar', 'Lakdikapul', 'Lalapet', 'Langer-Houz', 'Lingampally', 'Madannapet',
-    'Madhapur', 'Madinaguda', 'Mahdipatnam', 'Malakpet', 'Mallapur', 'Manikonda', 'Marredpally', 'Masab-Tank', 'Meerpet', 'Mehdipatnam',
-    'Mettuguda', 'Miyapur', 'Moghalpura', 'Moosarambagh', 'Moti-Nagar', 'Moula-Ali', 'Musheerabad', 'Nacharam', 'Nagaram', 'Nagole',
-    'Nallakunta', 'Nampally', 'Nanal-Nagar', 'Nanakramguda', 'Narayanguda', 'Neredmet', 'New-Bowenpally', 'Nizampet', 'Old-Bowenpally', 'Old-City',
+    'Kamala-Nagar', 'Kapra', 'Karkhana', 'Karwan', 'Kattedan', 'Khairtabad', 'Khajaguda', 'Kishanbagh', 'Kismatkhan-Gudda', 'Madipakkam',
+    'Velachery', 'Kothapet', 'Thiruvanmiyur-Colony', 'Porur', 'LB-Nagar', 'Lakdikapul', 'Lalapet', 'Langer-Houz', 'Lingampally', 'Madannapet',
+    'T Nagar', 'Madinaguda', 'Mahdipatnam', 'Malakpet', 'Mallapur', 'Mylapore', 'Marredpally', 'Masab-Tank', 'Meerpet', 'Mogappair',
+    'Mettuguda', 'Ambattur', 'Moghalpura', 'Moosarambagh', 'Moti-Nagar', 'Moula-Ali', 'Musheerabad', 'Nacharam', 'Nagaram', 'Nagole',
+    'Nallakunta', 'Nampally', 'Nanal-Nagar', 'Nanakramguda', 'Narayanguda', 'Neredmet', 'New-Bowenpally', 'Kilpauk', 'Old-Bowenpally', 'Old-City',
     'Osmangunj', 'Padmarao-Nagar', 'Panjagutta', 'Panjagutta-Circle', 'Paradise', 'Patancheru', 'Patel-Road', 'Peerzadiguda', 'Pragathi-Nagar', 'Purani-Haveli',
     'Quthbullapur', 'Rajendranagar', 'Ramakrishna-Puram', 'Ramanthapur', 'Ramnagar', 'RC-Puram', 'Red-Hills', 'Safilguda', 'Saidabad', 'Sainikpuri',
     'Sanath-Nagar', 'Sangareddy', 'Santosh-Nagar', 'Saroornagar', 'Tambaram', 'Serilingampally', 'Shaikpet', 'Shamirpet', 'Shamshabad', 'Shankarpally'
@@ -270,7 +270,7 @@ include 'includes/modern-header.php';
             </ul>
             
             <h3>Service Coverage</h3>
-            <p>We provide {$service_name} services across all areas of Chennai including Gachibowli, Madhapur, Kukatpally, Dilsukhnagar, and 150+ other locations.</p>
+            <p>We provide {$service_name} services across all areas of Chennai including Anna Nagar, T Nagar, Porur, Pallavaram, and 150+ other locations.</p>
             
             <div class="cta-section">
                 <a href="tel:+919912399224" class="btn btn-primary">Call Now: +91 99123 99224</a>

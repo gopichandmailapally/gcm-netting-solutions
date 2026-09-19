@@ -11,29 +11,20 @@ $service_slug = $service_slug ?? 'service-slug';
 $meta_title = $meta_title ?? $service_name . ' in Chennai | Professional Installation';
 $meta_description = $meta_description ?? 'Professional ' . $service_name . ' services in Chennai. Choose from 150+ locations. Expert installation, quality materials, affordable prices. Call now!';
 
-// Service areas (150 locations)
-$service_areas = [
-    'Abids', 'Adikmet', 'Afzalgunj', 'Aliwal', 'Amberpet', 'Ameerpet', 'Ananthagiri Hills', 'Asif Nagar',
-    'Asifabad', 'Attapur', 'Attapur Metro', 'Bagh Lingampally', 'Bagh Amberpet', 'Bahadurpura', 'Balkampet',
-    'Balnagar', 'Bandlaguda', 'Banjara Hills', 'Barkas', 'Basheerbagh', 'Begum Bazar', 'Begumpet', 'Borabanda',
-    'Champapet', 'Chandanagar', 'Charminar', 'Chikkadpally', 'Chintal', 'Chintalkunta', 'Dabeerpura', 
-    'Dilsukhnagar', 'Domalguda', 'Ecil', 'Erragadda', 'Falaknuma', 'Gachibowli', 'Gaddiannaram', 'Gandhi Nagar',
-    'Golconda', 'Goshamahal', 'Gudimelakunta', 'Habsiguda', 'Hafeezpet', 'Hayathnagar', 'Himayatnagar', 
-    'Hussainialam', 'Hyderguda', 'Jeedimetla', 'Jubilee Hills', 'Kachiguda', 'Kailash Nagar', 'Kalimandir',
-    'Kamala Nagar', 'Kapra', 'Karkhana', 'Karwan', 'Kattedan', 'Khairtabad', 'Khajaguda', 'Kishanbagh',
-    'Kismatkhan Gudda', 'Kompally', 'Kondapur', 'Kothapet', 'Kukatpally', 'LB Nagar', 'Langar Houz',
-    'Lingampally', 'Madhapur', 'Madinaguda', 'Mahdipatnam', 'Malakpet', 'Mallapur', 'Marredpally', 
-    'Masab Tank', 'Manikonda', 'Mehdipatnam', 'Mettuguda', 'Miyapur', 'Moghalpura', 'Moosarambagh', 
-    'Moti Nagar', 'Moula Ali', 'Musheerabad', 'Nacharam', 'Nagaram', 'Nagole', 'Nallakunta', 'Nanakramguda',
-    'Narayanguda', 'Nizampet', 'Old City', 'Osmania University', 'Padmarao Nagar', 'Panjagutta', 'Paradise',
-    'Patelguda', 'Patny', 'Peerzadiguda', 'PJR Nagar', 'Pragathi Nagar', 'Puppalaguda', 'Quthbullapur',
-    'Rajendranagar', 'Ramanthapur', 'Ramgopalpet', 'Ramnagar', 'Ramnagar Extension', 'Red Hills', 
-    'Safilguda', 'Saidabad', 'Sainikpuri', 'Sanath Nagar', 'Sanghi Nagar', 'Santosh Nagar', 'Saroor Nagar',
-    'Tambaram', 'Serilingampally', 'Shadnagar', 'Shah Ali Banda', 'Shaikpet', 'Shamshabad', 
-    'Shivam Road', 'Somajiguda', 'SR Nagar', 'Sultan Bazar', 'Suncity', 'Tarnaka', 'Toli Chowki',
-    'Tolichowki', 'Trimulgherry', 'Tukkuguda', 'Turkayamjal', 'Uppal', 'Vanasthalipuram', 'Vidyanagar',
-    'Vikrampuri', 'Vijayanagar Colony', 'West Marredpally', 'Yapral', 'Yousufguda', 'Zaheerabad'
-];
+// Chennai Service Areas
+$all_chennai_areas = file_exists(__DIR__ . '/../config/all-areas.php') ? require __DIR__ . '/../config/all-areas.php' : [];
+if (!empty($all_chennai_areas)) {
+    $service_areas = array_column($all_chennai_areas, 'area');
+} else {
+    $service_areas = [
+        'Anna Nagar', 'T Nagar', 'Velachery', 'Adyar', 'Tambaram', 'Porur', 
+        'Mylapore', 'Nungambakkam', 'Guindy', 'Besant Nagar', 'Sholinganallur', 
+        'Perungudi', 'Thoraipakkam', 'Medavakkam', 'Chromepet', 'Pallavaram', 
+        'Ambattur', 'Avadi', 'Poonamallee', 'Kilpauk', 'Kodambakkam', 'Alwarpet', 
+        'Thiruvanmiyur', 'Madipakkam', 'Saidapet', 'Royapettah', 'Kotturpuram', 
+        'Perambur', 'Mogappair', 'Navalur'
+    ];
+}
 
 define('GCM_INIT', true);
 require_once 'config/database.php';

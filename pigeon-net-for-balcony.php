@@ -57,7 +57,7 @@ include 'includes/modern-header.php';
     <li><i class="fas fa-check-circle"></i> <strong>Competitive Pricing with No Hidden Costs:</strong> We offer transparent pricing and affordable solutions for all budgets, with no surprises.</li>
 </ul>
 
-<p><strong>Service Coverage:</strong> We proudly serve all 188+ areas across Chennai, including but not limited to Gachibowli, Jubilee Hills, Banjara Hills, Madhapur, Kukatpally, and Tambaram. Whether you own a residential apartment, a commercial building, or an industrial property, GCM Netting Solutions has the expertise to provide effective pigeon control solutions. We offer a quick response time in all zones of Chennai and provide a free consultation and site visit to assess your specific needs.</p>
+<p><strong>Service Coverage:</strong> We proudly serve all 188+ areas across Chennai, including but not limited to Anna Nagar, T Nagar, Velachery, Adyar, Tambaram, and Porur. Whether you own a residential apartment, a commercial building, or an industrial property, GCM Netting Solutions has the expertise to provide effective pigeon control solutions. We offer a quick response time in all zones of Chennai and provide a free consultation and site visit to assess your specific needs.</p>
 
 <h3>Why Pigeon Net Installation Matters in Chennai</h3>
 

@@ -55,7 +55,7 @@ include 'includes/modern-header.php';
     <li><i class="fas fa-check-circle"></i> <strong>Competitive Pricing with No Hidden Costs:</strong> We provide transparent and affordable pricing with no surprises.</li>
 </ul>
 
-<p><strong>Service Coverage Across Chennai:</strong> We proudly serve all 188+ areas across Chennai, from Gachibowli to Tambaram, and Banjara Hills to Kukatpally. Whether you need sports netting for a residential complex, a commercial playground, or an industrial facility, we've got you covered. Our quick response time and strategically located teams ensure prompt service in all zones. We also offer a free consultation and site visit to assess your specific needs and provide a customized solution.</p>
+<p><strong>Service Coverage Across Chennai:</strong> We proudly serve all 188+ areas across Chennai, from Anna Nagar to Tambaram, and Adyar to Porur. Whether you need sports netting for a residential complex, a commercial playground, or an industrial facility, we've got you covered. Our quick response time and strategically located teams ensure prompt service in all zones. We also offer a free consultation and site visit to assess your specific needs and provide a customized solution.</p>
 
 <h3>The Importance of Sports Netting in Chennai's Unique Environment</h3>
 

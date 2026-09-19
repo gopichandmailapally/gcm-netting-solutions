@@ -59,7 +59,7 @@ include 'includes/modern-header.php';
 
 <h3>Service Coverage Across Chennai</h3>
 
-<p>GCM Netting Solutions proudly serves all 188+ areas across Chennai, including Begumpet, Gachibowli, Jubilee Hills, Banjara Hills, Tambaram, and more. We cater to residential, commercial, and industrial properties, offering quick response times in all zones. Contact us today for a free consultation and site visit to assess your specific needs and provide a customized bird netting solution.</p>
+<p>GCM Netting Solutions proudly serves all 188+ areas across Chennai, including Nungambakkam, Anna Nagar, Adyar, Besant Nagar, Tambaram, and more. We cater to residential, commercial, and industrial properties, offering quick response times in all zones. Contact us today for a free consultation and site visit to assess your specific needs and provide a customized bird netting solution.</p>
 
 <h3>Why Bird Netting Matters in Chennai</h3>
 

@@ -260,7 +260,7 @@ include 'includes/modern-header.php';
 
             <div style="background: #FEF3C7; padding: 20px; border-radius: 12px; border-left: 4px solid #F59E0B; margin-top: 40px;">
                 <p style="font-size: 14px; color: #78350F; margin: 0;">
-                    <i class="fas fa-check-circle"></i> <strong>Service Areas:</strong> We provide professional safety net installation services across all 188+ areas in Chennai including Gachibowli, Hitech City, Kukatpally, Ameerpet, Dilsukhnagar, and all major localities.
+                    <i class="fas fa-check-circle"></i> <strong>Service Areas:</strong> We provide professional safety net installation services across all 188+ areas in Chennai including Anna Nagar, T Nagar, Velachery, Adyar, Tambaram, and all major localities.
                 </p>
             </div>
             <?php endif; ?>

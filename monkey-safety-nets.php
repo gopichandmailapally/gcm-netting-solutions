@@ -59,7 +59,7 @@ include 'includes/modern-header.php';
 
 <h3>Our Service Coverage in Chennai</h3>
 
-<p>GCM Netting Solutions provides comprehensive monkey safety net services across all 188+ areas of Chennai, including but not limited to Gachibowli, Madhapur, Jubilee Hills, Banjara Hills, Tambaram, and Kukatpally. We cater to residential, commercial, and industrial properties, offering customized solutions to meet your specific needs. Our quick response time ensures that your monkey problem is addressed promptly and efficiently. Contact us today for a free consultation and site visit.</p>
+<p>GCM Netting Solutions provides comprehensive monkey safety net services across all 188+ areas of Chennai, including but not limited to Anna Nagar, T Nagar, Velachery, Adyar, Tambaram, and Porur. We cater to residential, commercial, and industrial properties, offering customized solutions to meet your specific needs. Our quick response time ensures that your monkey problem is addressed promptly and efficiently. Contact us today for a free consultation and site visit.</p>
 
 <h3>Why Monkey Safety Nets are Crucial in Chennai</h3>
 

@@ -55,7 +55,7 @@ include 'includes/modern-header.php';
     <li><i class="fas fa-check-circle"></i> <strong>Competitive Pricing with No Hidden Costs:</strong> Transparent pricing and affordable solutions for every budget.</li>
 </ul>
 
-<p><strong>Service Coverage:</strong> We proudly serve all 188+ areas across Chennai, from Gachibowli to Tambaram, and Banjara Hills to Kukatpally. Whether you own a residential apartment, manage a commercial complex, or oversee an industrial property, GCM Netting Solutions is your trusted partner for balcony safety. We offer quick response times in all zones and provide a free consultation and site visit to assess your specific needs.</p>
+<p><strong>Service Coverage:</strong> We proudly serve all 188+ areas across Chennai, from Anna Nagar to Tambaram, and Adyar to Porur. Whether you own a residential apartment, manage a commercial complex, or oversee an industrial property, GCM Netting Solutions is your trusted partner for balcony safety. We offer quick response times in all zones and provide a free consultation and site visit to assess your specific needs.</p>
 
 <h3>Why Balcony Safety Nets are Essential in Chennai</h3>
 

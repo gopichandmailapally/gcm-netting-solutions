@@ -63,7 +63,7 @@ include 'includes/modern-header.php';
 
 <h3>Service Coverage Across Chennai</h3>
 <p>
-    GCM Netting Solutions is proud to offer comprehensive <strong>Bird Netting Chennai</strong> services across all 188+ areas of the city. Whether you reside in Jubilee Hills, Gachibowli, Tambaram, Kondapur, Madhapur, Uppal, or any other locality, our expert team is ready to serve you. We cater to a diverse range of properties including residential apartments, independent houses, commercial complexes, industrial buildings, and educational institutions. Expect a quick response time and efficient service delivery in all zones, starting with a free consultation and site visit to understand your specific needs.
+    GCM Netting Solutions is proud to offer comprehensive <strong>Bird Netting Chennai</strong> services across all 188+ areas of the city. Whether you reside in Anna Nagar, T Nagar, Velachery, Adyar, Tambaram, Porur, or any other locality, our expert team is ready to serve you. We cater to a diverse range of properties including residential apartments, independent houses, commercial complexes, industrial buildings, and educational institutions. Expect a quick response time and efficient service delivery in all zones, starting with a free consultation and site visit to understand your specific needs.
 </p>
 
 <h3>Why This Service Matters in Chennai</h3>

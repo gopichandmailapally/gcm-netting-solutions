@@ -59,7 +59,7 @@ include 'includes/modern-header.php';
 
 <h3>Service Coverage Across Chennai</h3>
 
-<p>We provide comprehensive sports nets installation and repair services across all 188+ areas of Chennai, including Gachibowli, Madhapur, Jubilee Hills, Banjara Hills, Kukatpally, and Tambaram. Whether you have a residential apartment, a commercial building, or an industrial property, we offer quick response times and efficient service in all zones. Contact us today for a free consultation and site visit!</p>
+<p>We provide comprehensive sports nets installation and repair services across all 188+ areas of Chennai, including Anna Nagar, T Nagar, Velachery, Adyar, Tambaram, and Porur. Whether you have a residential apartment, a commercial building, or an industrial property, we offer quick response times and efficient service in all zones. Contact us today for a free consultation and site visit!</p>
 
 <h3>Why Sports Nets Matter in Chennai</h3>
 

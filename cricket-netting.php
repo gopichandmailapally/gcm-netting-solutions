@@ -59,7 +59,7 @@ include 'includes/modern-header.php';
 
 <h2>Service Coverage Across Chennai</h2>
 
-<p>GCM Netting Solutions provides comprehensive cricket netting services across all 188+ areas of Chennai, including but not limited to Gachibowli, Jubilee Hills, Banjara Hills, Madhapur, Kukatpally, and Tambaram. We cater to residential, commercial, and industrial properties, offering quick response times in all zones. Contact us today for a free consultation and site visit to assess your specific needs and provide a tailored solution.</p>
+<p>GCM Netting Solutions provides comprehensive cricket netting services across all 188+ areas of Chennai, including but not limited to Anna Nagar, T Nagar, Velachery, Adyar, Tambaram, and Porur. We cater to residential, commercial, and industrial properties, offering quick response times in all zones. Contact us today for a free consultation and site visit to assess your specific needs and provide a tailored solution.</p>
 
 <h2>Why Cricket Netting Matters More in Chennai</h2>
 

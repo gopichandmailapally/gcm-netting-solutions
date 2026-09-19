@@ -57,7 +57,7 @@ include 'includes/modern-header.php';
 
 <h3>Service Coverage Across Chennai</h3>
 
-<p>GCM Netting Solutions proudly serves all 188+ areas across Chennai, providing reliable Clothes Hanger Drier installations for residential, commercial, and industrial properties. Whether you're in Gachibowli, Jubilee Hills, or anywhere in between, our team offers a quick response time in all zones. We also provide free consultation and site visits to assess your specific needs and recommend the best solution for your space.</p>
+<p>GCM Netting Solutions proudly serves all 188+ areas across Chennai, providing reliable Clothes Hanger Drier installations for residential, commercial, and industrial properties. Whether you're in Anna Nagar, Adyar, or anywhere in between, our team offers a quick response time in all zones. We also provide free consultation and site visits to assess your specific needs and recommend the best solution for your space.</p>
 
 <h3>Why Clothes Hanger Drier Services Matter in Chennai's Unique Climate</h3>
 

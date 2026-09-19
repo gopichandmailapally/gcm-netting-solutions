@@ -127,17 +127,17 @@
 <h2 class="section-title">Price Estimation Services Across Chennai</h2>
 <p>Free cost estimation in all Chennai areas:</p>
 <div class="areas-grid">
-<div class="area-tag">Banjara Hills</div>
-<div class="area-tag">Jubilee Hills</div>
-<div class="area-tag">Hitech City</div>
-<div class="area-tag">Gachibowli</div>
-<div class="area-tag">Madhapur</div>
-<div class="area-tag">Kukatpally</div>
-<div class="area-tag">Kondapur</div>
-<div class="area-tag">Kothaguda</div>
-<div class="area-tag">Financial District</div>
+<div class="area-tag">Anna Nagar</div>
+<div class="area-tag">T Nagar</div>
+<div class="area-tag">Velachery</div>
+<div class="area-tag">Adyar</div>
 <div class="area-tag">Tambaram</div>
-<div class="area-tag">+ 188 More Areas</div>
+<div class="area-tag">Porur</div>
+<div class="area-tag">Mylapore</div>
+<div class="area-tag">Nungambakkam</div>
+<div class="area-tag">Sholinganallur</div>
+<div class="area-tag">Besant Nagar</div>
+<div class="area-tag">+ 600 More Areas</div>
 </div>
 </section>
 

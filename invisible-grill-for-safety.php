@@ -59,7 +59,7 @@ include 'includes/modern-header.php';
 
 <h3>Our Service Coverage in Chennai</h3>
 
-<p>GCM Netting Solutions provides comprehensive invisible grill installation services across all 188+ areas in Chennai, including but not limited to Gachibowli, Madhapur, Jubilee Hills, Banjara Hills, Kondapur, Kukatpally, and Tambaram. We cater to residential, commercial, and industrial properties, offering quick response times in all zones. Contact us today for a free consultation and site visit, and let us help you create a safer environment for your family or business.</p>
+<p>GCM Netting Solutions provides comprehensive invisible grill installation services across all 188+ areas in Chennai, including but not limited to Anna Nagar, T Nagar, Adyar, Besant Nagar, Velachery, Porur, and Tambaram. We cater to residential, commercial, and industrial properties, offering quick response times in all zones. Contact us today for a free consultation and site visit, and let us help you create a safer environment for your family or business.</p>
 
 <h3>Why Invisible Grills Matter in Chennai</h3>
 

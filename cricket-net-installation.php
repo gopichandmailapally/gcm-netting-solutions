@@ -63,7 +63,7 @@ include 'includes/modern-header.php';
 
 <h3>Service Coverage</h3>
 <p>
-    GCM Netting Solutions proudly extends its top-tier <strong>Cricket Net Installation services</strong> across all 188+ areas of Chennai. From the bustling lanes of Old City to the modern high-rises of Gachibowli, and from the residential tranquility of Jubilee Hills to the industrial hubs of Balanagar, our expert teams are always ready to serve you. We cater to a diverse clientele, including residential properties (independent houses, apartments), commercial establishments (corporate sports facilities), and educational/institutional sectors (schools, colleges, sports academies). Expect a quick response time in all zones of Chennai, accompanied by a complimentary consultation and site visit to understand your specific requirements and offer tailored solutions.
+    GCM Netting Solutions proudly extends its top-tier <strong>Cricket Net Installation services</strong> across all 188+ areas of Chennai. From the bustling lanes of Old City to the modern high-rises of Anna Nagar, and from the residential tranquility of Adyar to the industrial hubs of Balanagar, our expert teams are always ready to serve you. We cater to a diverse clientele, including residential properties (independent houses, apartments), commercial establishments (corporate sports facilities), and educational/institutional sectors (schools, colleges, sports academies). Expect a quick response time in all zones of Chennai, accompanied by a complimentary consultation and site visit to understand your specific requirements and offer tailored solutions.
 </p>
 
 <h3>Why This Service Matters in Chennai</h3>

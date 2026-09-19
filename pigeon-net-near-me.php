@@ -59,7 +59,7 @@ include 'includes/modern-header.php';
 
 <h2>Service Coverage Across Chennai</h2>
 
-<p>We provide pigeon net installation services in all 188+ areas of Chennai, covering residential, commercial, and industrial properties. Whether you are in Gachibowli, Banjara Hills, Tambaram, or any other locality, we offer quick response times and efficient service. Contact us today for a free consultation and site visit to assess your specific needs.</p>
+<p>We provide pigeon net installation services in all 188+ areas of Chennai, covering residential, commercial, and industrial properties. Whether you are in Anna Nagar, Besant Nagar, Tambaram, or any other locality, we offer quick response times and efficient service. Contact us today for a free consultation and site visit to assess your specific needs.</p>
 
 <h2>Why Pigeon Netting Matters in Chennai</h2>
 

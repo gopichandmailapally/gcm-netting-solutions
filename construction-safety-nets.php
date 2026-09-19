@@ -57,7 +57,7 @@ include 'includes/modern-header.php';
 
 <h3>Service Coverage Across Chennai</h3>
 
-<p>GCM Netting Solutions provides construction safety net installation and maintenance services across all 188+ areas of Chennai, including but not limited to Gachibowli, Hitech City, Jubilee Hills, Banjara Hills, Madhapur, Kukatpally, and Tambaram. We cater to residential, commercial, and industrial properties. Our quick response time ensures that you receive prompt and efficient service, regardless of your location. We also offer free consultations and site visits to assess your specific needs and provide tailored solutions.</p>
+<p>GCM Netting Solutions provides construction safety net installation and maintenance services across all 188+ areas of Chennai, including but not limited to Anna Nagar, Sholinganallur, Adyar, Besant Nagar, T Nagar, Porur, and Tambaram. We cater to residential, commercial, and industrial properties. Our quick response time ensures that you receive prompt and efficient service, regardless of your location. We also offer free consultations and site visits to assess your specific needs and provide tailored solutions.</p>
 
 <h3>The Importance of Construction Safety Nets in Chennai's Unique Environment</h3>
 

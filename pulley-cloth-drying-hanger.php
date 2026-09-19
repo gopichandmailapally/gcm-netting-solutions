@@ -57,7 +57,7 @@ include 'includes/modern-header.php';
     <li><i class="fas fa-check-circle"></i> <strong>Competitive Pricing:</strong> Transparent pricing with no hidden costs. Get the best value for your money.</li>
 </ul>
 
-<p><strong>Service Coverage:</strong> We provide Pulley Cloth Drying Hanger installation and repair services across all 188+ areas of Chennai, including Banjara Hills, Jubilee Hills, Gachibowli, Madhapur, Kukatpally, and more. We cater to residential, commercial, and industrial properties, ensuring quick response times and reliable service in all zones. Contact us today for a free consultation and site visit!</p>
+<p><strong>Service Coverage:</strong> We provide Pulley Cloth Drying Hanger installation and repair services across all 188+ areas of Chennai, including Anna Nagar, T Nagar, Velachery, Adyar, Porur, and more. We cater to residential, commercial, and industrial properties, ensuring quick response times and reliable service in all zones. Contact us today for a free consultation and site visit!</p>
 
 <h3>Why This Service Matters in Chennai</h3>
 

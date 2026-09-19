@@ -59,7 +59,7 @@ include 'includes/modern-header.php';
 
 <h3>Our Service Coverage in Chennai</h3>
 
-<p>We provide comprehensive bird netting services across all 188+ areas of Chennai, including residential apartments, commercial complexes, industrial units, and government buildings. Whether you're in Gachibowli, Jubilee Hills, Tambaram, or any other locality, our team is ready to provide a quick response and effective bird control solution. We offer free consultations and site visits to assess your specific needs and provide a customized netting solution.
+<p>We provide comprehensive bird netting services across all 188+ areas of Chennai, including residential apartments, commercial complexes, industrial units, and government buildings. Whether you're in Anna Nagar, Adyar, Tambaram, or any other locality, our team is ready to provide a quick response and effective bird control solution. We offer free consultations and site visits to assess your specific needs and provide a customized netting solution.
 </p>
 
 <h3>Why Bird Netting Matters in Chennai</h3>

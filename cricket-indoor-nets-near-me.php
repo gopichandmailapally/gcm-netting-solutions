@@ -57,7 +57,7 @@ include 'includes/modern-header.php';
 
 <h3>Our Service Coverage in Chennai</h3>
 
-<p>GCM Netting Solutions proudly serves all 188+ areas across Chennai, from Gachibowli to Tambaram and beyond. We cater to residential, commercial, and industrial properties, providing customized solutions to meet your specific needs. Our quick response time ensures that you receive prompt and efficient service, no matter where you are located in Chennai. Contact us today for a free consultation and site visit to discuss your cricket indoor net requirements.</p>
+<p>GCM Netting Solutions proudly serves all 188+ areas across Chennai, from Anna Nagar to Tambaram and beyond. We cater to residential, commercial, and industrial properties, providing customized solutions to meet your specific needs. Our quick response time ensures that you receive prompt and efficient service, no matter where you are located in Chennai. Contact us today for a free consultation and site visit to discuss your cricket indoor net requirements.</p>
 
 <h3>Why Cricket Indoor Nets Matter in Chennai</h3>
 

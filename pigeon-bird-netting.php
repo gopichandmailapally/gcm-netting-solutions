@@ -57,7 +57,7 @@ include 'includes/modern-header.php';
 
 <h3>Service Coverage: Across All of Chennai</h3>
 
-<p>GCM Netting Solutions provides pigeon bird netting services in all 188+ areas across Chennai, including but not limited to Gachibowli, Madhapur, Banjara Hills, Jubilee Hills, Tambaram, Kukatpally, and Ameerpet. We cater to residential, commercial, and industrial properties of all sizes. Our quick response time ensures that your bird control needs are addressed promptly and efficiently. We also offer free consultations and site visits to assess your specific requirements and provide a customized solution.</p>
+<p>GCM Netting Solutions provides pigeon bird netting services in all 188+ areas across Chennai, including but not limited to Anna Nagar, T Nagar, Velachery, Adyar, Tambaram, Porur, and Kodambakkam. We cater to residential, commercial, and industrial properties of all sizes. Our quick response time ensures that your bird control needs are addressed promptly and efficiently. We also offer free consultations and site visits to assess your specific requirements and provide a customized solution.</p>
 
 <h3>Why Pigeon Bird Netting Matters in Chennai</h3>
 

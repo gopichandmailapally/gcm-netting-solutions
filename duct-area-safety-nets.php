@@ -57,7 +57,7 @@ include 'includes/modern-header.php';
     <li><i class="fas fa-check-circle"></i> <strong>Competitive Pricing with No Hidden Costs:</strong> Transparent and affordable solutions for all budgets.</li>
 </ul>
 
-<p><strong>Service Coverage:</strong> We provide duct area safety net installation and repair services across all 188+ areas of Chennai, including prominent locations like Gachibowli, Jubilee Hills, Banjara Hills, Madhapur, Kukatpally, and Tambaram. Whether you own a residential property, commercial building, or industrial facility, we have the expertise to deliver customized solutions to meet your specific needs. We pride ourselves on our quick response time and offer free consultations and site visits to assess your requirements accurately.</p>
+<p><strong>Service Coverage:</strong> We provide duct area safety net installation and repair services across all 188+ areas of Chennai, including prominent locations like Anna Nagar, T Nagar, Velachery, Adyar, Tambaram, and Porur. Whether you own a residential property, commercial building, or industrial facility, we have the expertise to deliver customized solutions to meet your specific needs. We pride ourselves on our quick response time and offer free consultations and site visits to assess your requirements accurately.</p>
 
 <h3>Why Duct Area Safety Nets Matter in Chennai's Unique Environment</h3>
 

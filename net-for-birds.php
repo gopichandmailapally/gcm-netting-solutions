@@ -59,7 +59,7 @@ include 'includes/modern-header.php';
 
 <h3>Service Coverage Across Chennai</h3>
 
-<p>GCM Netting Solutions proudly serves all 188+ areas across Chennai, including but not limited to Gachibowli, Madhapur, Banjara Hills, Jubilee Hills, Tambaram, and Kukatpally. We cater to residential, commercial, and industrial properties, offering a quick response time in all zones. Contact us today for a free consultation and site visit!</p>
+<p>GCM Netting Solutions proudly serves all 188+ areas across Chennai, including but not limited to Anna Nagar, T Nagar, Velachery, Adyar, Tambaram, and Porur. We cater to residential, commercial, and industrial properties, offering a quick response time in all zones. Contact us today for a free consultation and site visit!</p>
 
 <h3>Why Bird Netting Matters in Chennai</h3>
 

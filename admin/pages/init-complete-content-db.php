@@ -218,24 +218,24 @@ if ($services_count == 0) {
     
     // Insert all 188 Chennai areas
     $areas = [
-        'Abids','Adikmet','Afzalgunj','Aliabad','Alwal','Amberpet','Ameerpet','Ananthagiri Hills','Asif Nagar','Asifabad',
-        'Attapur','Attapur Metro','Ayyappa Society','Bachupally','Badangpet','Bagh Amberpet','Bagh Lingampally','Bahadurpura','Balkampet','Balnagar',
-        'Bandlaguda','Banjara Hills','Barkas','Basheerbagh','Begum Bazar','Begumpet','Boduppal','Borabanda','Bowenpally','Boysguda',
-        'Champapet','Chanda Nagar','Chandanagar','Charminar','Chikkadpally','Chintal','Chintalkunta','Dabeerpura','Dammaiguda','Dar-ul-Shifa',
-        'Dhoolpet','Dilsukhnagar','Domalguda','Dundigal','East Marredpally','ECIL','ECIL Cross Roads','Edi Bazar','Erragadda','Falaknuma',
-        'Fateh Nagar','Ferozguda','Film Nagar','Financial District','Gachibowli','Gaddiannaram','Gajularamaram','Gandhi Nagar','Ghatkesar','Golconda',
-        'Goshamahal','Gowlidoddy','Gudimelakunta','Habsiguda','Hafeezpet','Hayathnagar','Himayatnagar','Hitech City','Hussainialam','Hyderguda',
-        'Ibrahim Bagh','Ibrahimpatnam','IDA Bollaram','IS Sadan','Izzat Nagar','Jagadgirigutta','Jahanuma','Jamia Osmania','Jeedimetla','Jubilee Hills',
+        'Abids','Adikmet','Afzalgunj','Aliabad','Alwal','Amberpet','Kodambakkam','Ananthagiri Hills','Asif Nagar','Asifabad',
+        'Saidapet','Saidapet Metro','Ayyappa Society','Royapettah','Badangpet','Bagh Amberpet','Bagh Lingampally','Bahadurpura','Balkampet','Balnagar',
+        'Bandlaguda','Besant Nagar','Barkas','Basheerbagh','Begum Bazar','Nungambakkam','Boduppal','Borabanda','Bowenpally','Boysguda',
+        'Champapet','Chanda Nagar','Chromepet','Charminar','Chikkadpally','Chintal','Chintalkunta','Dabeerpura','Dammaiguda','Dar-ul-Shifa',
+        'Dhoolpet','Pallavaram','Domalguda','Dundigal','East Marredpally','ECIL','ECIL Cross Roads','Edi Bazar','Erragadda','Falaknuma',
+        'Fateh Nagar','Ferozguda','Film Nagar','Financial District','Anna Nagar','Gaddiannaram','Gajularamaram','Gandhi Nagar','Ghatkesar','Golconda',
+        'Goshamahal','Gowlidoddy','Gudimelakunta','Habsiguda','Hafeezpet','Hayathnagar','Himayatnagar','Sholinganallur','Hussainialam','Hyderguda',
+        'Ibrahim Bagh','Ibrahimpatnam','IDA Bollaram','IS Sadan','Izzat Nagar','Jagadgirigutta','Jahanuma','Jamia Osmania','Jeedimetla','Adyar',
         'Kachiguda','Kailash Nagar','Kalimandir','Kamala Nagar','Kapra','Karkhana','Karwan','Kattedan','Khairtabad','Khajaguda',
-        'Kishanbagh','Kismatkhan Gudda','Kompally','Kondapur','Kothapet','KPHB Colony','Kukatpally','Lakdikapul','Lalapet','Langer Houz',
-        'LB Nagar','Lingampally','Madannapet','Madhapur','Madinaguda','Mahdipatnam','Malakpet','Mallapur','Manikonda','Marredpally',
-        'Masab Tank','Meerpet','Mehdipatnam','Mettuguda','Miyapur','Moghalpura','Moosarambagh','Moti Nagar','Moula Ali','Musheerabad',
+        'Kishanbagh','Kismatkhan Gudda','Madipakkam','Velachery','Kothapet','Thiruvanmiyur','Porur','Lakdikapul','Lalapet','Langer Houz',
+        'Avadi','Lingampally','Madannapet','T Nagar','Madinaguda','Mahdipatnam','Malakpet','Mallapur','Mylapore','Marredpally',
+        'Masab Tank','Meerpet','Mogappair','Mettuguda','Ambattur','Moghalpura','Moosarambagh','Moti Nagar','Moula Ali','Musheerabad',
         'Nacharam','Nagaram','Nagole','Nallakunta','Nampally','Nanakramguda','Nanal Nagar','Narayanguda','Neredmet','New Bowenpally',
-        'Nizampet','Old Bowenpally','Old City','Old Malakpet','Osman Nagar','Osmangunj','Osmania University','Padmarao Nagar','Panjagutta','Panjagutta Circle',
+        'Kilpauk','Old Bowenpally','Old City','Old Malakpet','Osman Nagar','Osmangunj','Osmania University','Padmarao Nagar','Panjagutta','Panjagutta Circle',
         'Paradise','Patancheru','Patel Road','Peerzadiguda','Pragathi Nagar','Purani Haveli','Qila Mohd. Nagar','Quthbullapur','Rajendranagar','Ramakrishna Puram',
         'Ramanthapur','Ramnagar','RC Puram','Red Hills','Safilguda','Saidabad','Sainikpuri','Sanath Nagar','Sangareddy','Santosh Nagar',
         'Saroornagar','Tambaram','Serilingampally','Shaikpet','Shamirpet','Shamshabad','Shankarpally','Tank Bund','Tappachabutra','Tarnaka',
-        'Tolichowki','Trimulgherry','Umdanagar','Uppal','Uppuguda','Vanasthalipuram','Vengal Rao Nagar','Vidyanagar','Vikrampuri','Warasiguda',
+        'Kotturpuram','Trimulgherry','Umdanagar','Uppal','Uppuguda','Vanasthalipuram','Vengal Rao Nagar','Vidyanagar','Vikrampuri','Warasiguda',
         'West Marredpally','Yakutpura','Yousufguda','Zakir Hussain Colony','Zamistanpur','Zeregumbad','Ziaguda','Zohra Nagar'
     ];
     

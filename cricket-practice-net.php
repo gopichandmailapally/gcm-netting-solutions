@@ -63,7 +63,7 @@ include 'includes/modern-header.php';
 
 <h3>Why This Service Matters in Chennai</h3>
 
-<p>Chennai's climate, with its hot summers and monsoon season, presents unique challenges for outdoor structures. Traditional cricket practice often leads to broken windows and damaged property, especially in densely populated areas like Banjara Hills, Jubilee Hills, and Gachibowli. Our cricket practice nets are designed to withstand these conditions, providing a safe and reliable barrier that prevents accidents and allows you to practice without worry.</p>
+<p>Chennai's climate, with its hot summers and monsoon season, presents unique challenges for outdoor structures. Traditional cricket practice often leads to broken windows and damaged property, especially in densely populated areas like Anna Nagar, T Nagar, and Velachery. Our cricket practice nets are designed to withstand these conditions, providing a safe and reliable barrier that prevents accidents and allows you to practice without worry.</p>
 
 <p>Furthermore, the increasing number of apartments and gated communities in Chennai means limited open space for recreational activities. Our customized cricket nets can be installed in balconies, terraces, or dedicated areas within your property, transforming unused space into a functional practice area. By choosing GCM Netting Solutions, you're investing in a safe, durable, and convenient solution that enhances your cricket experience and protects your property in Chennai.</p>
                 </div>

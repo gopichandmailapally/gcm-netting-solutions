@@ -510,7 +510,7 @@ $_generic = 'Professional installation services across Chennai';
                         <div class="customer-avatar">R</div>
                         <div class="customer-info">
                             <h4>Rajesh Kumar</h4>
-                            <p><i class="fas fa-map-marker-alt"></i> Kukatpally</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Anna Nagar, Chennai</p>
                         </div>
                         <div class="review-rating">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -527,7 +527,7 @@ $_generic = 'Professional installation services across Chennai';
                         <div class="customer-avatar">P</div>
                         <div class="customer-info">
                             <h4>Priya Sharma</h4>
-                            <p><i class="fas fa-map-marker-alt"></i> Gachibowli</p>
+                            <p><i class="fas fa-map-marker-alt"></i> T Nagar, Chennai</p>
                         </div>
                         <div class="review-rating">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -723,7 +723,7 @@ $_generic = 'Professional installation services across Chennai';
                 Looking for Safety Nets Near Me in Chennai?
             </h2>
             <p style="font-size: 17px; color: #64748b; line-height: 1.6;">
-                GCM Netting Solutions provides fast, doorstep inspection and same-day installation across <strong>all 188+ localities</strong> in Chennai & Outskirts. Whether you reside in a high-rise gated society in Gachibowli or an independent villa in Kompally, our mobile teams reach you in under 60 minutes.
+                GCM Netting Solutions provides fast, doorstep inspection and same-day installation across <strong>all 600+ localities</strong> in Chennai &amp; Outskirts. Whether you reside in a high-rise apartment in Anna Nagar, a coastal villa in Besant Nagar, or an IT corridor flat in Velachery/OMR, our mobile teams reach you in under 60 minutes.
             </p>
         </div>
 
@@ -731,30 +731,36 @@ $_generic = 'Professional installation services across Chennai';
         <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 35px;">
             <?php
             $featured_localities = [
-                ['name' => 'Gachibowli', 'slug' => 'gachibowli'],
-                ['name' => 'Hitec City', 'slug' => 'hitec-city'],
-                ['name' => 'Madhapur', 'slug' => 'madhapur'],
-                ['name' => 'Kondapur', 'slug' => 'kondapur'],
-                ['name' => 'Jubilee Hills', 'slug' => 'jubilee-hills'],
-                ['name' => 'Banjara Hills', 'slug' => 'banjara-hills'],
-                ['name' => 'Kukatpally', 'slug' => 'kukatpally'],
-                ['name' => 'Miyapur', 'slug' => 'miyapur'],
-                ['name' => 'Manikonda', 'slug' => 'manikonda'],
-                ['name' => 'Begumpet', 'slug' => 'begumpet'],
-                ['name' => 'Tambaram', 'slug' => 'secunderabad'],
-                ['name' => 'Ameerpet', 'slug' => 'ameerpet'],
-                ['name' => 'Chandanagar', 'slug' => 'chandanagar'],
-                ['name' => 'Nallagandla', 'slug' => 'nallagandla'],
-                ['name' => 'Tellapur', 'slug' => 'tellapur'],
-                ['name' => 'Dilsukhnagar', 'slug' => 'dilsukhnagar'],
-                ['name' => 'LB Nagar', 'slug' => 'lb-nagar'],
-                ['name' => 'Uppal', 'slug' => 'uppal'],
-                ['name' => 'Kompally', 'slug' => 'kompally'],
-                ['name' => 'Nizampet', 'slug' => 'nizampet'],
-                ['name' => 'Bachupally', 'slug' => 'bachupally'],
-                ['name' => 'Attapur', 'slug' => 'attapur'],
-                ['name' => 'Somajiguda', 'slug' => 'somajiguda'],
-                ['name' => 'KPHB Colony', 'slug' => 'kphb-colony']
+                ['name' => 'Anna Nagar', 'slug' => 'anna-nagar'],
+                ['name' => 'T Nagar', 'slug' => 't-nagar'],
+                ['name' => 'Velachery', 'slug' => 'velachery'],
+                ['name' => 'Adyar', 'slug' => 'adyar'],
+                ['name' => 'Tambaram', 'slug' => 'tambaram'],
+                ['name' => 'Porur', 'slug' => 'porur'],
+                ['name' => 'Mylapore', 'slug' => 'mylapore'],
+                ['name' => 'Nungambakkam', 'slug' => 'nungambakkam'],
+                ['name' => 'Guindy', 'slug' => 'guindy'],
+                ['name' => 'Besant Nagar', 'slug' => 'besant-nagar'],
+                ['name' => 'Sholinganallur', 'slug' => 'sholinganallur'],
+                ['name' => 'Perungudi', 'slug' => 'perungudi'],
+                ['name' => 'Thoraipakkam', 'slug' => 'thoraipakkam'],
+                ['name' => 'Medavakkam', 'slug' => 'medavakkam'],
+                ['name' => 'Chromepet', 'slug' => 'chromepet'],
+                ['name' => 'Pallavaram', 'slug' => 'pallavaram'],
+                ['name' => 'Ambattur', 'slug' => 'ambattur'],
+                ['name' => 'Avadi', 'slug' => 'avadi'],
+                ['name' => 'Poonamallee', 'slug' => 'poonamallee'],
+                ['name' => 'Kilpauk', 'slug' => 'kilpauk'],
+                ['name' => 'Kodambakkam', 'slug' => 'kodambakkam'],
+                ['name' => 'Alwarpet', 'slug' => 'alwarpet'],
+                ['name' => 'Thiruvanmiyur', 'slug' => 'thiruvanmiyur'],
+                ['name' => 'Madipakkam', 'slug' => 'madipakkam'],
+                ['name' => 'Saidapet', 'slug' => 'saidapet'],
+                ['name' => 'Royapettah', 'slug' => 'royapettah'],
+                ['name' => 'Kotturpuram', 'slug' => 'kotturpuram'],
+                ['name' => 'Perambur', 'slug' => 'perambur'],
+                ['name' => 'Mogappair', 'slug' => 'mogappair'],
+                ['name' => 'Navalur (OMR)', 'slug' => 'navalur']
             ];
             foreach ($featured_localities as $loc):
             ?>
@@ -780,7 +786,7 @@ $_generic = 'Professional installation services across Chennai';
                 <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
                     <a href="<?php echo SITE_URL; ?>/all-areas" 
                        style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 14px 28px; border-radius: 10px; font-weight: 700; text-decoration: none; font-size: 16px; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 14px rgba(37,99,235,0.4);">
-                        <i class="fas fa-list-ul"></i> Browse All 188 Chennai Service Areas
+                        <i class="fas fa-list-ul"></i> Browse All 600+ Chennai Service Areas
                     </a>
                     <a href="tel:+919912399224" 
                        style="background: #10b981; color: white; padding: 14px 28px; border-radius: 10px; font-weight: 700; text-decoration: none; font-size: 16px; display: inline-flex; align-items: center; gap: 10px;">
@@ -863,7 +869,7 @@ $_generic = 'Professional installation services across Chennai';
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes! We cover all 188+ areas across Chennai including Tambaram, Gachibowli, Hitech City, Banjara Hills, Jubilee Hills, and surrounding localities.</p>
+                        <p>Yes! We provide full coverage across all 600+ localities in Chennai and suburbs, including Anna Nagar, T Nagar, Velachery, Adyar, Tambaram, Porur, Mylapore, Nungambakkam, Sholinganallur, and surrounding areas.</p>
                     </div>
                 </div>
                 

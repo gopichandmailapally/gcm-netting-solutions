@@ -148,10 +148,10 @@ include '../includes/header.php';
                     <li><strong>LSI Keywords:</strong> Related terms Google expects to see</li>
                 </ul>
                 
-                <p><strong>Example for "Pigeon Nets in Kukatpally":</strong></p>
+                <p><strong>Example for "Pigeon Nets in Porur":</strong></p>
                 <ul>
-                    <li>Primary: Pigeon Nets in Kukatpally</li>
-                    <li>Secondary: Pigeon Net Installation Kukatpally, Anti Pigeon Nets Kukatpally</li>
+                    <li>Primary: Pigeon Nets in Porur</li>
+                    <li>Secondary: Pigeon Net Installation Porur, Anti Pigeon Nets Porur</li>
                     <li>LSI: Bird control, Balcony safety, Pigeon proofing, Net installation services</li>
                 </ul>
             </div>
