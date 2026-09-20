@@ -84,138 +84,18 @@ $billingPath = $inSubfolder ? ($inBillingFolder ? '' : '../billing/') : 'billing
                     </a>
                 </li>
 
-                <!-- CONTENT -->
-                <li class="nav-group <?php echo navGroupOpen(['service-highlights.php','homepage-images.php','generate-pages.php','pillar-page-generator.php','view-generated-pages.php','content-generator.php','content-export.php']); ?>">
-                    <div class="nav-group-header">
-                        <div class="nav-group-label"><i class="fas fa-edit"></i><span>Content</span></div>
-                        <i class="fas fa-chevron-right nav-group-arrow"></i>
-                    </div>
-                    <ul class="nav-group-items">
-                        <li class="<?php echo $currentPage=='service-highlights.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>service-highlights.php"><i class="fas fa-star"></i><span>Service Highlights</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='homepage-images.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>homepage-images.php"><i class="fas fa-images"></i><span>Homepage Images</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='generate-pages.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>generate-pages.php"><i class="fas fa-cogs"></i><span>AI Page Generator</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='pillar-page-generator.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>pillar-page-generator.php"><i class="fas fa-layer-group"></i><span>64 Pillar Pages</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='view-generated-pages.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>view-generated-pages.php"><i class="fas fa-file-alt"></i><span>View Generated Pages</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='content-export.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>content-export.php"><i class="fas fa-shield-alt"></i><span>Content Protection</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='content-generator.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>content-generator.php"><i class="fas fa-robot"></i><span>Content Generator</span></a>
-                        </li>
-                    </ul>
+                <!-- Inquiries & Leads -->
+                <li class="nav-dashboard-item <?php echo $currentPage == 'contact-forms.php' ? 'active' : ''; ?>">
+                    <a href="<?php echo $pagesPath; ?>contact-forms.php">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <span>Customer Leads</span>
+                    </a>
                 </li>
 
-                <!-- WEBSITE -->
-                <li class="nav-group <?php echo navGroupOpen(['hero-slider.php','gallery-management.php','about-page.php','logo-management.php','rate-management.php']); ?>">
+                <!-- Content & Media -->
+                <li class="nav-group <?php echo navGroupOpen(['manage-blogs.php','manage-reviews.php','manage-faqs.php','gallery-management.php','hero-slider.php','about-page.php']); ?>">
                     <div class="nav-group-header">
-                        <div class="nav-group-label"><i class="fas fa-globe"></i><span>Website</span></div>
-                        <i class="fas fa-chevron-right nav-group-arrow"></i>
-                    </div>
-                    <ul class="nav-group-items">
-                        <li class="<?php echo $currentPage=='hero-slider.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>hero-slider.php"><i class="fas fa-sliders-h"></i><span>Hero Slider</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='gallery-management.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>gallery-management.php"><i class="fas fa-th"></i><span>Gallery</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='about-page.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>about-page.php"><i class="fas fa-info-circle"></i><span>About Page</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='logo-management.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>logo-management.php"><i class="fas fa-image"></i><span>Logo Management</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='rate-management.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>rate-management.php"><i class="fas fa-rupee-sign"></i><span>Rate Management</span></a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- PAGE FIXES -->
-                <li class="nav-group <?php echo navGroupOpen(['fix-broken-pages.php','fix-layout.php','fix-faq.php','update-hero-titles.php']); ?>">
-                    <div class="nav-group-header">
-                        <div class="nav-group-label"><i class="fas fa-tools"></i><span>Page Fixes</span></div>
-                        <i class="fas fa-chevron-right nav-group-arrow"></i>
-                    </div>
-                    <ul class="nav-group-items">
-                        <li class="<?php echo $currentPage=='fix-broken-pages.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>fix-broken-pages.php"><i class="fas fa-wrench"></i><span>Fix Broken Pages</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='fix-layout.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>fix-layout.php"><i class="fas fa-columns"></i><span>Fix Layout</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='fix-faq.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>fix-faq.php"><i class="fas fa-question-circle"></i><span>Fix FAQ Format</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='update-hero-titles.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>update-hero-titles.php"><i class="fas fa-heading"></i><span>Update Hero Titles</span></a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- SEO & MARKETING -->
-                <li class="nav-group <?php echo navGroupOpen(['complete-seo-system.php','auto-seo-optimizer-dashboard.php','seo-dashboard.php','sitemap-generator.php','search-console.php','realistic-seo-dashboard.php','seo-improvement-guide.php']); ?>">
-                    <div class="nav-group-header">
-                        <div class="nav-group-label"><i class="fas fa-rocket"></i><span>SEO &amp; Marketing</span></div>
-                        <i class="fas fa-chevron-right nav-group-arrow"></i>
-                    </div>
-                    <ul class="nav-group-items">
-                        <li class="<?php echo $currentPage=='complete-seo-system.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>complete-seo-system.php"><i class="fas fa-rocket"></i><span>Complete SEO System</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='auto-seo-optimizer-dashboard.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>auto-seo-optimizer-dashboard.php"><i class="fas fa-magic"></i><span>Auto SEO Optimizer</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='seo-dashboard.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>seo-dashboard.php"><i class="fas fa-search"></i><span>SEO Dashboard</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='realistic-seo-dashboard.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>realistic-seo-dashboard.php"><i class="fas fa-search-location"></i><span>Rank Checker</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='sitemap-generator.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>sitemap-generator.php"><i class="fas fa-sitemap"></i><span>Sitemap Generator</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='search-console.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>search-console.php"><i class="fab fa-google"></i><span>Search Console</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='seo-improvement-guide.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>seo-improvement-guide.php"><i class="fas fa-graduation-cap"></i><span>SEO Guide</span></a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- AUTOMATED CONTENT -->
-                <li class="nav-group <?php echo navGroupOpen(['auto-blog-dashboard.php','review-generator.php','faq-generator.php']); ?>">
-                    <div class="nav-group-header">
-                        <div class="nav-group-label"><i class="fas fa-robot"></i><span>Automated Content</span></div>
-                        <i class="fas fa-chevron-right nav-group-arrow"></i>
-                    </div>
-                    <ul class="nav-group-items">
-                        <li class="<?php echo $currentPage=='auto-blog-dashboard.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>auto-blog-dashboard.php"><i class="fas fa-robot"></i><span>Auto Blog Generator</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='review-generator.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>review-generator.php"><i class="fas fa-star"></i><span>Auto Review Generator</span></a>
-                        </li>
-                        <li class="<?php echo $currentPage=='faq-generator.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>faq-generator.php"><i class="fas fa-question-circle"></i><span>Auto FAQ Generator</span></a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- CONTENT MANAGEMENT -->
-                <li class="nav-group <?php echo navGroupOpen(['manage-blogs.php','manage-reviews.php','manage-faqs.php']); ?>">
-                    <div class="nav-group-header">
-                        <div class="nav-group-label"><i class="fas fa-layer-group"></i><span>Content Management</span></div>
+                        <div class="nav-group-label"><i class="fas fa-layer-group"></i><span>Content &amp; Media</span></div>
                         <i class="fas fa-chevron-right nav-group-arrow"></i>
                     </div>
                     <ul class="nav-group-items">
@@ -223,18 +103,46 @@ $billingPath = $inSubfolder ? ($inBillingFolder ? '' : '../billing/') : 'billing
                             <a href="<?php echo $pagesPath; ?>manage-blogs.php"><i class="fas fa-blog"></i><span>Manage Blogs</span></a>
                         </li>
                         <li class="<?php echo $currentPage=='manage-reviews.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>manage-reviews.php"><i class="fas fa-tasks"></i><span>Manage Reviews</span></a>
+                            <a href="<?php echo $pagesPath; ?>manage-reviews.php"><i class="fas fa-star"></i><span>Customer Reviews</span></a>
                         </li>
                         <li class="<?php echo $currentPage=='manage-faqs.php'?'active':''; ?>">
                             <a href="<?php echo $pagesPath; ?>manage-faqs.php"><i class="fas fa-question-circle"></i><span>Manage FAQs</span></a>
                         </li>
+                        <li class="<?php echo $currentPage=='gallery-management.php'?'active':''; ?>">
+                            <a href="<?php echo $pagesPath; ?>gallery-management.php"><i class="fas fa-images"></i><span>Photo Gallery</span></a>
+                        </li>
+                        <li class="<?php echo $currentPage=='hero-slider.php'?'active':''; ?>">
+                            <a href="<?php echo $pagesPath; ?>hero-slider.php"><i class="fas fa-sliders-h"></i><span>Hero Slider</span></a>
+                        </li>
+                        <li class="<?php echo $currentPage=='about-page.php'?'active':''; ?>">
+                            <a href="<?php echo $pagesPath; ?>about-page.php"><i class="fas fa-info-circle"></i><span>About Page</span></a>
+                        </li>
                     </ul>
                 </li>
 
-                <!-- ANALYTICS -->
-                <li class="nav-group <?php echo navGroupOpen(['visitor-analytics.php','live-visitors.php','advanced-analytics.php']); ?>">
+                <!-- SEO & Search -->
+                <li class="nav-group <?php echo navGroupOpen(['seo-dashboard.php','sitemap-generator.php','search-console.php']); ?>">
                     <div class="nav-group-header">
-                        <div class="nav-group-label"><i class="fas fa-chart-line"></i><span>Analytics &amp; Tracking</span></div>
+                        <div class="nav-group-label"><i class="fas fa-rocket"></i><span>SEO &amp; Search</span></div>
+                        <i class="fas fa-chevron-right nav-group-arrow"></i>
+                    </div>
+                    <ul class="nav-group-items">
+                        <li class="<?php echo $currentPage=='seo-dashboard.php'?'active':''; ?>">
+                            <a href="<?php echo $pagesPath; ?>seo-dashboard.php"><i class="fas fa-search"></i><span>SEO Dashboard</span></a>
+                        </li>
+                        <li class="<?php echo $currentPage=='sitemap-generator.php'?'active':''; ?>">
+                            <a href="<?php echo $pagesPath; ?>sitemap-generator.php"><i class="fas fa-sitemap"></i><span>Sitemap Generator</span></a>
+                        </li>
+                        <li class="<?php echo $currentPage=='search-console.php'?'active':''; ?>">
+                            <a href="<?php echo $pagesPath; ?>search-console.php"><i class="fab fa-google"></i><span>Search Console</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Analytics & Tracking -->
+                <li class="nav-group <?php echo navGroupOpen(['visitor-analytics.php','live-visitors.php']); ?>">
+                    <div class="nav-group-header">
+                        <div class="nav-group-label"><i class="fas fa-chart-line"></i><span>Analytics &amp; Traffic</span></div>
                         <i class="fas fa-chevron-right nav-group-arrow"></i>
                     </div>
                     <ul class="nav-group-items">
@@ -244,56 +152,27 @@ $billingPath = $inSubfolder ? ($inBillingFolder ? '' : '../billing/') : 'billing
                         <li class="<?php echo $currentPage=='live-visitors.php'?'active':''; ?>">
                             <a href="<?php echo $pagesPath; ?>live-visitors.php"><i class="fas fa-users"></i><span>Live Visitors</span></a>
                         </li>
-                        <li class="<?php echo $currentPage=='advanced-analytics.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>advanced-analytics.php"><i class="fas fa-chart-bar"></i><span>Advanced Analytics</span></a>
-                        </li>
                     </ul>
                 </li>
 
-                <!-- CUSTOMER MANAGEMENT -->
-                <li class="nav-group <?php echo navGroupOpen(['contact-forms.php','offers-management.php']); ?>">
+                <!-- Security & System -->
+                <li class="nav-group <?php echo navGroupOpen(['security-status.php','account-manager.php','security-2fa.php','api-settings.php']); ?>">
                     <div class="nav-group-header">
-                        <div class="nav-group-label"><i class="fas fa-users"></i><span>Customer Management</span></div>
-                        <i class="fas fa-chevron-right nav-group-arrow"></i>
-                    </div>
-                    <ul class="nav-group-items">
-                        <li class="<?php echo $currentPage=='contact-forms.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>contact-forms.php"><i class="fas fa-envelope"></i><span>Contact Forms</span></a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- SECURITY -->
-                <li class="nav-group <?php echo navGroupOpen(['security-status.php','ai-content-security.php','account-manager.php','security-2fa.php']); ?>">
-                    <div class="nav-group-header">
-                        <div class="nav-group-label"><i class="fas fa-shield-alt"></i><span>Security</span></div>
+                        <div class="nav-group-label"><i class="fas fa-shield-alt"></i><span>Security &amp; System</span></div>
                         <i class="fas fa-chevron-right nav-group-arrow"></i>
                     </div>
                     <ul class="nav-group-items">
                         <li class="<?php echo $currentPage=='security-status.php'?'active':''; ?>">
                             <a href="<?php echo $pagesPath; ?>security-status.php"><i class="fas fa-shield-alt"></i><span>Security Status</span></a>
                         </li>
-                        <li class="<?php echo $currentPage=='ai-content-security.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>ai-content-security.php"><i class="fas fa-lock"></i><span>AI Content Security</span><span class="nav-ai-badge"><i class="fas fa-robot"></i>AI</span></a>
-                        </li>
                         <li class="<?php echo $currentPage=='account-manager.php'?'active':''; ?>">
                             <a href="<?php echo $pagesPath; ?>account-manager.php"><i class="fas fa-user-shield"></i><span>Account Manager</span></a>
                         </li>
                         <li class="<?php echo $currentPage=='security-2fa.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>security-2fa.php"><i class="fas fa-mobile-alt"></i><span>2FA &amp; Trusted Devices</span></a>
+                            <a href="<?php echo $pagesPath; ?>security-2fa.php"><i class="fas fa-mobile-alt"></i><span>2FA Authentication</span></a>
                         </li>
-                    </ul>
-                </li>
-
-                <!-- SETTINGS -->
-                <li class="nav-group <?php echo navGroupOpen(['api-settings.php']); ?>">
-                    <div class="nav-group-header">
-                        <div class="nav-group-label"><i class="fas fa-cog"></i><span>Settings</span></div>
-                        <i class="fas fa-chevron-right nav-group-arrow"></i>
-                    </div>
-                    <ul class="nav-group-items">
                         <li class="<?php echo $currentPage=='api-settings.php'?'active':''; ?>">
-                            <a href="<?php echo $pagesPath; ?>api-settings.php"><i class="fas fa-cog"></i><span>API Settings</span></a>
+                            <a href="<?php echo $pagesPath; ?>api-settings.php"><i class="fas fa-cog"></i><span>API &amp; System Settings</span></a>
                         </li>
                     </ul>
                 </li>

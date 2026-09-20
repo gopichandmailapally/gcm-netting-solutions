@@ -317,9 +317,9 @@ include 'includes/header.php';
     </div>
     <div class="seo-section-body">
         <div class="qa-grid">
-            <a href="pages/generate-pages.php" class="qa-card qa-indigo">
+            <a href="pages/contact-forms.php" class="qa-card qa-indigo">
                 <div class="qa-icon"><i class="fas fa-magic"></i></div>
-                <div class="qa-text"><span class="qa-title">Generate Pages</span><span class="qa-sub">Create service + area pages</span></div>
+                <div class="qa-text"><span class="qa-title">Customer Leads</span><span class="qa-sub">Create service + area pages</span></div>
             </a>
             <a href="pages/manage-reviews.php" class="qa-card qa-amber">
                 <div class="qa-icon"><i class="fas fa-star"></i></div>
@@ -334,7 +334,7 @@ include 'includes/header.php';
                 <div class="qa-icon"><i class="fas fa-images"></i></div>
                 <div class="qa-text"><span class="qa-title">Gallery &amp; Media</span><span class="qa-sub">Upload photos &amp; images</span></div>
             </a>
-            <a href="pages/rate-management.php" class="qa-card qa-rose">
+            <a href="pages/api-settings.php" class="qa-card qa-rose">
                 <div class="qa-icon"><i class="fas fa-rupee-sign"></i></div>
                 <div class="qa-text"><span class="qa-title">Update Pricing</span><span class="qa-sub">Service rates &amp; packages</span></div>
             </a>
@@ -354,7 +354,7 @@ include 'includes/header.php';
                 <div class="qa-icon"><i class="fas fa-sliders-h"></i></div>
                 <div class="qa-text"><span class="qa-title">Hero Slider</span><span class="qa-sub">Manage homepage slides</span></div>
             </a>
-            <a href="pages/update-hero-titles.php" class="qa-card qa-orange">
+            <a href="pages/about-page.php" class="qa-card qa-orange">
                 <div class="qa-icon"><i class="fas fa-font"></i></div>
                 <div class="qa-text"><span class="qa-title">Hero Titles</span><span class="qa-sub">Update page headings</span></div>
             </a>
@@ -397,13 +397,13 @@ include 'includes/header.php';
     </div>
     <div class="seo-section-body">
         <div class="seo-tools-grid">
-            <!-- Complete SEO System -->
-            <a href="pages/complete-seo-system.php" class="seo-tool-card seo-purple">
+            <!-- Search Console -->
+            <a href="pages/search-console.php" class="seo-tool-card seo-purple">
                 <div class="seo-tool-header">
                     <div class="seo-tool-icon"><i class="fas fa-rocket"></i></div>
                     <span class="seo-tool-badge">All-in-One</span>
                 </div>
-                <h3>Complete SEO System</h3>
+                <h3>Search Console</h3>
                 <p>Whole website optimization + link building strategy</p>
                 <div class="seo-tool-stats">
                     <div class="seo-stat"><span class="seo-stat-val"><?php echo number_format($seo_total_pages); ?></span><span class="seo-stat-lbl">Total Pages</span></div>
@@ -411,13 +411,13 @@ include 'includes/header.php';
                 </div>
                 <div class="seo-tool-action">Open Tool <i class="fas fa-arrow-right"></i></div>
             </a>
-            <!-- Auto SEO Optimizer -->
-            <a href="pages/auto-seo-optimizer-dashboard.php" class="seo-tool-card seo-green">
+            <!-- Security Status -->
+            <a href="pages/security-status.php" class="seo-tool-card seo-green">
                 <div class="seo-tool-header">
                     <div class="seo-tool-icon"><i class="fas fa-magic"></i></div>
                     <span class="seo-tool-badge">One Click</span>
                 </div>
-                <h3>Auto SEO Optimizer</h3>
+                <h3>Security Status</h3>
                 <p>Push all <?php echo number_format($seo_total_pages); ?> pages to #1 with one click</p>
                 <div class="seo-tool-stats">
                     <div class="seo-stat"><span class="seo-stat-val"><?php echo $seo_pct; ?>%</span><span class="seo-stat-lbl">Completion</span></div>
@@ -565,7 +565,7 @@ include 'includes/header.php';
             <div>
                 <div class="dash-panel-head"><i class="fas fa-file-alt"></i> Recently Generated Pages <a href="pages/manage-pages.php" class="view-all-lnk">View All <i class="fas fa-arrow-right"></i></a></div>
                 <?php if (empty($recent_pages)): ?>
-                <div class="empty-state"><i class="fas fa-file-alt"></i><p>No pages yet</p><a href="pages/generate-pages.php" class="btn-dash">Generate First Page</a></div>
+                <div class="empty-state"><i class="fas fa-file-alt"></i><p>No pages yet</p><a href="pages/contact-forms.php" class="btn-dash">View Customer Leads</a></div>
                 <?php else: ?>
                 <table class="dash-table">
                     <thead><tr><th>Page</th><th>Area</th><th>Status</th><th>Date</th></tr></thead>
@@ -607,7 +607,7 @@ include 'includes/header.php';
 <!-- Tip Bar -->
 <div class="tip-bar">
     <div class="tip-icon"><i class="fas fa-lightbulb"></i></div>
-    <div><strong>Dashboard Tips:</strong> Run <em>Auto SEO Optimizer</em> weekly &mdash; Check <em>Pending Reviews</em> daily &mdash; <em>Regenerate Sitemap</em> after adding new pages &mdash; Use <em>Live Visitors</em> to track real-time traffic.</div>
+    <div><strong>Dashboard Tips:</strong> Run <em>Security Status</em> weekly &mdash; Check <em>Pending Reviews</em> daily &mdash; <em>Regenerate Sitemap</em> after adding new pages &mdash; Use <em>Live Visitors</em> to track real-time traffic.</div>
 </div>
 
 </div>
@@ -623,7 +623,7 @@ include 'includes/header.php';
 </script>
 
 <style>
-/* ===== DASHBOARD — Complete SEO System Theme ===== */
+/* ===== DASHBOARD — Search Console Theme ===== */
 @keyframes fadeInUp  { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
 @keyframes spinLoad  { from{transform:rotate(0)} to{transform:rotate(360deg)} }
 

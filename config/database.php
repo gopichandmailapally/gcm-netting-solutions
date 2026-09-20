@@ -35,9 +35,13 @@ class Database {
             $this->seedData();
         } else {
             $this->connectMySQL();
-            $this->seedMySQLAdmin();
-            $this->migrateMySQLSchema();
-            try { $this->seedKeywords(); } catch (\Exception $e) { error_log('[Database] seedKeywords error: ' . $e->getMessage()); } // Ensure all 64 keywords exist on MySQL
+            $lockFile = dirname(__DIR__) . '/data/.db_schema_migrated_v2';
+            if (!file_exists($lockFile)) {
+                $this->seedMySQLAdmin();
+                $this->migrateMySQLSchema();
+                try { $this->seedKeywords(); } catch (\Exception $e) { error_log('[Database] seedKeywords error: ' . $e->getMessage()); }
+                @file_put_contents($lockFile, date('Y-m-d H:i:s'));
+            }
         }
     }
 
@@ -247,7 +251,7 @@ class Database {
                 ['Cloth Hangers',        'cloth-hangers',        'cloth-hangers',        'home',   'fas fa-tshirt',        'Ceiling cloth hanger installation',            6],
             ];
             $stmt = $this->connection->prepare(
-                "INSERT INTO services (keyword, slug, category, is_active, service_name, service_slug, icon_class, description, display_order)
+                "INSERT INTO services (service_id, slug, category, is_active, service_name, service_slug, icon_class, description, display_order)
                  VALUES (?,?,?,1,?,?,?,?,?)
                  ON DUPLICATE KEY UPDATE
                    service_name=VALUES(service_name), service_slug=VALUES(service_slug),
@@ -616,11 +620,11 @@ class Database {
         try {
             $this->connection->exec("CREATE OR REPLACE VIEW `v_blog_statistics` AS
                 SELECT COUNT(*) as total_blogs,
-                    SUM(CASE WHEN status='published' THEN 1 ELSE 0 END) as published_blogs,
-                    SUM(CASE WHEN status='draft'     THEN 1 ELSE 0 END) as draft_blogs,
+                    SUM(CASE WHEN is_published=1 THEN 1 ELSE 0 END) as published_blogs,
+                    SUM(CASE WHEN is_published=0 THEN 1 ELSE 0 END) as draft_blogs,
                     COALESCE(SUM(views),0)         as total_views,
-                    COALESCE(AVG(word_count),0)    as avg_word_count,
-                    COALESCE(AVG(seo_score),0)     as avg_seo_score
+                    0                              as avg_word_count,
+                    0                              as avg_seo_score
                 FROM blog_posts");
         } catch (\Exception $e) { error_log('[DB migrate] v_blog_statistics: ' . $e->getMessage()); }
     }

@@ -32,3 +32,5 @@ Thumbs.db
 
 # Node / vendor if any
 node_modules/
+archive_admin_cleanup/
+data/.db_schema_migrated_v2
