@@ -5,9 +5,10 @@
 
 /* ========== Announcement/Marquee Bar ========== */
 .announcement-bar {
+    font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background: linear-gradient(135deg, #1E40AF, #3B82F6, #8B5CF6);
     color: #FFFFFF;
-    padding: 12px 0;
+    padding: 10px 0;
     overflow: hidden;
     position: relative;
     z-index: 999;
@@ -72,8 +73,9 @@
 
 /* ========== Modern Header ========== */
 .modern-header {
+    font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background: #FFFFFF;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     position: sticky;
     top: 0;
     z-index: 998;
@@ -83,17 +85,17 @@
 .header-container {
     max-width: 100%;
     margin: 0;
-    padding: 10px 20px 10px 40px;
+    padding: 10px 24px 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 100px;
-    gap: 15px;
+    min-height: 90px;
+    gap: 14px;
 }
 
 /* Logo */
 .header-logo {
-    height: 100px;
+    height: 85px;
     display: flex;
     align-items: center;
     flex-shrink: 0;
@@ -126,6 +128,7 @@
     display: flex;
     justify-content: flex-start;
     max-width: none;
+    min-width: 0;
 }
 
 .nav-menu {
@@ -133,8 +136,9 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 8px;
+    gap: 6px;
     flex-wrap: nowrap;
+    align-items: center;
 }
 
 .nav-item {
@@ -145,21 +149,27 @@
     display: flex;
     align-items: center;
     gap: 6px;
-    padding: 10px 16px;
+    padding: 8px 12px;
     color: #1E293B;
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
     white-space: nowrap;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    background: linear-gradient(135deg, #3B82F6, #8B5CF6);
-    color: #FFFFFF;
+    background: linear-gradient(135deg, #3B82F6, #8B5CF6) !important;
+    color: #FFFFFF !important;
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
+}
+
+.nav-link:hover i,
+.nav-link.active i {
+    color: #FFFFFF !important;
 }
 
 /* Mega Dropdown */
@@ -392,7 +402,7 @@
     gap: 12px;
     flex-shrink: 0;
     margin-left: auto;
-    margin-right: 120px;
+    margin-right: 0;
 }
 
 .btn-call {
@@ -774,6 +784,33 @@ body.menu-open {
     .dropdown-level3 {
         top: 0 !important;
         margin-top: 0 !important;
+    }
+}
+
+/* Intermediate Laptop Screen Fit (1025px to 1440px) */
+@media (max-width: 1440px) and (min-width: 1025px) {
+    .header-container {
+        padding: 8px 16px;
+        gap: 10px;
+    }
+    .nav-menu {
+        gap: 4px;
+    }
+    .nav-link {
+        padding: 7px 9px;
+        font-size: 13px;
+        gap: 4px;
+    }
+    .btn-call {
+        padding: 8px 12px;
+        gap: 8px;
+    }
+    .call-text strong {
+        font-size: 13px;
+    }
+    .btn-quote {
+        padding: 10px 14px;
+        font-size: 13px;
     }
 }
 

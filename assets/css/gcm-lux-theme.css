@@ -53,67 +53,6 @@ h1, h2, h3, h4, h5, h6, .hero-slider h1, .section-title, .service-card h3 {
     letter-spacing: -0.02em;
 }
 
-/* ==========================================================================
-   1. LUXURY ANNOUNCEMENT & MARQUEE BAR
-   ========================================================================== */
-.announcement-bar {
-    background: linear-gradient(90deg, #09132b 0%, #132752 30%, #1e40af 60%, #065f46 100%) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 10px 0 !important;
-}
-
-.marquee span.highlight {
-    background: rgba(16, 185, 129, 0.25) !important;
-    border: 1px solid rgba(16, 185, 129, 0.5) !important;
-    color: #6ee7b7 !important;
-    text-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    padding: 4px 14px;
-}
-
-/* ==========================================================================
-   2. MODERN GLASS HEADER & NAVIGATION
-   ========================================================================== */
-.modern-header {
-    background: rgba(255, 255, 255, 0.88) !important;
-    backdrop-filter: blur(20px) saturate(180%) !important;
-    -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
-    border-bottom: 1px solid rgba(226, 232, 240, 0.8) !important;
-    box-shadow: 0 4px 25px rgba(15, 23, 42, 0.05) !important;
-    transition: all 0.3s ease;
-}
-
-.modern-header .nav-link {
-    font-weight: 600 !important;
-    color: #334155 !important;
-    font-size: 15px !important;
-    padding: 10px 18px !important;
-    border-radius: 10px !important;
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-
-.modern-header .nav-link:hover, 
-.modern-header .nav-link.active {
-    color: #1d4ed8 !important;
-    background: rgba(37, 99, 235, 0.08) !important;
-}
-
-/* CTA Call / WhatsApp in Header */
-.header-contact-btn {
-    background: var(--gcm-grad-accent) !important;
-    color: #ffffff !important;
-    font-weight: 700 !important;
-    border-radius: 30px !important;
-    box-shadow: var(--gcm-glow-emerald) !important;
-    transition: transform 0.25s ease, box-shadow 0.25s ease !important;
-    padding: 10px 22px !important;
-}
-
-.header-contact-btn:hover {
-    transform: translateY(-2px) scale(1.02) !important;
-    box-shadow: 0 14px 35px -8px rgba(16, 185, 129, 0.6) !important;
-}
 
 /* ==========================================================================
    3. HERO SLIDER & CALL TO ACTIONS
