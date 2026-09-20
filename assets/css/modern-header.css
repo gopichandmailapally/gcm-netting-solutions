@@ -82,9 +82,15 @@
     transition: all 0.3s ease;
 }
 
-.modern-header,
-.modern-header * {
+.modern-header {
     font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.modern-header i,
+.modern-header .fas,
+.modern-header .far,
+.modern-header .fab {
+    font-family: "Font Awesome 6 Free", "Font Awesome 5 Free", fontawesome !important;
 }
 
 .header-container {
