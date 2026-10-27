@@ -1,16 +1,10 @@
 <?php
 /**
- * Smart Dynamic WhatsApp Helper for GCM Netting Solutions (Chennai)
+ * Smart Dynamic WhatsApp Helper for GCM Netting Solutions (Chennai & Pan-India)
  * Generates rich, high-converting WhatsApp inquiry messages tailored to the specific product/service, location, and page.
- * Format matches GCM Enterprises standard:
- * 
- * Hi GCM Netting Solutions, I would like to inquire about *[Service]* in *[Location]*.
- * • Service: [Service]
- * • Location: [Location]
- * • Page: [Full URL]
- * • Website: www.gcmnettingsolutions.com
- * [Pricing/Technical prompt]
  */
+
+require_once __DIR__ . '/geo_resolver.php';
 
 if (!function_exists('getGcmPageContext')) {
 function getGcmPageContext($customService = null, $customLocation = null) {
@@ -30,7 +24,6 @@ function getGcmPageContext($customService = null, $customLocation = null) {
     }
 
     if (empty($service)) {
-        // Pattern: {service}-in-{area}
         if (preg_match('/^([a-z0-9-]+)-in-([a-z0-9-]+)/', $cleanUri, $m)) {
             $slug = $m[1];
             $svcMap = [
@@ -98,22 +91,23 @@ function getGcmPageContext($customService = null, $customLocation = null) {
         }
     }
 
-    // 2. Detect Chennai Location / Area
-    $location = $customLocation;
-    if (empty($location) && !empty($area_name)) {
-        $location = $area_name . ', Chennai';
-    }
-
+    // 2. Detect Granular Geographic Location
+    $location = !empty($customLocation) ? resolveSmartGeoLocation($customLocation) : "";
     if (empty($location)) {
-        if (preg_match('/-in-([a-z0-9-]+)/', $cleanUri, $m)) {
-            $slug = $m[1];
-            $locFormatted = ucwords(str_replace('-', ' ', $slug));
-            $location = $locFormatted . ', Chennai';
+        if (!empty($_GET['area'])) {
+            $location = resolveSmartGeoLocation($_GET['area'], 'Chennai, Tamil Nadu (All Areas & Greater Chennai)');
+        } elseif (!empty($area_slug)) {
+            $location = resolveSmartGeoLocation($area_slug, 'Chennai, Tamil Nadu (All Areas & Greater Chennai)');
+        } elseif (!empty($area_name)) {
+            $location = resolveSmartGeoLocation($area_name, 'Chennai, Tamil Nadu (All Areas & Greater Chennai)');
+        } elseif (preg_match('/-in-([a-z0-9-]+)/', $cleanUri, $m)) {
+            $location = resolveSmartGeoLocation($m[1], 'Chennai, Tamil Nadu (All Areas & Greater Chennai)');
         }
     }
 
     if (empty($location)) {
-        $location = 'Chennai, Tamil Nadu (All Areas & Outskirts)';
+        $checkLoc = strtolower(($page_title ?? '') . ' ' . $cleanUri . ' ' . $script);
+        $location = resolveSmartGeoLocation($checkLoc, 'Chennai, Tamil Nadu (All Areas & Greater Chennai)');
     }
 
     // 3. Determine Pricing / Unit Prompt

@@ -1,3 +1,4 @@
+<script src="/assets/js/geo_resolver.js"></script>
 <?php
 /**
  * GCM Netting Solutions - Unified Floating Action Buttons
@@ -52,7 +53,16 @@ $smart_wa_url    = getGcmWhatsAppUrl();
         <span class="gcm-fab-tooltip">WhatsApp</span>
     </a>
 
-    <!-- 3. Scroll to Top Button (Only 3rd button) -->
+    <!-- 3. Cost Estimation Button -->
+    <a href="<?php echo defined('SITE_URL') ? rtrim(SITE_URL, '/') : 'https://www.gcmnettingsolutions.com'; ?>/estimation" 
+       class="gcm-fab gcm-fab-estimate" 
+       title="Get Instant Price Estimation"
+       aria-label="Cost Estimation">
+        <i class="fas fa-calculator"></i>
+        <span class="gcm-fab-tooltip">Cost Estimation</span>
+    </a>
+
+    <!-- 4. Scroll to Top Button -->
     <button type="button" 
             class="gcm-fab gcm-fab-scrolltop" 
             id="gcmScrollTopBtn" 
@@ -126,6 +136,12 @@ $smart_wa_url    = getGcmWhatsAppUrl();
 .gcm-fab-whatsapp {
     background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
     animation: gcm-fab-pulse 3s ease-in-out infinite 1.5s;
+}
+
+/* 2.5 Cost Estimation Button - Golden Orange */
+.gcm-fab-estimate {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    animation: gcm-fab-pulse 3s ease-in-out infinite 0.75s;
 }
 
 /* 3. Scroll to Top Button - Warm Orange */
@@ -210,114 +226,90 @@ $smart_wa_url    = getGcmWhatsAppUrl();
 </style>
 
 <script>
-(function() {
-    // Universal Scroll to Top
-    window.scrollToTop = function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    };
-
-    // Toggle Scroll-to-Top button visibility
-    var scrollBtn = document.getElementById('gcmScrollTopBtn');
+// Smart Dynamic WhatsApp Click Handler for GCM Netting Solutions (Chennai)
+document.addEventListener("click", function(e) {
+    var waLink = e.target.closest('a[href*="wa.me"], a[href*="whatsapp.com"], .gcm-fab-whatsapp, .btn-whatsapp, .whatsapp-link, .fab-whatsapp');
+    if (!waLink) return;
     
-    function updateScrollTopVisibility() {
-        if (!scrollBtn) return;
-        var scrolled = (window.pageYOffset || document.documentElement.scrollTop || 0) > 250;
-        if (scrolled) {
-            scrollBtn.classList.add('visible');
-        } else {
-            scrollBtn.classList.remove('visible');
-        }
+    e.preventDefault();
+    
+    var currentUrl = window.location.href.split("#")[0];
+    var path = window.location.pathname;
+    var title = document.title || "";
+    var h1Elem = document.querySelector("h1");
+    var h1 = h1Elem ? h1Elem.innerText.trim() : "";
+    var checkStr = (h1 + " " + title + " " + path).toLowerCase();
+    
+    // 1. Detect Service
+    var service = "";
+    if (checkStr.includes("cloth-hanger") || checkStr.includes("cloth hanger") || checkStr.includes("drying-hanger") || checkStr.includes("drying stand") || checkStr.includes("ceiling cloth")) {
+        service = "Balcony & Ceiling Cloth Drying Hangers";
+    } else if (checkStr.includes("invisible-grill") || checkStr.includes("invisible grill")) {
+        service = "SS 316 Marine Grade Invisible Grills";
+    } else if (checkStr.includes("box-cricket") || checkStr.includes("box cricket")) {
+        service = "Box Cricket Ground Setup & Netting";
+    } else if (checkStr.includes("cricket")) {
+        service = "Cricket Practice Pitch Nets Installation";
+    } else if (checkStr.includes("sports")) {
+        service = "Sports & Ground Perimeter Netting";
+    } else if (checkStr.includes("spike")) {
+        service = "Anti-Bird & Pigeon Spikes Installation";
+    } else if (checkStr.includes("pigeon")) {
+        service = "Pigeon Safety Nets Installation";
+    } else if (checkStr.includes("child")) {
+        service = "Children & Pet Balcony Safety Nets";
+    } else if (checkStr.includes("balcony")) {
+        service = "Balcony Safety Nets Installation";
+    } else if (checkStr.includes("duct")) {
+        service = "Duct Area Safety Nets";
+    } else if (checkStr.includes("coconut")) {
+        service = "Coconut Tree Safety Nets";
+    } else if (h1) {
+        service = h1.replace(/[–—|\-].*$/, "").trim();
+    } else {
+        service = "Safety Nets & Netting Solutions";
     }
-
-    window.addEventListener('scroll', updateScrollTopVisibility, { passive: true });
-    updateScrollTopVisibility();
-
-    // Smart Dynamic WhatsApp Click Handler for GCM Netting Solutions
-    document.addEventListener('click', function(e) {
-        var waLink = e.target.closest('a[href*="wa.me"], a[href*="whatsapp.com"], .gcm-fab-whatsapp, .btn-whatsapp, .whatsapp-link');
-        if (!waLink) return;
-        
-        // Prevent default static link and launch custom smart formatted message
-        e.preventDefault();
-        
-        var currentUrl = window.location.href.split('#')[0];
-        var path = window.location.pathname;
-        var title = document.title || '';
-        var h1Elem = document.querySelector('h1');
-        var h1 = h1Elem ? h1Elem.innerText.trim() : '';
-        
-        // 1. Detect Service
-        var service = '';
-        var checkStr = (h1 + ' ' + title + ' ' + path).toLowerCase();
-        
-        if (checkStr.includes('cloth-hanger') || checkStr.includes('cloth hanger') || checkStr.includes('drying-hanger') || checkStr.includes('drying stand') || checkStr.includes('pulley cloth')) {
-            service = 'Balcony & Ceiling Cloth Drying Hanger';
-        } else if (checkStr.includes('invisible-grill') || checkStr.includes('invisible grill')) {
-            service = 'Stainless Steel 316 Invisible Grills for Balcony';
-        } else if (checkStr.includes('box-cricket') || checkStr.includes('box cricket')) {
-            service = 'Box Cricket Ground Setup & Netting';
-        } else if (checkStr.includes('cricket')) {
-            service = 'Cricket Practice Pitch Nets Installation';
-        } else if (checkStr.includes('sports')) {
-            service = 'Sports & Ground Perimeter Netting';
-        } else if (checkStr.includes('spike')) {
-            service = 'Anti-Bird & Pigeon Protection Spikes';
-        } else if (checkStr.includes('pigeon') || checkStr.includes('kabutar')) {
-            service = 'Pigeon Safety Nets Installation';
-        } else if (checkStr.includes('child') || checkStr.includes('toddler')) {
-            service = 'Children Balcony & Stair Safety Nets';
-        } else if (checkStr.includes('duct')) {
-            service = 'Duct Area Safety Nets';
-        } else if (checkStr.includes('monkey')) {
-            service = 'Monkey Protection Safety Nets';
-        } else if (checkStr.includes('fall')) {
-            service = 'Fall Protection Safety Nets';
-        } else if (checkStr.includes('balcony')) {
-            service = 'Balcony Safety Nets Installation';
-        } else if (h1) {
-            service = h1.replace(/[–—|\-].*$/, '').trim();
-        } else if (title) {
-            service = title.replace(/[–—|\-].*$/, '').trim();
+    
+    // 2. Detect Locality
+    var location = "";
+    var match = path.match(/-in-([a-z0-9-]+)/i);
+    if (match && match[1]) {
+        var areaSlug = match[1];
+        if (typeof resolveSmartGeoLocation === "function") {
+            location = resolveSmartGeoLocation(areaSlug);
         } else {
-            service = 'Safety Nets & Balcony Solutions';
+            var areaFormatted = areaSlug.split("-").map(function(w) { return w.charAt(0).toUpperCase() + w.slice(1); }).join(" ");
+            location = areaFormatted + ", Chennai, Tamil Nadu";
         }
-        
-        // 2. Detect Chennai Locality
-        var location = '';
-        var match = path.match(/-in-([a-z0-9-]+)/i);
-        if (match && match[1]) {
-            var areaSlug = match[1];
-            var areaFormatted = areaSlug.split('-').map(function(w) {
-                return w.charAt(0).toUpperCase() + w.slice(1);
-            }).join(' ');
-            location = areaFormatted + ', Chennai';
-        } else {
-            location = 'Chennai, Tamil Nadu (All Areas & Outskirts)';
-        }
-        
-        // 3. Determine Pricing / Prompt text
-        var pricingText = 'Please share pricing per sq.ft, warranty details, and same-day installation availability.';
-        if (checkStr.includes('hanger') || checkStr.includes('drying')) {
-            pricingText = 'Please share pricing per piece / set, model options, technical specifications, and installation availability.';
-        } else if (checkStr.includes('spike')) {
-            pricingText = 'Please share pricing per piece / per strip, technical specifications, and installation availability.';
-        } else if (checkStr.includes('box cricket') || checkStr.includes('turf')) {
-            pricingText = 'Please share turnkey court setup cost / pricing per sq.ft, technical specifications, and installation availability.';
-        }
-        
-        // 4. Construct Exact Standard Inquiry Message
-        var msg = 'Hi GCM Netting Solutions, I would like to inquire about *' + service + '* in *' + location + '*.\n\n' +
-                  '• Service: ' + service + '\n' +
-                  '• Location: ' + location + '\n' +
-                  '• Page: ' + currentUrl + '\n' +
-                  '• Website: www.gcmnettingsolutions.com\n\n' +
-                  pricingText;
-                  
-        var targetPhone = '<?php echo preg_replace("/[^0-9]/", "", $whatsapp_num); ?>';
-        window.open('https://wa.me/' + targetPhone + '?text=' + encodeURIComponent(msg), '_blank');
-    });
-})();
+    } else {
+        location = "Chennai, Tamil Nadu (All Areas & Pan-India Supply)";
+    }
+    
+    // 3. Pricing Line
+    var pricingText = "Please share pricing per sq.ft, technical specifications, and installation availability.";
+    if (checkStr.includes("hanger") || checkStr.includes("drying")) {
+        pricingText = "Please share pricing per piece / set, model options, technical specifications, and installation availability.";
+    } else if (checkStr.includes("spike")) {
+        pricingText = "Please share pricing per piece / per strip, technical specifications, and installation availability.";
+    } else if (checkStr.includes("box cricket") || checkStr.includes("turf")) {
+        pricingText = "Please share turnkey court setup cost / pricing per sq.ft, technical specifications, and installation availability.";
+    }
+    
+    var msg = "Hi GCM Netting Solutions, I would like to inquire about *" + service + "* in *" + location + "*.
+
+" +
+              "• Service: " + service + "
+" +
+              "• Location: " + location + "
+" +
+              "• Page: " + currentUrl + "
+" +
+              "• Website: www.gcmnettingsolutions.com
+
+" +
+              pricingText;
+              
+    var targetPhone = "<?php echo preg_replace('/[^0-9]/', '', $whatsapp_num); ?>";
+    window.open("https://wa.me/" + targetPhone + "?text=" + encodeURIComponent(msg), "_blank");
+});
 </script>

@@ -8,15 +8,54 @@
 define('GCM_INIT', true);
 require_once __DIR__ . '/config/config.php';
 require_once __DIR__ . '/config/database.php';
+require_once __DIR__ . '/includes/whatsapp_helper.php';
 
 // Parse query parameters
 $service_slug = strtolower(trim($_GET['service'] ?? ''));
 $area_slug    = strtolower(trim($_GET['area'] ?? ''));
 
+// If passed via single 'slug' parameter from Nginx rewrite:
+if (empty($service_slug) && !empty($_GET['slug'])) {
+    $full_slug = strtolower(trim($_GET['slug']));
+    $full_slug = preg_replace('/\.php$/i', '', rtrim($full_slug, '/'));
+    if ($full_slug === '404') {
+        http_response_code(404);
+        if (file_exists(__DIR__ . '/404.php')) {
+            require __DIR__ . '/404.php';
+        } else {
+            echo '<h1>404 Not Found</h1>';
+        }
+        exit;
+    }
+    if (strpos($full_slug, '-in-') !== false) {
+        $parts = explode('-in-', $full_slug, 2);
+        $service_slug = $parts[0];
+        $area_slug    = $parts[1];
+    } else {
+        $service_slug = $full_slug;
+        $area_slug    = 'chennai';
+    }
+}
+
+// Sanitize recursion traps if repeated -in- appears
+if (strpos($service_slug, '-in-') !== false) {
+    $subparts = explode('-in-', $service_slug);
+    $service_slug = $subparts[0];
+}
+
+// Redirect legacy commander-in-chief-road slug to commander-chief-road
+if ($area_slug === 'commander-in-chief-road') {
+    $area_slug = 'commander-chief-road';
+}
+
 // Default to Chennai city target if area is not specified
 if (!empty($service_slug) && empty($area_slug)) {
     $area_slug = 'chennai';
 }
+
+// Populate $_GET for downstream references
+$_GET['service'] = $service_slug;
+$_GET['area']    = $area_slug;
 
 if (empty($service_slug) || empty($area_slug)) {
     http_response_code(404);
@@ -61,23 +100,50 @@ $area_row = $_db->fetchOne(
     's'
 );
 
-// If either service or area not recognized, return 404
-if (!$service_row || !$area_row) {
-    http_response_code(404);
-    if (file_exists(__DIR__ . '/404.php')) {
-        require __DIR__ . '/404.php';
-    } else {
-        echo '<h1>404 Page Not Found</h1>';
+// Dynamic Semantic Fallback & Resilient Resolver for Chennai (Zero 404s)
+if (!$service_row) {
+    $clean_slug = preg_replace('/^(russea-|best-|top-|cheap-|near-me-)/i', '', $service_slug);
+    $service_row = $_db->fetchOne(
+        "SELECT * FROM seo_service_keywords WHERE keyword_slug = ? AND is_active = 1 LIMIT 1",
+        [$clean_slug],
+        's'
+    );
+    if (!$service_row) {
+        $clean_name = ucwords(str_replace(['-', 'russea', 'ss', 'hdpe', 'uv'], [' ', 'Russea', 'SS', 'HDPE', 'UV'], $service_slug));
+        $cat_name = 'SAFETY NETS';
+        if (stripos($service_slug, 'pigeon') !== false || stripos($service_slug, 'bird') !== false) {
+            $cat_name = 'PIGEON NETS';
+        } elseif (stripos($service_slug, 'invisible') !== false || stripos($service_slug, 'grill') !== false) {
+            $cat_name = 'INVISIBLE GRILLS';
+        } elseif (stripos($service_slug, 'cricket') !== false || stripos($service_slug, 'turf') !== false || stripos($service_slug, 'sports') !== false) {
+            $cat_name = 'SPORTS NETS';
+        } elseif (stripos($service_slug, 'cloth') !== false || stripos($service_slug, 'hanger') !== false) {
+            $cat_name = 'CLOTH HANGERS';
+        } elseif (stripos($service_slug, 'balcony') !== false || stripos($service_slug, 'child') !== false) {
+            $cat_name = 'BALCONY SAFETY NETS';
+        }
+        $service_row = [
+            'keyword_name' => $clean_name,
+            'keyword_slug' => $service_slug,
+            'category'     => $cat_name,
+            'search_volume'=> 1500
+        ];
     }
-    exit;
 }
 
-// If request came as standalone keyword URL without "-in-", 301 redirect to canonical Chennai target page
-$request_path = trim(parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH), '/');
-if ($request_path === $service_slug && $service_slug !== 'index') {
-    header("Location: " . SITE_URL . "/{$service_slug}-in-chennai", true, 301);
-    exit;
+if (!$area_row) {
+    $clean_area_name = ucwords(str_replace('-', ' ', $area_slug));
+    $area_row = [
+        'area_name' => $clean_area_name,
+        'area_slug' => $area_slug,
+        'zone'      => 'Chennai Urban & Industrial Corridor',
+        'pincode'   => '600001',
+        'is_active' => 1
+    ];
 }
+
+// Standalone pillar page serves 200 OK directly for Chennai Hub
+
 
 $service_name = htmlspecialchars($service_row['keyword_name']);
 $area_name    = htmlspecialchars($area_row['area_name']);
@@ -434,7 +500,7 @@ $display_inspect  = $is_chennai_metro ? 'in Chennai' : "in {$area_name}";
       <a href="tel:+919912399224" style="display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#10B981,#059669);color:white;padding:14px 28px;border-radius:12px;text-decoration:none;font-weight:700;font-size:16px;box-shadow:0 8px 24px rgba(16,185,129,.4);">
         <i class="fas fa-phone-alt"></i> Call +91 99123 99224
       </a>
-      <a href="https://wa.me/919912399224?text=Hi%20GCM%20Netting%20Solutions,%20I%20need%20<?php echo urlencode($service_name); ?>%20in%20<?php echo urlencode($display_locality); ?>" 
+      <a href="<?php echo getGcmWhatsAppUrl($service_name, $display_locality); ?>" 
          target="_blank" 
          style="display:inline-flex;align-items:center;gap:10px;background:#25D366;color:white;padding:14px 28px;border-radius:12px;text-decoration:none;font-weight:700;font-size:16px;box-shadow:0 8px 24px rgba(37,211,102,.35);">
         <i class="fab fa-whatsapp"></i> WhatsApp Quote
@@ -732,6 +798,20 @@ $display_inspect  = $is_chennai_metro ? 'in Chennai' : "in {$area_name}";
         </div>
       </div>
 
+      <!-- Master Service Areas Directory Link -->
+      <div class="gcm-card" style="background: linear-gradient(135deg, #1e293b, #0f172a); color: white; text-align: center; padding: 25px;">
+        <h3 style="color: #f8fafc; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 8px;">
+          &#128205; Serving All Localities Across Chennai & Tambaram
+        </h3>
+        <p style="color: #94a3b8; font-size: 14px; max-width: 600px; margin: 0 auto 16px; line-height: 1.5;">
+          Need safety netting in another part of Chennai? Browse our complete, searchable directory of all localities.
+        </p>
+        <a href="<?php echo SITE_URL; ?>/all-areas" 
+           style="display: inline-flex; align-items: center; gap: 8px; background: #2563eb; color: #fff; padding: 10px 22px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 14px; box-shadow: 0 4px 12px rgba(37,99,235,0.3);">
+          <i class="fas fa-th-list"></i> Browse All Service Areas &rarr;
+        </a>
+      </div>
+
     </div><!-- /main -->
 
     <!-- Sidebar Column -->
@@ -804,7 +884,7 @@ $display_inspect  = $is_chennai_metro ? 'in Chennai' : "in {$area_name}";
       </div>
 
       <!-- Quick Call Badge -->
-      <div class="gcm-card" style="background:linear-gradient(135deg,#0f172a,#1e293b);color:white;">
+      <div class="gcm-card gcm-call-card" style="background:linear-gradient(135deg,#0f172a,#1e293b)!important;color:white!important;border:1px solid #1e293b!important;">
         <h4 style="color:#fff;margin:0 0 8px;font-size:18px;">&#128222; Need Instant Help?</h4>
         <p style="font-size:14px;color:rgba(255,255,255,.8);margin:0 0 14px;">
           Speak directly with our Chennai netting specialist for <?php echo $display_locality; ?>:

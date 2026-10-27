@@ -1,15 +1,15 @@
 {
-    "date": "2026-09-19",
+    "date": "2026-09-20",
     "blog_hour": 8,
-    "review_hour": 15,
-    "faq_hour": 20,
-    "backup_hour": 2,
-    "blog_done": true,
+    "review_hour": 13,
+    "faq_hour": 19,
+    "backup_hour": 3,
+    "blog_done": false,
     "review_done": false,
     "faq_done": false,
-    "backup_done": true,
-    "blog_fired_at": "08:02:38",
+    "backup_done": false,
+    "blog_fired_at": null,
     "review_fired_at": null,
     "faq_fired_at": null,
-    "backup_fired_at": "02:39:34"
+    "backup_fired_at": null
 }

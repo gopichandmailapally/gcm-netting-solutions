@@ -111,6 +111,41 @@ try {
     error_log('[contact-handler] DB save failed: ' . $e->getMessage());
 }
 
+// ── Push Lead to ChatGCM Central Omnichannel CRM (100% Autonomous) ────────────
+try {
+    $crm_url = 'http://127.0.0.1:3020/api/crm/ingest-lead';
+    $crm_payload = json_encode([
+        'websiteId'          => 'gcmnettingsolutions',
+        'customerName'       => $name ?? 'Customer',
+        'phone'              => $phone ?? '',
+        'email'              => $email ?? null,
+        'city'               => 'Chennai',
+        'locality'           => $area ?? null,
+        'service'            => $service ?? 'Safety Netting',
+        'requirementSummary' => !empty($service) ? ucwords(str_replace('-', ' ', $service)) . (!empty($area) ? ' in ' . $area : '') : 'Safety Netting',
+        'channel'            => 'web_form',
+        'sourceUrl'          => $_SERVER['HTTP_REFERER'] ?? ('https://' . ($_SERVER['HTTP_HOST'] ?? 'gcmnettingsolutions')),
+        'ipAddress'          => $ip_address ?? ($_SERVER['REMOTE_ADDR'] ?? '127.0.0.1'),
+        'notes'              => $message ?? null
+    ]);
+
+    $crm_ch = curl_init($crm_url);
+    curl_setopt($crm_ch, CURLOPT_POST, true);
+    curl_setopt($crm_ch, CURLOPT_POSTFIELDS, $crm_payload);
+    curl_setopt($crm_ch, CURLOPT_HTTPHEADER, [
+        'Content-Type: application/json',
+        'X-GCM-KEY: gcm-lead-bridge-2026'
+    ]);
+    curl_setopt($crm_ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($crm_ch, CURLOPT_TIMEOUT, 2);
+    curl_setopt($crm_ch, CURLOPT_CONNECTTIMEOUT, 1);
+    curl_exec($crm_ch);
+    curl_close($crm_ch);
+} catch (\Throwable $t) {
+    error_log('[ChatGCM Bridge Error] ' . $t->getMessage());
+}
+
+
 // Always send email notification
 $email_sent = send_contact_email($name, $phone, $email, $service, $area, $message);
 

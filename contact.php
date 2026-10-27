@@ -200,6 +200,11 @@ include 'includes/modern-header.php';
                     </div>
                     
                     <!-- Why Choose Us Section -->
+                    <style>
+                    .why-choose-section .feature-item { display: flex !important; align-items: flex-start !important; gap: 16px !important; padding: 14px 26px !important; }
+                    .why-choose-section .feature-icon { width: 38px !important; height: 38px !important; min-width: 38px !important; max-width: 38px !important; flex: 0 0 38px !important; flex-shrink: 0 !important; margin: 2px 0 0 0 !important; display: flex !important; align-items: center !important; justify-content: center !important; border-radius: 10px !important; }
+                    .why-choose-section .feature-content { flex: 1 1 auto !important; min-width: 0 !important; }
+                    </style>
                     <div class="why-choose-section">
                         <div class="choose-card">
                             <h3><i class="fas fa-star"></i> Why Choose GCM Netting Solutions?</h3>
@@ -473,29 +478,29 @@ include 'includes/modern-header.php';
                 <div class="branch-quick-links">
                     <h3>Quick Direction Links:</h3>
                     <div class="quick-links-grid">
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=17.3569,78.5378" target="_blank" class="direction-link">
-                            <i class="fas fa-map-marker-alt"></i> Head Office - Saroornagar
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=13.0827,80.2707" target="_blank" class="direction-link">
+                            <i class="fas fa-map-marker-alt"></i> Head Office - Anna Salai
                         </a>
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=17.4947,78.3985" target="_blank" class="direction-link">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=13.0418,80.2341" target="_blank" class="direction-link">
+                            <i class="fas fa-map-marker-alt"></i> T Nagar Branch
+                        </a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=13.0850,80.2101" target="_blank" class="direction-link">
+                            <i class="fas fa-map-marker-alt"></i> Anna Nagar Branch
+                        </a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=12.9759,80.2212" target="_blank" class="direction-link">
+                            <i class="fas fa-map-marker-alt"></i> Velachery Branch
+                        </a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=13.0012,80.2565" target="_blank" class="direction-link">
+                            <i class="fas fa-map-marker-alt"></i> Adyar Branch
+                        </a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=12.9249,80.1000" target="_blank" class="direction-link">
+                            <i class="fas fa-map-marker-alt"></i> Tambaram Branch
+                        </a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=13.0382,80.1565" target="_blank" class="direction-link">
                             <i class="fas fa-map-marker-alt"></i> Porur Branch
                         </a>
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=17.4290,78.4490" target="_blank" class="direction-link">
-                            <i class="fas fa-map-marker-alt"></i> Panjagutta Branch
-                        </a>
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=17.4010,78.3845" target="_blank" class="direction-link">
-                            <i class="fas fa-map-marker-alt"></i> Mylapore Branch
-                        </a>
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=17.5378,78.4903" target="_blank" class="direction-link">
-                            <i class="fas fa-map-marker-alt"></i> Madipakkam Branch
-                        </a>
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=17.4421,78.5494" target="_blank" class="direction-link">
-                            <i class="fas fa-map-marker-alt"></i> Nacharam Branch
-                        </a>
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=17.3669,78.4159" target="_blank" class="direction-link">
-                            <i class="fas fa-map-marker-alt"></i> Saidapet Branch
-                        </a>
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=17.4062,78.5591" target="_blank" class="direction-link">
-                            <i class="fas fa-map-marker-alt"></i> Uppal Branch
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=12.9010,80.2279" target="_blank" class="direction-link">
+                            <i class="fas fa-map-marker-alt"></i> OMR Branch
                         </a>
                     </div>
                 </div>

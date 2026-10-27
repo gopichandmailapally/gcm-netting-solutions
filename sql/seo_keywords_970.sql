@@ -120,7 +120,7 @@ INSERT INTO `seo_service_keywords` VALUES (927253,66,'Safety Nets For Balcony','
 INSERT INTO `seo_service_keywords` VALUES (927254,66,'Safety Nets For Balcony Services','safety-nets-for-balcony-services','SAFETY NETS',1000,1,7,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927256,66,'Balcony Mesh','balcony-mesh','SAFETY NETS',1000,1,9,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927257,66,'Nylon Balcony Safety Nets','nylon-balcony-safety-nets','SAFETY NETS',1000,1,10,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927258,66,'Garware Balcony Safety Nets','garware-balcony-safety-nets','SAFETY NETS',1000,1,11,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927258,66,'Russea Balcony Safety Nets','russea-balcony-safety-nets','SAFETY NETS',1000,1,11,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927259,66,'High Rise Balcony Safety Nets','high-rise-balcony-safety-nets','SAFETY NETS',1000,1,12,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927260,66,'Apartment Balcony Safety Nets','apartment-balcony-safety-nets','SAFETY NETS',1000,1,13,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927261,66,'Villa Balcony Safety Nets','villa-balcony-safety-nets','SAFETY NETS',1000,1,14,'2026-09-19 02:25:55',0);
@@ -160,8 +160,8 @@ INSERT INTO `seo_service_keywords` VALUES (927302,23,'Coconut Tree Safety Nets',
 INSERT INTO `seo_service_keywords` VALUES (927303,28,'Scaffolding Safety Nets','scaffolding-safety-nets','SAFETY NETS',1000,1,56,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927304,23,'Glass Balcony Safety Nets','glass-balcony-safety-nets','SAFETY NETS',1000,1,57,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927305,23,'Heavy Duty Safety Nets','heavy-duty-safety-nets','SAFETY NETS',1000,1,58,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927306,23,'Garware Safety Nets','garware-safety-nets','SAFETY NETS',1000,1,59,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927307,23,'Garware Safety Nets Services','garware-safety-nets-services','SAFETY NETS',1000,1,60,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927306,23,'Russea Safety Nets','russea-safety-nets','SAFETY NETS',1000,1,59,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927307,23,'Russea Safety Nets Services','russea-safety-nets-services','SAFETY NETS',1000,1,60,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927308,23,'Nylon Safety Nets','nylon-safety-nets','SAFETY NETS',1000,1,61,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927309,23,'Nylon Safety Nets Services','nylon-safety-nets-services','SAFETY NETS',1000,1,62,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927310,23,'HDPE Safety Nets','hdpe-safety-nets','SAFETY NETS',1000,1,63,'2026-09-19 02:25:55',0);
@@ -172,8 +172,8 @@ INSERT INTO `seo_service_keywords` VALUES (927314,28,'Best Construction Safety N
 INSERT INTO `seo_service_keywords` VALUES (927315,66,'Top Balcony Safety Nets','top-balcony-safety-nets','SAFETY NETS',1000,1,68,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927316,32,'Top Child Safety Nets','top-child-safety-nets','SAFETY NETS',1000,1,69,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927317,28,'Top Construction Safety Nets','top-construction-safety-nets','SAFETY NETS',1000,1,70,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927318,32,'Garware Child Safety Nets','garware-child-safety-nets','SAFETY NETS',1000,1,71,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927319,28,'Garware Construction Safety Nets','garware-construction-safety-nets','SAFETY NETS',1000,1,72,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927318,32,'Russea Child Safety Nets','russea-child-safety-nets','SAFETY NETS',1000,1,71,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927319,28,'Russea Construction Safety Nets','russea-construction-safety-nets','SAFETY NETS',1000,1,72,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927320,66,'Same Day Balcony Safety Nets','same-day-balcony-safety-nets','SAFETY NETS',1000,1,73,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927321,32,'Same Day Child Safety Nets','same-day-child-safety-nets','SAFETY NETS',1000,1,74,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927322,28,'Same Day Construction Safety Nets','same-day-construction-safety-nets','SAFETY NETS',1000,1,75,'2026-09-19 02:25:55',0);
@@ -191,7 +191,7 @@ INSERT INTO `seo_service_keywords` VALUES (927333,66,'Safety Nets For Balcony Ne
 INSERT INTO `seo_service_keywords` VALUES (927334,66,'Safety Nets For Balconies Near Me','safety-nets-for-balconies-near-me','SAFETY NETS',1000,1,87,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927335,66,'Balcony Mesh Near Me','balcony-mesh-near-me','SAFETY NETS',1000,1,88,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927336,66,'Nylon Balcony Safety Nets Near Me','nylon-balcony-safety-nets-near-me','SAFETY NETS',1000,1,89,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927337,66,'Garware Balcony Safety Nets Near Me','garware-balcony-safety-nets-near-me','SAFETY NETS',1000,1,90,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927337,66,'Russea Balcony Safety Nets Near Me','russea-balcony-safety-nets-near-me','SAFETY NETS',1000,1,90,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927338,66,'High Rise Balcony Safety Nets Near Me','high-rise-balcony-safety-nets-near-me','SAFETY NETS',1000,1,91,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927339,66,'Apartment Balcony Safety Nets Near Me','apartment-balcony-safety-nets-near-me','SAFETY NETS',1000,1,92,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927340,66,'Villa Balcony Safety Nets Near Me','villa-balcony-safety-nets-near-me','SAFETY NETS',1000,1,93,'2026-09-19 02:25:55',0);
@@ -235,7 +235,7 @@ INSERT INTO `seo_service_keywords` VALUES (927381,1,'AC Unit Pigeon Nets','ac-un
 INSERT INTO `seo_service_keywords` VALUES (927382,1,'Duct Area Pigeon Nets','duct-area-pigeon-nets','PIGEON NETS',1000,1,135,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927383,1,'Window Pigeon Nets','window-pigeon-nets','PIGEON NETS',1000,1,136,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927384,1,'Terrace Pigeon Nets','terrace-pigeon-nets','PIGEON NETS',1000,1,137,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927385,1,'Garware Pigeon Nets','garware-pigeon-nets','PIGEON NETS',1000,1,138,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927385,1,'Russea Pigeon Nets','russea-pigeon-nets','PIGEON NETS',1000,1,138,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927386,1,'Nylon Pigeon Nets','nylon-pigeon-nets','PIGEON NETS',1000,1,139,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927387,1,'Translucent Pigeon Nets','translucent-pigeon-nets','PIGEON NETS',1000,1,140,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927388,1,'Balcony Pigeon Netting','balcony-pigeon-netting','PIGEON NETS',1000,1,141,'2026-09-19 02:25:55',0);
@@ -258,7 +258,7 @@ INSERT INTO `seo_service_keywords` VALUES (927406,1,'AC Unit Pigeon Nets Near Me
 INSERT INTO `seo_service_keywords` VALUES (927407,1,'Duct Area Pigeon Nets Near Me','duct-area-pigeon-nets-near-me','PIGEON NETS',1000,1,160,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927408,1,'Window Pigeon Nets Near Me','window-pigeon-nets-near-me','PIGEON NETS',1000,1,161,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927409,1,'Terrace Pigeon Nets Near Me','terrace-pigeon-nets-near-me','PIGEON NETS',1000,1,162,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927410,1,'Garware Pigeon Nets Near Me','garware-pigeon-nets-near-me','PIGEON NETS',1000,1,163,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927410,1,'Russea Pigeon Nets Near Me','russea-pigeon-nets-near-me','PIGEON NETS',1000,1,163,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927411,1,'Nylon Pigeon Nets Near Me','nylon-pigeon-nets-near-me','PIGEON NETS',1000,1,164,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927412,1,'Translucent Pigeon Nets Near Me','translucent-pigeon-nets-near-me','PIGEON NETS',1000,1,165,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927413,1,'Balcony Pigeon Netting Near Me','balcony-pigeon-netting-near-me','PIGEON NETS',1000,1,166,'2026-09-19 02:25:55',0);
@@ -276,7 +276,7 @@ INSERT INTO `seo_service_keywords` VALUES (927426,1,'AC Unit Pigeon Nets Install
 INSERT INTO `seo_service_keywords` VALUES (927427,1,'Duct Area Pigeon Nets Installation','duct-area-pigeon-nets-installation','PIGEON NETS',1000,1,180,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927428,1,'Window Pigeon Nets Installation','window-pigeon-nets-installation','PIGEON NETS',1000,1,181,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927429,1,'Terrace Pigeon Nets Installation','terrace-pigeon-nets-installation','PIGEON NETS',1000,1,182,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927430,1,'Garware Pigeon Nets Installation','garware-pigeon-nets-installation','PIGEON NETS',1000,1,183,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927430,1,'Russea Pigeon Nets Installation','russea-pigeon-nets-installation','PIGEON NETS',1000,1,183,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927431,1,'Nylon Pigeon Nets Installation','nylon-pigeon-nets-installation','PIGEON NETS',1000,1,184,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927432,1,'Translucent Pigeon Nets Installation','translucent-pigeon-nets-installation','PIGEON NETS',1000,1,185,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927433,1,'Balcony Pigeon Netting Installation','balcony-pigeon-netting-installation','PIGEON NETS',1000,1,186,'2026-09-19 02:25:55',0);
@@ -295,7 +295,7 @@ INSERT INTO `seo_service_keywords` VALUES (927446,1,'AC Unit Pigeon Nets Price',
 INSERT INTO `seo_service_keywords` VALUES (927447,1,'Duct Area Pigeon Nets Price','duct-area-pigeon-nets-price','PIGEON NETS',1000,1,200,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927448,1,'Window Pigeon Nets Price','window-pigeon-nets-price','PIGEON NETS',1000,1,201,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927449,1,'Terrace Pigeon Nets Price','terrace-pigeon-nets-price','PIGEON NETS',1000,1,202,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927450,1,'Garware Pigeon Nets Price','garware-pigeon-nets-price','PIGEON NETS',1000,1,203,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927450,1,'Russea Pigeon Nets Price','russea-pigeon-nets-price','PIGEON NETS',1000,1,203,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927451,1,'Nylon Pigeon Nets Price','nylon-pigeon-nets-price','PIGEON NETS',1000,1,204,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927452,1,'Translucent Pigeon Nets Price','translucent-pigeon-nets-price','PIGEON NETS',1000,1,205,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927453,1,'Balcony Pigeon Netting Price','balcony-pigeon-netting-price','PIGEON NETS',1000,1,206,'2026-09-19 02:25:55',0);
@@ -315,7 +315,7 @@ INSERT INTO `seo_service_keywords` VALUES (927466,1,'AC Unit Pigeon Nets Dealers
 INSERT INTO `seo_service_keywords` VALUES (927467,1,'Duct Area Pigeon Nets Dealers','duct-area-pigeon-nets-dealers','PIGEON NETS',1000,1,220,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927468,1,'Window Pigeon Nets Dealers','window-pigeon-nets-dealers','PIGEON NETS',1000,1,221,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927469,1,'Terrace Pigeon Nets Dealers','terrace-pigeon-nets-dealers','PIGEON NETS',1000,1,222,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927470,1,'Garware Pigeon Nets Dealers','garware-pigeon-nets-dealers','PIGEON NETS',1000,1,223,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927470,1,'Russea Pigeon Nets Dealers','russea-pigeon-nets-dealers','PIGEON NETS',1000,1,223,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927471,1,'Nylon Pigeon Nets Dealers','nylon-pigeon-nets-dealers','PIGEON NETS',1000,1,224,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927472,1,'Translucent Pigeon Nets Dealers','translucent-pigeon-nets-dealers','PIGEON NETS',1000,1,225,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927473,1,'Balcony Pigeon Netting Dealers','balcony-pigeon-netting-dealers','PIGEON NETS',1000,1,226,'2026-09-19 02:25:55',0);
@@ -346,7 +346,7 @@ INSERT INTO `seo_service_keywords` VALUES (927502,10,'Transparent Bird Netting',
 INSERT INTO `seo_service_keywords` VALUES (927503,10,'Sparrow Protection Nets','sparrow-protection-nets','BIRD NETS',1000,1,256,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927504,10,'Crow Protection Nets','crow-protection-nets','BIRD NETS',1000,1,257,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927505,10,'Bird Protection Nets','bird-protection-nets','BIRD NETS',1000,1,258,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927506,10,'Garware Bird Nets','garware-bird-nets','BIRD NETS',1000,1,259,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927506,10,'Russea Bird Nets','russea-bird-nets','BIRD NETS',1000,1,259,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927507,10,'Nylon Bird Nets','nylon-bird-nets','BIRD NETS',1000,1,260,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927508,10,'Bird Proofing Solutions','bird-proofing-solutions','BIRD NETS',1000,1,261,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927509,512,'Anti Bird Spikes','anti-bird-spikes','BIRD NETS',1000,1,262,'2026-09-19 02:25:55',0);
@@ -363,7 +363,7 @@ INSERT INTO `seo_service_keywords` VALUES (927519,512,'Bird Deterrent Spikes','b
 INSERT INTO `seo_service_keywords` VALUES (927520,512,'Commercial Bird Spikes','commercial-bird-spikes','BIRD NETS',1000,1,273,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927521,10,'Best Anti Bird Netting','best-anti-bird-netting','BIRD NETS',1000,1,274,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927522,10,'Top Anti Bird Netting','top-anti-bird-netting','BIRD NETS',1000,1,275,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927523,10,'Garware Anti Bird Netting','garware-anti-bird-netting','BIRD NETS',1000,1,276,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927523,10,'Russea Anti Bird Netting','russea-anti-bird-netting','BIRD NETS',1000,1,276,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927524,10,'Same Day Anti Bird Netting','same-day-anti-bird-netting','BIRD NETS',1000,1,277,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927525,10,'Affordable Anti Bird Netting','affordable-anti-bird-netting','BIRD NETS',1000,1,278,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927526,10,'High Quality Anti Bird Netting','high-quality-anti-bird-netting','BIRD NETS',1000,1,279,'2026-09-19 02:25:55',0);
@@ -383,7 +383,7 @@ INSERT INTO `seo_service_keywords` VALUES (927540,10,'Transparent Bird Netting N
 INSERT INTO `seo_service_keywords` VALUES (927541,10,'Sparrow Protection Nets Near Me','sparrow-protection-nets-near-me','BIRD NETS',1000,1,294,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927542,10,'Crow Protection Nets Near Me','crow-protection-nets-near-me','BIRD NETS',1000,1,295,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927543,10,'Bird Protection Nets Near Me','bird-protection-nets-near-me','BIRD NETS',1000,1,296,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927544,10,'Garware Bird Nets Near Me','garware-bird-nets-near-me','BIRD NETS',1000,1,297,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927544,10,'Russea Bird Nets Near Me','russea-bird-nets-near-me','BIRD NETS',1000,1,297,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927545,10,'Nylon Bird Nets Near Me','nylon-bird-nets-near-me','BIRD NETS',1000,1,298,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927546,10,'Bird Proofing Solutions Near Me','bird-proofing-solutions-near-me','BIRD NETS',1000,1,299,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927547,512,'Anti Bird Spikes Near Me','anti-bird-spikes-near-me','BIRD NETS',1000,1,300,'2026-09-19 02:25:55',0);
@@ -413,7 +413,7 @@ INSERT INTO `seo_service_keywords` VALUES (927570,10,'Transparent Bird Netting I
 INSERT INTO `seo_service_keywords` VALUES (927571,10,'Sparrow Protection Nets Installation','sparrow-protection-nets-installation','BIRD NETS',1000,1,324,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927572,10,'Crow Protection Nets Installation','crow-protection-nets-installation','BIRD NETS',1000,1,325,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927573,10,'Bird Protection Nets Installation','bird-protection-nets-installation','BIRD NETS',1000,1,326,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927574,10,'Garware Bird Nets Installation','garware-bird-nets-installation','BIRD NETS',1000,1,327,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927574,10,'Russea Bird Nets Installation','russea-bird-nets-installation','BIRD NETS',1000,1,327,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927575,10,'Nylon Bird Nets Installation','nylon-bird-nets-installation','BIRD NETS',1000,1,328,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927576,10,'Bird Proofing Solutions Installation','bird-proofing-solutions-installation','BIRD NETS',1000,1,329,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927577,512,'Anti Bird Spikes Installation','anti-bird-spikes-installation','BIRD NETS',1000,1,330,'2026-09-19 02:25:55',0);
@@ -446,7 +446,7 @@ INSERT INTO `seo_service_keywords` VALUES (927604,47,'Invisible Balcony Safety G
 INSERT INTO `seo_service_keywords` VALUES (927605,47,'Invisible Safety Grill For Windows','invisible-safety-grill-for-windows','INVISIBLE GRILLS',1000,1,358,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927606,47,'Best Invisible Grills','best-invisible-grills','INVISIBLE GRILLS',1000,1,359,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927607,47,'Top Invisible Grills','top-invisible-grills','INVISIBLE GRILLS',1000,1,360,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927608,47,'Garware Invisible Grills','garware-invisible-grills','INVISIBLE GRILLS',1000,1,361,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927608,47,'Russea Invisible Grills','russea-invisible-grills','INVISIBLE GRILLS',1000,1,361,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927609,47,'Same Day Invisible Grills','same-day-invisible-grills','INVISIBLE GRILLS',1000,1,362,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927610,47,'Affordable Invisible Grills','affordable-invisible-grills','INVISIBLE GRILLS',1000,1,363,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927611,47,'High Quality Invisible Grills','high-quality-invisible-grills','INVISIBLE GRILLS',1000,1,364,'2026-09-19 02:25:55',0);
@@ -534,7 +534,7 @@ INSERT INTO `seo_service_keywords` VALUES (927696,515,'Sports Safety Nets','spor
 INSERT INTO `seo_service_keywords` VALUES (927697,515,'Golf Practice Nets','golf-practice-nets','SPORTS NETS',1000,1,450,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927699,515,'Best Cricket Nets','best-cricket-nets','SPORTS NETS',1000,1,452,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927700,515,'Top Cricket Nets','top-cricket-nets','SPORTS NETS',1000,1,453,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927701,515,'Garware Cricket Nets','garware-cricket-nets','SPORTS NETS',1000,1,454,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927701,515,'Russea Cricket Nets','russea-cricket-nets','SPORTS NETS',1000,1,454,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927702,515,'Same Day Cricket Nets','same-day-cricket-nets','SPORTS NETS',1000,1,455,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927703,515,'Affordable Cricket Nets','affordable-cricket-nets','SPORTS NETS',1000,1,456,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927704,515,'High Quality Cricket Nets','high-quality-cricket-nets','SPORTS NETS',1000,1,457,'2026-09-19 02:25:55',0);
@@ -612,7 +612,7 @@ INSERT INTO `seo_service_keywords` VALUES (927780,509,'Ceiling Hangers For Balco
 INSERT INTO `seo_service_keywords` VALUES (927781,509,'Clothes Drying Rope Pulley','clothes-drying-rope-pulley','CLOTH HANGERS',1000,1,534,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927785,509,'Best Cloth Drying Hangers','best-cloth-drying-hangers','CLOTH HANGERS',1000,1,538,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927786,509,'Top Cloth Drying Hangers','top-cloth-drying-hangers','CLOTH HANGERS',1000,1,539,'2026-09-19 02:25:55',0);
-INSERT INTO `seo_service_keywords` VALUES (927787,509,'Garware Cloth Drying Hangers','garware-cloth-drying-hangers','CLOTH HANGERS',1000,1,540,'2026-09-19 02:25:55',0);
+INSERT INTO `seo_service_keywords` VALUES (927787,509,'Russea Cloth Drying Hangers','russea-cloth-drying-hangers','CLOTH HANGERS',1000,1,540,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927788,509,'Same Day Cloth Drying Hangers','same-day-cloth-drying-hangers','CLOTH HANGERS',1000,1,541,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927789,509,'Affordable Cloth Drying Hangers','affordable-cloth-drying-hangers','CLOTH HANGERS',1000,1,542,'2026-09-19 02:25:55',0);
 INSERT INTO `seo_service_keywords` VALUES (927790,509,'High Quality Cloth Drying Hangers','high-quality-cloth-drying-hangers','CLOTH HANGERS',1000,1,543,'2026-09-19 02:25:55',0);
@@ -793,14 +793,14 @@ INSERT INTO `seo_service_keywords` VALUES (928144,26,'Duct Area Safety Nets Cost
 INSERT INTO `seo_service_keywords` VALUES (928145,26,'Duct Area Safety Nets Near Me','duct-area-safety-nets-near-me','SAFETY NETS',1000,1,292,'2026-09-19 02:27:21',0);
 INSERT INTO `seo_service_keywords` VALUES (928146,26,'Duct Area Safety Nets Fixing','duct-area-safety-nets-fixing','SAFETY NETS',1000,1,293,'2026-09-19 02:27:21',0);
 INSERT INTO `seo_service_keywords` VALUES (928147,26,'Duct Area Safety Nets Fitting','duct-area-safety-nets-fitting','SAFETY NETS',1000,1,294,'2026-09-19 02:27:21',0);
-INSERT INTO `seo_service_keywords` VALUES (928151,23,'Garware Safety Nets Installation','garware-safety-nets-installation','SAFETY NETS',1000,1,298,'2026-09-19 02:27:21',0);
-INSERT INTO `seo_service_keywords` VALUES (928152,23,'Garware Safety Nets Dealers','garware-safety-nets-dealers','SAFETY NETS',1000,1,299,'2026-09-19 02:27:21',0);
-INSERT INTO `seo_service_keywords` VALUES (928153,23,'Garware Safety Nets Contractors','garware-safety-nets-contractors','SAFETY NETS',1000,1,300,'2026-09-19 02:27:21',0);
-INSERT INTO `seo_service_keywords` VALUES (928154,23,'Garware Safety Nets Price','garware-safety-nets-price','SAFETY NETS',1000,1,301,'2026-09-19 02:27:21',0);
-INSERT INTO `seo_service_keywords` VALUES (928155,23,'Garware Safety Nets Cost','garware-safety-nets-cost','SAFETY NETS',1000,1,302,'2026-09-19 02:27:21',0);
-INSERT INTO `seo_service_keywords` VALUES (928156,23,'Garware Safety Nets Near Me','garware-safety-nets-near-me','SAFETY NETS',1000,1,303,'2026-09-19 02:27:21',0);
-INSERT INTO `seo_service_keywords` VALUES (928157,23,'Garware Safety Nets Fixing','garware-safety-nets-fixing','SAFETY NETS',1000,1,304,'2026-09-19 02:27:21',0);
-INSERT INTO `seo_service_keywords` VALUES (928158,23,'Garware Safety Nets Fitting','garware-safety-nets-fitting','SAFETY NETS',1000,1,305,'2026-09-19 02:27:21',0);
+INSERT INTO `seo_service_keywords` VALUES (928151,23,'Russea Safety Nets Installation','russea-safety-nets-installation','SAFETY NETS',1000,1,298,'2026-09-19 02:27:21',0);
+INSERT INTO `seo_service_keywords` VALUES (928152,23,'Russea Safety Nets Dealers','russea-safety-nets-dealers','SAFETY NETS',1000,1,299,'2026-09-19 02:27:21',0);
+INSERT INTO `seo_service_keywords` VALUES (928153,23,'Russea Safety Nets Contractors','russea-safety-nets-contractors','SAFETY NETS',1000,1,300,'2026-09-19 02:27:21',0);
+INSERT INTO `seo_service_keywords` VALUES (928154,23,'Russea Safety Nets Price','russea-safety-nets-price','SAFETY NETS',1000,1,301,'2026-09-19 02:27:21',0);
+INSERT INTO `seo_service_keywords` VALUES (928155,23,'Russea Safety Nets Cost','russea-safety-nets-cost','SAFETY NETS',1000,1,302,'2026-09-19 02:27:21',0);
+INSERT INTO `seo_service_keywords` VALUES (928156,23,'Russea Safety Nets Near Me','russea-safety-nets-near-me','SAFETY NETS',1000,1,303,'2026-09-19 02:27:21',0);
+INSERT INTO `seo_service_keywords` VALUES (928157,23,'Russea Safety Nets Fixing','russea-safety-nets-fixing','SAFETY NETS',1000,1,304,'2026-09-19 02:27:21',0);
+INSERT INTO `seo_service_keywords` VALUES (928158,23,'Russea Safety Nets Fitting','russea-safety-nets-fitting','SAFETY NETS',1000,1,305,'2026-09-19 02:27:21',0);
 INSERT INTO `seo_service_keywords` VALUES (928161,23,'Nylon Safety Nets Installation','nylon-safety-nets-installation','SAFETY NETS',1000,1,308,'2026-09-19 02:27:21',0);
 INSERT INTO `seo_service_keywords` VALUES (928162,23,'Nylon Safety Nets Dealers','nylon-safety-nets-dealers','SAFETY NETS',1000,1,309,'2026-09-19 02:27:21',0);
 INSERT INTO `seo_service_keywords` VALUES (928163,23,'Nylon Safety Nets Contractors','nylon-safety-nets-contractors','SAFETY NETS',1000,1,310,'2026-09-19 02:27:21',0);
@@ -827,9 +827,9 @@ INSERT INTO `seo_service_keywords` VALUES (928239,66,'Balcony Mesh Price','balco
 INSERT INTO `seo_service_keywords` VALUES (928241,66,'Nylon Balcony Safety Nets Installation','nylon-balcony-safety-nets-installation','SAFETY NETS',1000,1,388,'2026-09-19 02:27:21',0);
 INSERT INTO `seo_service_keywords` VALUES (928242,66,'Nylon Balcony Safety Nets Dealers','nylon-balcony-safety-nets-dealers','SAFETY NETS',1000,1,389,'2026-09-19 02:27:21',0);
 INSERT INTO `seo_service_keywords` VALUES (928243,66,'Nylon Balcony Safety Nets Price','nylon-balcony-safety-nets-price','SAFETY NETS',1000,1,390,'2026-09-19 02:27:21',0);
-INSERT INTO `seo_service_keywords` VALUES (928245,66,'Garware Balcony Safety Nets Installation','garware-balcony-safety-nets-installation','SAFETY NETS',1000,1,392,'2026-09-19 02:27:21',0);
-INSERT INTO `seo_service_keywords` VALUES (928246,66,'Garware Balcony Safety Nets Dealers','garware-balcony-safety-nets-dealers','SAFETY NETS',1000,1,393,'2026-09-19 02:27:21',0);
-INSERT INTO `seo_service_keywords` VALUES (928247,66,'Garware Balcony Safety Nets Price','garware-balcony-safety-nets-price','SAFETY NETS',1000,1,394,'2026-09-19 02:27:21',0);
+INSERT INTO `seo_service_keywords` VALUES (928245,66,'Russea Balcony Safety Nets Installation','russea-balcony-safety-nets-installation','SAFETY NETS',1000,1,392,'2026-09-19 02:27:21',0);
+INSERT INTO `seo_service_keywords` VALUES (928246,66,'Russea Balcony Safety Nets Dealers','russea-balcony-safety-nets-dealers','SAFETY NETS',1000,1,393,'2026-09-19 02:27:21',0);
+INSERT INTO `seo_service_keywords` VALUES (928247,66,'Russea Balcony Safety Nets Price','russea-balcony-safety-nets-price','SAFETY NETS',1000,1,394,'2026-09-19 02:27:21',0);
 INSERT INTO `seo_service_keywords` VALUES (928249,66,'High Rise Balcony Safety Nets Installation','high-rise-balcony-safety-nets-installation','SAFETY NETS',1000,1,396,'2026-09-19 02:27:21',0);
 INSERT INTO `seo_service_keywords` VALUES (928250,66,'High Rise Balcony Safety Nets Dealers','high-rise-balcony-safety-nets-dealers','SAFETY NETS',1000,1,397,'2026-09-19 02:27:21',0);
 INSERT INTO `seo_service_keywords` VALUES (928251,66,'High Rise Balcony Safety Nets Price','high-rise-balcony-safety-nets-price','SAFETY NETS',1000,1,398,'2026-09-19 02:27:21',0);
@@ -883,8 +883,8 @@ INSERT INTO `seo_service_keywords` VALUES (928424,10,'Crow Protection Nets Deale
 INSERT INTO `seo_service_keywords` VALUES (928425,10,'Crow Protection Nets Price','crow-protection-nets-price','BIRD NETS',1000,1,572,'2026-09-19 02:27:21',0);
 INSERT INTO `seo_service_keywords` VALUES (928429,10,'Bird Protection Nets Dealers','bird-protection-nets-dealers','BIRD NETS',1000,1,576,'2026-09-19 02:27:21',0);
 INSERT INTO `seo_service_keywords` VALUES (928430,10,'Bird Protection Nets Price','bird-protection-nets-price','BIRD NETS',1000,1,577,'2026-09-19 02:27:21',0);
-INSERT INTO `seo_service_keywords` VALUES (928434,10,'Garware Bird Nets Dealers','garware-bird-nets-dealers','BIRD NETS',1000,1,581,'2026-09-19 02:27:21',0);
-INSERT INTO `seo_service_keywords` VALUES (928435,10,'Garware Bird Nets Price','garware-bird-nets-price','BIRD NETS',1000,1,582,'2026-09-19 02:27:21',0);
+INSERT INTO `seo_service_keywords` VALUES (928434,10,'Russea Bird Nets Dealers','russea-bird-nets-dealers','BIRD NETS',1000,1,581,'2026-09-19 02:27:21',0);
+INSERT INTO `seo_service_keywords` VALUES (928435,10,'Russea Bird Nets Price','russea-bird-nets-price','BIRD NETS',1000,1,582,'2026-09-19 02:27:21',0);
 INSERT INTO `seo_service_keywords` VALUES (928439,10,'Nylon Bird Nets Dealers','nylon-bird-nets-dealers','BIRD NETS',1000,1,586,'2026-09-19 02:27:21',0);
 INSERT INTO `seo_service_keywords` VALUES (928440,10,'Nylon Bird Nets Price','nylon-bird-nets-price','BIRD NETS',1000,1,587,'2026-09-19 02:27:21',0);
 INSERT INTO `seo_service_keywords` VALUES (928444,10,'Bird Proofing Solutions Dealers','bird-proofing-solutions-dealers','BIRD NETS',1000,1,591,'2026-09-19 02:27:21',0);

@@ -57,7 +57,7 @@ return [
     // More areas with efficient data structure
     'ameerpet' => ['name' => 'Kodambakkam', 'type' => 'Educational & Commercial', 'weather' => 'Hot summers, moderate winters', 'development' => 'Major educational hub with coaching centers and commercial establishments', 'problems' => 'Bird issues in coaching center buildings, safety nets for educational institutions', 'landmarks' => 'SR Nagar, Kodambakkam Metro, Educational institutes'],
     
-    'secunderabad' => ['name' => 'Tambaram', 'type' => 'Twin City Commercial', 'weather' => 'Similar to Chennai with slightly better air quality', 'development' => 'Historic cantonment area with colonial architecture and modern development', 'problems' => 'Heritage building bird protection, railway station area bird control', 'landmarks' => 'Tambaram Railway Station, Paradise Circle, Cantonment'],
+    'tambaram' => ['name' => 'Tambaram', 'type' => 'Twin City Commercial', 'weather' => 'Similar to Chennai with slightly better air quality', 'development' => 'Historic cantonment area with colonial architecture and modern development', 'problems' => 'Heritage building bird protection, railway station area bird control', 'landmarks' => 'Tambaram Railway Station, Tambaram Sanatorium, Cantonment'],
     
     'uppal' => ['name' => 'Uppal', 'type' => 'Residential Suburb', 'weather' => 'Hot and humid, typical Deccan plateau climate', 'development' => 'Growing residential area with metro connectivity and new apartment complexes', 'problems' => 'Residential balcony bird protection, safety nets for apartments', 'landmarks' => 'Uppal Metro, Uppal X Roads, New residential townships'],
     

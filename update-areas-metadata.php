@@ -158,7 +158,7 @@ $area_data = [
     "adikmet" => ["Central Chennai", "500044"],
 
     // North Chennai & Tambaram
-    "secunderabad" => ["North Chennai", "500003"],
+    "tambaram" => ["Tambaram Zone", "600045"],
     "marredpally" => ["North Chennai", "500026"],
     "east-marredpally" => ["North Chennai", "500026"],
     "west-marredpally" => ["North Chennai", "500026"],

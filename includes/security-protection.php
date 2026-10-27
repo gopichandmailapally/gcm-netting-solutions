@@ -134,7 +134,23 @@ class SecurityProtection {
     /**
      * Rate Limiting
      */
+    
+    /**
+     * Check if request is from a verified or legitimate search crawler or AI engine
+     */
+    public static function isSearchEngineBot(): bool {
+        $user_agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
+        if (empty($user_agent)) return false;
+        
+        $bot_pattern = '/(Googlebot|Google-InspectionTool|Google-Extended|Mediapartners-Google|Feedfetcher-Google|bingbot|msnbot|Slurp|Baiduspider|YandexBot|Applebot|DuckDuckBot|GPTBot|ClaudeBot|Claude-SearchBot|PerplexityBot|Bytespider|OAI-SearchBot|GrokBot|cohere-ai|Amazonbot|facebookexternalhit|Twitterbot)/i';
+        return (bool) preg_match($bot_pattern, $user_agent);
+    }
+
     public static function rateLimiting() {
+        // Never rate-limit search engine crawlers and legitimate AI bots
+        if (self::isSearchEngineBot()) {
+            return;
+        }
         $current_script = $_SERVER['SCRIPT_NAME'] ?? '';
 
         // Never rate-limit authenticated admin actions.

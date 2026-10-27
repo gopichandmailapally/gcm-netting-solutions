@@ -967,9 +967,9 @@
   },
   {
     "area_name": "Tambaram",
-    "area_slug": "secunderabad",
-    "zone": "North Chennai",
-    "pincode": "500003"
+    "area_slug": "tambaram",
+    "zone": "Tambaram Zone",
+    "pincode": "600045"
   },
   {
     "area_name": "Serilingampally",
@@ -3043,39 +3043,39 @@
   },
   {
     "area_name": "Tambaram Station",
-    "area_slug": "secunderabad-station",
-    "zone": "North Chennai",
-    "pincode": "500003"
+    "area_slug": "tambaram-station",
+    "zone": "Tambaram Zone",
+    "pincode": "600045"
   },
   {
     "area_name": "Paradise Circle Tambaram",
-    "area_slug": "paradise-circle-secunderabad",
-    "zone": "North Chennai",
-    "pincode": "500003"
+    "area_slug": "paradise-circle-tambaram",
+    "zone": "Tambaram Zone",
+    "pincode": "600045"
   },
   {
     "area_name": "General Bazaar Tambaram",
-    "area_slug": "general-bazaar-secunderabad",
-    "zone": "North Chennai",
-    "pincode": "500003"
+    "area_slug": "general-bazaar-tambaram",
+    "zone": "Tambaram Zone",
+    "pincode": "600045"
   },
   {
     "area_name": "MG Road Tambaram",
-    "area_slug": "mg-road-secunderabad",
-    "zone": "North Chennai",
-    "pincode": "500003"
+    "area_slug": "mg-road-tambaram",
+    "zone": "Tambaram Zone",
+    "pincode": "600045"
   },
   {
     "area_name": "RP Road Tambaram",
-    "area_slug": "rp-road-secunderabad",
-    "zone": "North Chennai",
-    "pincode": "500003"
+    "area_slug": "rp-road-tambaram",
+    "zone": "Tambaram Zone",
+    "pincode": "600045"
   },
   {
     "area_name": "Regimental Bazaar Tambaram",
-    "area_slug": "regimental-bazaar-secunderabad",
-    "zone": "North Chennai",
-    "pincode": "500003"
+    "area_slug": "regimental-bazaar-tambaram",
+    "zone": "Tambaram Zone",
+    "pincode": "600045"
   },
   {
     "area_name": "Teachers Colony Marredpally",
@@ -3103,9 +3103,9 @@
   },
   {
     "area_name": "Diamond Point Tambaram",
-    "area_slug": "diamond-point-secunderabad",
-    "zone": "North Chennai",
-    "pincode": "500009"
+    "area_slug": "diamond-point-tambaram",
+    "zone": "Tambaram Zone",
+    "pincode": "600045"
   },
   {
     "area_name": "Hasmathpet",
